@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pl-commentary-bank-v0.1.0';
+const CACHE_NAME = 'pl-commentary-bank-v0.1.1';
 const ASSETS = [
   './',
   './index.html',
@@ -7,7 +7,8 @@ const ASSETS = [
   './src/styles.css',
   './src/app.js',
   './data/database.json',
-  './data/research-candidates.json'
+  './data/research-candidates.json',
+  './data/event-config.json'
 ];
 
 self.addEventListener('install', event => {
