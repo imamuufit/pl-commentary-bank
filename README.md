@@ -6,7 +6,7 @@
 
 - 正本データ：`data/database.json`
 - 編集画面：ブラウザで動くPWA
-- 確認・印刷用：A4横PDF / CSV / 将来のExcel出力
+- 確認・印刷用：A4横PDF / CSV / Excel出力
 
 ## 固定レイアウト
 
@@ -41,4 +41,4 @@ npm run validate
 4. `data/database.json` に反映する
 5. PDF印刷でA4横資料を出力する
 
-Codexに依頼する場合は `docs/CODEX_PROMPT.md` を基準にしてください。
+Codexに依頼する場合は `docs/LOCK_RULES.md` を基準にしてください。
