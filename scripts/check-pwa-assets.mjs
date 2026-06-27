@@ -20,6 +20,7 @@ requireIncludes('index.html', '<link rel="manifest" href="./manifest.webmanifest
 requireIncludes('index.html', "navigator.serviceWorker.register('./sw.js')", 'service worker registration must remain present');
 requireIncludes('sw.js', './data/database.json', 'service worker must cache the confirmed database');
 requireIncludes('sw.js', './data/research-candidates.json', 'service worker must cache research candidates separately');
+requireIncludes('sw.js', './data/event-config.json', 'service worker must cache event configuration for GitHub Pages/offline stability');
 
 const manifestText = read('manifest.webmanifest');
 try {
