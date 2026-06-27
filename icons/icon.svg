@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">PL Commentary Bank</title>
+  <desc id="desc">A simple teal and gold icon for the PL Commentary Bank PWA.</desc>
+  <rect width="512" height="512" rx="108" fill="#183b3f"/>
+  <rect x="86" y="128" width="340" height="256" rx="32" fill="#fffdf7"/>
+  <rect x="116" y="168" width="280" height="34" rx="10" fill="#1f6f73"/>
+  <rect x="116" y="226" width="170" height="24" rx="8" fill="#d8d2c2"/>
+  <rect x="116" y="270" width="236" height="24" rx="8" fill="#d8d2c2"/>
+  <rect x="116" y="314" width="200" height="24" rx="8" fill="#d8d2c2"/>
+  <circle cx="372" cy="326" r="42" fill="#f5c542"/>
+  <path d="M348 326h48M372 302v48" stroke="#183b3f" stroke-width="18" stroke-linecap="round"/>
+</svg>
