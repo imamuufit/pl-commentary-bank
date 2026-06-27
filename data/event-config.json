@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "purpose": "大会単位運用の下準備。現行PWAの表示・印刷レイアウトは変更しない。",
+    "updatedAt": "2026-06-28"
+  },
+  "event": {
+    "eventId": "default-v5-9-6-lock",
+    "name": "PL Commentary Bank Default Event",
+    "hostArea": "",
+    "dateFrom": "",
+    "dateTo": "",
+    "venue": "",
+    "memo": "将来の大会切替用。空欄は現行DB運用を優先する。"
+  },
+  "printPolicy": {
+    "layoutTemplate": "v5.9.6_LOCK",
+    "paper": "A4",
+    "orientation": "landscape",
+    "cardsPerPage": 1,
+    "sourcePlacement": "appendix",
+    "allowLayoutChange": false
+  },
+  "dataPolicy": {
+    "verifiedHistoriesRequireSourceIds": true,
+    "researchCandidatesStaySeparate": true,
+    "doNotPromoteCandidatesAutomatically": true,
+    "doNotInferAthleteHistory": true
+  },
+  "groups": []
+}
