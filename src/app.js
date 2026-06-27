@@ -1,6 +1,8 @@
 const DB_URL='./data/database.json';
+const CANDIDATES_URL='./data/research-candidates.json';
 const STORAGE_KEY='pl-commentary-bank-db-v1';
 let db=null;
+let researchDb={meta:{},candidates:[]};
 let selectedId=null;
 let dataOrigin='remote';
 const $=s=>document.querySelector(s);
@@ -12,9 +14,10 @@ const nowDate=()=>new Date().toISOString().slice(0,10);
 const save=()=>{db.meta.updatedAt=nowDate();db.meta.localSavedAt=new Date().toISOString();localStorage.setItem(STORAGE_KEY,JSON.stringify(db,null,2));dataOrigin='local';render();};
 const download=(name,text,type='application/json')=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();URL.revokeObjectURL(a.href);};
 async function fetchRemoteDb(){const res=await fetch(`${DB_URL}?t=${Date.now()}`,{cache:'no-store'});if(!res.ok)throw new Error('正本DBを読み込めませんでした');return res.json();}
-async function load(){const local=localStorage.getItem(STORAGE_KEY);if(local){db=JSON.parse(local);dataOrigin='local';}else{db=await fetchRemoteDb();dataOrigin='remote';}selectedId=db.players[0]?.id;render();}
-async function reloadRemote(){if(!confirm('GitHub Pages上の正本DBを再読込します。ブラウザ内のローカル編集は上書きされます。続けますか？'))return;db=await fetchRemoteDb();localStorage.setItem(STORAGE_KEY,JSON.stringify(db,null,2));dataOrigin='remote';selectedId=db.players[0]?.id;render();}
-async function discardLocal(){if(!confirm('ブラウザ内のローカル編集を破棄し、正本DBを読み直します。続けますか？'))return;localStorage.removeItem(STORAGE_KEY);db=await fetchRemoteDb();dataOrigin='remote';selectedId=db.players[0]?.id;render();}
+async function fetchResearchDb(){try{const res=await fetch(`${CANDIDATES_URL}?t=${Date.now()}`,{cache:'no-store'});if(!res.ok)throw new Error('未確認候補DBを読み込めませんでした');return res.json();}catch(e){return {meta:{error:String(e.message||e)},candidates:[]};}}
+async function load(){researchDb=await fetchResearchDb();const local=localStorage.getItem(STORAGE_KEY);if(local){db=JSON.parse(local);dataOrigin='local';}else{db=await fetchRemoteDb();dataOrigin='remote';}selectedId=db.players[0]?.id;render();}
+async function reloadRemote(){if(!confirm('GitHub Pages上の正本DBを再読込します。ブラウザ内のローカル編集は上書きされます。続けますか？'))return;db=await fetchRemoteDb();researchDb=await fetchResearchDb();localStorage.setItem(STORAGE_KEY,JSON.stringify(db,null,2));dataOrigin='remote';selectedId=db.players[0]?.id;render();}
+async function discardLocal(){if(!confirm('ブラウザ内のローカル編集を破棄し、正本DBを読み直します。続けますか？'))return;localStorage.removeItem(STORAGE_KEY);db=await fetchRemoteDb();researchDb=await fetchResearchDb();dataOrigin='remote';selectedId=db.players[0]?.id;render();}
 function player(){return db.players.find(p=>p.id===selectedId)||db.players[0];}
 function playerText(p){return [p.group,p.lot,p.name,p.kana,p.team,p.bodyweightClass,p.entryDivision].join(' ').toLowerCase();}
 function renderList(){const q=$('#search').value.toLowerCase();$('#playerList').innerHTML=db.players.filter(p=>playerText(p).includes(q)).sort((a,b)=>String(a.group).localeCompare(b.group)||a.lot-b.lot).map(p=>`<li><button data-id="${p.id}"><strong>${p.group}.Lot ${p.lot}</strong> ${esc(p.name)} ${esc(p.kana)}<br><small>${esc(p.team)} / ${esc(p.bodyweightClass)}</small></button></li>`).join('');document.querySelectorAll('#playerList button').forEach(b=>b.onclick=()=>{selectedId=b.dataset.id;render();});}
@@ -29,9 +32,12 @@ function page(p){const hs=[...p.histories].sort((a,b)=>String(a.date).localeComp
 function sourcePage(){return `<section class="a4 sources"><header class="page-header"><div class="title">巻末_記録/確認元</div><div class="meta">個別ページに確認元を置かず、巻末へ集約</div></header><ol>${db.sources.map(s=>`<li><strong>${esc(s.title)}</strong><br>${esc(s.sourceType)} / 確認日:${esc(s.checkedAt)}<br>${esc(s.url)}<br>${esc(s.memo||'')}</li>`).join('')}</ol></section>`;}
 function renderPages(){const p=player();$('#pages').innerHTML=page(p)+sourcePage();}
 function csv(){const rows=[['player_id','group','lot','name','kana','date','competition','grade','event','class','place','status']];for(const p of db.players)for(const h of p.histories)rows.push([p.id,p.group,p.lot,p.name,p.kana,h.date,h.competitionName,h.grade,h.eventType,h.className,h.place,h.status]);return rows.map(r=>r.map(v=>`"${String(v??'').replaceAll('"','""')}"`).join(',')).join('\n');}
-function statusText(){const origin=dataOrigin==='local'?'ローカル編集データ':'正本DB';return `${origin} / version ${esc(db.meta?.version||'不明')} / updated ${esc(db.meta?.updatedAt||'不明')} / players ${db.players.length}`;}
+function statusText(){const origin=dataOrigin==='local'?'ローカル編集データ':'正本DB';return `${origin} / version ${esc(db.meta?.version||'不明')} / updated ${esc(db.meta?.updatedAt||'不明')} / players ${db.players.length} / candidates ${researchDb.candidates?.length||0}`;}
+function candidateListForPlayer(){return (researchDb.candidates||[]).filter(c=>!selectedId||c.playerId===selectedId);}
+function renderCandidates(){ensureResearchPanel();const items=candidateListForPlayer();$('#candidateSummary').textContent=`この選手の未確認候補: ${items.length}件 / 全体: ${(researchDb.candidates||[]).length}件`;$('#candidateList').innerHTML=items.length?items.map(c=>`<article class="candidate-card"><strong>${esc(c.playerName||'')}</strong><span>${esc(c.status||'')}</span><p>${esc(c.note||'')}</p><details><summary>検索語</summary><ul>${(c.searchTerms||[]).map(t=>`<li>${esc(t)}</li>`).join('')}</ul></details></article>`).join(''):'<p class="muted">この選手の未確認候補はありません。</p>';}
 function renderStatus(){ensureSafetyControls();$('#dataStatus').innerHTML=`<strong>データ状態:</strong> ${statusText()}<br><span>JSON保存はPCへ保存するだけです。GitHub上の正本DBは自動更新されません。</span>`;}
 function ensureSafetyControls(){if(!$('#reloadDbBtn')){const reload=document.createElement('button');reload.id='reloadDbBtn';reload.textContent='正本DB再読込';reload.onclick=reloadRemote;const discard=document.createElement('button');discard.id='discardLocalBtn';discard.textContent='ローカル破棄';discard.onclick=discardLocal;document.querySelector('.actions')?.insertBefore(reload,$('#jsonBtn'));document.querySelector('.actions')?.insertBefore(discard,$('#jsonBtn'));}if(!$('#dataStatus')){const box=document.createElement('div');box.id='dataStatus';box.className='no-print data-status';document.querySelector('.preview')?.insertBefore(box,document.querySelector('.lock'));}}
-function render(){renderList();renderPlayerForm();renderHistoryForm();renderPages();renderStatus();}
+function ensureResearchPanel(){if($('#researchPanel'))return;const panel=document.createElement('section');panel.id='researchPanel';panel.className='panel no-print candidate-panel';panel.innerHTML='<h2>未確認候補</h2><p id="candidateSummary" class="candidate-summary"></p><div id="candidateList"></div>';document.querySelector('.side')?.insertBefore(panel,$('#playerForm')?.closest('.panel'));}
+function render(){renderList();renderCandidates();renderPlayerForm();renderHistoryForm();renderPages();renderStatus();}
 $('#search').addEventListener('input',renderList);$('#printBtn').onclick=()=>window.print();$('#jsonBtn').onclick=()=>{alert('JSON保存はPCへ保存するだけです。GitHub上の正本DBは自動更新されません。');download('database.json',JSON.stringify(db,null,2));};$('#csvBtn').textContent='Excel/CSV保存';$('#csvBtn').onclick=()=>download('histories_excel.csv',csv(),'text/csv');$('#jsonInput').onchange=async e=>{const f=e.target.files[0];if(!f)return;db=JSON.parse(await f.text());dataOrigin='local';selectedId=db.players[0]?.id;save();};
 load();
