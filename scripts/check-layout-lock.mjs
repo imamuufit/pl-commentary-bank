@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 
 const checks = [
-  ['data/database.json', '"layoutTemplate": "v5.9.6_LOCK"', 'database meta.layoutTemplate must remain v5.9.6_LOCK'],
   ['index.html', '固定雛形：v5.9.6_LOCK', 'visible lock warning must remain in preview'],
   ['src/app.js', '<header class="page-header">', 'A4 page header markup must remain present'],
   ['src/app.js', '<section class="events"><h2>出場歴</h2><div class="event-grid">', 'event history card grid must remain present'],
@@ -29,6 +28,19 @@ function read(file) {
     return '';
   }
 }
+
+function checkDatabaseLayoutTemplate() {
+  try {
+    const db = JSON.parse(read('data/database.json'));
+    if (db.meta?.layoutTemplate !== 'v5.9.6_LOCK') {
+      errors.push('data/database.json: database meta.layoutTemplate must remain v5.9.6_LOCK');
+    }
+  } catch (error) {
+    errors.push(`data/database.json: could not parse JSON for layout lock check: ${error.message}`);
+  }
+}
+
+checkDatabaseLayoutTemplate();
 
 for (const [file, needle, message] of checks) {
   if (!read(file).includes(needle)) errors.push(`${file}: ${message}`);
