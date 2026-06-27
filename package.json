@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 4173",
-    "validate": "node scripts/validate-data.mjs data/database.json && node scripts/check-layout-lock.mjs",
-    "check:layout": "node scripts/check-layout-lock.mjs"
+    "validate": "node scripts/validate-data.mjs data/database.json && node scripts/check-layout-lock.mjs && node scripts/check-pwa-assets.mjs",
+    "check:layout": "node scripts/check-layout-lock.mjs",
+    "check:pwa": "node scripts/check-pwa-assets.mjs"
   }
 }
