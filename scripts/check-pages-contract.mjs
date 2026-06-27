@@ -31,6 +31,10 @@ function localReferenceIsPagesSafe(value) {
   return value.startsWith('./') || value.startsWith('../');
 }
 
+function quotedRelativeReferences(text) {
+  return [...text.matchAll(/['"](\.\.?\/(?:[^'"]*)?)['"]/g)].map(match => match[1]);
+}
+
 const indexHtml = read('index.html');
 const sw = read('sw.js');
 const manifest = parseJson('manifest.webmanifest');
@@ -57,7 +61,7 @@ if (manifest) {
   }
 }
 
-const assetMatches = [...sw.matchAll(/['"](\.\.?\/[^'"]+)['"]/g)].map(match => match[1]);
+const assetMatches = quotedRelativeReferences(sw);
 for (const required of ['./', './index.html', './manifest.webmanifest', './src/styles.css', './src/app.js', './data/database.json', './data/research-candidates.json', './data/event-config.json']) {
   if (!assetMatches.includes(required)) errors.push(`sw.js: ${required} must remain cached for GitHub Pages/offline fallback`);
 }
