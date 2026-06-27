@@ -12,7 +12,7 @@ const checks = [
 const regexChecks = [
   ['src/styles.css', /@page\s*\{[^}]*size:\s*A4\s+landscape;[^}]*margin:\s*0;/s, '@page must remain A4 landscape with zero print margin'],
   ['src/styles.css', /\.a4\s*\{[^}]*width:\s*297mm;[^}]*min-height:\s*210mm;/s, '.a4 must remain A4 landscape dimensions'],
-  ['src/styles.css', /\.event-grid\s*\{[^}]*grid-template-columns:\s*repeat\(2,\s*1fr\);/s, 'event grid must stay two-column']
+  ['src/styles.css', /\.event-grid\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*1fr\);/s, 'event grid must stay on the locked three-column card layout']
 ];
 
 const cache = new Map();
