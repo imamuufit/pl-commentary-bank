@@ -1,7 +1,7 @@
 const DB_URL='./data/database.json';
 const CANDIDATES_URL='./data/research-candidates.json';
 const STORAGE_KEY='pl-commentary-bank-db-v1';
-const WORKSPACE_BACKUP_VERSION='0.1.0';
+const WORKSPACE_BACKUP_VERSION='0.1.1';
 let db=null;
 let researchDb={meta:{},candidates:[]};
 let selectedId=null;
@@ -38,8 +38,8 @@ function researchCsv(){const rows=[['candidate_id','player_id','player_name','st
 function exportResearchCsv(){download(`research-candidates-${nowDate()}.csv`,researchCsv(),'text/csv');}
 function workspaceBackup(){return {meta:{backupVersion:WORKSPACE_BACKUP_VERSION,exportedAt:new Date().toISOString(),app:'PL Commentary Bank',dataOrigin,selectedId},database:db,researchCandidates:researchDb};}
 function exportWorkspaceBackup(){download(`pl-commentary-bank-backup-${nowDate()}.json`,JSON.stringify(workspaceBackup(),null,2));}
-function unwrapImportedDatabase(json){if(json?.database?.players&&Array.isArray(json.database.players))return json.database;if(json?.players&&Array.isArray(json.players))return json;throw new Error('database.json、またはPL Commentary BankバックアップJSONではありません');}
-async function importDatabaseFile(file){const json=JSON.parse(await file.text());db=unwrapImportedDatabase(json);dataOrigin='local';selectedId=db.players[0]?.id;save();}
+function unwrapImportedWorkspace(json){if(json?.database?.players&&Array.isArray(json.database.players)){return {database:json.database,researchCandidates:Array.isArray(json.researchCandidates?.candidates)?json.researchCandidates:null};}if(json?.players&&Array.isArray(json.players))return {database:json,researchCandidates:null};throw new Error('database.json、またはPL Commentary BankバックアップJSONではありません');}
+async function importDatabaseFile(file){const json=JSON.parse(await file.text());const imported=unwrapImportedWorkspace(json);db=imported.database;if(imported.researchCandidates)researchDb=imported.researchCandidates;dataOrigin='local';selectedId=db.players[0]?.id;save();}
 function statusText(){const origin=dataOrigin==='local'?'ローカル編集データ':'正本DB';return `${origin} / version ${esc(db.meta?.version||'不明')} / updated ${esc(db.meta?.updatedAt||'不明')} / players ${db.players.length} / candidates ${researchDb.candidates?.length||0}`;}
 function candidateListForPlayer(){return (researchDb.candidates||[]).filter(c=>!selectedId||c.playerId===selectedId);}
 function renderCandidates(){ensureResearchPanel();const items=candidateListForPlayer();$('#candidateSummary').textContent=`この選手の未確認候補: ${items.length}件 / 全体: ${(researchDb.candidates||[]).length}件`;$('#candidateList').innerHTML=items.length?items.map(c=>`<article class="candidate-card"><strong>${esc(c.playerName||'')}</strong><span>${esc(c.status||'')}</span><p>${esc(c.note||'')}</p><details><summary>検索語</summary><ul>${(c.searchTerms||[]).map(t=>`<li>${esc(t)}</li>`).join('')}</ul></details></article>`).join(''):'<p class="muted">この選手の未確認候補はありません。</p>';}
