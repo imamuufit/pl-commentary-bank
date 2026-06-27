@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "purpose": "未確認候補の一時管理。確認済みになるまで data/database.json へ昇格しない。",
+    "updatedAt": "2026-06-27"
+  },
+  "candidates": [
+    {
+      "playerId": "C-40-saito-keita",
+      "playerName": "齊藤 敬太",
+      "candidateId": "c40-old-national-results",
+      "status": "要再確認",
+      "note": "過去の全国大会・世界大会歴を追加調査。公式結果PDFまたはGoodlift/IPF確認後に正本DBへ昇格する。",
+      "searchTerms": ["齊藤敬太 ベンチプレス", "斉藤敬太 ベンチプレス", "Keita Saito Goodlift", "site:goodlift.info Keita Saito"]
+    },
+    {
+      "playerId": "D-52-houri-momoka",
+      "playerName": "宝利 桃華",
+      "candidateId": "d52-early-hokkaido-results",
+      "status": "要再確認",
+      "note": "2021年以降の北海道クラシックPL、全日本ベンチ、AAP関連を追加調査。公式結果で確認後に正本DBへ昇格する。",
+      "searchTerms": ["宝利桃華 パワーリフティング", "宝利 桃華 ベンチプレス", "Momoka Hori bench press", "site:h-power.sakura.ne.jp 宝利"]
+    }
+  ]
+}

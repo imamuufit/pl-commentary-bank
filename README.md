@@ -5,6 +5,7 @@
 ## 目的
 
 - 正本データ：`data/database.json`
+- 未確認候補：`data/research-candidates.json`
 - 編集画面：ブラウザで動くPWA
 - 確認・印刷用：A4横PDF / CSV / Excel出力
 
@@ -18,6 +19,13 @@ A4横PDFの雛形は `v5.9.6_LOCK` として固定します。
 - 出場歴は大会日・大会正式名称優先
 - 記録/確認元は巻末に集約
 - レイアウト変更は事前確認なしに行わない
+
+## 選手調査運用
+
+- 確認済みの出場歴だけを `data/database.json` に登録します。
+- 本人申告、プロフィール記事、SNS、古い大会候補は `data/research-candidates.json` に置きます。
+- 公式結果PDF、Goodlift/IPF、JPA/HPA、記録DBで確認できた段階で正本DBへ昇格します。
+- 詳細は `docs/PLAYER_RESEARCH_WORKFLOW.md` を参照してください。
 
 ## 起動
 
@@ -41,4 +49,4 @@ npm run validate
 4. `data/database.json` に反映する
 5. PDF印刷でA4横資料を出力する
 
-Codexに依頼する場合は `docs/LOCK_RULES.md` を基準にしてください。
+Codexに依頼する場合は `docs/CODEX_PLAYER_RESEARCH_PROMPT.md` を基準にしてください。
