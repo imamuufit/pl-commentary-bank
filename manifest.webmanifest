@@ -1,0 +1,19 @@
+{
+  "name": "PL Commentary Bank",
+  "short_name": "PL Bank",
+  "description": "Powerlifting commentary data bank for safe athlete-history research and fixed A4 print output.",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f1eee5",
+  "theme_color": "#183b3f",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

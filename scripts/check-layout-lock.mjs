@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 
 const checks = [
-  ['data/database.json', '"layoutTemplate": "v5.9.6_LOCK"', 'database meta.layoutTemplate must remain v5.9.6_LOCK'],
   ['index.html', '固定雛形：v5.9.6_LOCK', 'visible lock warning must remain in preview'],
   ['src/app.js', '<header class="page-header">', 'A4 page header markup must remain present'],
   ['src/app.js', '<section class="events"><h2>出場歴</h2><div class="event-grid">', 'event history card grid must remain present'],
@@ -10,9 +9,9 @@ const checks = [
 ];
 
 const regexChecks = [
-  ['src/styles.css', /@page\s*\{[^}]*size:\s*A4\s+landscape;[^}]*margin:\s*0;/s, '@page must remain A4 landscape with zero print margin'],
-  ['src/styles.css', /\.a4\s*\{[^}]*width:\s*297mm;[^}]*min-height:\s*210mm;/s, '.a4 must remain A4 landscape dimensions'],
-  ['src/styles.css', /\.event-grid\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*1fr\);/s, 'event grid must stay on the locked three-column card layout']
+  ['src/styles.css', /@page\s*\{[^}]*size:\s*A4\s+landscape;[^}]*margin:\s*0;?/s, '@page must remain A4 landscape with zero print margin'],
+  ['src/styles.css', /\.a4\s*\{[^}]*width:\s*297mm;[^}]*min-height:\s*210mm;?/s, '.a4 must remain A4 landscape dimensions'],
+  ['src/styles.css', /\.event-grid\s*\{[^}]*grid-template-columns:\s*repeat\(3,\s*1fr\);?/s, 'event grid must stay on the locked three-column card layout']
 ];
 
 const cache = new Map();
@@ -29,6 +28,19 @@ function read(file) {
     return '';
   }
 }
+
+function checkDatabaseLayoutTemplate() {
+  try {
+    const db = JSON.parse(read('data/database.json'));
+    if (db.meta?.layoutTemplate !== 'v5.9.6_LOCK') {
+      errors.push('data/database.json: database meta.layoutTemplate must remain v5.9.6_LOCK');
+    }
+  } catch (error) {
+    errors.push(`data/database.json: could not parse JSON for layout lock check: ${error.message}`);
+  }
+}
+
+checkDatabaseLayoutTemplate();
 
 for (const [file, needle, message] of checks) {
   if (!read(file).includes(needle)) errors.push(`${file}: ${message}`);
