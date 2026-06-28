@@ -1,6 +1,8 @@
 import fs from 'node:fs';
 
 const app = fs.readFileSync('src/app.js', 'utf8');
+const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+const cli = fs.readFileSync('scripts/generate-workspace-health-report.mjs', 'utf8');
 const errors = [];
 
 const requiredSnippets = [
@@ -22,6 +24,29 @@ const requiredSnippets = [
 
 for (const snippet of requiredSnippets) {
   if (!app.includes(snippet)) errors.push(`src/app.js missing workspace health report snippet: ${snippet}`);
+}
+
+const requiredCliSnippets = [
+  "readJson('data/database.json')",
+  "readJson('data/research-candidates.json')",
+  "readJson('data/event-config.json')",
+  'confirmedWithoutSources',
+  'unknownSourceLinks',
+  'confirmedCandidatesStillInResearch',
+  'candidatesForMissingPlayers',
+  'blockingIssues',
+  "database.meta?.layoutTemplate === 'v5.9.6_LOCK'",
+  "eventConfig.printPolicy?.layoutTemplate === 'v5.9.6_LOCK'",
+  'eventConfig.printPolicy?.allowLayoutChange === false',
+  'process.exitCode = 1'
+];
+
+for (const snippet of requiredCliSnippets) {
+  if (!cli.includes(snippet)) errors.push(`workspace health report CLI missing snippet: ${snippet}`);
+}
+
+if (pkg.scripts?.['health:report'] !== 'node scripts/generate-workspace-health-report.mjs') {
+  errors.push('package.json must expose health:report command');
 }
 
 const healthExportIndex = app.indexOf("healthExport.id='workspaceHealthReportBtn'");
