@@ -22,6 +22,7 @@
     "check:print-safety": "node scripts/check-print-safety-contract.mjs",
     "check:sources": "node scripts/check-source-registry-contract.mjs",
     "check:source-export": "node scripts/check-source-export-contract.mjs",
-    "check:health-report": "node scripts/check-workspace-health-report-contract.mjs"
+    "check:health-report": "node scripts/check-workspace-health-report-contract.mjs",
+    "health:report": "node scripts/generate-workspace-health-report.mjs"
   }
 }
