@@ -29,10 +29,12 @@
     "check:health-report": "node scripts/check-workspace-health-report-contract.mjs",
     "check:event-workspace-export": "node scripts/check-event-workspace-export-contract.mjs",
     "check:import-audit": "node scripts/check-import-audit-contract.mjs",
+    "check:export-bundle": "node scripts/check-workspace-export-bundle-contract.mjs",
     "health:report": "node scripts/generate-workspace-health-report.mjs",
     "export:sources": "node scripts/export-source-registry.mjs",
     "export:players": "node scripts/export-player-roster.mjs",
     "export:event-workspace": "node scripts/export-event-workspace.mjs",
+    "export:bundle": "node scripts/export-workspace-bundle.mjs",
     "audit:import": "node scripts/audit-workspace-import.mjs"
   }
 }
