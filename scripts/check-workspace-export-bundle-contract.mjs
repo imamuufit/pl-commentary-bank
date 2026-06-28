@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 
 const errors = [];
-const packageText = read('package.json');
+const packageJson = parseJson('package.json');
 const scriptText = read('scripts/export-workspace-bundle.mjs');
 
 function read(file) {
@@ -13,12 +13,27 @@ function read(file) {
   }
 }
 
+function parseJson(file) {
+  const text = read(file);
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    errors.push(`${file}: invalid JSON: ${error.message}`);
+    return {};
+  }
+}
+
 function requireIncludes(text, needle, message) {
   if (!text.includes(needle)) errors.push(message);
 }
 
-requireIncludes(packageText, '"export:bundle": "node scripts/export-workspace-bundle.mjs"', 'package.json must expose export:bundle');
-requireIncludes(packageText, 'node scripts/check-workspace-export-bundle-contract.mjs', 'npm run validate must include workspace export bundle contract');
+if (packageJson.scripts?.['export:bundle'] !== 'node scripts/export-workspace-bundle.mjs') {
+  errors.push('package.json must expose export:bundle');
+}
+if (!String(packageJson.scripts?.validate || '').includes('node scripts/check-workspace-export-bundle-contract.mjs')) {
+  errors.push('package.json validate must include workspace export bundle contract');
+}
+
 requireIncludes(scriptText, 'scripts/generate-workspace-health-report.mjs', 'workspace bundle must include the health report export');
 requireIncludes(scriptText, 'scripts/export-source-registry.mjs', 'workspace bundle must include source registry export');
 requireIncludes(scriptText, 'scripts/export-player-roster.mjs', 'workspace bundle must include player roster export');
