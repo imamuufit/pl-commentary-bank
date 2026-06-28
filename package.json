@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 4173",
-    "validate": "node scripts/validate-data.mjs data/database.json && node scripts/check-layout-lock.mjs && node scripts/check-pwa-assets.mjs && node scripts/check-github-pages-contract.mjs && node scripts/check-service-worker-offline-contract.mjs && node scripts/check-service-worker-cache-contract.mjs && node scripts/check-event-config.mjs && node scripts/check-backup-contract.mjs && node scripts/check-pages-contract.mjs && node scripts/check-pages-workflow-contract.mjs && node scripts/check-ui-safety-contract.mjs && node scripts/check-local-edit-safety-contract.mjs && node scripts/check-event-export-contract.mjs && node scripts/check-research-candidates-contract.mjs && node scripts/check-research-json-export-contract.mjs && node scripts/check-history-entry-contract.mjs && node scripts/check-print-safety-contract.mjs && node scripts/check-source-registry-contract.mjs && node scripts/check-source-export-contract.mjs && node scripts/check-player-roster-export-contract.mjs && node scripts/check-workspace-health-report-contract.mjs",
+    "validate": "node scripts/validate-data.mjs data/database.json && node scripts/check-layout-lock.mjs && node scripts/check-pwa-assets.mjs && node scripts/check-github-pages-contract.mjs && node scripts/check-service-worker-offline-contract.mjs && node scripts/check-service-worker-cache-contract.mjs && node scripts/check-event-config.mjs && node scripts/check-backup-contract.mjs && node scripts/check-pages-contract.mjs && node scripts/check-pages-workflow-contract.mjs && node scripts/check-ui-safety-contract.mjs && node scripts/check-local-edit-safety-contract.mjs && node scripts/check-event-export-contract.mjs && node scripts/check-research-candidates-contract.mjs && node scripts/check-research-json-export-contract.mjs && node scripts/check-history-entry-contract.mjs && node scripts/check-print-safety-contract.mjs && node scripts/check-source-registry-contract.mjs && node scripts/check-source-export-contract.mjs && node scripts/check-player-roster-export-contract.mjs && node scripts/check-workspace-health-report-contract.mjs && node scripts/check-event-workspace-export-contract.mjs",
     "check:layout": "node scripts/check-layout-lock.mjs",
     "check:pwa": "node scripts/check-pwa-assets.mjs",
     "check:pages-deploy": "node scripts/check-github-pages-contract.mjs",
@@ -26,8 +26,10 @@
     "check:source-export": "node scripts/check-source-export-contract.mjs",
     "check:player-roster-export": "node scripts/check-player-roster-export-contract.mjs",
     "check:health-report": "node scripts/check-workspace-health-report-contract.mjs",
+    "check:event-workspace-export": "node scripts/check-event-workspace-export-contract.mjs",
     "health:report": "node scripts/generate-workspace-health-report.mjs",
     "export:sources": "node scripts/export-source-registry.mjs",
-    "export:players": "node scripts/export-player-roster.mjs"
+    "export:players": "node scripts/export-player-roster.mjs",
+    "export:event-workspace": "node scripts/export-event-workspace.mjs"
   }
 }
