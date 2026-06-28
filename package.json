@@ -1,16 +1,1 @@
-{
-  "name": "pl-commentary-bank",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "python3 -m http.server 4173",
-    "validate": "node scripts/validate-data.mjs data/database.json && node scripts/check-layout-lock.mjs && node scripts/check-pwa-assets.mjs && node scripts/check-event-config.mjs && node scripts/check-backup-contract.mjs && node scripts/check-pages-contract.mjs && node scripts/check-ui-safety-contract.mjs",
-    "check:layout": "node scripts/check-layout-lock.mjs",
-    "check:pwa": "node scripts/check-pwa-assets.mjs",
-    "check:event": "node scripts/check-event-config.mjs",
-    "check:backup": "node scripts/check-backup-contract.mjs",
-    "check:pages": "node scripts/check-pages-contract.mjs",
-    "check:ui-safety": "node scripts/check-ui-safety-contract.mjs"
-  }
-}
+{"name":"pl-commentary-bank","version":"0.1.0","private":true,"type":"module","scripts":{"start":"python3 -m http.server 4173","validate":"node scripts/validate-data.mjs data/database.json && node scripts/check-layout-lock.mjs && node scripts/check-pwa-assets.mjs && node scripts/check-event-config.mjs && node scripts/check-backup-contract.mjs && node scripts/check-pages-contract.mjs && node scripts/check-ui-safety-contract.mjs && node scripts/check-event-export-contract.mjs","check:layout":"node scripts/check-layout-lock.mjs","check:pwa":"node scripts/check-pwa-assets.mjs","check:event":"node scripts/check-event-config.mjs","check:backup":"node scripts/check-backup-contract.mjs","check:pages":"node scripts/check-pages-contract.mjs","check:ui-safety":"node scripts/check-ui-safety-contract.mjs","check:event-export":"node scripts/check-event-export-contract.mjs"}}
