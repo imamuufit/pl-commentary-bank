@@ -5,7 +5,7 @@ const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 const scriptText = fs.readFileSync('scripts/export-workspace-bundle.mjs', 'utf8');
 
 function requireIncludes(text, needle, message) {
-  if (!text.includes(needle)) errors.push(message);
+  if (!String(text || '').includes(needle)) errors.push(message);
 }
 
 if (packageJson.scripts?.['export:bundle'] !== 'node scripts/export-workspace-bundle.mjs') {
@@ -14,6 +14,11 @@ if (packageJson.scripts?.['export:bundle'] !== 'node scripts/export-workspace-bu
 if (packageJson.scripts?.['check:export-bundle'] !== 'node scripts/check-workspace-export-bundle-contract.mjs') {
   errors.push('package.json must expose check:export-bundle');
 }
+requireIncludes(
+  packageJson.scripts?.validate,
+  'node scripts/check-workspace-export-bundle-contract.mjs',
+  'package.json validate must include check-workspace-export-bundle-contract.mjs'
+);
 
 requireIncludes(scriptText, 'scripts/generate-workspace-health-report.mjs', 'workspace bundle must include the health report export');
 requireIncludes(scriptText, 'scripts/export-source-registry.mjs', 'workspace bundle must include source registry export');
