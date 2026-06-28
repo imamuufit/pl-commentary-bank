@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "purpose": "将来の大会切替モード候補を宣言する。現行大会・正本DB・印刷雛形はこのファイルだけでは切り替えない。",
+    "updatedAt": "2026-06-29"
+  },
+  "activeModeId": "default-v5-9-6-lock",
+  "modePolicy": {
+    "doesNotSwitchTournamentAutomatically": true,
+    "requiresExplicitEventConfigChange": true,
+    "preserveLayoutTemplate": "v5.9.6_LOCK",
+    "preserveResearchCandidateSeparation": true,
+    "verifiedHistoriesRequireSourceIds": true
+  },
+  "modes": [
+    {
+      "modeId": "default-v5-9-6-lock",
+      "label": "Default v5.9.6 locked print mode",
+      "eventConfigId": "default-v5-9-6-lock",
+      "status": "active",
+      "description": "現行のA4横固定レイアウトと正本DB運用を維持する標準モード。",
+      "allowedDataFiles": [
+        "data/database.json",
+        "data/research-candidates.json",
+        "data/event-config.json"
+      ]
+    },
+    {
+      "modeId": "future-event-template",
+      "label": "Future event template",
+      "eventConfigId": "future-event-template",
+      "status": "scaffold-only",
+      "description": "秋大会など将来大会のための下書き枠。選択しても自動で大会切替・選手DB変更・履歴昇格は行わない。",
+      "allowedDataFiles": []
+    }
+  ]
+}
