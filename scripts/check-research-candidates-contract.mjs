@@ -2,6 +2,7 @@ import fs from 'node:fs';
 
 const errors = [];
 const appText = readText('src/app.js');
+const database = readJson('data/database.json', 'database');
 const candidates = readJson('data/research-candidates.json', 'research candidates');
 
 function readText(file) {
@@ -36,20 +37,40 @@ requireIncludes('researchExport.onclick=exportResearchCsv', 'research candidates
 requireIncludes('confirmed items must be promoted to database.json or downgraded from research-candidates', 'confirmed candidates must stay out of research-candidates');
 requireIncludes('if(imported.researchCandidates)researchDb=imported.researchCandidates', 'workspace import must restore research candidates separately');
 
+const playersById = new Map();
+if (database) {
+  if (!Array.isArray(database.players)) errors.push('database.json: players must be array');
+  for (const player of database.players || []) {
+    if (!player.id) errors.push('database.json: player missing id');
+    if (player.id && playersById.has(player.id)) errors.push(`database.json: duplicate player ${player.id}`);
+    if (player.id) playersById.set(player.id, player);
+  }
+}
+
 if (candidates) {
   if (!candidates.meta) errors.push('research-candidates.json: meta is required');
   if (!Array.isArray(candidates.candidates)) errors.push('research-candidates.json: candidates must be array');
 
   const ids = new Set();
   for (const candidate of candidates.candidates || []) {
+    const label = candidate.candidateId || 'unknown candidate';
     if (!candidate.candidateId) errors.push('candidate missing candidateId');
     if (candidate.candidateId && ids.has(candidate.candidateId)) errors.push(`duplicate candidate ${candidate.candidateId}`);
     if (candidate.candidateId) ids.add(candidate.candidateId);
-    if (!candidate.playerId) errors.push(`${candidate.candidateId || 'unknown candidate'} missing playerId`);
-    if (!candidate.playerName) errors.push(`${candidate.candidateId || 'unknown candidate'} missing playerName`);
-    if (!candidate.note) errors.push(`${candidate.candidateId || 'unknown candidate'} missing note`);
-    if (candidate.status === '確認済') errors.push(`${candidate.candidateId}: confirmed candidates must not remain in research-candidates.json`);
-    if (!Array.isArray(candidate.searchTerms) || candidate.searchTerms.length === 0) errors.push(`${candidate.candidateId}: searchTerms must be a non-empty array`);
+    if (!candidate.playerId) errors.push(`${label} missing playerId`);
+    if (!candidate.playerName) errors.push(`${label} missing playerName`);
+    if (!candidate.note) errors.push(`${label} missing note`);
+    if (candidate.status === '確認済') errors.push(`${label}: confirmed candidates must not remain in research-candidates.json`);
+    if (!Array.isArray(candidate.searchTerms) || candidate.searchTerms.length === 0) errors.push(`${label}: searchTerms must be a non-empty array`);
+
+    if (candidate.playerId) {
+      const player = playersById.get(candidate.playerId);
+      if (!player) {
+        errors.push(`${label}: playerId ${candidate.playerId} must exist in database.json`);
+      } else if (candidate.playerName && candidate.playerName !== player.name) {
+        errors.push(`${label}: playerName must match database.json name for ${candidate.playerId}`);
+      }
+    }
   }
 }
 
