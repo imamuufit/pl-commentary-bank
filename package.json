@@ -25,6 +25,7 @@
     "check:sources": "node scripts/check-source-registry-contract.mjs",
     "check:source-export": "node scripts/check-source-export-contract.mjs",
     "check:health-report": "node scripts/check-workspace-health-report-contract.mjs",
-    "health:report": "node scripts/generate-workspace-health-report.mjs"
+    "health:report": "node scripts/generate-workspace-health-report.mjs",
+    "export:sources": "node scripts/export-source-registry.mjs"
   }
 }
