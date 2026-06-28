@@ -2,8 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
-const OUT_DIR = path.join(ROOT, 'dist');
-const OUT_FILE = path.join(OUT_DIR, 'event-workspace-export.json');
+const OUT_RELATIVE = 'dist/event-workspace-export.json';
+const OUT_FILE = path.join(ROOT, OUT_RELATIVE);
 
 function readJson(relativePath) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, relativePath), 'utf8'));
@@ -121,6 +121,6 @@ const candidatesDb = readJson('data/research-candidates.json');
 const eventConfig = readJson('data/event-config.json');
 const exported = buildEventWorkspaceExport(database, candidatesDb, eventConfig);
 
-fs.mkdirSync(OUT_DIR, { recursive: true });
+fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
 fs.writeFileSync(OUT_FILE, `${JSON.stringify(exported, null, 2)}\n`);
-console.log(`Wrote ${path.relative(ROOT, OUT_FILE)}`);
+console.log(`Wrote ${OUT_RELATIVE}`);
