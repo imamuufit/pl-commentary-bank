@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pl-commentary-bank-v0.1.1';
+const CACHE_NAME = 'pl-commentary-bank-v0.1.2';
 const ASSETS = [
   './',
   './index.html',
@@ -10,6 +10,13 @@ const ASSETS = [
   './data/research-candidates.json',
   './data/event-config.json'
 ];
+
+function withoutQuery(request) {
+  const url = new URL(request.url);
+  url.search = '';
+  url.hash = '';
+  return new Request(url.href, { method: 'GET' });
+}
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -36,6 +43,8 @@ self.addEventListener('fetch', event => {
         caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
         return response;
       })
-      .catch(() => caches.match(event.request).then(cached => cached || caches.match('./index.html')))
+      .catch(() => caches.match(event.request)
+        .then(cached => cached || caches.match(withoutQuery(event.request)))
+        .then(cached => cached || caches.match('./index.html')))
   );
 });
