@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "purpose": "Automation small-batch research log for PL Commentary Bank. This file records source-backed findings before any destructive or broad database promotion.",
+    "batchDate": "2026-06-29",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Only rows with explicit official/high-trust source support may later be promoted to data/database.json. Ambiguous identity or incomplete result context must remain outside confirmed histories."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [1, 2, 3, 4, 5],
+    "primarySourcesChecked": [
+      "HPA top page 2026 Numata Bench Press section",
+      "HPA 2026 Numata Bench Press A/B/C result速報 PDF",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF"
+    ]
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-abc-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 A/B/Cグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "sourceType": "HPA official result速報 PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館"
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25",
+      "venue": "江別市青年センター"
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "A-1-saito-yuta",
+      "lot": 1,
+      "playerName": "齊藤 夕大",
+      "status": "source-backed-current-and-prior-found",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "53kg級",
+          "bw": "47.25",
+          "bpAttempts": "47.5-52.5-60.0",
+          "bpBest": "60.0",
+          "place": "1",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"],
+          "note": "速報PDF上では区分見出しが女子クラシックと表示されているが、DB roster skeletonでは男子53kg級。性別区分は公式エントリー原表または最終版結果で再照合が必要。"
+        },
+        {
+          "date": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会 / 全日本高校北海道予選会",
+          "eventType": "PL",
+          "className": "中高生男子53kg級",
+          "bw": "46.85",
+          "sqAttempts": "65.0-70.0-85.0",
+          "bpAttempts": "40.0-45.0-50.0",
+          "dlAttempts": "80.0-90.0-100.0",
+          "total": "235.0",
+          "place": "1",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "promotionRecommendation": "Promote the 2026-04-25 PL history only after resolving sex/category consistency with roster and source display. The 2026-06-21 current-event result can be stored as event result, not prior history."
+    },
+    {
+      "playerId": "A-2-saitou-yuu",
+      "lot": 2,
+      "playerName": "齋藤 悠",
+      "status": "source-backed-current-only",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "59kg級",
+          "bw": "58.90",
+          "bpAttempts": "95.0-100.0-105.0",
+          "bpBest": "105.0",
+          "place": "3",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"]
+        }
+      ],
+      "promotionRecommendation": "Do not promote as prior history for Numata; no earlier official result found in this batch."
+    },
+    {
+      "playerId": "A-3-tamada-mutsuo",
+      "lot": 3,
+      "playerName": "玉田 睦生",
+      "status": "source-backed-current-only",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "59kg級",
+          "bw": "57.45",
+          "bpAttempts": "92.5-100.0--102.5",
+          "bpBest": "100.0",
+          "place": "4",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"]
+        }
+      ],
+      "promotionRecommendation": "Do not promote as prior history for Numata; no earlier official result found in this batch."
+    },
+    {
+      "playerId": "A-4-yamaguchi-takumi",
+      "lot": 4,
+      "playerName": "山口 巧",
+      "status": "source-backed-current-only",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "59kg級",
+          "bw": "58.30",
+          "bpAttempts": "110.0-117.5-122.5",
+          "bpBest": "122.5",
+          "place": "1",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"]
+        }
+      ],
+      "promotionRecommendation": "Do not promote as prior history for Numata; no earlier official result found in this batch."
+    },
+    {
+      "playerId": "A-5-haruki-shoei",
+      "lot": 5,
+      "playerName": "春木 祥英",
+      "status": "source-backed-current-and-prior-found",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "59kg級",
+          "bw": "58.60",
+          "bpAttempts": "110.0-115.0--117.5",
+          "bpBest": "115.0",
+          "place": "2",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"]
+        },
+        {
+          "date": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "PL",
+          "className": "クラシック男子59kg級",
+          "bw": "58.80",
+          "sqAttempts": "140.0-150.0--157.5",
+          "bpAttempts": "110.0--115.0-pass",
+          "dlAttempts": "165.0-177.5--187.5",
+          "total": "437.5",
+          "place": "4",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "promotionRecommendation": "The 2026-04-25 PL row is a strong candidate for confirmed prior history promotion for the Numata event-relative view. Current Numata result should be event result, not prior history."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "The batch found usable official rows, but database.json is the canonical roster/history file and should be updated only with a targeted schema-safe edit. This run avoids broad rewrite risk while PR #46 is open and while A-1 sex/category inconsistency remains unresolved.",
+    "safeNextStep": "Promote A-5 2026-04-25 PL history to data/database.json in a dedicated small PR; keep A-1 as candidate until category consistency is resolved."
+  }
+}
