@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "purpose": "Small-batch research log for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, and same-event current rows stay outside data/database.json."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [66, 67, 68, 69, 70],
+    "primarySourcesChecked": [
+      "data/database.json roster skeleton on main for Lot 66-70",
+      "HPA 2026 Numata Bench Press D/E result PDF locator from prior batch logs",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF"
+    ],
+    "openPrCheck": "No open Numata athlete research PRs were found before this batch. This continues after Lot 61-65.",
+    "writeScope": "Research log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-de-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 D/Eグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "Locator reused from prior batch logs. Row-level extraction for Lot 66-70 was not completed in this run, so no current-event result rows are asserted."
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "Extracted for exact-name prior-history matches."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "E-66-shirakawa-yuuta",
+      "lot": 66,
+      "playerName": "白川 雄太",
+      "status": "prior-hokkaido-clpl-history-confirmed-current-event-row-not-asserted",
+      "confirmedFindings": [
+        {
+          "findingType": "priorHistory",
+          "eventDate": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "CL-PL",
+          "division": "クラシック男子105kg級",
+          "birthYear": 1992,
+          "affiliation": "NPR",
+          "bodyweight": "95.45",
+          "sqAttempts": "170.0〇-190.0〇-200.0〇",
+          "bpAttempts": "120.0〇-130.0〇-135.0〇",
+          "dlAttempts": "190.0×-190.0〇-205.0〇",
+          "sqBest": "200.0",
+          "bpBest": "135.0",
+          "dlBest": "205.0",
+          "total": "540.0",
+          "place": "8",
+          "points": "69.76",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Official-source backed. Promote only in a schema-safe database pass."
+    },
+    {
+      "playerId": "E-67-mo-taichi",
+      "lot": 67,
+      "playerName": "森 大一",
+      "status": "prior-hokkaido-clpl-history-confirmed-current-event-row-not-asserted",
+      "confirmedFindings": [
+        {
+          "findingType": "priorHistory",
+          "eventDate": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "CL-PL",
+          "division": "クラシック男子105kg級",
+          "birthYear": 1974,
+          "affiliation": "北海道協会個人登録",
+          "bodyweight": "97.95",
+          "sqAttempts": "185.0〇-200.0〇-205.0〇",
+          "bpAttempts": "137.5〇-140.0〇-142.5×",
+          "dlAttempts": "190.0×-190.0〇-205.0〇",
+          "sqBest": "205.0",
+          "bpBest": "140.0",
+          "dlBest": "205.0",
+          "total": "550.0",
+          "place": "6",
+          "points": "70.17",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Official-source backed. Promote only in a schema-safe database pass."
+    },
+    {
+      "playerId": "E-68-nakazono-norifumi",
+      "lot": 68,
+      "playerName": "中園 訓史",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [
+        {
+          "candidateType": "near-name-official-result",
+          "candidateNameInSource": "中薗 謙史",
+          "eventDate": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "reasonNotPromoted": "Roster name is 中園 訓史, while the official PDF row is 中薗 謙史. Because both surname kanji and given name differ, this is not an exact-name match and must not be treated as the same athlete without additional confirmation.",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. A near-name row exists but remains unpromoted."
+    },
+    {
+      "playerId": "E-69-ishigami-osamu",
+      "lot": 69,
+      "playerName": "石上 修",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match."
+    },
+    {
+      "playerId": "E-70-yazaki-mitsuyasu",
+      "lot": 70,
+      "playerName": "矢崎 光康",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "Low-risk isolated log only. Two official-source-backed promotion candidates: 白川 雄太 and 森 大一. One near-name ambiguous candidate for 中園 訓史 was intentionally kept out of data/database.json.",
+    "safeNextStep": "Promote confirmed prior histories in a later schema-safe pass after duplicate checks; resolve 中園 訓史 only with roster-level or official identity confirmation."
+  }
+}
