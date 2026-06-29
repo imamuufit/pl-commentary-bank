@@ -1,0 +1,133 @@
+(() => {
+  const DB_URL = './data/database.json';
+  const EVENT_CONFIG_URL = './data/event-config.json';
+  const STORAGE_KEY = 'pl-commentary-bank-db-v1';
+  const FALLBACK_FLOW = '履歴不足（選択大会より前の確認済み出場歴が2件未満です）';
+  const FALLBACK_PROGRESS = '大会基準日の直近2大会が揃っていないため、推移コメントは未生成です。未確認候補からは推測しません。';
+  let workspace = null;
+  let config = null;
+  let applying = false;
+
+  const esc = (value) => String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;');
+
+  async function loadJson(url) {
+    const response = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`failed to load ${url}`);
+    return response.json();
+  }
+
+  async function getWorkspace() {
+    try {
+      const local = localStorage.getItem(STORAGE_KEY);
+      if (local) {
+        const parsed = JSON.parse(local);
+        if (Array.isArray(parsed?.players)) {
+          workspace = parsed;
+          return workspace;
+        }
+      }
+    } catch (error) {
+      console.warn('event-relative history: local workspace ignored', error);
+    }
+    if (!workspace) workspace = await loadJson(DB_URL);
+    return workspace;
+  }
+
+  async function getEventConfig() {
+    if (!config) config = await loadJson(EVENT_CONFIG_URL);
+    return config;
+  }
+
+  function eventDate(configJson) {
+    const date = configJson?.event?.dateFrom || configJson?.event?.dateTo || '';
+    return /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : null;
+  }
+
+  function confirmedBeforeEvent(player, baseDate) {
+    return [...(player?.histories || [])]
+      .filter((history) => history.status === '確認済')
+      .filter((history) => Array.isArray(history.sourceIds) && history.sourceIds.length > 0)
+      .filter((history) => /^\d{4}-\d{2}-\d{2}$/.test(String(history.date || '')))
+      .filter((history) => String(history.date) < baseDate)
+      .sort((a, b) => String(a.date).localeCompare(String(b.date)));
+  }
+
+  function eventSummary(history) {
+    const parts = [];
+    if (history.ageDivision) parts.push(history.ageDivision);
+    if (history.className) parts.push(history.className);
+    if (history.sqBest) parts.push(`SQ${history.sqBest}`);
+    if (history.bpBest) parts.push(`BP${history.bpBest}`);
+    if (history.dlBest) parts.push(`DL${history.dlBest}`);
+    if (history.total) parts.push(`T${history.total}`);
+    return `${history.date} ${history.competitionName}${parts.length ? `｜${parts.join(' / ')}` : ''}`;
+  }
+
+  function relativeHistory(player, baseDate) {
+    if (!baseDate) {
+      return {
+        flow: '履歴不足（大会設定に基準日 dateFrom/dateTo が未設定です）',
+        progress: '大会基準日が未設定のため、推移コメントは未生成です。'
+      };
+    }
+    const histories = confirmedBeforeEvent(player, baseDate);
+    const pair = histories.slice(-2);
+    if (pair.length < 2) {
+      return { flow: FALLBACK_FLOW, progress: FALLBACK_PROGRESS };
+    }
+    return {
+      flow: pair.map(eventSummary).join('\n→\n'),
+      progress: '大会基準日より前の確認済み出場歴2件を自動抽出しました。伸び率・推移コメントは次段階で確認済み数値から生成します。'
+    };
+  }
+
+  function currentPlayerFromPage(database) {
+    const page = document.querySelector('#pages .a4:not(.sources)');
+    const title = page?.querySelector('.page-header .title')?.textContent || '';
+    const lot = title.match(/Lot\s*(\d+)/)?.[1];
+    return (database.players || []).find((player) => {
+      if (lot && String(player.lot) !== lot) return false;
+      return title.includes(player.name || '');
+    }) || null;
+  }
+
+  function infoBlocks() {
+    return [...document.querySelectorAll('#pages .a4:not(.sources) .info')].reduce((map, section) => {
+      const heading = section.querySelector('h3')?.textContent?.trim();
+      const body = section.querySelector('div');
+      if (heading && body) map[heading] = body;
+      return map;
+    }, {});
+  }
+
+  async function applyRelativeHistory() {
+    if (applying) return;
+    const page = document.querySelector('#pages .a4:not(.sources)');
+    if (!page) return;
+    applying = true;
+    try {
+      const [database, eventConfig] = await Promise.all([getWorkspace(), getEventConfig()]);
+      const player = currentPlayerFromPage(database);
+      if (!player) return;
+      const result = relativeHistory(player, eventDate(eventConfig));
+      const blocks = infoBlocks();
+      if (blocks['前々回→前回']) blocks['前々回→前回'].innerHTML = esc(result.flow).replaceAll('\n', '<br>');
+      if (blocks['推移コメント']) blocks['推移コメント'].innerHTML = esc(result.progress).replaceAll('\n', '<br>');
+    } catch (error) {
+      console.warn('event-relative history failed', error);
+    } finally {
+      applying = false;
+    }
+  }
+
+  const observer = new MutationObserver(() => applyRelativeHistory());
+  window.addEventListener('load', () => {
+    const pages = document.querySelector('#pages');
+    if (pages) observer.observe(pages, { childList: true, subtree: true });
+    applyRelativeHistory();
+  });
+})();
