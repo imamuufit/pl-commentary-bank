@@ -59,10 +59,14 @@
     return String(history?.competitionName || '').trim().length > 0;
   }
 
+  function hasConfirmedSourceIds(history) {
+    return Array.isArray(history?.sourceIds) && history.sourceIds.some((sourceId) => String(sourceId || '').trim().length > 0);
+  }
+
   function confirmedBeforeEvent(player, baseDate) {
     return [...(player?.histories || [])]
       .filter((history) => history.status === '確認済')
-      .filter((history) => Array.isArray(history.sourceIds) && history.sourceIds.length > 0)
+      .filter((history) => hasConfirmedSourceIds(history))
       .filter((history) => hasConfirmedCompetitionIdentity(history))
       .filter((history) => /^\d{4}-\d{2}-\d{2}$/.test(String(history.date || '')))
       .filter((history) => String(history.date) < baseDate)

@@ -25,7 +25,10 @@ requireIncludes(indexText, '<script src="./src/event-relative-history.js" defer>
 requireIncludes(helperText, "const FALLBACK_FLOW = '履歴不足", 'src/event-relative-history.js', 'must show 履歴不足 when two prior confirmed histories are unavailable');
 requireIncludes(helperText, "configJson?.event?.dateFrom || configJson?.event?.dateTo", 'src/event-relative-history.js', 'must use selected event dateFrom/dateTo as the base date');
 requireIncludes(helperText, "history.status === '確認済'", 'src/event-relative-history.js', 'must use only confirmed histories');
-requireIncludes(helperText, 'Array.isArray(history.sourceIds) && history.sourceIds.length > 0', 'src/event-relative-history.js', 'confirmed histories must carry sourceIds before use');
+requireIncludes(helperText, 'function hasConfirmedSourceIds(history)', 'src/event-relative-history.js', 'confirmed histories must validate sourceIds before use');
+requireIncludes(helperText, 'Array.isArray(history?.sourceIds) && history.sourceIds.some', 'src/event-relative-history.js', 'confirmed histories must carry nonblank sourceIds before use');
+requireIncludes(helperText, "String(sourceId || '').trim().length > 0", 'src/event-relative-history.js', 'blank sourceIds must not qualify as confirmed sources');
+requireIncludes(helperText, '.filter((history) => hasConfirmedSourceIds(history))', 'src/event-relative-history.js', 'must exclude histories with empty sourceIds before selecting previous two events');
 requireIncludes(helperText, 'function hasConfirmedCompetitionIdentity(history)', 'src/event-relative-history.js', 'confirmed histories must have an explicit competition identity before use');
 requireIncludes(helperText, "String(history?.competitionName || '').trim().length > 0", 'src/event-relative-history.js', 'event-relative histories must not treat unnamed date-only records as competitions');
 requireIncludes(helperText, '.filter((history) => hasConfirmedCompetitionIdentity(history))', 'src/event-relative-history.js', 'must exclude confirmed histories without a competition name before selecting previous two events');
