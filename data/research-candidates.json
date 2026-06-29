@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "purpose": "未確認候補の一時管理。確認済みになるまで data/database.json へ昇格しない。",
-    "updatedAt": "2026-06-27"
+    "updatedAt": "2026-06-29"
   },
   "candidates": [
     {
@@ -10,16 +10,56 @@
       "playerName": "齊藤 敬太",
       "candidateId": "c40-old-national-results",
       "status": "要再確認",
-      "note": "過去の全国大会・世界大会歴を追加調査。公式結果PDFまたはGoodlift/IPF確認後に正本DBへ昇格する。",
-      "searchTerms": ["齊藤敬太 ベンチプレス", "斉藤敬太 ベンチプレス", "Keita Saito Goodlift", "site:goodlift.info Keita Saito"]
+      "note": "過去の全国大会・世界大会歴を追加調査。公式結果PDFまたはGoodlift/IPF確認後に正本DBへ昇格する。2026-06-29時点の小ロット調査では、公式・高信頼ソースで正本DBへ昇格できる履歴は未確認。",
+      "searchTerms": ["齊藤敬太 ベンチプレス", "斉藤敬太 ベンチプレス", "Keita Saito Goodlift", "site:goodlift.info Keita Saito"],
+      "lastCheckedAt": "2026-06-29",
+      "checkedSources": [
+        {
+          "label": "web search: 齊藤 敬太 ベンチプレス パワーリフティング Goodlift",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: 齊藤敬太 ベンチプレス JPA 結果 PDF",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: site:h-power.sakura.ne.jp 齊藤 敬太",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: site:japanpowerlifting.org 齊藤 敬太",
+          "result": "no reliable athlete-history match found"
+        }
+      ],
+      "promotionRule": "公式結果PDF、JPA、HPA、IPF/Goodlift等で同一人物性と大会結果が確認できるまで data/database.json へ昇格しない。"
     },
     {
       "playerId": "D-52-houri-momoka",
       "playerName": "宝利 桃華",
       "candidateId": "d52-early-hokkaido-results",
       "status": "要再確認",
-      "note": "2021年以降の北海道クラシックPL、全日本ベンチ、AAP関連を追加調査。公式結果で確認後に正本DBへ昇格する。",
-      "searchTerms": ["宝利桃華 パワーリフティング", "宝利 桃華 ベンチプレス", "Momoka Hori bench press", "site:h-power.sakura.ne.jp 宝利"]
+      "note": "2021年以降の北海道クラシックPL、全日本ベンチ、AAP関連を追加調査。公式結果で確認後に正本DBへ昇格する。2026-06-29時点の小ロット調査では、公式・高信頼ソースで正本DBへ昇格できる履歴は未確認。",
+      "searchTerms": ["宝利桃華 パワーリフティング", "宝利 桃華 ベンチプレス", "Momoka Hori bench press", "site:h-power.sakura.ne.jp 宝利"],
+      "lastCheckedAt": "2026-06-29",
+      "checkedSources": [
+        {
+          "label": "web search: 宝利 桃華 パワーリフティング ベンチプレス 結果 PDF",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: site:h-power.sakura.ne.jp 宝利 桃華 パワーリフティング",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: site:japanpowerlifting.org 宝利 桃華",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: Momoka Hori Goodlift powerlifting",
+          "result": "no reliable athlete-history match found"
+        }
+      ],
+      "promotionRule": "公式結果PDF、JPA、HPA、IPF/Goodlift等で同一人物性と大会結果が確認できるまで data/database.json へ昇格しない。"
     }
   ]
 }
