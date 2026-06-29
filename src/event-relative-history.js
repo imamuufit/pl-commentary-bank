@@ -85,8 +85,7 @@
     };
   }
 
-  function currentPlayerFromPage(database) {
-    const page = document.querySelector('#pages .a4:not(.sources)');
+  function playerFromPage(database, page) {
     const title = page?.querySelector('.page-header .title')?.textContent || '';
     const lot = title.match(/Lot\s*(\d+)/)?.[1];
     return (database.players || []).find((player) => {
@@ -95,8 +94,8 @@
     }) || null;
   }
 
-  function infoBlocks() {
-    return [...document.querySelectorAll('#pages .a4:not(.sources) .info')].reduce((map, section) => {
+  function infoBlocks(page) {
+    return [...page.querySelectorAll('.info')].reduce((map, section) => {
       const heading = section.querySelector('h3')?.textContent?.trim();
       const body = section.querySelector('div');
       if (heading && body) map[heading] = body;
@@ -104,19 +103,28 @@
     }, {});
   }
 
+  function athletePages() {
+    return [...document.querySelectorAll('#pages .a4:not(.sources)')];
+  }
+
+  function applyPageRelativeHistory(page, database, baseDate) {
+    const player = playerFromPage(database, page);
+    if (!player) return;
+    const result = relativeHistory(player, baseDate);
+    const blocks = infoBlocks(page);
+    if (blocks['前々回→前回']) blocks['前々回→前回'].innerHTML = esc(result.flow).replaceAll('\n', '<br>');
+    if (blocks['推移コメント']) blocks['推移コメント'].innerHTML = esc(result.progress).replaceAll('\n', '<br>');
+  }
+
   async function applyRelativeHistory() {
     if (applying) return;
-    const page = document.querySelector('#pages .a4:not(.sources)');
-    if (!page) return;
+    const pages = athletePages();
+    if (!pages.length) return;
     applying = true;
     try {
       const [database, eventConfig] = await Promise.all([getWorkspace(), getEventConfig()]);
-      const player = currentPlayerFromPage(database);
-      if (!player) return;
-      const result = relativeHistory(player, eventDate(eventConfig));
-      const blocks = infoBlocks();
-      if (blocks['前々回→前回']) blocks['前々回→前回'].innerHTML = esc(result.flow).replaceAll('\n', '<br>');
-      if (blocks['推移コメント']) blocks['推移コメント'].innerHTML = esc(result.progress).replaceAll('\n', '<br>');
+      const baseDate = eventDate(eventConfig);
+      pages.forEach((page) => applyPageRelativeHistory(page, database, baseDate));
     } catch (error) {
       console.warn('event-relative history failed', error);
     } finally {
