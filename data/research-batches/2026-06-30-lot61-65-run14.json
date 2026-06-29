@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "purpose": "Small-batch research log for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, and same-event current rows stay outside data/database.json."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [61, 62, 63, 64, 65],
+    "primarySourcesChecked": [
+      "data/database.json roster skeleton on main for Lot 61-65",
+      "HPA 2026 Numata Bench Press D/E result PDF locator from prior batch logs",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF"
+    ],
+    "openPrCheck": "No open Numata athlete research PRs were found before this batch. This continues after Lot 56-60.",
+    "writeScope": "Research log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-de-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 D/Eグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "Locator reused from prior batch. Row-level extraction for Lot 61-65 was not completed, so no current-event result rows are asserted."
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "Extracted for exact-name prior-history matches."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "E-61-moriya-wataru",
+      "lot": 61,
+      "playerName": "森谷 渉",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match."
+    },
+    {
+      "playerId": "E-62-daidou-yuuki",
+      "lot": 62,
+      "playerName": "大道 裕輝",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match."
+    },
+    {
+      "playerId": "E-63-ashida-tatsuki",
+      "lot": 63,
+      "playerName": "芦田 竜輝",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match."
+    },
+    {
+      "playerId": "E-64-sakamoto-hiroshi",
+      "lot": 64,
+      "playerName": "坂本 洋",
+      "status": "prior-hokkaido-clpl-history-confirmed-current-event-row-not-asserted",
+      "confirmedFindings": [
+        {
+          "findingType": "priorHistory",
+          "eventDate": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "CL-PL",
+          "division": "クラシック男子105kg級",
+          "birthYear": 1969,
+          "affiliation": "北海道協会個人登録",
+          "bodyweight": "101.40",
+          "sqAttempts": "110.0〇-120.0×-120.0〇",
+          "bpAttempts": "105.0〇-110.0〇-112.5〇",
+          "dlAttempts": "110.0〇-115.0〇-120.0〇",
+          "sqBest": "120.0",
+          "bpBest": "112.5",
+          "dlBest": "120.0",
+          "total": "352.5",
+          "place": "11",
+          "points": "44.24",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Official-source backed. Promote only in a schema-safe database pass."
+    },
+    {
+      "playerId": "E-65-hosokawa-hirokazu",
+      "lot": 65,
+      "playerName": "細川 広一",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "Low-risk isolated log only. One official-source-backed promotion candidate: 坂本 洋. No uncertain or ambiguous findings required data/research-candidates.json changes.",
+    "safeNextStep": "Promote confirmed prior histories in a later schema-safe pass after duplicate checks."
+  }
+}
