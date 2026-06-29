@@ -1,17 +1,33 @@
 {
   "meta": {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "purpose": "大会単位運用の下準備。現行PWAの表示・印刷レイアウトは変更しない。",
-    "updatedAt": "2026-06-28"
+    "updatedAt": "2026-06-29"
   },
   "event": {
-    "eventId": "default-v5-9-6-lock",
-    "name": "PL Commentary Bank Default Event",
-    "hostArea": "",
-    "dateFrom": "",
-    "dateTo": "",
-    "venue": "",
-    "memo": "将来の大会切替用。空欄は現行DB運用を優先する。"
+    "eventId": "2026-numata-bench-press",
+    "name": "2026年北海道沼田町ベンチプレス大会",
+    "hostArea": "北海道",
+    "location": "北海道雨竜郡沼田町",
+    "city": "沼田町",
+    "dateFrom": "2026-06-21",
+    "dateTo": "2026-06-21",
+    "venue": "沼田町",
+    "aliases": [
+      "沼田",
+      "沼田町",
+      "沼田ベンチ",
+      "沼田町ベンチ",
+      "北海道ベンチ",
+      "北海道BP",
+      "ベンチプレス",
+      "ベンチ大会",
+      "BP",
+      "2026",
+      "2026沼田",
+      "2026沼田ベンチ"
+    ],
+    "memo": "2026年北海道沼田町ベンチプレス大会のエントリー選手を表示する現行大会設定。正式名称以外の自然な呼び方でも検索できるよう aliases を持つ。"
   },
   "printPolicy": {
     "layoutTemplate": "v5.9.6_LOCK",
