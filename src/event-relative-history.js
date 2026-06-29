@@ -43,7 +43,7 @@
   }
 
   function eventDate(configJson) {
-    const date = configJson?.event?.dateFrom || configJson?.event?.dateTo || '';
+    const date = configJson?.event?.dateFrom || configJson?.event?.dateTo || configJson?.event?.date || '';
     return /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : null;
   }
 

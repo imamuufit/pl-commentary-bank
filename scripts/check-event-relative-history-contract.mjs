@@ -23,7 +23,7 @@ function requireNotIncludes(text, needle, target, message) {
 
 requireIncludes(indexText, '<script src="./src/event-relative-history.js" defer></script>', 'index.html', 'event-relative history helper must remain loaded after the app');
 requireIncludes(helperText, "const FALLBACK_FLOW = '履歴不足", 'src/event-relative-history.js', 'must show 履歴不足 when two prior confirmed histories are unavailable');
-requireIncludes(helperText, "configJson?.event?.dateFrom || configJson?.event?.dateTo", 'src/event-relative-history.js', 'must use selected event dateFrom/dateTo as the base date');
+requireIncludes(helperText, "configJson?.event?.dateFrom || configJson?.event?.dateTo || configJson?.event?.date", 'src/event-relative-history.js', 'must use selected event dateFrom/dateTo/date as the base date');
 requireIncludes(helperText, "history.status === '確認済'", 'src/event-relative-history.js', 'must use only confirmed histories');
 requireIncludes(helperText, 'function hasConfirmedSourceIds(history)', 'src/event-relative-history.js', 'confirmed histories must validate sourceIds before use');
 requireIncludes(helperText, 'Array.isArray(history?.sourceIds) && history.sourceIds.some', 'src/event-relative-history.js', 'confirmed histories must carry nonblank sourceIds before use');
