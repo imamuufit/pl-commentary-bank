@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "updatedAt": "2026-06-30",
+    "sourcePolicy": "Official HPA/JPA sources only. This file records 2014 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
+    "layoutLock": "v5.9.6_LOCK",
+    "notes": [
+      "Temporary 2014 official-source candidate addendum for HPA Event Watch.",
+      "Keep separate from athlete master data, confirmed athlete histories, event entries, and research candidates.",
+      "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion.",
+      "2014 source pages are historical official result PDFs; program, outline, entry roster, schedule, live速報, and YouTube links were not promoted unless separately confirmed."
+    ]
+  },
+  "events": [
+    {
+      "id": "2014-05-11-kokutai-hokkaido-pre-and-no-gear-bench-ebetsu",
+      "status": "official_result_pdf_found",
+      "name": "国民体育大会パワーリフティング競技 北海道予選会 プレ大会／第18回 北海道ノーギアベンチプレス選手権大会",
+      "includedChampionships": [
+        "国民体育大会パワーリフティング競技 北海道予選会 プレ大会",
+        "第18回 北海道ノーギアベンチプレス選手権大会"
+      ],
+      "dates": ["2014-05-11"],
+      "venue": {
+        "name": "江別市民体育館",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2014年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2014.pdf",
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF pages for 国民体育大会パワーリフティング競技 北海道予選会 プレ大会 state 2014年5月11日 and 会場 江別市民体育館; later pages in the same PDF list 第18回北海道ノーギアベンチプレス選手権大会 with the same date and venue."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not create athlete histories from this file without row-level verification.",
+        "National-sport selection/pre-event labels and no-gear bench labels must remain distinct in future importers.",
+        "Bench-only results are not interchangeable with three-lift histories unless the consuming feature explicitly handles event type."
+      ]
+    },
+    {
+      "id": "2014-07-20-summer-hokkaido-official-record-meet-ebetsu",
+      "status": "official_result_pdf_found",
+      "name": "2014夏季北海道公認記録会",
+      "includedChampionships": [
+        "2014夏季北海道公認記録会（パワーリフティング部門）",
+        "2014夏季北海道公認記録会（ベンチプレス部門）"
+      ],
+      "dates": ["2014-07-20"],
+      "venue": {
+        "name": "江別市民体育館",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2014年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2014.pdf",
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF pages for 2014夏季北海道公認記録会 list both パワーリフティング部門 and ベンチプレス部門, state 2014年7月20日 and 会場 江別市民体育館."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not promote athlete rows into confirmed histories without matching athlete identity, category/class, event date, and PDF row.",
+        "Powerlifting record-meet rows and bench-only rows must remain distinct when a future importer reads this source.",
+        "Do not infer athlete progression comments from this addendum alone."
+      ]
+    },
+    {
+      "id": "2014-09-14-hokkaido-power-and-bench-ebetsu",
+      "status": "official_result_pdf_found",
+      "name": "第44回男子・第32回女子 北海道パワーリフティング選手権大会／第24回 北海道ベンチプレス選手権大会",
+      "includedChampionships": [
+        "第44回男子 北海道パワーリフティング選手権大会",
+        "第32回女子 北海道パワーリフティング選手権大会",
+        "第24回 北海道ベンチプレス選手権大会"
+      ],
+      "dates": ["2014-09-14"],
+      "venue": {
+        "name": "江別市民体育館",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2014年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2014.pdf",
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF pages for 第44回男子・第32回女子北海道パワーリフティング選手権大会 and 第24回北海道ベンチプレス選手権大会 state 2014年9月14日 and 会場 江別市民体育館."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not promote athlete rows into confirmed histories without matching athlete identity, category/class, event date, and PDF row.",
+        "Men's, women's, high-school, junior, open, and bench-only divisions must remain distinct when a future importer reads this source.",
+        "Do not infer athlete progression comments from this addendum alone."
+      ]
+    }
+  ]
+}
