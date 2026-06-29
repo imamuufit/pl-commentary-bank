@@ -47,13 +47,21 @@
     return /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : null;
   }
 
+  function historySortKey(history) {
+    return [
+      String(history?.date || ''),
+      String(history?.competitionName || ''),
+      String(history?.sourceIds?.[0] || '')
+    ].join('\u0000');
+  }
+
   function confirmedBeforeEvent(player, baseDate) {
     return [...(player?.histories || [])]
       .filter((history) => history.status === '確認済')
       .filter((history) => Array.isArray(history.sourceIds) && history.sourceIds.length > 0)
       .filter((history) => /^\d{4}-\d{2}-\d{2}$/.test(String(history.date || '')))
       .filter((history) => String(history.date) < baseDate)
-      .sort((a, b) => String(a.date).localeCompare(String(b.date)));
+      .sort((a, b) => historySortKey(a).localeCompare(historySortKey(b)));
   }
 
   function eventSummary(history) {
