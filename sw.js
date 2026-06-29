@@ -6,6 +6,7 @@ const ASSETS = [
   './icons/icon.svg',
   './src/styles.css',
   './src/app.js',
+  './src/event-relative-history.js',
   './data/database.json',
   './data/research-candidates.json',
   './data/event-config.json'
