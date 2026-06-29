@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "purpose": "Automation small-batch research log for PL Commentary Bank. This file records source-backed findings before any destructive or broad database promotion.",
+    "batchDate": "2026-06-29",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Only rows with explicit official/high-trust source support may be promoted to data/database.json. Ambiguous identity or incomplete result context must remain outside confirmed histories. Current-event Numata rows are event results, not prior histories for the same event-relative view."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [16, 17, 18, 19, 20],
+    "primarySourcesChecked": [
+      "HPA 2026 Numata Bench Press A/B/C result速報 PDF",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF",
+      "Web search for HPA/JPA/Goodlift-indexable exact-name matches"
+    ],
+    "openPrCheck": "No open PRs were found before this batch. This batch adds an isolated research log only and does not touch app layout, runtime logic, database.json, or research-candidates.json."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-abc-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 A/B/Cグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "sourceType": "HPA official result速報 PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館"
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25",
+      "venue": "江別市青年センター"
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "A-16-hamaoka-kenta",
+      "lot": 16,
+      "playerName": "浜岡 謙太",
+      "status": "source-backed-current-only",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "66kg級",
+          "birthYear": "1991",
+          "club": "BURSTLIMIT",
+          "bw": "65.10",
+          "bpAttempts": "160.0-170.0--175.0",
+          "bpBest": "170.0",
+          "place": "1",
+          "points": "97.15",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Do not promote as prior history for Numata. No earlier official same-name match was found in the checked 2026 Spring Ebetsu PL result PDF or indexable exact-name web searches."
+    },
+    {
+      "playerId": "A-17-mori-kento",
+      "lot": 17,
+      "playerName": "森 健人",
+      "status": "source-backed-current-only",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "66kg級",
+          "birthYear": "2001",
+          "club": "北海道協会個人登録",
+          "bw": "65.50",
+          "bpAttempts": "170.0--175.0--175.0",
+          "bpBest": "170.0",
+          "place": "2",
+          "points": "96.83",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Do not promote as prior history for Numata. No earlier official same-name match was found in the checked 2026 Spring Ebetsu PL result PDF or indexable exact-name web searches."
+    },
+    {
+      "playerId": "B-18-onami-hirotsugu",
+      "lot": 18,
+      "playerName": "大浪 弘嗣",
+      "status": "source-backed-current-only",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "74kg級",
+          "birthYear": "1998",
+          "club": "北海道協会個人登録",
+          "bw": "73.40",
+          "bpAttempts": "180.0--182.5--182.5",
+          "bpBest": "180.0",
+          "place": "3",
+          "points": "96.41",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Do not promote as prior history for Numata. No earlier official same-name match was found in the checked 2026 Spring Ebetsu PL result PDF or indexable exact-name web searches."
+    },
+    {
+      "playerId": "B-19-seta-yasuo",
+      "lot": 19,
+      "playerName": "瀬田 恭央",
+      "status": "source-backed-current-and-one-confirmed-prior-history",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "74kg級",
+          "birthYear": "1995",
+          "club": "BURSTLIMIT",
+          "bw": "73.00",
+          "bpAttempts": "105.0-112.5--120.0",
+          "bpBest": "112.5",
+          "place": "18",
+          "points": "60.43",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"]
+        },
+        {
+          "date": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "CL-PL",
+          "className": "74kg級",
+          "birthYear": "1995",
+          "club": "BURSTLIMIT",
+          "bw": "72.95",
+          "sqAttempts": "130.0-140.0-145.0",
+          "bpAttempts": "100.0-105.0--110.0",
+          "dlAttempts": "160.0-170.0-180.0",
+          "sqBest": "145.0",
+          "bpBest": "105.0",
+          "dlBest": "180.0",
+          "total": "430.0",
+          "place": "18",
+          "points": "63.60",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"],
+          "identityBasis": "Same Japanese name, birth year 1995, BURSTLIMIT affiliation, and 74kg-class context across two HPA official PDFs."
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Safe future database promotion candidate for one confirmed prior CL-PL history after confirming the database history schema. This batch intentionally records it in an isolated log only."
+    },
+    {
+      "playerId": "B-20-soejima-kotaro",
+      "lot": 20,
+      "playerName": "副嶋 広太郎",
+      "status": "source-backed-current-only",
+      "confirmedFindings": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "74kg級",
+          "birthYear": "1997",
+          "club": "北海道協会個人登録",
+          "bw": "73.90",
+          "bpAttempts": "95.0-100.0-105.0",
+          "bpBest": "105.0",
+          "place": "21",
+          "points": "56.04",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Do not promote as prior history for Numata. No earlier official same-name match was found in the checked 2026 Spring Ebetsu PL result PDF or indexable exact-name web searches."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "This run intentionally avoided rewriting data/database.json until the confirmed-history schema is inspected and a separate schema-safe promotion PR can be kept minimal.",
+    "safeNextStep": "Promote 瀬田 恭央 2026-04-25 江別CLPL history after confirming the database history schema, then continue with Lot 21-25."
+  }
+}
