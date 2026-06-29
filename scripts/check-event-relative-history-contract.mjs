@@ -51,7 +51,7 @@ requireIncludes(helperText, "title.match(/^\\s*([A-Z])\\.Lot\\s*\\d+/)?.[1]", 's
 requireIncludes(helperText, 'if (group && String(player.group) !== group) return false', 'src/event-relative-history.js', 'must avoid matching same-lot athletes from another group');
 requireIncludes(helperText, 'function confirmedProgress(pair)', 'src/event-relative-history.js', 'must keep confirmed numeric progress generation isolated');
 requireIncludes(helperText, "deltaLine('SQ', previousPrevious.sqBest, previous.sqBest)", 'src/event-relative-history.js', 'must only compare confirmed SQ values from the selected two histories');
-requireIncludes(helperText, "deltaLine('BP', previousPrevious.bpBest, previous.sqBest)", 'src/event-relative-history.js', 'must only compare confirmed BP values from the selected two histories');
+requireIncludes(helperText, "deltaLine('BP', previousPrevious.bpBest, previous.bpBest)", 'src/event-relative-history.js', 'must only compare confirmed BP values from the selected two histories');
 requireIncludes(helperText, "deltaLine('DL', previousPrevious.dlBest, previous.dlBest)", 'src/event-relative-history.js', 'must only compare confirmed DL values from the selected two histories');
 requireIncludes(helperText, "deltaLine('T', previousPrevious.total, previous.total)", 'src/event-relative-history.js', 'must only compare confirmed total values from the selected two histories');
 requireIncludes(helperText, '数値が揃った種目のみ表示しています', 'src/event-relative-history.js', 'must avoid filling missing numeric deltas by inference');
