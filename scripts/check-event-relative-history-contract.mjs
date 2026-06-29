@@ -34,6 +34,12 @@ requireIncludes(helperText, '未確認候補からは推測しません', 'src/e
 requireIncludes(helperText, "function athletePages()", 'src/event-relative-history.js', 'must process every athlete print page, not only the first page');
 requireIncludes(helperText, "pages.forEach((page) => applyPageRelativeHistory(page, database, baseDate))", 'src/event-relative-history.js', 'must apply relative histories page-by-page');
 requireIncludes(helperText, "function infoBlocks(page)", 'src/event-relative-history.js', 'must scope info block updates to each athlete page');
+requireIncludes(helperText, "function confirmedProgress(pair)", 'src/event-relative-history.js', 'must keep confirmed numeric progress generation isolated');
+requireIncludes(helperText, "deltaLine('SQ', previousPrevious.sqBest, previous.sqBest)", 'src/event-relative-history.js', 'must only compare confirmed SQ values from the selected two histories');
+requireIncludes(helperText, "deltaLine('BP', previousPrevious.bpBest, previous.bpBest)", 'src/event-relative-history.js', 'must only compare confirmed BP values from the selected two histories');
+requireIncludes(helperText, "deltaLine('DL', previousPrevious.dlBest, previous.dlBest)", 'src/event-relative-history.js', 'must only compare confirmed DL values from the selected two histories');
+requireIncludes(helperText, "deltaLine('T', previousPrevious.total, previous.total)", 'src/event-relative-history.js', 'must only compare confirmed total values from the selected two histories');
+requireIncludes(helperText, '数値が揃った種目のみ表示しています', 'src/event-relative-history.js', 'must avoid filling missing numeric deltas by inference');
 requireNotIncludes(helperText, 'research-candidates', 'src/event-relative-history.js', 'must not read research candidate data for event-relative display');
 requireNotIncludes(helperText, 'researchDb', 'src/event-relative-history.js', 'must not depend on candidate workspace state');
 requireNotIncludes(helperText, 'document.createElement', 'src/event-relative-history.js', 'must not create new print layout sections');
