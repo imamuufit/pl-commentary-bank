@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "updatedAt": "2026-06-29",
+    "sourcePolicy": "Official HPA/JPA sources only. This file records 2021 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
+    "layoutLock": "v5.9.6_LOCK",
+    "notes": [
+      "Temporary 2021 official-source candidate addendum for HPA Event Watch.",
+      "Keep separate from athlete master data, confirmed athlete histories, and research candidates.",
+      "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion.",
+      "2021 source pages are historical official result PDFs; program, outline, entry roster, schedule, live速報, and YouTube links were not promoted unless separately confirmed."
+    ]
+  },
+  "events": [
+    {
+      "id": "2021-05-08-09-hokkaido-kokutai-selection-power-ebetsu",
+      "status": "official_result_pdf_found",
+      "name": "国民体育大会パワーリフティング公開競技 第7回北海道代表選考会",
+      "includedChampionships": [
+        "国民体育大会パワーリフティング公開競技 第7回北海道代表選考会",
+        "第5回 全日本高校パワーリフティング選手権大会 北海道予選会"
+      ],
+      "dates": ["2021-05-08", "2021-05-09"],
+      "venue": {
+        "name": "江別市民体育館",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2021年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2021.pdf",
+          "observedAt": "2026-06-29",
+          "evidenceLines": "HPA top page year navigation links 2021 to 2021.pdf. PDF pages for 国民体育大会パワーリフティング公開競技 第7回北海道代表選考会 state 2021年5月8日-9日 and 会場 江別市民体育館; the same result block also includes 第5回 高校男子 entries."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not promote athlete rows into confirmed histories without matching athlete identity, category/class, event date, and PDF row.",
+        "Record marks in the PDF require separate北海道記録/JPA verification before summarizing as record-holder achievements.",
+        "国体代表選考 and 高校予選 labels must remain explicit when used by future importers."
+      ]
+    },
+    {
+      "id": "2021-07-18-hokkaido-bench-nayoro",
+      "status": "official_result_pdf_found",
+      "name": "2021年度 北海道ベンチプレス選手権大会",
+      "includedChampionships": [
+        "2021年度 北海道シングルベンチプレス選手権大会",
+        "第31回北海道ベンチプレス選手権大会（フルギア）",
+        "第25回北海道クラシックベンチプレス選手権大会"
+      ],
+      "dates": ["2021-07-18"],
+      "venue": {
+        "name": "名寄市スポーツセンター",
+        "city": "名寄市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2021年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2021.pdf",
+          "observedAt": "2026-06-29",
+          "evidenceLines": "PDF pages for 2021年度 北海道シングルベンチプレス選手権大会 and 第25回北海道クラシックベンチプレス選手権大会 state 2021年7月18日 and 会場 名寄市スポーツセンター. The result block also identifies 第31回フルギア and 第25回クラシック."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Bench-only results are not interchangeable with three-lift histories unless the consuming feature explicitly handles event type.",
+        "Do not create athlete histories from this file without row-level verification.",
+        "Equipped, classic, and single-bench labels must remain distinct in any future importer."
+      ]
+    },
+    {
+      "id": "2021-10-16-17-hokkaido-autumn-power-ebetsu",
+      "status": "official_result_pdf_found",
+      "name": "2021年度 秋季北海道パワーリフティング選手権大会",
+      "includedChampionships": [
+        "第24回北海道クラシックパワーリフティング選手権大会",
+        "第50回北海道パワーリフティング選手権大会（フルギア）"
+      ],
+      "dates": ["2021-10-16", "2021-10-17"],
+      "venue": {
+        "name": "江別市民体育館",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2021年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2021.pdf",
+          "observedAt": "2026-06-29",
+          "evidenceLines": "PDF pages for 2021年度 秋季北海道パワーリフティング選手権大会 state 2021年10月16日-17日 and 会場 江別市民体育館. The page labels include 第24回北海道クラシックパワーリフティング選手権大会 and 第50回北海道男子（フルギア）."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not promote athlete rows into confirmed histories without matching athlete identity, category/class, event date, and PDF row.",
+        "Keep equipped and classic divisions distinct when a future importer reads this source.",
+        "Do not infer athlete progression comments from this addendum alone."
+      ]
+    }
+  ]
+}
