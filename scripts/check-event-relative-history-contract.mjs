@@ -31,6 +31,9 @@ requireIncludes(helperText, 'const pair = histories.slice(-2)', 'src/event-relat
 requireIncludes(helperText, "blocks['前々回→前回']", 'src/event-relative-history.js', 'must update the existing 前々回→前回 block without changing layout markup');
 requireIncludes(helperText, "blocks['推移コメント']", 'src/event-relative-history.js', 'must keep progress output conservative in the existing block');
 requireIncludes(helperText, '未確認候補からは推測しません', 'src/event-relative-history.js', 'must explicitly avoid inference from unverified candidates');
+requireIncludes(helperText, "function athletePages()", 'src/event-relative-history.js', 'must process every athlete print page, not only the first page');
+requireIncludes(helperText, "pages.forEach((page) => applyPageRelativeHistory(page, database, baseDate))", 'src/event-relative-history.js', 'must apply relative histories page-by-page');
+requireIncludes(helperText, "function infoBlocks(page)", 'src/event-relative-history.js', 'must scope info block updates to each athlete page');
 requireNotIncludes(helperText, 'research-candidates', 'src/event-relative-history.js', 'must not read research candidate data for event-relative display');
 requireNotIncludes(helperText, 'researchDb', 'src/event-relative-history.js', 'must not depend on candidate workspace state');
 requireNotIncludes(helperText, 'document.createElement', 'src/event-relative-history.js', 'must not create new print layout sections');
