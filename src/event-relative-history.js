@@ -132,8 +132,10 @@
 
   function playerFromPage(database, page) {
     const title = page?.querySelector('.page-header .title')?.textContent || '';
+    const group = title.match(/^\s*([A-Z])\.Lot\s*\d+/)?.[1];
     const lot = title.match(/Lot\s*(\d+)/)?.[1];
     return (database.players || []).find((player) => {
+      if (group && String(player.group) !== group) return false;
       if (lot && String(player.lot) !== lot) return false;
       return title.includes(player.name || '');
     }) || null;
