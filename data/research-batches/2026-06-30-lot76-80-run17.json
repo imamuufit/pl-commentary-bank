@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "purpose": "Small-batch research log for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, and same-event current rows stay outside data/database.json. Do not infer achievements from name similarity."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [76, 77, 78, 79, 80],
+    "processedAthletes": [
+      "佐藤 直毅",
+      "飯泉 圭太",
+      "伊畑 一真",
+      "土屋 仁",
+      "佐藤 楓"
+    ],
+    "primarySourcesChecked": [
+      "data/database.json roster skeleton on main for Lot 76-80",
+      "HPA 2026 Numata Bench Press F/G result PDF locator attempted but not row-extracted in this run",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF",
+      "Web exact-name searches scoped to HPA/high-trust powerlifting and bench press terms"
+    ],
+    "openPrCheck": "No open Lot 76-80 Numata athlete research PRs were found before this batch. This continues after Lot 71-75.",
+    "writeScope": "Research log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-fg-sokuhou-unextracted",
+      "title": "第30回北海道クラシックベンチプレス選手権 F/Gグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "sourceType": "HPA official result PDF locator",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "Locator inferred from prior HPA batch naming pattern and attempted, but the URL was not safely opened through the web tool in this run. No current-event Lot 76-80 rows are asserted."
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25/2026-04-26",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "Opened and searched exact names for Lot 76-80. Exact prior-history matches were found for 伊畑 一真 and 佐藤 楓 only."
+    },
+    {
+      "sourceId": "src-web-exact-name-search-20260630-lot76-80",
+      "title": "Exact-name web searches for Lot 76-80 athlete histories",
+      "url": "search-only-no-single-result-url",
+      "sourceType": "Search audit",
+      "checkedAt": "2026-06-30",
+      "rowLevelExtractionStatus": "Exact-name web searches for HPA/powerlifting/bench press terms returned no additional promotable official or high-trust histories for 佐藤 直毅, 飯泉 圭太, 土屋 仁, or additional rows for 伊畑 一真 and 佐藤 楓 in this run."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "F-76-satou-naoki",
+      "lot": 76,
+      "playerName": "佐藤 直毅",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 76 identity. Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. External exact-name web searches did not return a promotable official/high-trust result."
+    },
+    {
+      "playerId": "F-77-iizumi-keita",
+      "lot": 77,
+      "playerName": "飯泉 圭太",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 77 identity. Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. External exact-name web searches did not return a promotable official/high-trust result."
+    },
+    {
+      "playerId": "F-78-ibata-kazuma",
+      "lot": 78,
+      "playerName": "伊畑 一真",
+      "status": "prior-history-confirmed-this-run",
+      "confirmedFindings": [
+        {
+          "findingType": "prior-three-lift-powerlifting-result",
+          "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "date": "2026-04-26",
+          "grade": "北海道",
+          "eventType": "CLPL",
+          "division": "クラシック男子83kg級",
+          "bodyweight": "82.80kg",
+          "affiliation": "BURSTLIMIT",
+          "squatBest": "205.0kg",
+          "benchBest": "140.0kg",
+          "deadliftBest": "215.0kg",
+          "total": "560.0kg",
+          "place": "5",
+          "attemptsRaw": "S 190.0 / -200.0 / 205.0, B 135.0 / 140.0 / -145.0, D 190.0 / 205.0 / 215.0",
+          "identityCheck": "Exact Japanese full-name match in HPA official PDF; roster name and official result name both 伊畑 一真."
+        }
+      ],
+      "candidateFindings": [],
+      "searchNotes": "Official HPA Spring Ebetsu CLPL PDF has an exact match row for 伊畑 一真. This is source-backed but kept in batch log only; data/database.json was not rewritten in this run."
+    },
+    {
+      "playerId": "F-79-tsuchiya-hitoshi",
+      "lot": 79,
+      "playerName": "土屋 仁",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 79 identity. Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. External exact-name web searches did not return a promotable official/high-trust result."
+    },
+    {
+      "playerId": "F-80-satou-kaede",
+      "lot": 80,
+      "playerName": "佐藤 楓",
+      "status": "prior-history-confirmed-this-run",
+      "confirmedFindings": [
+        {
+          "findingType": "prior-three-lift-powerlifting-result",
+          "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "date": "2026-04-26",
+          "grade": "北海道",
+          "eventType": "CLPL",
+          "division": "クラシック男子93kg級",
+          "bodyweight": "92.15kg",
+          "affiliation": "キムンカムイ旭川",
+          "squatBest": "250.0kg",
+          "benchBest": "157.5kg",
+          "deadliftBest": "242.5kg",
+          "total": "650.0kg",
+          "place": "3",
+          "attemptsRaw": "S 240.0 / 250.0 / pass, B 150.0 / 155.0 / 157.5, D 235.0 / 242.5 / -250.0",
+          "identityCheck": "Exact Japanese full-name match in HPA official PDF; roster name and official result name both 佐藤 楓."
+        }
+      ],
+      "candidateFindings": [],
+      "searchNotes": "Official HPA Spring Ebetsu CLPL PDF has an exact match row for 佐藤 楓. This is source-backed but kept in batch log only; data/database.json was not rewritten in this run."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "This run intentionally wrote an isolated batch log only. Confirmed prior-history rows for 伊畑 一真 and 佐藤 楓 are ready for later conservative database promotion with source links, but data/database.json was left unchanged to avoid broad minified JSON rewrites during the recurring research pass.",
+    "safeNextStep": "Continue with Lot 81-85, or perform a dedicated promotion pass for already confirmed batch-log histories after reviewing the schema/source ID convention."
+  }
+}
