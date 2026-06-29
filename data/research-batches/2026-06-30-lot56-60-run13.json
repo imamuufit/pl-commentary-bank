@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "purpose": "Automation small-batch research log for PL Commentary Bank. This file records source-backed findings before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Only rows with explicit official/high-trust source support may be promoted to data/database.json. Ambiguous identity, incomplete result context, or inaccessible row-level source data must remain outside confirmed histories. Current-event Numata rows are event results, not prior histories for the same event-relative view."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [56, 57, 58, 59, 60],
+    "primarySourcesChecked": [
+      "Existing data/database.json roster skeleton on main for Lot 56-60 identity targets",
+      "HPA 2026 Numata Bench Press D/E result速報 PDF locator already recorded in previous batch log",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF"
+    ],
+    "openPrCheck": "No open Numata athlete research PRs were found before this batch. Recent merged athlete research included Lot 51-55, so this batch continues with Lot 56-60 and avoids duplicate work.",
+    "writeScope": "Adds an isolated research log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-de-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 D/Eグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+      "sourceType": "HPA official result速報 PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "source locator reused from prior batch; row-level extraction for Lot 56-60 was not completed in this run, so no current-event result rows are asserted here"
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "extracted for exact-name prior-history matches in this run"
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "D-56-kitamura-taemi",
+      "lot": 56,
+      "playerName": "北村 妙美",
+      "status": "prior-hokkaido-clpl-history-confirmed-current-event-row-not-asserted",
+      "confirmedFindings": [
+        {
+          "findingType": "priorHistory",
+          "eventDate": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "CL-PL",
+          "division": "クラシック女子76kg級",
+          "birthYear": 1989,
+          "affiliation": "BURSTLIMIT",
+          "bodyweight": "75.65",
+          "sqAttempts": "120.0〇-125.0〇-130.0〇",
+          "bpAttempts": "75.0〇-80.0〇-82.5×",
+          "dlAttempts": "120.0〇-127.5〇-140.0×",
+          "sqBest": "130.0",
+          "bpBest": "80.0",
+          "dlBest": "127.5",
+          "total": "337.5",
+          "place": "1",
+          "points": "66.69",
+          "recordFlags": ["一般北海道記録 marker present on squat best"],
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Prior-history row is official-source backed and can be promoted to data/database.json in a schema-safe promotion pass. Current Numata result should not be inserted as prior history for this same event-relative view."
+    },
+    {
+      "playerId": "E-57-isa-hideki",
+      "lot": 57,
+      "playerName": "伊佐 秀貴",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. Current-event Numata row was not asserted because row-level extraction from the D/E速報 PDF was not completed in this run."
+    },
+    {
+      "playerId": "E-58-kakuta-daiki",
+      "lot": 58,
+      "playerName": "角田 大樹",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. Current-event Numata row was not asserted because row-level extraction from the D/E速報 PDF was not completed in this run."
+    },
+    {
+      "playerId": "E-59-saitou-shouma",
+      "lot": 59,
+      "playerName": "斎藤 翔磨",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. Current-event Numata row was not asserted because row-level extraction from the D/E速報 PDF was not completed in this run."
+    },
+    {
+      "playerId": "E-60-fujiwara-makoto",
+      "lot": 60,
+      "playerName": "藤原 詢",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. Current-event Numata row was not asserted because row-level extraction from the D/E速報 PDF was not completed in this run."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "This batch intentionally avoids direct data/database.json mutation to keep the change isolated and low-risk. One prior-history row is official-source-backed promotion candidate: 北村 妙美. No uncertain or ambiguous findings required data/research-candidates.json changes.",
+    "safeNextStep": "Run a dedicated schema-safe database promotion pass for confirmed prior histories from accumulated research-batch logs after confirming the history schema and avoiding duplicate same-event rows."
+  }
+}
