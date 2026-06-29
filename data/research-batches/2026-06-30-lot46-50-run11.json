@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "purpose": "Automation small-batch research log for PL Commentary Bank. This file records source-backed findings before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Only rows with explicit official/high-trust source support may be promoted to data/database.json. Ambiguous identity, incomplete result context, or inaccessible row-level source data must remain outside confirmed histories. Current-event Numata rows are event results, not prior histories for the same event-relative view."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [46, 47, 48, 49, 50],
+    "primarySourcesChecked": [
+      "Existing data/database.json roster skeleton on main for Lot 46-50 identity targets",
+      "HPA 2026 Numata Bench Press D/E result速報 PDF URL from prior trusted batch source index",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF URL from prior trusted batch source index",
+      "Indexable web search for exact-name HPA/JPA/IPF/Goodlift/APF/AAPF matches"
+    ],
+    "openPrCheck": "No open PRs were found before this batch. Recent merged athlete research included Lot 41-45, so this batch continues with Lot 46-50 and avoids duplicate work. This batch adds an isolated research log only and does not touch app layout, runtime logic, data/database.json, or data/research-candidates.json.",
+    "limitation": "The official HPA D/E PDF URL is known from the previous batch source index, but row-level PDF extraction was not available in this run. Therefore no attempt numbers, bodyweights, placements, or past histories are promoted or asserted for Lot 46-50."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-de-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 D/Eグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+      "sourceType": "HPA official result速報 PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "not extracted in this run"
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "exact-name web/PDF-search candidates not found in this run"
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "D-46-teramura-mika",
+      "lot": 46,
+      "playerName": "寺村 美香",
+      "status": "roster-target-identified-no-promotable-history",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchesPerformed": [
+        "寺村 美香 パワーリフティング ベンチプレス",
+        "寺村 美香 HPA"
+      ],
+      "promotionRecommendation": "Do not promote. No official/high-trust row-level result or earlier same-athlete history was confirmed in this run."
+    },
+    {
+      "playerId": "D-47-miyazaki-yuka",
+      "lot": 47,
+      "playerName": "宮﨑 優花",
+      "status": "roster-target-identified-no-promotable-history",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchesPerformed": [
+        "宮﨑 優花 パワーリフティング ベンチプレス",
+        "宮﨑 優花 ベンチプレス"
+      ],
+      "promotionRecommendation": "Do not promote. No official/high-trust row-level result or earlier same-athlete history was confirmed in this run."
+    },
+    {
+      "playerId": "D-48-mizushima-minami",
+      "lot": 48,
+      "playerName": "水島 南美",
+      "status": "roster-target-identified-no-promotable-history",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchesPerformed": [
+        "水島 南美 パワーリフティング ベンチプレス"
+      ],
+      "promotionRecommendation": "Do not promote. No official/high-trust row-level result or earlier same-athlete history was confirmed in this run."
+    },
+    {
+      "playerId": "D-49-satou-yurino",
+      "lot": 49,
+      "playerName": "佐藤 友里乃",
+      "status": "roster-target-identified-no-promotable-history",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchesPerformed": [
+        "佐藤 友里乃 パワーリフティング ベンチプレス"
+      ],
+      "promotionRecommendation": "Do not promote. No official/high-trust row-level result or earlier same-athlete history was confirmed in this run."
+    },
+    {
+      "playerId": "D-50-tanaka-yuuna",
+      "lot": 50,
+      "playerName": "田中 悠菜",
+      "status": "roster-target-identified-no-promotable-history",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchesPerformed": [
+        "田中 悠菜 パワーリフティング ベンチプレス",
+        "田中 悠菜 ベンチプレス"
+      ],
+      "promotionRecommendation": "Do not promote. No official/high-trust row-level result or earlier same-athlete history was confirmed in this run."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "No confirmed prior histories were found for Lot 46-50 from accessible official/high-trust sources in this run. Row-level HPA D/E PDF extraction was not available, so this batch avoids inventing attempt data, placements, or achievements.",
+    "safeNextStep": "Continue with Lot 51-55 if row-level PDF extraction is available, or perform a focused PDF extraction pass for HPA D/E before promoting any current-event results."
+  }
+}
