@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "updatedAt": "2026-06-29",
+    "sourcePolicy": "Official HPA/JPA sources only. This index records event-level source candidates and must not auto-promote athlete histories into data/database.json.",
+    "layoutLock": "v5.9.6_LOCK",
+    "notes": [
+      "Keep event-level sources separate from athlete master data and confirmed athlete histories.",
+      "Use result PDFs to support event participation/results only after athlete identity is verified.",
+      "Entry lists and schedules are event-entry sources, not confirmed achievement summaries by themselves."
+    ]
+  },
+  "events": [
+    {
+      "id": "2026-04-25-26-hokkaido-spring-power-ebetsu",
+      "status": "official_source_found",
+      "name": "2026春のパワーリフティング選手権大会",
+      "includedChampionships": [
+        "第55回 北海道パワーリフティング選手権大会",
+        "第29回 北海道クラシックパワーリフティング選手権大会",
+        "国民スポーツ大会パワーリフティング公開競技 第12回北海道代表選考会",
+        "全日本高校パワーリフティング選手権大会 第10回北海道予選会",
+        "第39回北海道団体戦"
+      ],
+      "dates": ["2026-04-25", "2026-04-26"],
+      "venue": {
+        "name": "江別市青年センター 体育室",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": true,
+        "hasOutline": true,
+        "hasEntryRoster": true,
+        "hasSchedule": true,
+        "hasResultPdf": true,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "hpa_home_section",
+          "title": "北海道パワーリフティング協会HP 2026年4月25日-26日 江別市青年センター掲載欄",
+          "url": "https://h-power.sakura.ne.jp/",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "program_pdf",
+          "title": "2026春のパワーリフティング選手権大会 大会プログラム",
+          "url": "https://h-power.sakura.ne.jp/2026haru_hokkaido_cut.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "outline_pdf",
+          "title": "2026春のパワーリフティング選手権大会 開催要項",
+          "url": "https://h-power.sakura.ne.jp/2026haruyoukou0224.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "entry_pdf",
+          "title": "2026春のパワーリフティング選手権大会 エントリー",
+          "url": "https://h-power.sakura.ne.jp/2026haru_entry.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "result_pdf",
+          "title": "2026春のパワーリフティング選手権大会 大会結果",
+          "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+          "observedAt": "2026-06-29"
+        }
+      ],
+      "promotionGuardrails": [
+        "Do not add athlete histories automatically from this event index.",
+        "Before promoting a result row to data/database.json, match athlete name, division/class, date, event, and source PDF row.",
+        "Records marked in result PDFs require separate record-table verification before being summarized as record-holder achievements."
+      ]
+    },
+    {
+      "id": "2026-06-21-hokkaido-summer-bench-numata",
+      "status": "official_source_found",
+      "name": "2026夏のベンチ大会",
+      "includedChampionships": [
+        "第36回 北海道ベンチプレス選手権大会",
+        "第30回 北海道クラシックベンチプレス選手権大会"
+      ],
+      "dates": ["2026-06-21"],
+      "venue": {
+        "name": "沼田町民会館",
+        "city": "沼田町",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": true,
+        "hasOutline": true,
+        "hasEntryRoster": true,
+        "hasSchedule": true,
+        "hasResultPdf": true,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "hpa_home_section",
+          "title": "北海道パワーリフティング協会HP 2026年6月21日 沼田町民会館掲載欄",
+          "url": "https://h-power.sakura.ne.jp/",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "program_pdf",
+          "title": "2026夏のベンチ大会 大会プログラム",
+          "url": "https://h-power.sakura.ne.jp/2026hokkaido_natu.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "outline_pdf",
+          "title": "2026夏のベンチ大会 開催要項",
+          "url": "https://h-power.sakura.ne.jp/2026_natuyoukouz.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "entry_pdf",
+          "title": "2026夏のベンチ大会 エントリー",
+          "url": "https://h-power.sakura.ne.jp/2026natu_entry.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "schedule_pdf",
+          "title": "2026夏のベンチ大会 スケジュール",
+          "url": "https://h-power.sakura.ne.jp/2026natu_sche.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "result_pdf",
+          "title": "2026夏のベンチ大会 速報 A/B/C",
+          "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "result_pdf",
+          "title": "2026夏のベンチ大会 速報 D/E",
+          "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "result_pdf",
+          "title": "2026夏のベンチ大会 速報 F/G",
+          "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+          "observedAt": "2026-06-29"
+        }
+      ],
+      "promotionGuardrails": [
+        "Existing Lot1-100 roster data stays in data/database.json; this event-index only records official source locations.",
+        "Use this event as the canonical event container for future event-mode search and PDF-backed athlete row verification.",
+        "速報PDFの新記録表示は整理中の注記があるため、記録保持者要約へ昇格する前に北海道記録表で再確認する。"
+      ]
+    },
+    {
+      "id": "2026-10-17-18-hokkaido-autumn-power-asahikawa",
+      "status": "planned_official_calendar_only",
+      "name": "2026秋の北海道パワーリフティング大会",
+      "includedChampionships": [
+        "第56回 北海道パワーリフティング選手権大会",
+        "第30回 北海道クラシックパワーリフティング選手権大会"
+      ],
+      "dates": ["2026-10-17", "2026-10-18"],
+      "venue": {
+        "name": "大成市民センター",
+        "city": "旭川市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_plan_pdf",
+          "title": "2026年度 北海道協会主催大会等 事業計画",
+          "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "business_plan_pdf",
+          "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "observedAt": "2026-06-29"
+        }
+      ],
+      "promotionGuardrails": [
+        "Calendar-only event: do not create athlete entries until HPA publishes outline/entry/program/result sources.",
+        "Use as a future watch target for HPA Event Watch."
+      ]
+    },
+    {
+      "id": "2026-11-15-hokkaido-tohoku-block-bench-toyako",
+      "status": "planned_official_calendar_only",
+      "name": "第4回 北海道・東北ブロック ベンチプレス選手権大会",
+      "includedChampionships": [
+        "第4回 北海道・東北ブロック ベンチプレス選手権大会"
+      ],
+      "dates": ["2026-11-15"],
+      "venue": {
+        "name": "洞爺湖町文化センター",
+        "city": "洞爺湖町",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_plan_pdf",
+          "title": "2026年度 北海道協会主催大会等 事業計画",
+          "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+          "observedAt": "2026-06-29"
+        }
+      ],
+      "promotionGuardrails": [
+        "Calendar-only event: do not create athlete entries until HPA publishes outline/entry/program/result sources.",
+        "Use as a future watch target for HPA Event Watch."
+      ]
+    }
+  ]
+}
