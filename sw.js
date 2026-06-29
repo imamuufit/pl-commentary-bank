@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pl-commentary-bank-v0.1.4';
+const CACHE_NAME = 'pl-commentary-bank-v0.1.3';
 const ASSETS = [
   './',
   './index.html',
