@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "purpose": "Small-batch research log for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, and same-event current rows stay outside data/database.json. Do not infer achievements from name similarity."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [71, 72, 73, 74, 75],
+    "processedAthletes": [
+      "石川 匠",
+      "村井 寿徳",
+      "宇野 颯",
+      "古河 尚幸",
+      "千葉 雄太"
+    ],
+    "primarySourcesChecked": [
+      "data/database.json roster skeleton on main for Lot 71-75",
+      "HPA 2026 Numata Bench Press D/E result PDF locator from prior batch logs",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF",
+      "Web exact-name searches scoped to HPA/high-trust result terms"
+    ],
+    "openPrCheck": "No open Numata athlete research PRs were found before this batch. This continues after Lot 66-70.",
+    "writeScope": "Research log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-de-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 D/Eグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "Locator reused from prior batch logs. Row-level extraction for Lot 71-75 was not completed in this run, so no current-event result rows are asserted."
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25/2026-04-26",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "Opened and searched for exact-name prior-history matches. No exact matches for Lot 71-75 were found in this official PDF during this run."
+    },
+    {
+      "sourceId": "src-web-exact-name-search-20260630-lot71-75",
+      "title": "Exact-name web searches for Lot 71-75 athlete histories",
+      "url": "search-only-no-single-result-url",
+      "sourceType": "Search audit",
+      "checkedAt": "2026-06-30",
+      "rowLevelExtractionStatus": "Exact-name searches for HPA/powerlifting/bench press terms returned no promotable official or high-trust history for the five athletes in this run."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "E-71-ishikawa-takumi",
+      "lot": 71,
+      "playerName": "石川 匠",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 71 identity. Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. External exact-name web searches did not return a promotable official/high-trust result."
+    },
+    {
+      "playerId": "E-72-murai-toshinori",
+      "lot": 72,
+      "playerName": "村井 寿徳",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 72 identity. Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. External exact-name web searches did not return a promotable official/high-trust result. A different official-PDF row for 村井 功弥 exists, but this is a different name and was not treated as a candidate for 村井 寿徳."
+    },
+    {
+      "playerId": "E-73-uno-hayate",
+      "lot": 73,
+      "playerName": "宇野 颯",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 73 identity. Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. External exact-name web searches did not return a promotable official/high-trust result."
+    },
+    {
+      "playerId": "E-74-furukawa-naoyuki",
+      "lot": 74,
+      "playerName": "古河 尚幸",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 74 identity. Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. External exact-name web searches did not return a promotable official/high-trust result."
+    },
+    {
+      "playerId": "E-75-chiba-yuuta",
+      "lot": 75,
+      "playerName": "千葉 雄太",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 75 identity. Exact-name search in the 2026 Spring Ebetsu CLPL official PDF returned no match. External exact-name web searches did not return a promotable official/high-trust result. A different official-PDF row for 千葉 洋介 exists, but this is a different name and was not treated as a candidate for 千葉 雄太."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "No prior domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench press histories were confirmed from official/high-trust sources for Lot 71-75 in this run. Current-event Numata rows were not asserted without row-level extraction.",
+    "safeNextStep": "Continue with Lot 76-80, or separately perform row-level extraction of the HPA 2026 Numata D/E速報 PDF before adding current-event result rows."
+  }
+}
