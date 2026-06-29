@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "updatedAt": "2026-06-30",
+    "sourcePolicy": "Official HPA/JPA sources only. This file records 2012 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
+    "layoutLock": "v5.9.6_LOCK",
+    "notes": [
+      "Temporary 2012 official-source candidate addendum for HPA Event Watch.",
+      "Keep separate from athlete master data, confirmed athlete histories, event entries, and research candidates.",
+      "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion.",
+      "2012 source pages are historical official result PDFs; program, outline, entry roster, schedule, live速報, and YouTube links were not promoted unless separately confirmed."
+    ]
+  },
+  "events": [
+    {
+      "id": "2012-04-15-spring-hokkaido-power-and-bench-tomakomai",
+      "status": "official_result_pdf_found",
+      "name": "春季北海道パワーリフティング選手権大会／第4回春季ノーギア北海道パワーリフティング選手権大会／春季北海道ベンチプレス選手権大会／第8回春季ノーギア北海道ベンチプレス選手権大会",
+      "includedChampionships": [
+        "春季北海道パワーリフティング選手権大会",
+        "第4回春季ノーギア北海道パワーリフティング選手権大会",
+        "春季北海道ベンチプレス選手権大会",
+        "第8回春季ノーギア北海道ベンチプレス選手権大会"
+      ],
+      "dates": ["2012-04-15"],
+      "venue": {
+        "name": "苫小牧市総合体育館",
+        "city": "苫小牧市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2012年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2012.pdf",
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF pages for spring powerlifting and bench press groups state 2012年4月15日 and 会場 苫小牧市総合体育館."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not create athlete histories from this file without row-level verification.",
+        "Powerlifting and bench-only rows must remain distinct when a future importer reads this source.",
+        "Do not infer athlete progression comments from this addendum alone."
+      ]
+    },
+    {
+      "id": "2012-07-15-hokkaido-bench-otaru",
+      "status": "official_result_pdf_found",
+      "name": "第22回 北海道ベンチプレス選手権大会／第16回 ノーギア北海道ベンチプレス選手権大会",
+      "includedChampionships": [
+        "第22回 北海道ベンチプレス選手権大会",
+        "第16回 ノーギア北海道ベンチプレス選手権大会"
+      ],
+      "dates": ["2012-07-15"],
+      "venue": {
+        "name": "小樽市総合体育館",
+        "city": "小樽市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2012年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2012.pdf",
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF pages for 第22回北海道ベンチプレス選手権大会 and 第16回ノーギア北海道ベンチプレス選手権大会 state 2012年7月15日 and 会場 小樽市総合体育館."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not promote athlete rows into confirmed histories without matching athlete identity, category/class, event date, and PDF row.",
+        "Bench-only results are not interchangeable with three-lift histories unless the consuming feature explicitly handles event type.",
+        "Do not infer athlete progression comments from this addendum alone."
+      ]
+    },
+    {
+      "id": "2012-10-07-hokkaido-no-gear-power-nayoro",
+      "status": "official_result_pdf_found",
+      "name": "第15回 ノーギア北海道パワーリフティング選手権大会",
+      "includedChampionships": [
+        "第15回 ノーギア北海道パワーリフティング選手権大会"
+      ],
+      "dates": ["2012-10-07"],
+      "venue": {
+        "name": "名寄市スポーツセンター",
+        "city": "名寄市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2012年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2012.pdf",
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF page for 第15回ノーギア北海道パワーリフティング選手権大会 states 2012年10月7日 and 会場 名寄市スポーツセンター."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not promote athlete rows into confirmed histories without matching athlete identity, category/class, event date, and PDF row.",
+        "No-gear/classic rows must not be merged with equipped/open rows unless future source confirmation explicitly supports it.",
+        "Do not infer athlete progression comments from this addendum alone."
+      ]
+    },
+    {
+      "id": "2012-10-07-autumn-hokkaido-power-nayoro",
+      "status": "official_result_pdf_found",
+      "name": "第30回 秋季北海道パワーリフティング選手権大会",
+      "includedChampionships": [
+        "第30回 秋季北海道パワーリフティング選手権大会"
+      ],
+      "dates": ["2012-10-07"],
+      "venue": {
+        "name": "名寄市スポーツセンター",
+        "city": "名寄市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2012年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2012.pdf",
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF page for 第30回秋季北海道パワーリフティング選手権大会 states 2012年10月7日 and 会場 名寄市スポーツセンター."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not promote athlete rows into confirmed histories without matching athlete identity, category/class, event date, and PDF row.",
+        "Autumn equipped/open powerlifting rows must remain distinct from same-date no-gear/classic rows.",
+        "Do not infer athlete progression comments from this addendum alone."
+      ]
+    }
+  ]
+}
