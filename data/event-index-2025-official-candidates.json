@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "updatedAt": "2026-06-29",
+    "sourcePolicy": "Official HPA/JPA sources only. This file records 2025 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
+    "layoutLock": "v5.9.6_LOCK",
+    "notes": [
+      "Temporary 2025 official-source candidate addendum for HPA Event Watch.",
+      "Keep separate from athlete master data, confirmed athlete histories, and research candidates.",
+      "Entry lists and schedules are event-entry sources, not confirmed achievement summaries by themselves."
+    ]
+  },
+  "events": [
+    {
+      "id": "2025-10-18-19-hokkaido-autumn-power-ebetsu",
+      "status": "official_source_found",
+      "name": "2025秋のパワーリフティング選手権大会",
+      "includedChampionships": [
+        "第54回 北海道パワーリフティング選手権大会",
+        "第28回 北海道クラシックパワーリフティング選手権大会"
+      ],
+      "dates": ["2025-10-18", "2025-10-19"],
+      "venue": {
+        "name": "江別市青年センター 体育室",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": true,
+        "hasEntryRoster": true,
+        "hasSchedule": true,
+        "hasResultPdf": true,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "hpa_home_section",
+          "title": "北海道パワーリフティング協会HP 2025年10月18日-19日 江別市青年センター掲載欄",
+          "url": "https://h-power.sakura.ne.jp/",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "outline_pdf",
+          "title": "2025秋のパワーリフティング選手権大会 開催要項",
+          "url": "https://h-power.sakura.ne.jp/youkou2025aki.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "entry_pdf",
+          "title": "2025秋のパワーリフティング選手権大会 エントリーグループ分け表",
+          "url": "https://h-power.sakura.ne.jp/2025aki_group1.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "schedule_pdf",
+          "title": "2025秋のパワーリフティング選手権大会 スケジュール",
+          "url": "https://h-power.sakura.ne.jp/2025aki_sche.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "result_pdf",
+          "title": "2025秋のパワーリフティング選手権大会 大会結果",
+          "url": "https://h-power.sakura.ne.jp/2025result.pdf",
+          "observedAt": "2026-06-29"
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this event-index entry only as an official source locator.",
+        "Do not promote entry rows or result rows into confirmed athlete histories without matching athlete identity, category, class, date, and PDF row.",
+        "Keep this separate from data/database.json and research candidates."
+      ]
+    },
+    {
+      "id": "2025-11-16-hokkaido-tohoku-block-bench-toyako",
+      "status": "official_source_found",
+      "name": "第3回 北海道・東北ブロック ベンチプレス選手権大会",
+      "includedChampionships": [
+        "第3回 北海道・東北ブロック ベンチプレス選手権大会"
+      ],
+      "dates": ["2025-11-16"],
+      "venue": {
+        "name": "洞爺湖文化センター",
+        "city": "洞爺湖町",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": true,
+        "hasEntryRoster": true,
+        "hasSchedule": true,
+        "hasResultPdf": true,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "hpa_home_section",
+          "title": "北海道パワーリフティング協会HP 2025年11月16日 洞爺湖文化センター掲載欄",
+          "url": "https://h-power.sakura.ne.jp/",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "outline_pdf",
+          "title": "第3回 北海道・東北ブロック ベンチプレス選手権大会 開催要項",
+          "url": "https://h-power.sakura.ne.jp/2025block_b_youkou.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "entry_pdf",
+          "title": "第3回 北海道・東北ブロック ベンチプレス選手権大会 エントリー表",
+          "url": "https://h-power.sakura.ne.jp/2025touyagroup.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "schedule_pdf",
+          "title": "第3回 北海道・東北ブロック ベンチプレス選手権大会 スケジュール",
+          "url": "https://h-power.sakura.ne.jp/2025touyashc.pdf",
+          "observedAt": "2026-06-29"
+        },
+        {
+          "type": "result_pdf",
+          "title": "第3回 北海道・東北ブロック ベンチプレス選手権大会 大会結果",
+          "url": "https://h-power.sakura.ne.jp/hokkaidoudouhokuburokku_bench_20251116z.pdf",
+          "observedAt": "2026-06-29"
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this event-index entry only as an official source locator.",
+        "Do not promote entry rows or result rows into confirmed athlete histories without matching athlete identity, category, class, date, and PDF row.",
+        "Keep this separate from data/database.json and research candidates."
+      ]
+    }
+  ]
+}
