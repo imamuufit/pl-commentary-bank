@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "updatedAt": "2026-06-29",
+    "sourcePolicy": "Official HPA/JPA sources only. This file records 2020 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
+    "layoutLock": "v5.9.6_LOCK",
+    "notes": [
+      "Temporary 2020 official-source candidate addendum for HPA Event Watch.",
+      "Keep separate from athlete master data, confirmed athlete histories, and research candidates.",
+      "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion.",
+      "2020 source pages are historical official result PDFs; program, outline, entry roster, schedule, live速報, and YouTube links were not promoted unless separately confirmed."
+    ]
+  },
+  "events": [
+    {
+      "id": "2020-09-20-hokkaido-bench-ebetsu",
+      "status": "official_result_pdf_found",
+      "name": "第30回 北海道ベンチプレス選手権大会",
+      "includedChampionships": [
+        "第30回 北海道ベンチプレス選手権大会（フルギア）",
+        "第24回 北海道クラシックベンチプレス選手権大会"
+      ],
+      "dates": ["2020-09-20"],
+      "venue": {
+        "name": "江別市民体育館",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2020年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2020.pdf",
+          "observedAt": "2026-06-29",
+          "evidenceLines": "HPA top page year navigation links 2020 to 2020.pdf. PDF pages for 第30回北海道ベンチプレス選手権大会 and 第24回北海道クラシックベンチプレス選手権大会 state 2020年9月20日 and 会場 江別市民体育館."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Bench-only results are not interchangeable with three-lift histories unless the consuming feature explicitly handles event type.",
+        "Do not create athlete histories from this file without row-level verification.",
+        "Equipped and classic bench labels must remain distinct in any future importer."
+      ]
+    },
+    {
+      "id": "2020-10-24-25-hokkaido-autumn-power-ebetsu",
+      "status": "official_result_pdf_found",
+      "name": "2020年度 秋季北海道パワーリフティング選手権大会",
+      "includedChampionships": [
+        "第23回 北海道クラシックパワーリフティング選手権大会",
+        "第49回 北海道パワーリフティング選手権大会（フルギア）"
+      ],
+      "dates": ["2020-10-24", "2020-10-25"],
+      "venue": {
+        "name": "江別市民体育館",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasPreliminaryResults": false,
+        "hasYoutubeLivestream": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "annual_result_pdf",
+          "title": "2020年北海道協会大会結果PDF",
+          "url": "https://h-power.sakura.ne.jp/2020.pdf",
+          "observedAt": "2026-06-29",
+          "evidenceLines": "PDF pages for 2020年度 秋季北海道パワーリフティング選手権大会 state 2020年10月24日-25日 and 会場 江別市民体育館. The result block labels include 第23回北海道クラシックパワーリフティング選手権大会 and 第49回北海道男子（フルギア）."
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this entry only as an official event source locator.",
+        "Do not promote athlete rows into confirmed histories without matching athlete identity, category/class, event date, and PDF row.",
+        "Keep equipped and classic divisions distinct when a future importer reads this source.",
+        "Do not infer athlete progression comments from this addendum alone."
+      ]
+    }
+  ]
+}
