@@ -38,6 +38,9 @@ requireIncludes(helperText, '未確認候補からは推測しません', 'src/e
 requireIncludes(helperText, 'function athletePages()', 'src/event-relative-history.js', 'must process every athlete print page, not only the first page');
 requireIncludes(helperText, 'pages.forEach((page) => applyPageRelativeHistory(page, database, baseDate))', 'src/event-relative-history.js', 'must apply relative histories page-by-page');
 requireIncludes(helperText, 'function infoBlocks(page)', 'src/event-relative-history.js', 'must scope info block updates to each athlete page');
+requireIncludes(helperText, 'function playerFromPage(database, page)', 'src/event-relative-history.js', 'must resolve the athlete for each page before applying event-relative history');
+requireIncludes(helperText, "title.match(/^\\s*([A-Z])\\.Lot\\s*\\d+/)?.[1]", 'src/event-relative-history.js', 'must read the fixed-layout group letter from the page header');
+requireIncludes(helperText, 'if (group && String(player.group) !== group) return false', 'src/event-relative-history.js', 'must avoid matching same-lot athletes from another group');
 requireIncludes(helperText, 'function confirmedProgress(pair)', 'src/event-relative-history.js', 'must keep confirmed numeric progress generation isolated');
 requireIncludes(helperText, "deltaLine('SQ', previousPrevious.sqBest, previous.sqBest)", 'src/event-relative-history.js', 'must only compare confirmed SQ values from the selected two histories');
 requireIncludes(helperText, "deltaLine('BP', previousPrevious.bpBest, previous.bpBest)", 'src/event-relative-history.js', 'must only compare confirmed BP values from the selected two histories');
