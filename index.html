@@ -25,9 +25,18 @@
   <main class="shell">
     <aside class="side no-print">
       <section class="panel">
-        <h2>選手</h2>
+        <h2>大会検索</h2>
+        <label for="eventSearch">どの大会について調べますか</label>
+        <input id="eventSearch" type="search" placeholder="大会名・開催地・年">
+        <button id="openEventBtn" type="button">大会出場者を表示</button>
+        <p id="eventSearchHint" class="muted"></p>
+        <h2>大会出場者</h2>
         <input id="search" type="search" placeholder="氏名・フリガナ・所属・階級">
         <ol id="playerList"></ol>
+      </section>
+      <section class="panel">
+        <h2>選手名簿</h2>
+        <div id="playerMasterRoster"></div>
       </section>
       <section class="panel">
         <h2>選手編集</h2>
