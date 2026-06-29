@@ -35,6 +35,8 @@ requireIncludes(helperText, 'const pair = histories.slice(-2)', 'src/event-relat
 requireIncludes(helperText, "blocks['前々回→前回']", 'src/event-relative-history.js', 'must update the existing 前々回→前回 block without changing layout markup');
 requireIncludes(helperText, "blocks['推移コメント']", 'src/event-relative-history.js', 'must keep progress output conservative in the existing block');
 requireIncludes(helperText, '未確認候補からは推測しません', 'src/event-relative-history.js', 'must explicitly avoid inference from unverified candidates');
+requireIncludes(helperText, 'これは評価コメントではありません', 'src/event-relative-history.js', 'progress text must remain a neutral numeric supplement, not an assertive coaching or story comment');
+requireIncludes(helperText, '機械的な数値差分・伸び率', 'src/event-relative-history.js', 'progress wording must describe confirmed numeric deltas as mechanical supplements');
 requireIncludes(helperText, 'function athletePages()', 'src/event-relative-history.js', 'must process every athlete print page, not only the first page');
 requireIncludes(helperText, 'pages.forEach((page) => applyPageRelativeHistory(page, database, baseDate))', 'src/event-relative-history.js', 'must apply relative histories page-by-page');
 requireIncludes(helperText, 'function infoBlocks(page)', 'src/event-relative-history.js', 'must scope info block updates to each athlete page');
