@@ -73,13 +73,21 @@
     return match ? Number(match[0]) : null;
   }
 
+  function progressRate(before, after) {
+    if (!Number.isFinite(before) || !Number.isFinite(after) || before <= 0) return null;
+    const rate = Number((((after - before) / before) * 100).toFixed(1));
+    if (rate === 0) return '0%';
+    return `${rate > 0 ? '+' : ''}${rate}%`;
+  }
+
   function deltaLine(label, beforeValue, afterValue) {
     const before = numberValue(beforeValue);
     const after = numberValue(afterValue);
     if (!Number.isFinite(before) || !Number.isFinite(after)) return null;
     const delta = Number((after - before).toFixed(1));
-    if (delta === 0) return `${label}±0kg`;
-    return `${label}${delta > 0 ? '+' : ''}${delta}kg`;
+    const rate = progressRate(before, after);
+    const deltaText = delta === 0 ? '±0kg' : `${delta > 0 ? '+' : ''}${delta}kg`;
+    return `${label}${deltaText}${rate ? `（${rate}）` : ''}`;
   }
 
   function confirmedProgress(pair) {
@@ -93,7 +101,7 @@
     if (!lines.length) {
       return '大会基準日より前の確認済み出場歴2件を自動抽出しました。数値差分は確認済み重量が揃った種目のみ表示します。未確認候補からは推測しません。';
     }
-    return `確認済み2大会の数値差分：${lines.join(' / ')}。数値が揃った種目のみ表示しています。未確認候補からは推測しません。`;
+    return `確認済み2大会の数値差分・伸び率：${lines.join(' / ')}。数値が揃った種目のみ表示しています。未確認候補からは推測しません。`;
   }
 
   function relativeHistory(player, baseDate) {

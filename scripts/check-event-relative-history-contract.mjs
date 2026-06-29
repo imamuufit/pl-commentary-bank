@@ -40,6 +40,9 @@ requireIncludes(helperText, "deltaLine('BP', previousPrevious.bpBest, previous.b
 requireIncludes(helperText, "deltaLine('DL', previousPrevious.dlBest, previous.dlBest)", 'src/event-relative-history.js', 'must only compare confirmed DL values from the selected two histories');
 requireIncludes(helperText, "deltaLine('T', previousPrevious.total, previous.total)", 'src/event-relative-history.js', 'must only compare confirmed total values from the selected two histories');
 requireIncludes(helperText, '数値が揃った種目のみ表示しています', 'src/event-relative-history.js', 'must avoid filling missing numeric deltas by inference');
+requireIncludes(helperText, 'function progressRate(before, after)', 'src/event-relative-history.js', 'must isolate percentage progress calculation');
+requireIncludes(helperText, 'before <= 0', 'src/event-relative-history.js', 'must not calculate progress rate from invalid or zero baseline values');
+requireIncludes(helperText, '数値差分・伸び率', 'src/event-relative-history.js', 'must display progress rates only as confirmed numeric supplements');
 requireNotIncludes(helperText, 'research-candidates', 'src/event-relative-history.js', 'must not read research candidate data for event-relative display');
 requireNotIncludes(helperText, 'researchDb', 'src/event-relative-history.js', 'must not depend on candidate workspace state');
 requireNotIncludes(helperText, 'document.createElement', 'src/event-relative-history.js', 'must not create new print layout sections');
