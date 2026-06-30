@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "runId": "candidate-sweep-run23",
+    "date": "2026-06-30",
+    "scope": "Small-batch candidate recheck after Lot 1-100 coverage",
+    "layoutTemplate": "v5.9.6_LOCK",
+    "databaseUpdated": false,
+    "researchCandidatesUpdated": false,
+    "note": "A4 print layout files were intentionally not touched. Confirmed histories were not promoted because no new official/high-trust source established athlete identity beyond the existing candidate records."
+  },
+  "processedAthletes": [
+    {
+      "lot": 13,
+      "playerId": "A-13-taniguchi-takahito",
+      "playerName": "谷口 孝仁",
+      "action": "candidate recheck",
+      "confirmedPromotions": [],
+      "candidateDisposition": "existing candidate retained",
+      "summary": "Existing HPA 2011 and 2012 official PDF candidate rows remain useful, but no additional official/high-trust source found in this run confirms that those rows are the same athlete as 2026 Numata Lot 13. No database promotion.",
+      "sourcesChecked": [
+        {
+          "label": "Existing candidate source: HPA official annual result PDF 2011",
+          "url": "https://h-power.sakura.ne.jp/2011.pdf",
+          "result": "Existing candidate row: 2011-07-17 第15回ノーギア北海道ベンチプレス選手権大会 / 男子C 66Kg級 / 谷口 孝仁 / 十勝協会 / BP best 132.5 / 1位. Same-person link to 2026 Lot 13 remains unconfirmed."
+        },
+        {
+          "label": "Existing candidate source: HPA official annual result PDF 2012",
+          "url": "https://h-power.sakura.ne.jp/2012.pdf",
+          "result": "Existing candidate row: 2012-04-15 春季北海道ベンチプレス選手権大会 / 男子66Kg級 / 谷口 孝仁 / 十勝協会 / BP best 130.0 / 3位. Same-person link to 2026 Lot 13 remains unconfirmed."
+        },
+        {
+          "label": "web search: 谷口 孝仁 ベンチプレス パワーリフティング 北海道",
+          "result": "no new reliable athlete-history match found"
+        },
+        {
+          "label": "web search: exact phrase 谷口 孝仁 ベンチプレス",
+          "result": "no new reliable athlete-history match found"
+        },
+        {
+          "label": "web search: Takahito Taniguchi powerlifting",
+          "result": "irrelevant non-powerlifting results only; not used"
+        }
+      ]
+    },
+    {
+      "lot": 52,
+      "playerId": "D-52-houri-momoka",
+      "playerName": "宝利 桃華",
+      "action": "candidate recheck",
+      "confirmedPromotions": [],
+      "candidateDisposition": "existing candidate retained",
+      "summary": "Exact-name and English-name searches did not return a promotable official/high-trust result in this run. Existing candidate remains unresolved; no database promotion and no new row added.",
+      "sourcesChecked": [
+        {
+          "label": "web search: 宝利 桃華 パワーリフティング",
+          "result": "no results found"
+        },
+        {
+          "label": "web search: 宝利桃華 ベンチプレス",
+          "result": "no results found"
+        },
+        {
+          "label": "web search: 宝利 桃華 h-power",
+          "result": "no results found"
+        },
+        {
+          "label": "web search: Momoka Hori powerlifting",
+          "result": "no results found"
+        }
+      ]
+    }
+  ],
+  "confirmedRowsAddedToDatabase": [],
+  "candidateRowsAddedOrChanged": [],
+  "doNotInferNotes": [
+    "HPA official PDF candidate rows are not treated as confirmed 2026 athlete history unless same-person identity is established from official or high-trust sources.",
+    "No domestic, national, international/world, three-lift, or single-bench history was invented or inferred.",
+    "v5.9.6_LOCK A4 print layout was preserved."
+  ]
+}
