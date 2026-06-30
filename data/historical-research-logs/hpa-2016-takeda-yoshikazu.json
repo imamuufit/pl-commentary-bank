@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "purpose": "Historical HPA row-level research log. This file is not a confirmed athlete history source of truth and must not mutate data/database.json automatically.",
+    "updatedAt": "2026-06-30",
+    "layoutTemplateProtected": "v5.9.6_LOCK",
+    "promotionPolicy": "Do not promote these rows into data/database.json unless identity, class/category, event date, event type, and official PDF row are unambiguous."
+  },
+  "source": {
+    "publisher": "北海道パワーリフティング協会",
+    "sourceType": "official annual result PDF",
+    "sourceUrl": "https://h-power.sakura.ne.jp/2016.pdf",
+    "sourceLabel": "HPA official annual result PDF 2016",
+    "checkedAt": "2026-06-30"
+  },
+  "processedBatch": {
+    "year": 2016,
+    "eventDate": "2016-05-15",
+    "eventName": "国民体育大会パワーリフティング競技 第2回北海道予選会（Bグループ）",
+    "venue": "江別市民体育館",
+    "scope": "one clearly readable three-lift row for 武田 佳和 from the official 2016 HPA PDF",
+    "coreAppPriorityNote": "Secondary historical research only; no app layout or runtime logic was changed."
+  },
+  "rows": [
+    {
+      "playerIdCandidate": "A-9-takeda-yoshikazu",
+      "playerNameCandidate": "武田 佳和",
+      "athleteNameInPdf": "武田 佳和",
+      "sourcePageTextReference": "2016.pdf p.2/P1 text row No.17 from PDF extraction",
+      "eventDate": "2016-05-15",
+      "eventName": "国民体育大会パワーリフティング競技 第2回北海道予選会（Bグループ）",
+      "venue": "江別市民体育館",
+      "eventType": "三種PL",
+      "equipment": "ノーギア/クラシック扱い候補（PDF大会記号 N大会）",
+      "sex": "男子",
+      "bodyweightClass": "59Kg級",
+      "birthYear": "1975",
+      "team": "名寄協会",
+      "bodyweight": "58.70",
+      "sqAttempts": "100.0 / 120.0 / 130.0",
+      "sqBest": "130.0",
+      "bpAttempts": "95.0 / 105.0 / 110.0",
+      "bpBest": "110.0",
+      "dlAttempts": "130.0 / 150.0 / 160.0",
+      "dlBest": "160.0",
+      "total": "400.0",
+      "place": "2",
+      "formula": "348.12",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2016.pdf",
+      "pdfRowEvidence": "17 59Kg級 武田 佳和 1975 名寄協会 58.70 100.0 120.0 130.0 95.0 105.0 110.0 130.0 150.0 160.0 130.0 ◇ 110.0 160.0 ◇ 400.0 2 348.12",
+      "promotionStatus": "公式PDF行は確認済み。ただし2026沼田Lot9本人との同一人物性、階級推移、継続所属、個人識別が未照合のため未昇格。",
+      "separationNote": "ベンチ単独履歴ではなく三種PL履歴として扱う。2011-2015の齊藤敬太/谷口孝仁ベンチ候補とは混同しない。"
+    }
+  ],
+  "nonMatches": [
+    {
+      "playerIdCandidate": "C-40-saito-keita",
+      "playerNameCandidate": "齊藤 敬太",
+      "year": 2016,
+      "result": "2016.pdf text extractionで齊藤/齋藤/斉藤/斎藤 敬太の同名一致行を確認できなかったため、この小ロットでは追加しない。"
+    },
+    {
+      "playerIdCandidate": "A-13-taniguchi-takahito",
+      "playerNameCandidate": "谷口 孝仁",
+      "year": 2016,
+      "result": "2016.pdf text extractionで同名一致行を確認できなかったため、この小ロットでは追加しない。谷口 優太の行は別人候補として扱い、流用しない。"
+    }
+  ]
+}
