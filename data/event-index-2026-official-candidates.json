@@ -1,16 +1,167 @@
 {
   "meta": {
-    "version": "0.1.0",
-    "updatedAt": "2026-06-30",
+    "version": "0.1.1",
+    "updatedAt": "2026-07-01",
     "sourcePolicy": "Official HPA/JPA sources only. This file records 2026 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
     "layoutLock": "v5.9.6_LOCK",
     "notes": [
       "2026 official-source candidate addendum for HPA Event Watch.",
       "Keep separate from athlete master data, confirmed athlete histories, event entries, and research candidates.",
       "Entry lists, programs, schedules, and速報 PDFs are event-entry/result sources, not confirmed athlete achievement summaries by themselves.",
-      "Future events are sourced from the HPA 2026 business plan only until HPA publishes event-specific outline, entry, schedule, program, or result pages."
+      "Future events are sourced from HPA year-level plan/business-plan sources only until HPA publishes event-specific outline, entry, schedule, program, or result pages.",
+      "The 2026 HPA corporate business plan is recorded as an annual planning locator only; do not treat related/cooperation items as confirmed athlete histories."
     ]
   },
+  "annualSources": [
+    {
+      "type": "year_navigation_page",
+      "title": "北海道パワーリフティング協会HP 2026日程リンクを含む年次ナビゲーション",
+      "url": "https://h-power.sakura.ne.jp/",
+      "observedAt": "2026-07-01"
+    },
+    {
+      "type": "year_plan_pdf",
+      "title": "2026年度（北海道協会主催大会等）事業計画",
+      "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+      "observedAt": "2026-07-01"
+    },
+    {
+      "type": "corporate_business_plan_pdf",
+      "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+      "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+      "observedAt": "2026-07-01"
+    }
+  ],
+  "relatedOfficialPlanItems": [
+    {
+      "id": "2026-06-07-hokkaido-tohoku-block-selected-powerlifting-plan-item",
+      "status": "annual_business_plan_related_item_only",
+      "year": 2026,
+      "name": "北海道・東北ブロック選抜パワーリフティング選手権大会",
+      "dates": ["2026-06-07"],
+      "venue": null,
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": false,
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": false,
+        "hasYearPlan": true
+      },
+      "sources": [
+        {
+          "type": "corporate_business_plan_pdf",
+          "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "observedAt": "2026-07-01"
+        }
+      ],
+      "promotionGuardrails": [
+        "Related/cooperation plan item only. Do not use for athlete histories or event entries.",
+        "Wait for event-specific outline, entry, schedule, program, or result sources before upgrading status."
+      ]
+    },
+    {
+      "id": "2026-05-31-hokkaido-student-spring-powerlifting-plan-item",
+      "status": "annual_business_plan_related_item_only",
+      "year": 2026,
+      "name": "北海道学生パワーリフティング選手権大会（春季）",
+      "dates": ["2026-05-31"],
+      "venue": null,
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": false,
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": false,
+        "hasYearPlan": true
+      },
+      "sources": [
+        {
+          "type": "corporate_business_plan_pdf",
+          "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "observedAt": "2026-07-01"
+        }
+      ],
+      "promotionGuardrails": [
+        "Related/cooperation plan item only. Do not use for athlete histories or event entries.",
+        "Wait for event-specific outline, entry, schedule, program, or result sources before upgrading status."
+      ]
+    },
+    {
+      "id": "2026-hokkaido-student-autumn-powerlifting-plan-item",
+      "status": "annual_business_plan_related_item_only",
+      "year": 2026,
+      "name": "北海道学生パワーリフティング選手権大会（秋季）",
+      "dates": [],
+      "venue": null,
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": false,
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": false,
+        "hasYearPlan": true
+      },
+      "sources": [
+        {
+          "type": "corporate_business_plan_pdf",
+          "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "observedAt": "2026-07-01"
+        }
+      ],
+      "promotionGuardrails": [
+        "Related/cooperation plan item only; date is not fixed in the current official source.",
+        "Do not use for athlete histories or event entries."
+      ]
+    },
+    {
+      "id": "2026-sapporo-citizen-powerlifting-plan-item",
+      "status": "annual_business_plan_related_item_only",
+      "year": 2026,
+      "name": "札幌市民スポーツ大会パワーリフティング競技",
+      "dates": [],
+      "venue": {
+        "name": "札幌市西区体育館",
+        "city": "札幌市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": false,
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearPlan": true
+      },
+      "sources": [
+        {
+          "type": "corporate_business_plan_pdf",
+          "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "observedAt": "2026-07-01"
+        }
+      ],
+      "promotionGuardrails": [
+        "Related/cooperation plan item only; date is not fixed in the current official source.",
+        "Do not use for athlete histories or event entries."
+      ]
+    }
+  ],
   "events": [
     {
       "id": "2026-04-25-26-hokkaido-spring-power-ebetsu",
@@ -53,6 +204,12 @@
           "title": "2026年度（北海道協会主催大会等）事業計画",
           "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
           "observedAt": "2026-06-30"
+        },
+        {
+          "type": "corporate_business_plan_pdf",
+          "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "observedAt": "2026-07-01"
         },
         {
           "type": "program_pdf",
@@ -144,6 +301,12 @@
           "observedAt": "2026-06-30"
         },
         {
+          "type": "corporate_business_plan_pdf",
+          "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "observedAt": "2026-07-01"
+        },
+        {
           "type": "program_pdf",
           "title": "2026夏のベンチプレス選手権大会 大会プログラム",
           "url": "https://h-power.sakura.ne.jp/2026hokkaido_natu.pdf",
@@ -231,6 +394,12 @@
           "title": "2026年度（北海道協会主催大会等）事業計画",
           "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
           "observedAt": "2026-06-30"
+        },
+        {
+          "type": "corporate_business_plan_pdf",
+          "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "observedAt": "2026-07-01"
         }
       ],
       "promotionGuardrails": [
@@ -269,6 +438,12 @@
           "title": "2026年度（北海道協会主催大会等）事業計画",
           "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
           "observedAt": "2026-06-30"
+        },
+        {
+          "type": "corporate_business_plan_pdf",
+          "title": "令和8年度 事業計画書 一般社団法人北海道パワーリフティング協会",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "observedAt": "2026-07-01"
         }
       ],
       "promotionGuardrails": [
