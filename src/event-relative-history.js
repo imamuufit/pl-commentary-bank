@@ -42,16 +42,27 @@
     return config;
   }
 
+  function isValidDateString(value) {
+    const text = String(value || '');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) return false;
+    const date = new Date(`${text}T00:00:00Z`);
+    return Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === text;
+  }
+
   function eventDate(configJson) {
     const date = configJson?.event?.dateFrom || configJson?.event?.dateTo || configJson?.event?.date || '';
-    return /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : null;
+    return isValidDateString(date) ? date : null;
+  }
+
+  function firstConfirmedSourceId(history) {
+    return (history?.sourceIds || []).find((sourceId) => String(sourceId || '').trim().length > 0) || '';
   }
 
   function historySortKey(history) {
     return [
       String(history?.date || ''),
-      String(history?.competitionName || ''),
-      String(history?.sourceIds?.[0] || '')
+      String(history?.competitionName || '').trim(),
+      String(firstConfirmedSourceId(history))
     ].join('\u0000');
   }
 
@@ -68,7 +79,7 @@
       .filter((history) => history.status === '確認済')
       .filter((history) => hasConfirmedSourceIds(history))
       .filter((history) => hasConfirmedCompetitionIdentity(history))
-      .filter((history) => /^\d{4}-\d{2}-\d{2}$/.test(String(history.date || '')))
+      .filter((history) => isValidDateString(history.date))
       .filter((history) => String(history.date) < baseDate)
       .sort((a, b) => historySortKey(a).localeCompare(historySortKey(b)));
   }
@@ -81,7 +92,7 @@
     if (history.bpBest) parts.push(`BP${history.bpBest}`);
     if (history.dlBest) parts.push(`DL${history.dlBest}`);
     if (history.total) parts.push(`T${history.total}`);
-    return `${history.date} ${history.competitionName}${parts.length ? `｜${parts.join(' / ')}` : ''}`;
+    return `${history.date} ${String(history.competitionName || '').trim()}${parts.length ? `｜${parts.join(' / ')}` : ''}`;
   }
 
   function numberValue(value) {
@@ -124,8 +135,8 @@
   function relativeHistory(player, baseDate) {
     if (!baseDate) {
       return {
-        flow: '履歴不足（大会設定に基準日 dateFrom/dateTo が未設定です）',
-        progress: '大会基準日が未設定のため、推移コメントは未生成です。'
+        flow: '履歴不足（大会設定に基準日 dateFrom/dateTo/date が未設定または不正です）',
+        progress: '大会基準日が未設定または不正なため、推移コメントは未生成です。'
       };
     }
     const histories = confirmedBeforeEvent(player, baseDate);
