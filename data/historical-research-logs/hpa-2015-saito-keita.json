@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "purpose": "Historical HPA row-level research log. This file is not a confirmed athlete history source of truth and must not mutate data/database.json automatically.",
+    "updatedAt": "2026-06-30",
+    "layoutTemplateProtected": "v5.9.6_LOCK",
+    "promotionPolicy": "Do not promote these rows into data/database.json unless identity, class/category, event date, event type, and official PDF row are unambiguous."
+  },
+  "source": {
+    "publisher": "北海道パワーリフティング協会",
+    "sourceType": "official annual result PDF",
+    "sourceUrl": "https://h-power.sakura.ne.jp/2015.pdf",
+    "sourceLabel": "HPA official annual result PDF 2015",
+    "checkedAt": "2026-06-30"
+  },
+  "processedBatch": {
+    "year": 2015,
+    "eventDate": "2015-05-10",
+    "eventName": "第19回 北海道クラシックベンチプレス選手権大会（Dグループ）",
+    "venue": "江別市民体育館",
+    "scope": "one clearly readable bench-only row for 齊藤 敬太 from the official 2015 HPA PDF",
+    "coreAppPriorityNote": "Secondary historical research only; no app layout or runtime logic was changed."
+  },
+  "rows": [
+    {
+      "playerIdCandidate": "C-40-saito-keita",
+      "playerNameCandidate": "齊藤 敬太",
+      "athleteNameInPdf": "齊藤 敬太",
+      "sourcePageTextReference": "2015.pdf p.4 text row / line shown by PDF extraction around row No.49",
+      "eventDate": "2015-05-10",
+      "eventName": "第19回 北海道クラシックベンチプレス選手権大会（Dグループ）",
+      "venue": "江別市民体育館",
+      "eventType": "S-BP",
+      "equipment": "クラシック/ノーギア扱い候補",
+      "sex": "男子",
+      "bodyweightClass": "66Kg級",
+      "birthYear": "1982",
+      "team": "BURST LIMIT",
+      "bodyweight": "65.30",
+      "bpAttempts": "160.0 / 165.0 / 165.0",
+      "bpBest": "160.0",
+      "total": "160.0",
+      "place": "1",
+      "formula": "126.74",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2015.pdf",
+      "pdfRowEvidence": "49 66Kg級 齊藤 敬太 1982 BURST LIMIT 65.30 160.0 165.0 165.0 160.0 160.0 1 126.74",
+      "promotionStatus": "公式PDF行は確認済み。ただし2026沼田Lot40本人との同一人物性、階級推移、継続所属、個人識別が未照合のため未昇格。",
+      "separationNote": "三種PLではなくベンチ単独履歴として扱う。2014第24回北海道BPのエクイップ/オープン扱い候補とは混同しない。"
+    }
+  ],
+  "nonMatches": [
+    {
+      "playerIdCandidate": "A-13-taniguchi-takahito",
+      "playerNameCandidate": "谷口 孝仁",
+      "year": 2015,
+      "result": "2015.pdf text extractionで同名一致行を確認できなかったため、この小ロットでは追加しない。谷口 優太の行は別人候補として扱い、流用しない。"
+    }
+  ]
+}
