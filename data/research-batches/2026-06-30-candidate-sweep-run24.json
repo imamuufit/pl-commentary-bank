@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "runId": "candidate-sweep-run24",
+    "date": "2026-06-30",
+    "scope": "Small-batch candidate recheck after Lot 1-100 coverage",
+    "layoutTemplate": "v5.9.6_LOCK",
+    "databaseUpdated": false,
+    "researchCandidatesUpdated": false,
+    "note": "A4 print layout files were intentionally not touched. Confirmed histories were not promoted because no new official/high-trust source established athlete identity beyond the existing candidate records."
+  },
+  "processedAthletes": [
+    {
+      "lot": 40,
+      "playerId": "C-40-saito-keita",
+      "playerName": "齊藤 敬太",
+      "action": "candidate recheck",
+      "confirmedPromotions": [],
+      "candidateDisposition": "existing candidate retained",
+      "summary": "Existing HPA 2011 and 2012 official PDF candidate rows remain useful, including name variants 齊藤/斎藤/齋藤. However, this run found no additional official/high-trust source confirming that those historical rows are the same athlete as 2026 Numata Lot 40. No database promotion.",
+      "sourcesChecked": [
+        {
+          "label": "Existing candidate source: HPA official annual result PDF 2011",
+          "url": "https://h-power.sakura.ne.jp/2011.pdf",
+          "result": "Existing candidate row: 2011-07-17 第15回ノーギア北海道ベンチプレス選手権大会 / 男子C 66Kg級 / 齊藤 敬太 / 札幌協会 / BP best 120.0 / 2位. Same-person link to 2026 Lot 40 remains unconfirmed."
+        },
+        {
+          "label": "Existing candidate source: HPA official annual result PDF 2012",
+          "url": "https://h-power.sakura.ne.jp/2012.pdf",
+          "result": "Existing candidate rows: 2012-04-15 春季北海道ベンチプレス選手権大会 / 男子66Kg級 / 斎藤 敬太 / BP best 135.0 / 1位, and 2012-07-15 第16回ノーギア北海道ベンチプレス選手権大会 / 男子66Kg級 / 齋藤 敬太 / BP best 142.5 / 1位. Same-person link to 2026 Lot 40 remains unconfirmed."
+        },
+        {
+          "label": "web search: site:h-power.sakura.ne.jp 齊藤 敬太",
+          "result": "no new reliable athlete-history match beyond existing candidate context"
+        },
+        {
+          "label": "web search: site:h-power.sakura.ne.jp 斎藤 敬太 ベンチプレス",
+          "result": "no new reliable athlete-history match beyond existing candidate context"
+        },
+        {
+          "label": "web search: site:japanpowerlifting.org 齊藤 敬太",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: Keita Saito Goodlift powerlifting",
+          "result": "irrelevant non-powerlifting results only; not used"
+        }
+      ]
+    },
+    {
+      "lot": 89,
+      "playerId": "F-89-kitamura-taemi",
+      "playerName": "北村 妙美",
+      "action": "duplicate-risk candidate recheck",
+      "confirmedPromotions": [],
+      "candidateDisposition": "existing duplicate-risk candidate retained",
+      "summary": "The roster/database duplicate-risk note for Lot 56 and Lot 89 remains unresolved. Exact-name and official-site searches did not return a promotable official/high-trust row for Lot 89 or a source that safely reconciles Lot 56 and Lot 89. No database merge or history reuse.",
+      "sourcesChecked": [
+        {
+          "label": "Existing candidate source: data/database.json roster skeleton main",
+          "result": "Lot 56 and Lot 89 share Japanese name, kana, and romanized name; treated as duplicate-risk candidate, not merged."
+        },
+        {
+          "label": "web search: site:h-power.sakura.ne.jp 北村 妙美 ベンチプレス",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: site:japanpowerlifting.org 北村 妙美 ベンチプレス",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: exact phrase 北村 妙美 ベンチプレス",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: Kitamura Taemi powerlifting",
+          "result": "no reliable athlete-history match found"
+        },
+        {
+          "label": "web search: 2026 北村 妙美 S130 B80 337.5",
+          "result": "no independent official/high-trust source found in this run"
+        }
+      ]
+    }
+  ],
+  "confirmedRowsAddedToDatabase": [],
+  "candidateRowsAddedOrChanged": [],
+  "doNotInferNotes": [
+    "Existing HPA official PDF candidate rows are not treated as confirmed 2026 athlete history unless same-person identity is established from official or high-trust sources.",
+    "The Lot 56/Lot 89 北村 妙美 duplicate-risk remains unresolved; no merge, history copy, or inferred achievement was made.",
+    "No domestic, national, international/world, three-lift, or single-bench history was invented or inferred.",
+    "v5.9.6_LOCK A4 print layout was preserved."
+  ]
+}
