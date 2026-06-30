@@ -150,6 +150,7 @@
     "reason": "No candidate row was promoted because same-person identity with 2026 Numata Lot65 remains unresolved."
   },
   "candidateUpdate": {
-    "data/research-candidates.json": "updated in this PR to append candidate-source notes for Lot65 without promoting to database"
+    "data/research-candidates.json": "unchanged",
+    "reason": "Candidate findings were isolated in this batch file to avoid risky full-file replacement of an existing candidate bank through the connector."
   }
 }
