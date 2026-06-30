@@ -1,0 +1,92 @@
+{
+  "batchId": "2026-06-30-lot65-candidate-run29",
+  "createdAt": "2026-06-30",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "65",
+    "athletes": [
+      {
+        "lot": 65,
+        "playerId": "E-65-hosokawa-hirokazu",
+        "name": "細川 広一"
+      }
+    ]
+  },
+  "policy": {
+    "confirmedDestination": "data/database.json",
+    "candidateDestination": "data/research-candidates.json or isolated data/research-batches/*.json when full-file overwrite risk exists",
+    "confirmationRule": "Do not promote same-name official rows unless the 2026 Numata roster athlete identity is reconciled by official/high-trust source evidence.",
+    "layoutLock": "v5.9.6_LOCK preserved; no print layout, CSS, page composition, or report-generator logic touched."
+  },
+  "openPrCheck": {
+    "checkedAt": "2026-06-30",
+    "openPrs": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "assessment": "Non-overlapping: report-generator only; no athlete data mutation."
+      }
+    ]
+  },
+  "sourceChecks": [
+    {
+      "sourceLabel": "HPA official annual result PDF 2022",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2022.pdf",
+      "searches": [
+        "site:h-power.sakura.ne.jp/2022.pdf 細川 広一",
+        "北海道パワーリフティング協会 2022 結果 PDF 細川 広一"
+      ],
+      "result": "No reliable indexed exact-name row was retrieved in this connector-backed run. Direct PDF opening was not available unless the URL appeared in search results, so no row was extracted or promoted."
+    },
+    {
+      "sourceLabel": "HPA official annual result PDF 2023",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2023.pdf",
+      "searches": [
+        "site:h-power.sakura.ne.jp/2023.pdf 細川 広一",
+        "北海道パワーリフティング協会 2023 結果 PDF 細川 広一"
+      ],
+      "result": "No reliable indexed exact-name row was retrieved in this connector-backed run. Direct PDF opening was not available unless the URL appeared in search results, so no row was extracted or promoted."
+    },
+    {
+      "sourceLabel": "HPA official annual result PDF 2024",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2024.pdf",
+      "searches": [
+        "site:h-power.sakura.ne.jp/2024.pdf 細川 広一",
+        "北海道パワーリフティング協会 2024 結果 PDF 細川 広一"
+      ],
+      "result": "No reliable indexed exact-name row was retrieved in this connector-backed run. Direct PDF opening was not available unless the URL appeared in search results, so no row was extracted or promoted."
+    },
+    {
+      "sourceLabel": "HPA official annual result PDF 2025",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2025.pdf",
+      "searches": [
+        "site:h-power.sakura.ne.jp/2025.pdf 細川 広一",
+        "北海道パワーリフティング協会 2025 結果 PDF 細川 広一"
+      ],
+      "result": "No reliable indexed exact-name row was retrieved in this connector-backed run. Direct PDF opening was not available unless the URL appeared in search results, so no row was extracted or promoted."
+    },
+    {
+      "sourceLabel": "JPA / IPF / Goodlift / APF-AAPF oriented web search",
+      "searches": [
+        "細川 広一 パワーリフティング JPA 結果 PDF",
+        "Hosokawa Hirokazu powerlifting Goodlift",
+        "細川広一 ベンチプレス AAPF APF"
+      ],
+      "result": "No official/high-trust promotable match was found in this run."
+    }
+  ],
+  "confirmedRows": [],
+  "candidateRows": [],
+  "disposition": {
+    "databaseJson": "unchanged",
+    "researchCandidatesJson": "unchanged to avoid lossy full-file replacement; no new row was confirmed even as candidate text",
+    "athleteDisposition": [
+      {
+        "lot": 65,
+        "name": "細川 広一",
+        "confirmed": "No new confirmed histories promoted.",
+        "candidate": "Existing 2016 and isolated 2017-2021 HPA same-name candidate findings remain candidates only; 2022-2025 search produced no extractable exact-name row in this run."
+      }
+    ]
+  }
+}
