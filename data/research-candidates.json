@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "0.1.1",
+    "version": "0.1.2",
     "purpose": "未確認候補の一時管理。確認済みになるまで data/database.json へ昇格しない。",
-    "updatedAt": "2026-06-29"
+    "updatedAt": "2026-06-30"
   },
   "candidates": [
     {
@@ -60,6 +60,30 @@
         }
       ],
       "promotionRule": "公式結果PDF、JPA、HPA、IPF/Goodlift等で同一人物性と大会結果が確認できるまで data/database.json へ昇格しない。"
+    },
+    {
+      "playerId": "F-89-kitamura-taemi",
+      "playerName": "北村 妙美",
+      "candidateId": "f89-possible-duplicate-of-d56-kitamura-taemi",
+      "status": "要再確認",
+      "note": "2026 Numata roster skeleton上で Lot 56 と Lot 89 に同じ氏名・カナ・英字名の北村 妙美が存在する。公式Numataエントリー/結果PDFで階級・部門・同一人物性を再照合するまで、Lot 56 の既確認/候補情報を Lot 89 に流用しない。",
+      "searchTerms": ["北村 妙美 ベンチプレス", "北村妙美 パワーリフティング", "Kitamura Taemi bench press", "site:h-power.sakura.ne.jp 北村 妙美"],
+      "lastCheckedAt": "2026-06-30",
+      "checkedSources": [
+        {
+          "label": "data/database.json roster skeleton main",
+          "result": "Lot 56 and Lot 89 share Japanese name, kana, and romanized name; treated as duplicate-risk candidate, not merged."
+        },
+        {
+          "label": "web exact-name search: 北村 妙美 ベンチプレス パワーリフティング",
+          "result": "no new promotable official/high-trust athlete-history row found in this run"
+        },
+        {
+          "label": "HPA 2026 Spring Ebetsu CLPL result context from prior Lot 56 batch",
+          "result": "Lot 56-related Spring Ebetsu history was previously logged, but it is not reused for Lot 89 until official duplicate reconciliation is done."
+        }
+      ],
+      "promotionRule": "公式Numataエントリー/結果PDFでLot 56とLot 89の扱いを確認し、同一人物性・部門・大会行が明確になるまで data/database.json へ統合または履歴流用しない。"
     }
   ]
 }
