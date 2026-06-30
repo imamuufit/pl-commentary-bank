@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "purpose": "Small-batch official/high-trust source audit for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-07-01",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support with athlete identity kept unambiguous. Ambiguous identity, incomplete context, and same-name rows without enough current-roster linkage stay outside data/database.json. Do not infer achievements from name similarity."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [81, 82, 83],
+    "processedAthletes": [
+      "高橋 俊寛",
+      "楠本 ⻯晟",
+      "前田 貴也"
+    ],
+    "reasonForAudit": "Incremental adjacent-lot pass after Lot 79-80 addendum. This run checks a small F-group batch and avoids repeating prior Lot 79-80 work.",
+    "openPrCheck": "Open PR check before this run found only #111, a non-overlapping completion report generator that does not mutate data/database.json, data/research-candidates.json, or A4 print layout.",
+    "writeScope": "Research batch log only. No data/database.json, data/research-candidates.json, app runtime, CSS, generator logic, print template, A4 layout, or v5.9.6_LOCK changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-open-pr-check-20260701-run35",
+      "title": "GitHub open PR check",
+      "sourceType": "Repository state audit",
+      "auditFinding": "Only open PR found: #111 Add Numata completion report generator. Non-overlapping with athlete data mutation and A4 layout."
+    },
+    {
+      "sourceId": "src-web-search-20260701-lot81-83",
+      "title": "High-trust web search sweep for Lot 81-83 names",
+      "sourceType": "Search audit across official/high-trust targets",
+      "queriesChecked": [
+        "\"高橋 俊寛\" パワーリフティング ベンチプレス",
+        "\"高橋俊寛\" \"北海道\" \"ベンチプレス\"",
+        "site:powerlifting-hokkaido.com 高橋 俊寛",
+        "\"楠本 竜晟\" OR \"楠本 ⻯晟\" OR \"楠本竜晟\" パワーリフティング",
+        "site:powerlifting-hokkaido.com 楠本 竜晟 OR 楠本 ⻯晟",
+        "\"前田 貴也\" パワーリフティング ベンチプレス",
+        "site:powerlifting-hokkaido.com 前田 貴也",
+        "site:jpa-powerlifting.or.jp 高橋俊寛 楠本竜晟 前田貴也"
+      ],
+      "auditFinding": "No reliable official/high-trust result rows were located for Lot 81-83 in this narrow pass. General web hits were absent or irrelevant; no candidate row was created from weak search hits."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "F-81-takahashi-toshihiro",
+      "lot": 81,
+      "playerName": "高橋 俊寛",
+      "status": "no-official-row-located-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "auditNotes": "No database promotion. No same-name official/high-trust row was located in the limited official-source sweep performed in this run."
+    },
+    {
+      "playerId": "F-82-kusumoto-ryuusei",
+      "lot": 82,
+      "playerName": "楠本 ⻯晟",
+      "status": "no-official-row-located-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "auditNotes": "No database promotion. Searches included both the roster glyph form ⻯ and the common 竜 variant. No official/high-trust row was located in this narrow pass."
+    },
+    {
+      "playerId": "F-83-maeda-takaya",
+      "lot": 83,
+      "playerName": "前田 貴也",
+      "status": "no-official-row-located-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "auditNotes": "No database promotion. General web search returned irrelevant non-athlete material for similar names; nothing was added as a candidate."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "No official/high-trust confirmed histories were found for Lot 81-83 in this narrow pass. Empty histories are not evidence of no history; they remain simply unconfirmed in the current database.",
+    "safeNextStep": "Continue with Lot 84-85 or perform a targeted official PDF text extraction pass if source PDFs become available locally."
+  }
+}
