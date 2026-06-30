@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "purpose": "Small-batch research log for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, and same-event current rows stay outside data/database.json. Do not infer achievements from name similarity."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [66, 67, 68, 69, 70],
+    "processedAthletes": [
+      "白川 雄太",
+      "森 大一",
+      "中薗 謙史",
+      "石上 修",
+      "矢崎 光康"
+    ],
+    "primarySourcesChecked": [
+      "data/database.json roster skeleton on main for Lot 66-70",
+      "Open PR search for active Numata athlete research work",
+      "HPA 2026 Numata Bench Press D/E result PDF locator from adjacent prior batch logs",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF locator from prior batch logs",
+      "Web exact-name searches scoped to HPA/high-trust result terms",
+      "JPA/IPF/Goodlift/APF-AAPF-oriented exact-name searches"
+    ],
+    "openPrCheck": "One open PR (#111) was present, but it is a standalone completion report generator and does not edit athlete data, candidates, or the A4 print layout. No overlapping open athlete research PR for Lot 66-70 was found.",
+    "writeScope": "Research log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-de-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 D/Eグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "Locator reused from adjacent Lot 71-75 prior batch log. Row-level extraction for Lot 66-70 was not completed in this run, so no current-event result rows are asserted."
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25/2026-04-26",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "Used as prior-history target source family from earlier official-source batches. No exact promotable Lot 66-70 prior-history row was identified in this run."
+    },
+    {
+      "sourceId": "src-web-exact-name-search-20260630-lot66-70",
+      "title": "Exact-name web searches for Lot 66-70 athlete histories",
+      "url": "search-only-no-single-result-url",
+      "sourceType": "Search audit",
+      "checkedAt": "2026-06-30",
+      "rowLevelExtractionStatus": "Exact-name searches for HPA/powerlifting/bench press terms and JPA/IPF/Goodlift/APF-AAPF-oriented terms returned no promotable official or high-trust history for the five athletes in this run."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "E-66-shirakawa-yuuta",
+      "lot": 66,
+      "playerName": "白川 雄太",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 66 identity. External exact-name web searches did not return a promotable official/high-trust domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench press history."
+    },
+    {
+      "playerId": "E-67-mo-taichi",
+      "lot": 67,
+      "playerName": "森 大一",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 67 identity. External exact-name web searches did not return a promotable official/high-trust domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench press history. Note: database playerId romanization is E-67-mo-taichi while Japanese name is 森 大一; this batch does not alter IDs or roster spelling."
+    },
+    {
+      "playerId": "E-68-nakazono-norifumi",
+      "lot": 68,
+      "playerName": "中薗 謙史",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 68 identity. External exact-name web searches did not return a promotable official/high-trust domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench press history."
+    },
+    {
+      "playerId": "E-69-ishigami-osamu",
+      "lot": 69,
+      "playerName": "石上 修",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 69 identity. External exact-name web searches did not return a promotable official/high-trust domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench press history."
+    },
+    {
+      "playerId": "E-70-yazaki-mitsuyasu",
+      "lot": 70,
+      "playerName": "矢崎 光康",
+      "status": "no-prior-history-confirmed-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed Lot 70 identity. External exact-name web searches did not return a promotable official/high-trust domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench press history. Separate Lot 98 has the same Japanese name in the roster; this batch does not merge or infer identity across lots."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "No prior domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench press histories were confirmed from official/high-trust sources for Lot 66-70 in this run. Current-event Numata rows were not asserted without row-level extraction.",
+    "safeNextStep": "Perform row-level extraction of the HPA 2026 Numata D/E速報 PDF before adding current-event result rows, then separately revisit duplicate-name handling for 矢崎 光康 Lot 70 and Lot 98."
+  }
+}
