@@ -1,20 +1,21 @@
 {
   "meta": {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "updatedAt": "2026-06-30",
     "sourcePolicy": "Official HPA/JPA sources only. This file records 2019 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
     "layoutLock": "v5.9.6_LOCK",
     "notes": [
       "Temporary 2019 official-source candidate addendum for HPA Event Watch.",
-      "Keep separate from athlete master data, confirmed athlete histories, and research candidates.",
+      "Keep separate from athlete master data, confirmed athlete histories, event entries, and research candidates.",
       "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion.",
-      "2019 source pages are historical official result PDFs; program, outline, entry roster, schedule, live速報, and YouTube links were not promoted unless separately confirmed."
+      "Source summary flags are aligned with newer event-index candidate files: 2019 currently has only annual official result PDF and venue/date evidence confirmed in this file; outline, entry roster, schedule, program,速報, and YouTube live sources remain unconfirmed."
     ]
   },
   "events": [
     {
       "id": "2019-05-12-kokutai-hokkaido-selection-ebetsu",
       "status": "official_result_pdf_found",
+      "year": 2019,
       "name": "国民体育大会パワーリフティング公開競技 第5回北海道代表選考会",
       "includedChampionships": [
         "いきいき茨城ゆめ国体・北海道代表選考会",
@@ -32,9 +33,10 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasPreliminaryResults": false,
-        "hasYoutubeLivestream": false,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
@@ -42,7 +44,7 @@
           "title": "2019年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2019.pdf",
           "observedAt": "2026-06-30",
-          "evidenceLines": "PDF pages for 国民体育大会パワーリフティング公開競技 第5回北海道代表選考会 state 2019年5月12日 and 会場 江別市民体育館. The header also references いきいき茨城ゆめ国体・北海道代表."
+          "evidenceLines": "HPA official year result PDF pages for 国民体育大会パワーリフティング公開競技 第5回北海道代表選考会 state 2019年5月12日 and 会場 江別市民体育館. The header also references いきいき茨城ゆめ国体・北海道代表."
         }
       ],
       "promotionGuardrails": [
@@ -55,6 +57,7 @@
     {
       "id": "2019-07-14-hokkaido-classic-bench-ebetsu",
       "status": "official_result_pdf_found",
+      "year": 2019,
       "name": "第23回 北海道クラシックベンチプレス選手権大会",
       "includedChampionships": [
         "第23回 北海道クラシックベンチプレス選手権大会"
@@ -71,9 +74,10 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasPreliminaryResults": false,
-        "hasYoutubeLivestream": false,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
@@ -81,7 +85,7 @@
           "title": "2019年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2019.pdf",
           "observedAt": "2026-06-30",
-          "evidenceLines": "PDF pages for 第23回 北海道クラシックベンチプレス選手権大会 state 2019年7月14日 and 会場 江別市民体育館."
+          "evidenceLines": "HPA official year result PDF pages for 第23回 北海道クラシックベンチプレス選手権大会 state 2019年7月14日 and 会場 江別市民体育館."
         }
       ],
       "promotionGuardrails": [
@@ -94,6 +98,7 @@
     {
       "id": "2019-10-13-hokkaido-classic-power-ebetsu",
       "status": "official_result_pdf_found",
+      "year": 2019,
       "name": "第22回 北海道クラシックパワーリフティング選手権大会",
       "includedChampionships": [
         "第22回 北海道クラシックパワーリフティング選手権大会",
@@ -111,9 +116,10 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasPreliminaryResults": false,
-        "hasYoutubeLivestream": false,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
@@ -121,7 +127,7 @@
           "title": "2019年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2019.pdf",
           "observedAt": "2026-06-30",
-          "evidenceLines": "PDF pages for 第22回 北海道クラシックパワーリフティング選手権大会 state 2019年10月13日 and 会場 江別市民体育館. Later pages also label 第48回北海道男子（F大会）."
+          "evidenceLines": "HPA official year result PDF pages for 第22回 北海道クラシックパワーリフティング選手権大会 state 2019年10月13日 and 会場 江別市民体育館. Later pages also label 第48回北海道男子（F大会）."
         }
       ],
       "promotionGuardrails": [
