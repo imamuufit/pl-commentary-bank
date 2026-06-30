@@ -1,0 +1,104 @@
+{
+  "batchId": "2026-07-01-lot84-88-audit-run38",
+  "task": "PL Athlete Research incremental audit for 2026 Numata Bench Press Lot 84-88",
+  "layoutGuard": "v5.9.6_LOCK preserved; no A4 print layout, CSS, generator, or runtime files touched.",
+  "mainAndPrCheck": {
+    "mainBranchChecked": true,
+    "openPullRequestsChecked": true,
+    "openPullRequests": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "disposition": "non-overlapping; report-only PR, no athlete database or candidate mutation"
+      }
+    ]
+  },
+  "sourcePriority": [
+    "HPA official result PDFs and HPA-hosted result locators",
+    "JPA official result pages/PDFs where discoverable",
+    "IPF/Goodlift searches where relevant",
+    "APF/AAPF-oriented searches where relevant"
+  ],
+  "processedAthletes": [
+    {
+      "lot": 84,
+      "name": "中嶋 輝",
+      "englishName": "Nakajima Hikaru",
+      "databaseDisposition": "no confirmed promotion",
+      "candidateDisposition": "no candidate row added",
+      "notes": "Current main roster entry remains skeleton-level with sex, bodyweight class, team, and declared best requiring official entry/result table confirmation before any data promotion. No same-person history was promoted or inferred in this run."
+    },
+    {
+      "lot": 85,
+      "name": "山下 幹太",
+      "englishName": "Yamashita Kanta",
+      "databaseDisposition": "no confirmed promotion",
+      "candidateDisposition": "no candidate row added",
+      "notes": "No official/high-trust prior-history row was isolated strongly enough for database promotion or candidate insertion in this small audit."
+    },
+    {
+      "lot": 86,
+      "name": "杉本 博夢",
+      "englishName": "Sugimoto Hiromu",
+      "databaseDisposition": "no confirmed promotion",
+      "candidateDisposition": "no candidate row added",
+      "notes": "No official/high-trust prior-history row was isolated strongly enough for database promotion or candidate insertion in this small audit."
+    },
+    {
+      "lot": 87,
+      "name": "大澤 連太郎",
+      "englishName": "Oosawa Rentarou",
+      "databaseDisposition": "no confirmed promotion",
+      "candidateDisposition": "no candidate row added",
+      "notes": "No official/high-trust prior-history row was isolated strongly enough for database promotion or candidate insertion in this small audit."
+    },
+    {
+      "lot": 88,
+      "name": "後藤 博恵",
+      "englishName": "Gotou Hiroe",
+      "databaseDisposition": "no confirmed promotion",
+      "candidateDisposition": "no candidate row added",
+      "notes": "No official/high-trust prior-history row was isolated strongly enough for database promotion or candidate insertion in this small audit."
+    }
+  ],
+  "confirmedHistories": [],
+  "candidateFindings": [],
+  "sourcesUsed": [
+    {
+      "type": "repository-main",
+      "label": "data/database.json roster skeleton on main",
+      "path": "data/database.json",
+      "usedFor": "Confirmed Lot 84-88 roster names and that these rows remain skeleton-level before this audit."
+    },
+    {
+      "type": "github-pr-search",
+      "label": "Open PR check",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/111",
+      "usedFor": "Verified the only open PR is non-overlapping and does not mutate athlete data/candidate data."
+    },
+    {
+      "type": "official-result-locator",
+      "label": "HPA 2026 Numata Bench Press F/G速報 PDF locator",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "usedFor": "Current-event official-source locator for the Lot 84-88 section; row-level extraction was not asserted in this audit."
+    },
+    {
+      "type": "official-result-locator",
+      "label": "HPA 2026 Spring Ebetsu CLPL official result PDF locator",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "usedFor": "Domestic Hokkaido three-lift source check context for exact-name/near-name prior histories."
+    },
+    {
+      "type": "web-search",
+      "label": "Exact-name searches across HPA/JPA/IPF/Goodlift/APF-AAPF-style terms",
+      "usedFor": "Checked for domestic Hokkaido, national, international/world, three-lift, and single bench press histories; no promotable confirmed or candidate rows were isolated in this small run."
+    }
+  ],
+  "mutationSummary": {
+    "databaseJsonChanged": false,
+    "researchCandidatesJsonChanged": false,
+    "addedFiles": [
+      "data/research-batches/2026-07-01-lot84-88-audit-run38.json"
+    ]
+  }
+}
