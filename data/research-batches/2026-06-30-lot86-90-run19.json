@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "purpose": "Small-batch research log for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, duplicate roster appearances, and same-event current rows stay outside data/database.json. Do not infer achievements from name similarity."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [86, 87, 88, 89, 90],
+    "processedAthletes": [
+      "杉本 博夢",
+      "大澤 連太郎",
+      "後藤 啓恵",
+      "北村 妙美",
+      "原田 高志"
+    ],
+    "primarySourcesChecked": [
+      "data/database.json roster skeleton on main for Lot 86-90",
+      "HPA 2026 Numata Bench Press F/G result PDF reference carried from prior official-source batches",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting result PDF reference carried from prior official-source batches",
+      "Exact-name web searches scoped to HPA, JPA, IPF/Goodlift, APF/AAPF, powerlifting, and bench press terms"
+    ],
+    "openPrCheck": "No open Lot 86-90 Numata athlete research PRs were found before this batch. This continues after Lot 81-85.",
+    "writeScope": "Research log plus one uncertain duplicate-roster candidate entry only. No app runtime, CSS, print template, A4 layout, or data/database.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-fg-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 Fグループ / 第36回北海道ベンチプレス選手権 Gグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "Official PDF source was retained as a checked source for the Lot 86-90 audit, but no new prior-history row was promoted from it in this run."
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25/2026-04-26",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "Exact-name prior-history search for Lot 86-90 did not produce a database-promotable new row in this run."
+    },
+    {
+      "sourceId": "src-web-exact-name-search-20260630-lot86-90",
+      "title": "Exact-name web searches for Lot 86-90 athlete histories",
+      "url": "search-only-no-single-result-url",
+      "sourceType": "Search audit",
+      "checkedAt": "2026-06-30",
+      "rowLevelExtractionStatus": "Exact-name web searches for HPA/JPA/IPF/Goodlift/APF/AAPF/powerlifting/bench press terms returned no additional promotable official or high-trust histories for 杉本 博夢, 大澤 連太郎, 後藤 啓恵, 北村 妙美, or 原田 高志 in this run."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "F-86-sugimoto-hiromu",
+      "lot": 86,
+      "playerName": "杉本 博夢",
+      "status": "no-prior-history-promoted-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed the Lot 86 target. Exact-name searches did not return a promotable official/high-trust prior three-lift, single-bench, national, international, HPA, JPA, IPF/Goodlift, APF, or AAPF history in this run."
+    },
+    {
+      "playerId": "F-87-oosawa-rentarou",
+      "lot": 87,
+      "playerName": "大澤 連太郎",
+      "status": "no-prior-history-promoted-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed the Lot 87 target. Exact-name searches did not return a promotable official/high-trust prior three-lift, single-bench, national, international, HPA, JPA, IPF/Goodlift, APF, or AAPF history in this run."
+    },
+    {
+      "playerId": "F-88-gotou-hiroe",
+      "lot": 88,
+      "playerName": "後藤 啓恵",
+      "status": "no-prior-history-promoted-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed the Lot 88 target. Exact-name searches did not return a promotable official/high-trust prior three-lift, single-bench, national, international, HPA, JPA, IPF/Goodlift, APF, or AAPF history in this run."
+    },
+    {
+      "playerId": "F-89-kitamura-taemi",
+      "lot": 89,
+      "playerName": "北村 妙美",
+      "status": "uncertain-duplicate-roster-appearance-candidate-only",
+      "confirmedFindings": [],
+      "candidateFindings": [
+        {
+          "candidateId": "f89-possible-duplicate-of-d56-kitamura-taemi",
+          "candidateType": "possible-duplicate-roster-appearance",
+          "candidateSummary": "Lot 89 roster skeleton has the same Japanese name, kana, and romanized name as Lot 56 北村 妙美, but the lot/group context differs. Treat as uncertain until the official Numata entry/result rows and division context are reconciled.",
+          "reasonNotPromoted": "Same-name match alone is not enough to merge roster records or reuse Lot 56 prior-history findings. No achievement or identity merge was inferred."
+        }
+      ],
+      "searchNotes": "Roster skeleton confirmed the Lot 89 target and the duplicate-name risk. Exact-name searches did not return a new promotable official/high-trust prior history beyond the already logged Lot 56 Spring Ebetsu note in prior batch context."
+    },
+    {
+      "playerId": "G-90-harada-takashi",
+      "lot": 90,
+      "playerName": "原田 高志",
+      "status": "no-prior-history-promoted-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "searchNotes": "Roster skeleton confirmed the Lot 90 target. Exact-name searches did not return a promotable official/high-trust prior three-lift, single-bench, national, international, HPA, JPA, IPF/Goodlift, APF, or AAPF history in this run."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "No Lot 86-90 prior-history row reached the project threshold for database promotion with explicit official/high-trust source support. 北村 妙美 Lot 89 was recorded as an uncertain duplicate-roster candidate instead of merging or reusing Lot 56 data by inference.",
+    "safeNextStep": "Continue with Lot 91-95. Separately reconcile duplicate roster entries for 北村 妙美 Lot 56 and Lot 89 against the official Numata entry/result PDF before any database merge or narration."
+  }
+}
