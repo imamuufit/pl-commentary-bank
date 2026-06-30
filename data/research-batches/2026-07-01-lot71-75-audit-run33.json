@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "purpose": "Small-batch continuation audit for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-07-01",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support with athlete identity kept unambiguous. Ambiguous identity, incomplete context, current-event rows without row-level extraction, and different-name rows stay outside data/database.json. Do not infer achievements from name similarity."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [71, 72, 73, 74, 75],
+    "processedAthletes": [
+      "石川 匠",
+      "村井 寿徳",
+      "宇野 颯",
+      "古河 尚幸",
+      "千葉 雄太"
+    ],
+    "reasonForAudit": "Prior Lot 71-75 batch exists, but explicitly left the HPA 2026 Numata Bench Press D/E速報 PDF at locator-only status without row-level extraction. This run preserves that separation and records that no safe promotion was made.",
+    "openPrCheck": "Open PR check before this run found only #111, a non-overlapping completion report generator that does not mutate data/database.json, data/research-candidates.json, or A4 print layout.",
+    "writeScope": "Research batch log only. No data/database.json, data/research-candidates.json, app runtime, CSS, generator logic, print template, A4 layout, or v5.9.6_LOCK changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-existing-batch-20260630-lot71-75-run16",
+      "title": "Existing Lot 71-75 research batch on main",
+      "repoPath": "data/research-batches/2026-06-30-lot71-75-run16.json",
+      "sourceType": "Repository research log",
+      "auditFinding": "Processed the same five athletes and recorded no confirmed prior histories or candidate findings. The HPA Numata D/E速報 source was locator-only and not row-level extracted in that run."
+    },
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-de-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 D/Eグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "Still not promoted in this audit because a safe row-level extraction was not completed in this connector-backed run. Current-event Numata results for Lot 71-75 remain unasserted."
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25/2026-04-26",
+      "venue": "江別市青年センター",
+      "auditFinding": "Existing prior batch recorded no exact-name Lot 71-75 matches in this source; this audit did not add any new confirmed row from it."
+    },
+    {
+      "sourceId": "src-open-pr-check-20260701-run33",
+      "title": "GitHub open PR check",
+      "sourceType": "Repository state audit",
+      "auditFinding": "Only open PR found: #111 Add Numata completion report generator. Non-overlapping with athlete data mutation and A4 layout."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "E-71-ishikawa-takumi",
+      "lot": 71,
+      "playerName": "石川 匠",
+      "status": "audit-only-no-promotion",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "auditNotes": "No confirmed domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench prior history was added. Current-event Numata D/E row remains unasserted without row-level extraction."
+    },
+    {
+      "playerId": "E-72-murai-toshinori",
+      "lot": 72,
+      "playerName": "村井 寿徳",
+      "status": "audit-only-no-promotion",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "auditNotes": "No confirmed history was added. Different-name official rows are not candidates for this athlete. Current-event Numata D/E row remains unasserted without row-level extraction."
+    },
+    {
+      "playerId": "E-73-uno-hayate",
+      "lot": 73,
+      "playerName": "宇野 颯",
+      "status": "audit-only-no-promotion",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "auditNotes": "No confirmed domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench prior history was added. Current-event Numata D/E row remains unasserted without row-level extraction."
+    },
+    {
+      "playerId": "E-74-furukawa-naoyuki",
+      "lot": 74,
+      "playerName": "古河 尚幸",
+      "status": "audit-only-no-promotion",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "auditNotes": "No confirmed domestic Hokkaido, national, international/world, three-lift powerlifting, or single bench prior history was added. Current-event Numata D/E row remains unasserted without row-level extraction."
+    },
+    {
+      "playerId": "E-75-chiba-yuuta",
+      "lot": 75,
+      "playerName": "千葉 雄太",
+      "status": "audit-only-no-promotion",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "auditNotes": "No confirmed history was added. Different-name official rows are not candidates for this athlete. Current-event Numata D/E row remains unasserted without row-level extraction."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "No new source-backed athlete histories were confirmed in this audit, and unresolved current-event row extraction remains outside confirmed history. This preserves the no-inference rule and avoids duplicate work from the existing Lot 71-75 batch.",
+    "safeNextStep": "Perform true row-level extraction of the HPA 2026 Numata D/E速報 PDF before adding current-event result rows, or move to an unresolved candidate sweep only when a specific official/high-trust same-name row is located."
+  }
+}
