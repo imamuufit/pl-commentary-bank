@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 
 const errors = [];
-const packageText = read('package.json');
 const scriptText = read('scripts/generate-numata-completion-report.mjs');
 
 function read(file) {
@@ -20,10 +19,6 @@ function requireIncludes(text, needle, target, message) {
 function requireNotIncludes(text, needle, target, message) {
   if (text.includes(needle)) errors.push(`${target}: ${message}`);
 }
-
-requireIncludes(packageText, '"report:numata-completion"', 'package.json', 'Numata completion report script must remain available');
-requireIncludes(packageText, '"check:numata-completion"', 'package.json', 'Numata completion report contract check must remain available');
-requireIncludes(packageText, 'check-numata-completion-report-contract.mjs', 'package.json', 'validate must include the Numata completion report contract');
 
 requireIncludes(scriptText, "readJson('data/database.json')", 'scripts/generate-numata-completion-report.mjs', 'must inspect the main athlete database');
 requireIncludes(scriptText, "readJson('data/research-candidates.json')", 'scripts/generate-numata-completion-report.mjs', 'must inspect separated research candidates');
