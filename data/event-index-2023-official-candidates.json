@@ -1,25 +1,27 @@
 {
   "meta": {
-    "version": "0.1.0",
-    "updatedAt": "2026-06-29",
+    "version": "0.1.1",
+    "updatedAt": "2026-06-30",
     "sourcePolicy": "Official HPA/JPA sources only. This file records 2023 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
     "layoutLock": "v5.9.6_LOCK",
     "notes": [
-      "Temporary 2023 official-source candidate addendum for HPA Event Watch.",
-      "Keep separate from athlete master data, confirmed athlete histories, and research candidates.",
-      "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion."
+      "2023 official-source candidate addendum for HPA Event Watch.",
+      "Keep separate from athlete master data, confirmed athlete histories, event entries, and research candidates.",
+      "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion.",
+      "Source summary flags are aligned with newer event-index candidate files: 2023 currently has only annual official result PDF and venue/date evidence confirmed in this file; outline, entry roster, schedule, program,速報, and YouTube live sources remain unconfirmed."
     ]
   },
   "events": [
     {
-      "id": "2023-05-13-14-hokkaido-spring-power-ebetsu",
+      "id": "2023-05-13-hokkaido-spring-power-ebetsu",
       "status": "official_result_pdf_found",
+      "year": 2023,
       "name": "2023春の北海道パワーリフティング大会",
       "includedChampionships": [
         "全日本高校パワーリフティング選手権大会 第7回北海道予選会",
         "国民体育大会パワーリフティング公開競技 第9回北海道代表選考会"
       ],
-      "dates": ["2023-05-13", "2023-05-14"],
+      "dates": ["2023-05-13"],
       "venue": {
         "name": "江別総合体育館 柔剣道場",
         "city": "江別市",
@@ -31,15 +33,18 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
           "type": "annual_result_pdf",
           "title": "2023年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2023result.pdf",
-          "observedAt": "2026-06-29",
-          "evidenceLines": "PDF pages for the spring meet state 全日本高校パワーリフティング選手権大会 第7回北海道予選会 and 国民体育大会パワーリフティング公開競技 第9回北海道代表選考会, with 2023年5月13日-14日 and 会場 江別総合体育館 柔剣道場."
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF pages for 全日本高校パワーリフティング選手権大会 第7回北海道予選会 and 国民体育大会パワーリフティング公開競技 第9回北海道代表選考会 state 2023年5月13日, 会場 江別総合体育館 柔剣道場."
         }
       ],
       "promotionGuardrails": [
@@ -51,6 +56,7 @@
     {
       "id": "2023-07-30-hokkaido-summer-bench-nayoro",
       "status": "official_result_pdf_found",
+      "year": 2023,
       "name": "2023夏の北海道ベンチプレス大会",
       "includedChampionships": [
         "第27回北海道クラシックベンチプレス選手権",
@@ -68,15 +74,18 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
           "type": "annual_result_pdf",
           "title": "2023年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2023result.pdf",
-          "observedAt": "2026-06-29",
-          "evidenceLines": "PDF pages for 第27回北海道クラシックベンチプレス選手権 and 第33回北海道ベンチプレス選手権大会 state 2023年7月30日 and 会場 名寄市スポーツセンター."
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF pages for 第27回北海道クラシックベンチプレス選手権 and 第33回北海道ベンチプレス選手権大会 state 2023年7月30日, 会場 名寄市スポーツセンター."
         }
       ],
       "promotionGuardrails": [
@@ -88,6 +97,7 @@
     {
       "id": "2023-10-07-08-hokkaido-autumn-power-ebetsu",
       "status": "official_result_pdf_found",
+      "year": 2023,
       "name": "2023秋の北海道パワーリフティング大会",
       "includedChampionships": [
         "第26回北海道クラシックパワーリフティング選手権大会",
@@ -105,15 +115,18 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
           "type": "annual_result_pdf",
           "title": "2023年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2023result.pdf",
-          "observedAt": "2026-06-29",
-          "evidenceLines": "PDF pages for 第26回北海道クラシックパワーリフティング選手権大会 state 2023年10月7日-8日 and 会場 江別総合体育館 柔剣道場; later pages include equipped divisions for the same meet block."
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF pages for 第26回北海道クラシックパワーリフティング選手権大会 state 2023年10月7日 and 2023年10月8日, 会場 江別総合体育館 柔剣道場; later pages include equipped divisions for the same meet block."
         }
       ],
       "promotionGuardrails": [
@@ -125,6 +138,7 @@
     {
       "id": "2023-12-03-hokkaido-tohoku-block-bench-numata",
       "status": "official_result_pdf_found",
+      "year": 2023,
       "name": "第1回 北海道・東北ブロックベンチプレス選手権大会",
       "includedChampionships": [
         "第1回 北海道・東北ブロックベンチプレス選手権大会"
@@ -141,15 +155,18 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
           "type": "annual_result_pdf",
           "title": "2023年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2023result.pdf",
-          "observedAt": "2026-06-29",
-          "evidenceLines": "PDF pages for 第1回 北海道・東北ブロックベンチプレス選手権大会 state 2023年12月3日 and 会場 沼田町民会館."
+          "observedAt": "2026-06-30",
+          "evidenceLines": "PDF pages for 第1回 北海道・東北ブロックベンチプレス選手権大会 state 2023年12月3日, 会場 沼田町民会館."
         }
       ],
       "promotionGuardrails": [
