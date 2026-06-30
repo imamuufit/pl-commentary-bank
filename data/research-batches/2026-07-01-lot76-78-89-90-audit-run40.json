@@ -1,0 +1,88 @@
+{
+  "batchId": "2026-07-01-lot76-78-89-90-audit-run40",
+  "createdAt": "2026-07-01",
+  "scope": "Incremental PL Athlete Research audit for 2026 Numata Bench Press Lot 76-78 and Lot 89-90.",
+  "layoutLock": "v5.9.6_LOCK preserved; no A4 print layout, CSS, generator, app runtime, or template files touched.",
+  "mainAndPrCheck": {
+    "mainBaseline": "main checked before mutation; database.json layoutTemplate remains v5.9.6_LOCK.",
+    "openPullRequests": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "overlapAssessment": "Non-overlapping report-only work; no athlete data or research-candidates mutation."
+      }
+    ],
+    "duplicateWorkCheck": "Search across prior PRs found no existing Lot76-78/Lot89-90 combined audit batch."
+  },
+  "processedAthletes": [
+    {
+      "lot": 76,
+      "name": "佐藤 直毅",
+      "aliasesChecked": ["佐藤 直毅", "佐藤直毅", "サトウ ナオキ", "Satou Naoki", "Naoki Satou"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "No official/high-trust row found safe enough for database or candidate promotion in this small pass."
+    },
+    {
+      "lot": 77,
+      "name": "飯泉 圭太",
+      "aliasesChecked": ["飯泉 圭太", "飯泉圭太", "イイズミ ケイタ", "Iizumi Keita", "Keita Iizumi"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "No official/high-trust row found safe enough for database or candidate promotion in this small pass."
+    },
+    {
+      "lot": 78,
+      "name": "伊畑 一真",
+      "aliasesChecked": ["伊畑 一真", "伊畑一真", "イバタ カズマ", "Ibata Kazuma", "Kazuma Ibata"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "No official/high-trust row found safe enough for database or candidate promotion in this small pass."
+    },
+    {
+      "lot": 89,
+      "name": "北村 妙美",
+      "aliasesChecked": ["北村 妙美", "北村妙美", "キタムラ タエミ", "Kitamura Taemi", "Taemi Kitamura"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "Same roster name also appears as Lot56 in database skeleton. No identity merge or inference performed. Existing discussion/history should remain candidate-only unless source-linked identity is confirmed."
+    },
+    {
+      "lot": 90,
+      "name": "原田 高志",
+      "aliasesChecked": ["原田 高志", "原田高志", "ハラダ タカシ", "Harada Takashi", "Takashi Harada"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "No official/high-trust row found safe enough for database or candidate promotion in this small pass."
+    }
+  ],
+  "sourcesChecked": [
+    {
+      "label": "HPA 2026 Numata Bench Press F/G速報 PDF locator",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "use": "Roster/current-event locator only; no row-level current-event result asserted in this batch."
+    },
+    {
+      "label": "HPA 2026 Spring Ebetsu CLPL official result PDF locator",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "use": "Checked as recent domestic Hokkaido three-lift context; no safe promotable prior rows for this batch."
+    },
+    {
+      "label": "Exact-name web/HPA/JPA/IPF/Goodlift/APF-AAPF style searches",
+      "url": "n/a",
+      "use": "Exact Japanese spaced/unspaced names plus romanized aliases checked; empty/no safe official row in this pass."
+    }
+  ],
+  "mutations": {
+    "data/database.json": "unchanged",
+    "data/research-candidates.json": "unchanged",
+    "addedFiles": [
+      "data/research-batches/2026-07-01-lot76-78-89-90-audit-run40.json"
+    ]
+  },
+  "validation": [
+    "JSON structure is self-contained research-log only.",
+    "No achievements invented or inferred.",
+    "No same-person assumption made for duplicate/similar roster names."
+  ]
+}
