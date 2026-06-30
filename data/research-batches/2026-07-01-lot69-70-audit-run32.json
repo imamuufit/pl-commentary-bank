@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "purpose": "Small-batch PL Athlete Research continuation for the 2026 Numata Bench Press roster.",
+    "batchDate": "2026-07-01",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, and same-event current rows stay outside data/database.json. Do not infer achievements from name similarity.",
+    "auditReason": "Continuation after Lot 66-68 audit. This run checks the remaining Lot 69-70 names from the prior Lot 66-70 scope without mutating athlete data or print layout."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [69, 70],
+    "processedAthletes": [
+      "石上 修",
+      "矢崎 光康"
+    ],
+    "primarySourcesChecked": [
+      "Open PR search on imamuufit/pl-commentary-bank before write",
+      "data/database.json roster skeleton on main for Lot 69-70 context",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting official result PDF",
+      "Exact-name web searches scoped to HPA/powerlifting/bench press terms",
+      "JPA/IPF/Goodlift/APF-AAPF-oriented exact-name searches"
+    ],
+    "openPrCheck": "One open PR (#111) was present. It is a standalone completion report generator and does not edit athlete data, candidate data, or the A4 print layout, so this isolated audit log is non-overlapping.",
+    "writeScope": "Research audit log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "PDF text opened. Exact-name searches for 石上, 矢崎, 修, and 光康 returned no matching text in this official PDF."
+    },
+    {
+      "sourceId": "src-github-open-pr-search",
+      "title": "Open PR search before write",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/111",
+      "sourceType": "Repository PR context",
+      "checkedAt": "2026-07-01",
+      "rowLevelExtractionStatus": "Only PR #111 was open; non-overlapping with athlete data, candidate data, or A4 print layout."
+    }
+  ],
+  "athletes": [
+    {
+      "lot": 69,
+      "playerName": "石上 修",
+      "status": "no-official-or-high-trust-prior-history-found-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "checkedFindings": [
+        {
+          "checkType": "officialPdfExactNameSearch",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"],
+          "result": "No exact-name match found in HPA 2026 Spring Ebetsu CLPL official result PDF text."
+        },
+        {
+          "checkType": "webExactNameSearch",
+          "result": "No official/high-trust domestic, national, international/world, three-lift PL, or single bench history was located in this small-batch run."
+        }
+      ],
+      "databaseAction": "No data/database.json promotion. No candidate row added because no ambiguous official/high-trust row was located."
+    },
+    {
+      "lot": 70,
+      "playerName": "矢崎 光康",
+      "status": "no-official-or-high-trust-prior-history-found-this-run",
+      "confirmedFindings": [],
+      "candidateFindings": [],
+      "checkedFindings": [
+        {
+          "checkType": "officialPdfExactNameSearch",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"],
+          "result": "No exact-name match found in HPA 2026 Spring Ebetsu CLPL official result PDF text."
+        },
+        {
+          "checkType": "webExactNameSearch",
+          "result": "No official/high-trust domestic, national, international/world, three-lift PL, or single bench history was located in this small-batch run."
+        }
+      ],
+      "databaseAction": "No data/database.json promotion. No candidate row added because no ambiguous official/high-trust row was located."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "No confirmed prior history rows were found for Lot 69-70 in the checked official/high-trust sources. No uncertain source-backed row was found that would justify adding to data/research-candidates.json.",
+    "safeNextStep": "Continue with another small, non-overlapping roster or candidate-review batch."
+  }
+}
