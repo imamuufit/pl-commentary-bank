@@ -1,0 +1,113 @@
+{
+  "batchId": "2026-07-01-lot97-100-audit-run37",
+  "task": "PL Athlete Research incremental small batch for 2026 Numata Bench Press Lot 1-100 roster",
+  "layoutSafety": {
+    "preserveLayoutTemplate": "v5.9.6_LOCK",
+    "touchedA4Layout": false,
+    "touchedPrintRuntime": false,
+    "touchedCss": false,
+    "touchedDatabase": false,
+    "touchedResearchCandidates": false
+  },
+  "openPrCheck": {
+    "checkedAt": "2026-07-01",
+    "openPrsFound": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "overlap": "non-overlapping; report generator only; no athlete data or print layout mutation"
+      }
+    ]
+  },
+  "processedAthletes": [
+    {
+      "lot": 97,
+      "name": "片山 遼",
+      "englishName": "Katayama Ryou",
+      "searchScope": [
+        "HPA official-result oriented exact-name search",
+        "JPA official-result oriented exact-name search",
+        "IPF/Goodlift exact-name search",
+        "APF/AAPF exact-name search",
+        "domestic Hokkaido / national / international / world / three-lift PL / single bench press history search"
+      ],
+      "confirmedHistoriesAdded": [],
+      "researchCandidatesAdded": [],
+      "notes": "No official/high-trust same-athlete history was confirmed in this small pass. No achievement inferred from current Numata roster skeleton."
+    },
+    {
+      "lot": 98,
+      "name": "矢崎 光康",
+      "englishName": "Yazaki Mitsuyasu",
+      "searchScope": [
+        "HPA official-result oriented exact-name search",
+        "JPA official-result oriented exact-name search",
+        "IPF/Goodlift exact-name search",
+        "APF/AAPF exact-name search",
+        "domestic Hokkaido / national / international / world / three-lift PL / single bench press history search"
+      ],
+      "confirmedHistoriesAdded": [],
+      "researchCandidatesAdded": [],
+      "notes": "No official/high-trust same-athlete history was confirmed in this small pass. Note: Lot 70 also contains 矢崎 光康 in the current roster skeleton; this batch does not merge or infer duplicate identity."
+    },
+    {
+      "lot": 99,
+      "name": "広瀬 優太",
+      "englishName": "Hirose Yuuta",
+      "searchScope": [
+        "HPA official-result oriented exact-name search",
+        "JPA official-result oriented exact-name search",
+        "IPF/Goodlift exact-name search",
+        "APF/AAPF exact-name search",
+        "domestic Hokkaido / national / international / world / three-lift PL / single bench press history search"
+      ],
+      "confirmedHistoriesAdded": [],
+      "researchCandidatesAdded": [],
+      "notes": "No official/high-trust same-athlete history was confirmed in this small pass. No achievement inferred from current Numata roster skeleton."
+    },
+    {
+      "lot": 100,
+      "name": "宮下 綾太",
+      "englishName": "Miyashita Ryouta",
+      "searchScope": [
+        "HPA official-result oriented exact-name search",
+        "JPA official-result oriented exact-name search",
+        "IPF/Goodlift exact-name search",
+        "APF/AAPF exact-name search",
+        "domestic Hokkaido / national / international / world / three-lift PL / single bench press history search"
+      ],
+      "confirmedHistoriesAdded": [],
+      "researchCandidatesAdded": [],
+      "notes": "No official/high-trust same-athlete history was confirmed in this small pass. No achievement inferred from current Numata roster skeleton."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "sourceType": "repository-main",
+      "description": "data/database.json roster skeleton on main; Lot 97-100 entries identified from main database content."
+    },
+    {
+      "sourceType": "github-pr-search",
+      "description": "Open PR search found only #111, non-overlapping with athlete data. Recent merged PRs reviewed to avoid duplicate Lot 94-96 and earlier Lot 69-83 work."
+    },
+    {
+      "sourceType": "web-search",
+      "queries": [
+        "\"片山 遼\" パワーリフティング ベンチプレス HPA JPA",
+        "\"矢崎 光康\" パワーリフティング ベンチプレス HPA JPA",
+        "\"広瀬 優太\" パワーリフティング ベンチプレス HPA JPA",
+        "\"宮下 綾太\" パワーリフティング ベンチプレス HPA JPA",
+        "site:powerlifting-hokkaido.com 片山 遼 ベンチプレス",
+        "site:powerlifting-hokkaido.com 矢崎 光康 ベンチプレス",
+        "site:powerlifting-hokkaido.com 広瀬 優太 ベンチプレス",
+        "site:powerlifting-hokkaido.com 宮下 綾太 ベンチプレス"
+      ],
+      "result": "No official/high-trust same-athlete result rows returned in this connector-backed pass."
+    }
+  ],
+  "promotionDecision": {
+    "databaseJson": "unchanged; no confirmed source-linked histories were found",
+    "researchCandidatesJson": "unchanged; no ambiguous official/high-trust candidate rows were found",
+    "reason": "Do not invent, infer, or promote achievements without row-level official/high-trust evidence and same-athlete confidence. Lot 98 duplicate-name risk with Lot 70 remains unresolved and was not normalized in this data pass."
+  }
+}
