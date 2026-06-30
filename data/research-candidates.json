@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.1.3",
+    "version": "0.1.4",
     "purpose": "未確認候補の一時管理。確認済みになるまで data/database.json へ昇格しない。",
     "updatedAt": "2026-06-30"
   },
@@ -10,8 +10,17 @@
       "playerName": "齊藤 敬太",
       "candidateId": "c40-old-national-results",
       "status": "要再確認",
-      "note": "過去の全国大会・世界大会歴を追加調査。公式結果PDFまたはGoodlift/IPF確認後に正本DBへ昇格する。2026-06-30の小ロット調査で、HPA公式2011年PDFから同名・男子66kg級・ノーギア北海道ベンチ行を確認した。ただし2026沼田Lot40本人との同一性、階級推移、個人識別は未照合のため、正本DBへは昇格しない。",
-      "searchTerms": ["齊藤敬太 ベンチプレス", "斉藤敬太 ベンチプレス", "Keita Saito Goodlift", "site:goodlift.info Keita Saito", "site:h-power.sakura.ne.jp/2011.pdf 齊藤 敬太"],
+      "note": "過去の全国大会・世界大会歴を追加調査。公式結果PDFまたはGoodlift/IPF確認後に正本DBへ昇格する。2026-06-30の小ロット調査で、HPA公式2011年PDFから同名・男子66kg級・ノーギア北海道ベンチ行を確認した。追加小ロットでHPA公式2012年PDFから同名/表記揺れ（斎藤・齋藤）・男子66kg級・春季ベンチおよびノーギア北海道ベンチ行を確認した。ただし2026沼田Lot40本人との同一性、階級推移、個人識別は未照合のため、正本DBへは昇格しない。",
+      "searchTerms": [
+        "齊藤敬太 ベンチプレス",
+        "斉藤敬太 ベンチプレス",
+        "齋藤敬太 ベンチプレス",
+        "Keita Saito Goodlift",
+        "site:goodlift.info Keita Saito",
+        "site:h-power.sakura.ne.jp/2011.pdf 齊藤 敬太",
+        "site:h-power.sakura.ne.jp/2012.pdf 斎藤 敬太",
+        "site:h-power.sakura.ne.jp/2012.pdf 齋藤 敬太"
+      ],
       "lastCheckedAt": "2026-06-30",
       "checkedSources": [
         {
@@ -33,6 +42,14 @@
         {
           "label": "HPA official PDF: 2011.pdf p.6 text row",
           "result": "第15回ノーギア北海道ベンチプレス選手権大会 / 2011-07-17 / 江別市民体育館 / 男子C 66Kg級 / 齊藤 敬太 / age 28 / 札幌協会 / BW 63.10 / BP 115.0, 120.0, ×122.5 / best 120.0 / total 120.0 / 2位 / formula 97.86 / source https://h-power.sakura.ne.jp/2011.pdf"
+        },
+        {
+          "label": "HPA official PDF: 2012.pdf p.3 text row",
+          "result": "春季北海道ベンチプレス選手権大会（Cグループ） / 2012-04-15 / 苫小牧市総合体育館 / 男子66Kg級 / 斎藤 敬太 / age 29 / 札幌協会 / BW 64.50 / BP 127.5, 132.5, 135.0 / best 135.0 / total 135.0 / 1位 / formula 108.05 / source https://h-power.sakura.ne.jp/2012.pdf"
+        },
+        {
+          "label": "HPA official PDF: 2012.pdf p.6 text row",
+          "result": "第16回ノーギア北海道ベンチプレス選手権大会（Bグループ） / 2012-07-15 / 小樽市総合体育館 / 男子66Kg級 / 齋藤 敬太 / birth year 1982 / 札幌協会 / BW 64.35 / BP 132.5, 137.5, 142.5 / best 142.5 / total 142.5 / 1位 / formula 114.28 / source https://h-power.sakura.ne.jp/2012.pdf"
         }
       ],
       "rowCandidates": [
@@ -57,6 +74,50 @@
           "place": "2",
           "formula": "97.86",
           "promotionStatus": "同一人物性未照合のため未昇格"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/2012.pdf",
+          "sourceLabel": "HPA official annual result PDF 2012, p.3 text row",
+          "eventDate": "2012-04-15",
+          "eventName": "春季北海道ベンチプレス選手権大会（Cグループ）",
+          "venue": "苫小牧市総合体育館",
+          "eventType": "S-BP",
+          "equipment": "春季ベンチ/ノーギア扱い候補",
+          "sex": "男子",
+          "bodyweightClass": "66Kg級",
+          "athleteName": "斎藤 敬太",
+          "nameVariantNote": "PDF行は斎藤表記。2026登録名の齊藤敬太との同一人物性は未照合。",
+          "age": 29,
+          "team": "札幌協会",
+          "bodyweight": "64.50",
+          "bpAttempts": "127.5 / 132.5 / 135.0",
+          "bpBest": "135.0",
+          "total": "135.0",
+          "place": "1",
+          "formula": "108.05",
+          "promotionStatus": "同一人物性未照合のため未昇格"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/2012.pdf",
+          "sourceLabel": "HPA official annual result PDF 2012, p.6 text row",
+          "eventDate": "2012-07-15",
+          "eventName": "第16回 ノーギア北海道ベンチプレス選手権大会（Bグループ）",
+          "venue": "小樽市総合体育館",
+          "eventType": "S-BP",
+          "equipment": "ノーギア/クラシック扱い候補",
+          "sex": "男子",
+          "bodyweightClass": "66Kg級",
+          "athleteName": "齋藤 敬太",
+          "nameVariantNote": "PDF行は齋藤表記。2026登録名の齊藤敬太との同一人物性は未照合。",
+          "birthYear": "1982",
+          "team": "札幌協会",
+          "bodyweight": "64.35",
+          "bpAttempts": "132.5 / 137.5 / 142.5",
+          "bpBest": "142.5",
+          "total": "142.5",
+          "place": "1",
+          "formula": "114.28",
+          "promotionStatus": "同一人物性未照合のため未昇格"
         }
       ],
       "promotionRule": "公式結果PDF、JPA、HPA、IPF/Goodlift等で同一人物性と大会結果が確認できるまで data/database.json へ昇格しない。"
@@ -67,7 +128,12 @@
       "candidateId": "d52-early-hokkaido-results",
       "status": "要再確認",
       "note": "2021年以降の北海道クラシックPL、全日本ベンチ、AAP関連を追加調査。公式結果で確認後に正本DBへ昇格する。2026-06-29時点の小ロット調査では、公式・高信頼ソースで正本DBへ昇格できる履歴は未確認。",
-      "searchTerms": ["宝利桃華 パワーリフティング", "宝利 桃華 ベンチプレス", "Momoka Hori bench press", "site:h-power.sakura.ne.jp 宝利"],
+      "searchTerms": [
+        "宝利桃華 パワーリフティング",
+        "宝利 桃華 ベンチプレス",
+        "Momoka Hori bench press",
+        "site:h-power.sakura.ne.jp 宝利"
+      ],
       "lastCheckedAt": "2026-06-29",
       "checkedSources": [
         {
@@ -95,7 +161,12 @@
       "candidateId": "f89-possible-duplicate-of-d56-kitamura-taemi",
       "status": "要再確認",
       "note": "2026 Numata roster skeleton上で Lot 56 と Lot 89 に同じ氏名・カナ・英字名の北村 妙美が存在する。公式Numataエントリー/結果PDFで階級・部門・同一人物性を再照合するまで、Lot 56 の既確認/候補情報を Lot 89 に流用しない。",
-      "searchTerms": ["北村 妙美 ベンチプレス", "北村妙美 パワーリフティング", "Kitamura Taemi bench press", "site:h-power.sakura.ne.jp 北村 妙美"],
+      "searchTerms": [
+        "北村 妙美 ベンチプレス",
+        "北村妙美 パワーリフティング",
+        "Kitamura Taemi bench press",
+        "site:h-power.sakura.ne.jp 北村 妙美"
+      ],
       "lastCheckedAt": "2026-06-30",
       "checkedSources": [
         {
@@ -118,13 +189,23 @@
       "playerName": "谷口 孝仁",
       "candidateId": "a13-2011-hpa-nogear-bench-row",
       "status": "要再確認",
-      "note": "HPA公式2011年PDFから同名・男子66kg級・第15回ノーギア北海道ベンチプレス選手権大会の行を確認した。2026沼田Lot13本人との同一性、階級推移、年齢整合、継続所属は未照合のため、正本DBへは昇格しない。",
-      "searchTerms": ["谷口 孝仁 ベンチプレス", "谷口孝仁 パワーリフティング", "site:h-power.sakura.ne.jp/2011.pdf 谷口 孝仁", "Taniguchi Takahito powerlifting"],
+      "note": "HPA公式2011年PDFから同名・男子66kg級・第15回ノーギア北海道ベンチプレス選手権大会の行を確認した。追加小ロットでHPA公式2012年PDFから同名・男子66kg級・春季ベンチ行を確認した。2026沼田Lot13本人との同一性、階級推移、年齢整合、継続所属は未照合のため、正本DBへは昇格しない。",
+      "searchTerms": [
+        "谷口 孝仁 ベンチプレス",
+        "谷口孝仁 パワーリフティング",
+        "site:h-power.sakura.ne.jp/2011.pdf 谷口 孝仁",
+        "site:h-power.sakura.ne.jp/2012.pdf 谷口 孝仁",
+        "Taniguchi Takahito powerlifting"
+      ],
       "lastCheckedAt": "2026-06-30",
       "checkedSources": [
         {
           "label": "HPA official PDF: 2011.pdf p.6 text row",
           "result": "第15回ノーギア北海道ベンチプレス選手権大会 / 2011-07-17 / 江別市民体育館 / 男子C 66Kg級 / 谷口 孝仁 / age 50 / 十勝協会 / BW 64.40 / BP 125.0, 130.0, 132.5 / best 132.5 / total 132.5 / 1位 / formula 106.19 / source https://h-power.sakura.ne.jp/2011.pdf"
+        },
+        {
+          "label": "HPA official PDF: 2012.pdf p.3 text row",
+          "result": "春季北海道ベンチプレス選手権大会（Cグループ） / 2012-04-15 / 苫小牧市総合体育館 / 男子66Kg級 / 谷口 孝仁 / age 51 / 十勝協会 / BW 64.60 / BP 125.0, 130.0, ×132.5 / best 130.0 / total 130.0 / 3位 / formula 103.91 / source https://h-power.sakura.ne.jp/2012.pdf"
         }
       ],
       "rowCandidates": [
@@ -148,6 +229,27 @@
           "total": "132.5",
           "place": "1",
           "formula": "106.19",
+          "promotionStatus": "同一人物性未照合のため未昇格"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/2012.pdf",
+          "sourceLabel": "HPA official annual result PDF 2012, p.3 text row",
+          "eventDate": "2012-04-15",
+          "eventName": "春季北海道ベンチプレス選手権大会（Cグループ）",
+          "venue": "苫小牧市総合体育館",
+          "eventType": "S-BP",
+          "equipment": "春季ベンチ/ノーギア扱い候補",
+          "sex": "男子",
+          "bodyweightClass": "66Kg級",
+          "athleteName": "谷口 孝仁",
+          "age": 51,
+          "team": "十勝協会",
+          "bodyweight": "64.60",
+          "bpAttempts": "125.0 / 130.0 / ×132.5",
+          "bpBest": "130.0",
+          "total": "130.0",
+          "place": "3",
+          "formula": "103.91",
           "promotionStatus": "同一人物性未照合のため未昇格"
         }
       ],
