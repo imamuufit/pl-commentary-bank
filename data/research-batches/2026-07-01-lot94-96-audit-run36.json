@@ -1,0 +1,93 @@
+{
+  "batchId": "2026-07-01-lot94-96-audit-run36",
+  "task": "PL Athlete Research incremental small batch for 2026 Numata Bench Press Lot 1-100 roster",
+  "layoutSafety": {
+    "preserveLayoutTemplate": "v5.9.6_LOCK",
+    "touchedA4Layout": false,
+    "touchedPrintRuntime": false,
+    "touchedCss": false,
+    "touchedDatabase": false,
+    "touchedResearchCandidates": false
+  },
+  "openPrCheck": {
+    "checkedAt": "2026-07-01",
+    "openPrsFound": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "overlap": "non-overlapping; report generator only; no athlete data or print layout mutation"
+      }
+    ]
+  },
+  "processedAthletes": [
+    {
+      "lot": 94,
+      "name": "入交 将昭",
+      "englishName": "Nyuukou Masaaki",
+      "searchScope": [
+        "HPA official-result oriented exact-name search",
+        "JPA official-result oriented exact-name search",
+        "IPF/Goodlift exact-name search",
+        "APF/AAPF exact-name search",
+        "domestic Hokkaido / national / international / world / three-lift PL / single bench press history search"
+      ],
+      "confirmedHistoriesAdded": [],
+      "researchCandidatesAdded": [],
+      "notes": "No official/high-trust same-athlete history was confirmed in this small pass. No achievement inferred from current Numata roster skeleton."
+    },
+    {
+      "lot": 95,
+      "name": "馬狩 良光",
+      "englishName": "Umakari Yoshimitsu",
+      "searchScope": [
+        "HPA official-result oriented exact-name search",
+        "JPA official-result oriented exact-name search",
+        "IPF/Goodlift exact-name search",
+        "APF/AAPF exact-name search",
+        "domestic Hokkaido / national / international / world / three-lift PL / single bench press history search"
+      ],
+      "confirmedHistoriesAdded": [],
+      "researchCandidatesAdded": [],
+      "notes": "No official/high-trust same-athlete history was confirmed in this small pass. No achievement inferred from current Numata roster skeleton."
+    },
+    {
+      "lot": 96,
+      "name": "竹内 謙太",
+      "englishName": "Takeuchi Kenta",
+      "searchScope": [
+        "HPA official-result oriented exact-name search",
+        "JPA official-result oriented exact-name search",
+        "IPF/Goodlift exact-name search",
+        "APF/AAPF exact-name search",
+        "domestic Hokkaido / national / international / world / three-lift PL / single bench press history search"
+      ],
+      "confirmedHistoriesAdded": [],
+      "researchCandidatesAdded": [],
+      "notes": "No official/high-trust same-athlete history was confirmed in this small pass. No achievement inferred from current Numata roster skeleton."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "sourceType": "repository-main",
+      "description": "data/database.json roster skeleton on main; Lot 94-96 entries identified from main database content."
+    },
+    {
+      "sourceType": "github-pr-search",
+      "description": "Open PR search found only #111, non-overlapping with athlete data. Recent merged PRs reviewed to avoid duplicate Lot 79-83 / Lot 69-75 work."
+    },
+    {
+      "sourceType": "web-search",
+      "queries": [
+        "\"入交 将昭\" パワーリフティング ベンチプレス",
+        "\"馬狩 良光\" パワーリフティング ベンチプレス",
+        "\"竹内 謙太\" パワーリフティング ベンチプレス"
+      ],
+      "result": "No result rows returned in this connector-backed pass."
+    }
+  ],
+  "promotionDecision": {
+    "databaseJson": "unchanged; no confirmed source-linked histories were found",
+    "researchCandidatesJson": "unchanged; no ambiguous official/high-trust candidate rows were found",
+    "reason": "Do not invent, infer, or promote achievements without row-level official/high-trust evidence and same-athlete confidence."
+  }
+}
