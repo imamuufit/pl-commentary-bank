@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "purpose": "Small-batch candidate sweep for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support plus identity confidence. Ambiguous identity rows stay in data/research-candidates.json."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [65],
+    "processedAthletes": ["細川 広一"],
+    "primarySourcesChecked": [
+      "open PR check on imamuufit/pl-commentary-bank",
+      "main branch data/research-candidates.json",
+      "main branch data/research-batches/2026-06-30-lot61-65-run14.json",
+      "HPA official annual result PDF 2016"
+    ],
+    "openPrCheck": "Open PR #111 was present but self-described as a report generator only; no athlete candidate/data mutation overlap was identified.",
+    "writeScope": "data/research-candidates.json and this isolated batch log only. No data/database.json, CSS, print template, A4 layout, app runtime, or v5.9.6_LOCK changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-2016-annual-results",
+      "title": "HPA official annual result PDF 2016",
+      "url": "https://h-power.sakura.ne.jp/2016.pdf",
+      "sourceType": "HPA official result PDF",
+      "rowLevelExtractionStatus": "Extracted exact-name row for 細川 広一."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "E-65-hosokawa-hirokazu",
+      "lot": 65,
+      "playerName": "細川 広一",
+      "status": "candidate-added-not-promoted",
+      "confirmedFindings": [],
+      "candidateFindings": [
+        {
+          "findingType": "priorHistoryCandidate",
+          "eventDate": "2016-05-15",
+          "competitionName": "国民体育大会パワーリフティング競技 第2回北海道予選会（Bグループ）",
+          "eventType": "PL",
+          "division": "男子105Kg級",
+          "birthYear": 1969,
+          "affiliation": "名寄協会",
+          "bodyweight": "98.25",
+          "sqAttempts": "180.0 / 190.0 / 190.0",
+          "bpAttempts": "110.0 / 115.0 / 120.0",
+          "dlAttempts": "180.0 / 190.0 / 200.0",
+          "sqBest": "190.0",
+          "bpBest": "120.0",
+          "dlBest": "190.0",
+          "total": "500.0",
+          "place": "3",
+          "points": "306.50",
+          "sourceIds": ["src-hpa-2016-annual-results"],
+          "candidateReason": "Official row is exact-name, but 2026 Numata Lot 65 identity continuity and category/affiliation progression were not fully reconciled in this small batch."
+        }
+      ],
+      "promotionRecommendation": "Keep in data/research-candidates.json until identity confidence is sufficient for data/database.json."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "The source row is official, but athlete identity continuity with the 2026 Numata roster entry was not proven in this run.",
+    "safeNextStep": "Cross-check HPA/JPA records after 2016 and the 2026 Numata official entry/result row before promotion."
+  }
+}
