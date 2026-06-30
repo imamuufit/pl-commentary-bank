@@ -1,19 +1,21 @@
 {
   "meta": {
-    "version": "0.1.0",
-    "updatedAt": "2026-06-29",
+    "version": "0.1.1",
+    "updatedAt": "2026-06-30",
     "sourcePolicy": "Official HPA/JPA sources only. This file records 2022 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
     "layoutLock": "v5.9.6_LOCK",
     "notes": [
-      "Temporary 2022 official-source candidate addendum for HPA Event Watch.",
-      "Keep separate from athlete master data, confirmed athlete histories, and research candidates.",
-      "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion."
+      "2022 official-source candidate addendum for HPA Event Watch.",
+      "Keep separate from athlete master data, confirmed athlete histories, event entries, and research candidates.",
+      "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion.",
+      "Source summary flags are aligned with newer event-index candidate files: 2022 currently has only annual official result PDF and venue/date evidence confirmed in this file; outline, entry roster, schedule, program,速報, and YouTube live sources remain unconfirmed."
     ]
   },
   "events": [
     {
       "id": "2022-05-14-15-hokkaido-spring-power-ebetsu",
       "status": "official_result_pdf_found",
+      "year": 2022,
       "name": "2022春の北海道パワーリフティング大会",
       "includedChampionships": [
         "全日本高校パワーリフティング選手権大会 第6回北海道予選会",
@@ -31,14 +33,17 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
           "type": "annual_result_pdf",
           "title": "2022年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2022resulttt.pdf",
-          "observedAt": "2026-06-29",
+          "observedAt": "2026-06-30",
           "evidenceLines": "HPA top page year navigation links 2022 to 2022resulttt.pdf. PDF pages for the spring meet state 全日本高校パワーリフティング選手権大会 第6回北海道予選会 and 国民体育大会パワーリフティング公開競技 第8回北海道代表選考会, with 2022年5月14日-15日 and 会場 江別総合体育館 柔剣道場."
         }
       ],
@@ -51,6 +56,7 @@
     {
       "id": "2022-07-31-hokkaido-summer-classic-bench-numata",
       "status": "official_result_pdf_found",
+      "year": 2022,
       "name": "2022夏の北海道クラシックベンチプレス大会",
       "includedChampionships": [
         "第26回北海道クラシックベンチプレス選手権大会"
@@ -67,14 +73,17 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
           "type": "annual_result_pdf",
           "title": "2022年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2022resulttt.pdf",
-          "observedAt": "2026-06-29",
+          "observedAt": "2026-06-30",
           "evidenceLines": "PDF pages for 第26回北海道クラシックベンチプレス選手権大会 state 2022年7月31日 and 会場 沼田町民会館."
         }
       ],
@@ -87,6 +96,7 @@
     {
       "id": "2022-10-08-09-hokkaido-autumn-classic-power-ebetsu",
       "status": "official_result_pdf_found",
+      "year": 2022,
       "name": "2022秋の北海道クラシックパワーリフティング大会",
       "includedChampionships": [
         "第25回 北海道クラシックパワーリフティング選手権大会"
@@ -103,14 +113,17 @@
         "hasEntryRoster": false,
         "hasSchedule": false,
         "hasResultPdf": true,
-        "hasVenueInfo": true
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true,
+        "hasYearResultPdf": true
       },
       "sources": [
         {
           "type": "annual_result_pdf",
           "title": "2022年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2022resulttt.pdf",
-          "observedAt": "2026-06-29",
+          "observedAt": "2026-06-30",
           "evidenceLines": "PDF pages for 第25回 北海道クラシックパワーリフティング選手権大会 state 2022年10月8日-9日 and 会場 江別市民体育館 柔剣道室."
         }
       ],
