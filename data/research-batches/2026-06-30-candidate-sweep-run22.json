@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "purpose": "Small-batch follow-up sweep for unresolved candidate athletes after Lot 1-100 initial coverage.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, same-event current rows, and record-marker interpretation stay outside data/database.json. Do not infer achievements from name similarity."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [40, 52],
+    "processedAthletes": [
+      "齊藤 敬太",
+      "宝利 桃華"
+    ],
+    "reasonForBatch": "Initial Lot 1-100 small-batch coverage is complete through Lot 100. This run reviewed the existing unresolved candidate list only, avoiding duplicate work on already logged Lot ranges.",
+    "openPrCheck": "No open Numata athlete research PRs were found before this batch.",
+    "writeScope": "Research log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-existing-candidates-20260630",
+      "title": "data/research-candidates.json on main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/research-candidates.json",
+      "sourceType": "Repository candidate register",
+      "checkedAt": "2026-06-30",
+      "rowLevelExtractionStatus": "Existing candidate register contains unresolved entries for Lot 40 齊藤 敬太 and Lot 52 宝利 桃華."
+    },
+    {
+      "sourceId": "src-web-exact-name-search-20260630-candidate-sweep",
+      "title": "Exact-name web searches for unresolved candidates",
+      "url": "search-only-no-single-result-url",
+      "sourceType": "Search audit",
+      "checkedAt": "2026-06-30",
+      "rowLevelExtractionStatus": "Searched exact Japanese names with HPA/JPA/IPF/Goodlift/APF/AAPF, powerlifting, bench press, and result-PDF terms. Search results did not produce a promotable official/high-trust row beyond the unresolved candidate notes already present."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "C-40-saito-keita",
+      "lot": 40,
+      "playerName": "齊藤 敬太",
+      "status": "candidate-remains-unpromoted",
+      "confirmedFindings": [],
+      "candidateFindings": [
+        {
+          "candidateId": "c40-old-national-results",
+          "sourceId": "src-existing-candidates-20260630",
+          "status": "要再確認",
+          "note": "Existing candidate note asks for additional confirmation of possible older national/world bench or powerlifting history. This follow-up search did not find an official/high-trust exact-match row sufficient for data/database.json promotion."
+        }
+      ],
+      "searchNotes": "No new confirmed domestic Hokkaido, national, international/world, three-lift powerlifting, single bench press, IPF/Goodlift, APF/AAPF, JPA, or HPA row was promoted. Continue to require official PDF row or Goodlift/IPF athlete-result confirmation before promotion."
+    },
+    {
+      "playerId": "D-52-houri-momoka",
+      "lot": 52,
+      "playerName": "宝利 桃華",
+      "status": "candidate-remains-unpromoted",
+      "confirmedFindings": [],
+      "candidateFindings": [
+        {
+          "candidateId": "d52-early-hokkaido-results",
+          "sourceId": "src-existing-candidates-20260630",
+          "status": "要再確認",
+          "note": "Existing candidate note asks for additional confirmation of 2021 onward Hokkaido Classic PL, national bench, and AAP-related history. This follow-up search did not find an official/high-trust exact-match row sufficient for data/database.json promotion."
+        }
+      ],
+      "searchNotes": "No new confirmed domestic Hokkaido, national, international/world, three-lift powerlifting, single bench press, IPF/Goodlift, APF/AAPF, JPA, or HPA row was promoted. Existing confirmed DB histories, if any, were not duplicated."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "Both processed athletes remain candidate-only because this run did not locate a row-level official/high-trust source that confirms the candidate histories with sufficient identity certainty.",
+    "safeNextStep": "Do not duplicate Lot-range research logs. Next useful work is either a conservative promotion review of already confirmed prior-history rows in batch logs, or manual official-PDF extraction for unresolved candidates where search indexing is insufficient."
+  }
+}
