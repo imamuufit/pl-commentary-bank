@@ -7,6 +7,7 @@
   let workspace = null;
   let config = null;
   let applying = false;
+  let scheduled = false;
 
   const esc = (value) => String(value ?? '')
     .replaceAll('&', '&amp;')
@@ -178,13 +179,19 @@
     return [...document.querySelectorAll('#pages .a4:not(.sources)')];
   }
 
+  function writeBlockIfChanged(block, text) {
+    if (!block) return;
+    const html = esc(text).replaceAll('\n', '<br>');
+    if (block.innerHTML !== html) block.innerHTML = html;
+  }
+
   function applyPageRelativeHistory(page, database, baseDate) {
     const player = playerFromPage(database, page);
     if (!player) return;
     const result = relativeHistory(player, baseDate);
     const blocks = infoBlocks(page);
-    if (blocks['前々回→前回']) blocks['前々回→前回'].innerHTML = esc(result.flow).replaceAll('\n', '<br>');
-    if (blocks['推移コメント']) blocks['推移コメント'].innerHTML = esc(result.progress).replaceAll('\n', '<br>');
+    writeBlockIfChanged(blocks['前々回→前回'], result.flow);
+    writeBlockIfChanged(blocks['推移コメント'], result.progress);
   }
 
   async function applyRelativeHistory() {
@@ -203,7 +210,16 @@
     }
   }
 
-  const observer = new MutationObserver(() => applyRelativeHistory());
+  function scheduleApplyRelativeHistory() {
+    if (scheduled) return;
+    scheduled = true;
+    window.requestAnimationFrame(() => {
+      scheduled = false;
+      applyRelativeHistory();
+    });
+  }
+
+  const observer = new MutationObserver(() => scheduleApplyRelativeHistory());
   window.addEventListener('load', () => {
     const pages = document.querySelector('#pages');
     if (pages) observer.observe(pages, { childList: true, subtree: true });
