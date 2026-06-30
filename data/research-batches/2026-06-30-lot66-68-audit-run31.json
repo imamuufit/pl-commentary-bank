@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "purpose": "Small-batch reconciliation audit for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, and same-event current rows stay outside data/database.json. Do not infer achievements from name similarity.",
+    "auditReason": "Earlier Lot 66-70 research logs on main contain conflicting conclusions. This audit returns to the official HPA 2026 Spring Ebetsu CLPL PDF and separates exact official rows from unresolved roster identity/schema promotion work."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [66, 67, 68],
+    "processedAthletes": [
+      "白川 雄太",
+      "森 大一",
+      "中薗 謙史"
+    ],
+    "primarySourcesChecked": [
+      "Open PR search on imamuufit/pl-commentary-bank before write",
+      "data/database.json roster skeleton on main for Lot 66-68",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting official result PDF",
+      "Prior merged Lot 66-70 logs #84 and #133 for conflict audit context"
+    ],
+    "openPrCheck": "One open PR (#111) was present. It is a standalone completion report generator and does not edit athlete data, candidate data, or the A4 print layout, so this isolated audit log is non-overlapping.",
+    "writeScope": "Research audit log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "Official PDF text opened and exact rows located for 白川 雄太, 森 大一, and 中薗 謙史. These rows are official-source confirmed as event result rows, but this audit does not mutate database histories."
+    },
+    {
+      "sourceId": "src-pr84-lot66-70-run15",
+      "title": "Merged PR #84 Lot 66-70 research batch",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/84",
+      "sourceType": "Merged repository research log",
+      "checkedAt": "2026-06-30",
+      "rowLevelExtractionStatus": "Reported exact official-source prior rows for 白川 雄太 and 森 大一 and a near-name candidate for 中園 訓史. Current main roster now spells Lot 68 as 中薗 謙史, so this audit supersedes the near-name wording for Lot 68."
+    },
+    {
+      "sourceId": "src-pr133-lot66-70-run30",
+      "title": "Merged PR #133 Lot 66-70 research batch",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/133",
+      "sourceType": "Merged repository research log",
+      "checkedAt": "2026-06-30",
+      "rowLevelExtractionStatus": "Reported no promotable prior histories for Lot 66-70. This conflicts with the official PDF rows rechecked in this audit and should not be used to erase the official-source findings."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "E-66-shirakawa-yuuta",
+      "lot": 66,
+      "playerName": "白川 雄太",
+      "status": "official-prior-hokkaido-clpl-row-confirmed-not-promoted-this-run",
+      "confirmedFindings": [
+        {
+          "findingType": "priorHistory",
+          "eventDate": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "CL-PL",
+          "division": "クラシック男子105kg級",
+          "birthYear": 1992,
+          "affiliation": "NPR",
+          "bodyweight": "95.45",
+          "sqAttempts": "170.0〇-190.0〇-200.0〇",
+          "bpAttempts": "120.0〇-130.0〇-135.0〇",
+          "dlAttempts": "190.0×-190.0〇-205.0〇",
+          "sqBest": "200.0",
+          "bpBest": "135.0",
+          "dlBest": "205.0",
+          "total": "540.0",
+          "place": "8",
+          "points": "69.76",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Official-source backed. Promote only in a later schema-safe database pass with source registry URL normalization."
+    },
+    {
+      "playerId": "E-67-mo-taichi",
+      "lot": 67,
+      "playerName": "森 大一",
+      "status": "official-prior-hokkaido-clpl-row-confirmed-not-promoted-this-run",
+      "confirmedFindings": [
+        {
+          "findingType": "priorHistory",
+          "eventDate": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "CL-PL",
+          "division": "クラシック男子105kg級",
+          "birthYear": 1974,
+          "affiliation": "北海道協会個人登録",
+          "bodyweight": "97.95",
+          "sqAttempts": "185.0〇-200.0〇-205.0〇",
+          "bpAttempts": "137.5〇-140.0〇-142.5×",
+          "dlAttempts": "190.0×-190.0〇-205.0〇",
+          "sqBest": "205.0",
+          "bpBest": "140.0",
+          "dlBest": "205.0",
+          "total": "550.0",
+          "place": "6",
+          "points": "70.17",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "Official-source backed. Promote only in a later schema-safe database pass. Note database playerId/englishName romanization is E-67-mo-taichi / Mo Taichi although the Japanese name is 森 大一; this audit does not rename IDs."
+    },
+    {
+      "playerId": "E-68-nakazono-norifumi",
+      "lot": 68,
+      "playerName": "中薗 謙史",
+      "status": "official-prior-hokkaido-clpl-row-confirmed-not-promoted-this-run",
+      "confirmedFindings": [
+        {
+          "findingType": "priorHistory",
+          "eventDate": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "CL-PL",
+          "division": "クラシック男子105kg級",
+          "birthYear": 1987,
+          "affiliation": "アイアンジム",
+          "bodyweight": "103.80",
+          "sqAttempts": "245.0〇-252.5〇-262.5〇",
+          "bpAttempts": "155.0〇-162.5×-162.5×",
+          "dlAttempts": "235.0〇-250.0〇-260.0〇",
+          "sqBest": "262.5",
+          "bpBest": "155.0",
+          "dlBest": "260.0",
+          "total": "677.5",
+          "place": "2",
+          "points": "84.10",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"]
+        }
+      ],
+      "candidateFindings": [],
+      "auditCorrection": "PR #84 treated this as a near-name candidate against a roster spelling of 中園 訓史. Current main database roster spells Lot 68 as 中薗 謙史, matching the official PDF row. This audit records it as an official prior-history row, still not promoted to database.json in this run."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "This run was intentionally limited to a reconciliation audit because prior merged logs conflict and database source schema/source registry normalization should be handled in a separate database-promotion PR. No uncertain item needed data/research-candidates.json in this audit because all three checked rows are exact-name official HPA rows against current main roster names.",
+    "safeNextStep": "Create a separate schema-safe database promotion PR for Lot 66-68 after confirming source registry conventions and avoiding duplicate history IDs."
+  }
+}
