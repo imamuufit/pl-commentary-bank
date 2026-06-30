@@ -74,9 +74,13 @@
     return Array.isArray(history?.sourceIds) && history.sourceIds.some((sourceId) => String(sourceId || '').trim().length > 0);
   }
 
+  function hasConfirmedStatus(history) {
+    return String(history?.status || '').trim() === '確認済';
+  }
+
   function confirmedBeforeEvent(player, baseDate) {
     return [...(player?.histories || [])]
-      .filter((history) => history.status === '確認済')
+      .filter((history) => hasConfirmedStatus(history))
       .filter((history) => hasConfirmedSourceIds(history))
       .filter((history) => hasConfirmedCompetitionIdentity(history))
       .filter((history) => isValidDateString(history.date))

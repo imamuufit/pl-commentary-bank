@@ -27,7 +27,9 @@ requireIncludes(helperText, 'function isValidDateString(value)', 'src/event-rela
 requireIncludes(helperText, "date.toISOString().slice(0, 10) === text", 'src/event-relative-history.js', 'must reject impossible YYYY-MM-DD dates such as 2026-02-30');
 requireIncludes(helperText, "configJson?.event?.dateFrom || configJson?.event?.dateTo || configJson?.event?.date", 'src/event-relative-history.js', 'must use selected event dateFrom/dateTo/date as the base date');
 requireIncludes(helperText, 'return isValidDateString(date) ? date : null', 'src/event-relative-history.js', 'must reject invalid selected event dates');
-requireIncludes(helperText, "history.status === '確認済'", 'src/event-relative-history.js', 'must use only confirmed histories');
+requireIncludes(helperText, 'function hasConfirmedStatus(history)', 'src/event-relative-history.js', 'confirmed history status must be normalized before use');
+requireIncludes(helperText, "String(history?.status || '').trim() === '確認済'", 'src/event-relative-history.js', 'confirmed history status must tolerate surrounding whitespace without broadening beyond 確認済');
+requireIncludes(helperText, '.filter((history) => hasConfirmedStatus(history))', 'src/event-relative-history.js', 'must use only normalized confirmed histories');
 requireIncludes(helperText, 'function hasConfirmedSourceIds(history)', 'src/event-relative-history.js', 'confirmed histories must validate sourceIds before use');
 requireIncludes(helperText, 'Array.isArray(history?.sourceIds) && history.sourceIds.some', 'src/event-relative-history.js', 'confirmed histories must carry nonblank sourceIds before use');
 requireIncludes(helperText, "String(sourceId || '').trim().length > 0", 'src/event-relative-history.js', 'blank sourceIds must not qualify as confirmed sources');
