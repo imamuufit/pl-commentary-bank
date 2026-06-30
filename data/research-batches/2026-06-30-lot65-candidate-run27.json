@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "purpose": "Small-batch candidate sweep for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support plus identity confidence. Ambiguous identity rows stay in data/research-candidates.json."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [65],
+    "processedAthletes": ["細川 広一"],
+    "primarySourcesChecked": [
+      "open PR check on imamuufit/pl-commentary-bank",
+      "main branch data/research-candidates.json",
+      "main branch data/research-batches/2026-06-30-lot65-candidate-run26.json",
+      "HPA official annual result PDF 2017",
+      "HPA official annual result PDF 2018"
+    ],
+    "openPrCheck": "Open PR #111 was present but self-described as a report generator only; no athlete candidate/data mutation overlap was identified.",
+    "writeScope": "This isolated batch log only. No data/database.json, CSS, print template, A4 layout, app runtime, or v5.9.6_LOCK changes. data/research-candidates.json update was intentionally deferred to avoid lossy full-file replacement in this connector-backed run."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-2017-annual-results",
+      "title": "HPA official annual result PDF 2017",
+      "url": "https://h-power.sakura.ne.jp/2017.pdf",
+      "sourceType": "HPA official result PDF",
+      "rowLevelExtractionStatus": "Extracted exact-name row for 細川 広一."
+    },
+    {
+      "sourceId": "src-hpa-2018-annual-results",
+      "title": "HPA official annual result PDF 2018",
+      "url": "https://h-power.sakura.ne.jp/2018.pdf",
+      "sourceType": "HPA official result PDF",
+      "rowLevelExtractionStatus": "Extracted exact-name rows for 細川 広一."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "E-65-hosokawa-hirokazu",
+      "lot": 65,
+      "playerName": "細川 広一",
+      "status": "candidate-found-not-promoted",
+      "confirmedFindings": [],
+      "candidateFindings": [
+        {
+          "findingType": "priorHistoryCandidate",
+          "eventDate": "2017-05-14",
+          "competitionName": "国民体育大会パワーリフティング競技 第3回北海道予選会（Dグループ）",
+          "eventType": "PL",
+          "division": "男子105Kg級",
+          "birthYear": 1969,
+          "affiliation": "名寄協会",
+          "bodyweight": "97.35",
+          "sqAttempts": "180.0 / 190.0 / 190.0",
+          "bpAttempts": "120.0 / 120.0 / 125.0",
+          "dlAttempts": "190.0 / 200.0 / 200.0",
+          "sqBest": "180.0",
+          "bpBest": "120.0",
+          "dlBest": "190.0",
+          "total": "490.0",
+          "place": "5",
+          "points": "301.54",
+          "sourceIds": ["src-hpa-2017-annual-results"],
+          "candidateReason": "Official exact-name row, but 2026 Numata Lot 65 identity continuity remains unproven."
+        },
+        {
+          "findingType": "priorHistoryCandidate",
+          "eventDate": "2018-05-13",
+          "competitionName": "国民体育大会パワーリフティング競技 第4回北海道予選会",
+          "eventType": "PL",
+          "division": "男子105Kg級",
+          "birthYear": 1969,
+          "affiliation": "名寄協会",
+          "bodyweight": "99.90",
+          "sqAttempts": "180.0 / 190.0 / 190.0",
+          "bpAttempts": "125.0 / 130.0 / 135.0",
+          "dlAttempts": "190.0 / 200.0 / 210.0",
+          "sqBest": "190.0",
+          "bpBest": "130.0",
+          "dlBest": "200.0",
+          "total": "520.0",
+          "place": "1",
+          "points": "316.59",
+          "sourceIds": ["src-hpa-2018-annual-results"],
+          "candidateReason": "Official exact-name row, but 2026 Numata Lot 65 identity continuity remains unproven."
+        },
+        {
+          "findingType": "priorHistoryCandidate",
+          "eventDate": "2018-07-15",
+          "competitionName": "第22回 北海道クラシックベンチプレス選手権大会（Fグループ）",
+          "eventType": "S-BP",
+          "division": "男子105Kg級",
+          "birthYear": 1969,
+          "affiliation": "名寄協会",
+          "bodyweight": "98.95",
+          "bpAttempts": "130.0 / 132.5 / 132.5",
+          "bpBest": "130.0",
+          "total": "130.0",
+          "place": "4",
+          "points": "79.46",
+          "sourceIds": ["src-hpa-2018-annual-results"],
+          "candidateReason": "Official exact-name row, but 2026 Numata Lot 65 identity continuity remains unproven."
+        },
+        {
+          "findingType": "priorHistoryCandidate",
+          "eventDate": "2018-10-21",
+          "competitionName": "第21回 北海道クラシックパワーリフティング選手権大会",
+          "eventType": "PL",
+          "division": "男子105Kg級",
+          "birthYear": 1969,
+          "affiliation": "名寄協会",
+          "bodyweight": "99.50",
+          "sqAttempts": "190.0 / 200.0 / 200.0",
+          "bpAttempts": "130.0 / 132.5 / 135.0",
+          "dlAttempts": "200.0 / 210.0 / 215.0",
+          "sqBest": "190.0",
+          "bpBest": "132.5",
+          "dlBest": "210.0",
+          "total": "532.5",
+          "place": "2",
+          "points": "324.73",
+          "sourceIds": ["src-hpa-2018-annual-results"],
+          "candidateReason": "Official exact-name row, but 2026 Numata Lot 65 identity continuity remains unproven."
+        }
+      ],
+      "promotionRecommendation": "Keep in data/research-candidates.json until identity confidence is sufficient for data/database.json."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "The source rows are official, but athlete identity continuity with the 2026 Numata roster entry was not proven in this run.",
+    "safeNextStep": "Cross-check 2019 onward HPA/JPA records and the 2026 Numata official entry/result row before promotion."
+  }
+}
