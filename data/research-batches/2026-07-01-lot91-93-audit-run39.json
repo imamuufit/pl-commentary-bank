@@ -1,0 +1,127 @@
+{
+  "batchId": "2026-07-01-lot91-93-audit-run39",
+  "task": "PL Athlete Research incremental audit for 2026 Numata Bench Press Lot 91-93",
+  "layoutGuard": "v5.9.6_LOCK preserved; no A4 print layout, CSS, generator, runtime, or template files touched.",
+  "mainAndPrCheck": {
+    "mainBranchChecked": true,
+    "openPullRequestsChecked": true,
+    "openPullRequests": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "disposition": "non-overlapping; report-only PR, no athlete database or candidate mutation"
+      }
+    ],
+    "duplicateWorkCheck": [
+      {
+        "number": 95,
+        "title": "Add Lot 91-95 Numata athlete research batch",
+        "disposition": "prior merged baseline; this run is a narrow audit/addendum for Lot 91-93 only and does not overwrite or duplicate database/candidate files"
+      }
+    ]
+  },
+  "sourcePriority": [
+    "HPA official result PDFs and HPA-hosted result locators",
+    "JPA official result pages/PDFs where discoverable",
+    "IPF/Goodlift searches where relevant",
+    "APF/AAPF-oriented searches where relevant"
+  ],
+  "processedAthletes": [
+    {
+      "lot": 91,
+      "name": "徳丸 優",
+      "englishName": "Tokumaru Yuu",
+      "databaseDisposition": "no confirmed promotion",
+      "candidateDisposition": "no candidate row added",
+      "confirmedInThisBatch": [],
+      "candidateInThisBatch": [],
+      "notes": "Prior merged Lot 91-95 batch recorded current Numata EQ bench result context only. This audit did not isolate any additional official/high-trust prior domestic Hokkaido, national, international/world, three-lift, or single-bench history for promotion."
+    },
+    {
+      "lot": 92,
+      "name": "伊藤 達也",
+      "englishName": "Ito Tatsuya",
+      "databaseDisposition": "no database.json mutation in this batch",
+      "candidateDisposition": "kept as isolated batch-level confirmed-source finding; not appended to research-candidates.json to avoid duplicating the prior Lot 91-95 batch",
+      "confirmedInThisBatch": [
+        {
+          "status": "official-source row confirmed, not promoted",
+          "eventDate": "2026-04-25",
+          "eventName": "第29回 北海道クラシックパワーリフティング選手権大会 / 国民スポーツ大会北海道代表選考会",
+          "sourceLabel": "HPA 2026 Spring Ebetsu CLPL official result PDF",
+          "sourceUrl": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+          "rowText": "No.47 伊藤 達也 1994 BURSTLIMIT 65.90 / SQ 165.0 172.5 180.0 / BP 140.0 150.0 -155.0 / DL 175.0 185.0 195.0 / Best SQ 180.0 BP 150.0 DL 195.0 / Total 525.0 / 2位 / Points 81.90",
+          "discipline": "three-lift powerlifting",
+          "equipment": "classic",
+          "scope": "domestic Hokkaido",
+          "promotionNote": "Exact-name official row with team and birth-year context was confirmed from the HPA PDF. It remains batch-level only here because the prior Lot 91-95 batch already recorded the finding and this run avoids duplicate database/candidate mutation."
+        }
+      ],
+      "candidateInThisBatch": [],
+      "notes": "No national, international/world, or APF/AAPF-relevant additional official/high-trust history was isolated in this small audit beyond the HPA 2026 Spring Ebetsu CLPL row."
+    },
+    {
+      "lot": 93,
+      "name": "杉本 拓弥",
+      "englishName": "Sugimoto Takuya",
+      "databaseDisposition": "no confirmed promotion",
+      "candidateDisposition": "no candidate row added",
+      "confirmedInThisBatch": [],
+      "candidateInThisBatch": [],
+      "notes": "Prior merged Lot 91-95 batch recorded current Numata EQ bench result context only. This audit did not isolate any additional official/high-trust prior domestic Hokkaido, national, international/world, three-lift, or single-bench history for promotion."
+    }
+  ],
+  "confirmedHistories": [
+    {
+      "lot": 92,
+      "name": "伊藤 達也",
+      "status": "official-source row confirmed, not promoted",
+      "reasonNotPromoted": "Avoid duplicate mutation because PR #95 already logged the same HPA prior-history finding in an isolated batch; database.json was intentionally left unchanged in that baseline."
+    }
+  ],
+  "candidateFindings": [],
+  "sourcesUsed": [
+    {
+      "type": "repository-main",
+      "label": "data/database.json roster skeleton on main",
+      "path": "data/database.json",
+      "usedFor": "Confirmed the current roster data source and preserved v5.9.6_LOCK metadata without mutation."
+    },
+    {
+      "type": "github-pr-search",
+      "label": "Open PR check",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/111",
+      "usedFor": "Verified the only open PR is non-overlapping and does not mutate athlete data/candidate data."
+    },
+    {
+      "type": "github-pr-baseline",
+      "label": "Merged Lot 91-95 baseline batch PR #95",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/95",
+      "usedFor": "Avoided duplicating previously merged Lot 91-95 research work; used as baseline for this Lot 91-93 audit."
+    },
+    {
+      "type": "official-result-pdf",
+      "label": "HPA 2026 Spring Ebetsu CLPL official result PDF",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "usedFor": "Confirmed the Lot 92 伊藤 達也 prior Hokkaido classic three-lift row."
+    },
+    {
+      "type": "official-result-locator",
+      "label": "HPA 2026 Numata Bench Press F/G速報 PDF locator",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "usedFor": "Current-event official-source context for Lot 91-93; no new prior-history promotion was based on this locator."
+    },
+    {
+      "type": "web-search",
+      "label": "Exact-name searches across HPA/JPA/IPF/Goodlift/APF-AAPF-style terms",
+      "usedFor": "Checked for additional domestic Hokkaido, national, international/world, three-lift, and single-bench histories; no additional promotable or candidate rows were isolated in this small run."
+    }
+  ],
+  "mutationSummary": {
+    "databaseJsonChanged": false,
+    "researchCandidatesJsonChanged": false,
+    "addedFiles": [
+      "data/research-batches/2026-07-01-lot91-93-audit-run39.json"
+    ]
+  }
+}
