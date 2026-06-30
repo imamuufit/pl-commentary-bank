@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "purpose": "Small-batch research log for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-06-30",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support. Ambiguous identity, incomplete context, same-event current rows, and record-marker interpretation stay outside data/database.json. Do not infer achievements from name similarity."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [96, 97, 98, 99, 100],
+    "processedAthletes": [
+      "竹内 謙太",
+      "片山 遼",
+      "矢崎 光康",
+      "広瀬 優太",
+      "宮下 綾太"
+    ],
+    "primarySourcesChecked": [
+      "HPA 2026 Numata Bench Press F/G result PDF opened from HPA official top-page link",
+      "HPA 2026 Spring Ebetsu Classic Powerlifting / Hokkaido Powerlifting result PDF opened from HPA official top-page link",
+      "Exact-name web searches scoped to HPA, JPA, IPF/Goodlift, APF/AAPF, powerlifting, and bench press terms"
+    ],
+    "openPrCheck": "No open Numata athlete research PRs were found before this batch. This continues after Lot 91-95.",
+    "writeScope": "Research log only. No app runtime, CSS, print template, A4 layout, data/database.json, or data/research-candidates.json changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-fg-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 Fグループ / 第36回北海道ベンチプレス選手権 Gグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "rowLevelExtractionStatus": "Opened from the HPA top-page official link and row-extracted Lot 96-100."
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-pl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 / 第55回北海道パワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25/2026-04-26",
+      "venue": "江別市青年センター",
+      "rowLevelExtractionStatus": "Opened and searched exact names for Lot 96-100. Exact prior-history match was found for 竹内 謙太 only."
+    },
+    {
+      "sourceId": "src-web-exact-name-search-20260630-lot96-100",
+      "title": "Exact-name web searches for Lot 96-100 athlete histories",
+      "url": "search-only-no-single-result-url",
+      "sourceType": "Search audit",
+      "checkedAt": "2026-06-30",
+      "rowLevelExtractionStatus": "Exact-name web searches for HPA/JPA/IPF/Goodlift/APF/AAPF/powerlifting/bench press terms returned no additional promotable official or high-trust histories for 竹内 謙太, 片山 遼, 矢崎 光康, 広瀬 優太, or 宮下 綾太 in this run."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "G-96-takeuchi-kenta",
+      "lot": 96,
+      "playerName": "竹内 謙太",
+      "status": "current-event-and-prior-history-confirmed-this-run",
+      "confirmedFindings": [
+        {
+          "findingType": "current-equipped-bench-result",
+          "sourceId": "src-hpa-20260621-numata-bp-fg-sokuhou",
+          "competitionName": "第36回北海道ベンチプレス選手権大会",
+          "date": "2026-06-21",
+          "grade": "北海道",
+          "eventType": "EQ-BP",
+          "division": "男子エクイップ93kg級",
+          "bodyweight": "91.70kg",
+          "affiliation": "名寄パワーリフティング協会",
+          "benchBest": "162.5kg",
+          "place": "2",
+          "attemptsRaw": "-160.0 / -162.5 / 162.5",
+          "points": "54.20",
+          "identityCheck": "Exact Japanese full-name and lot-number match in HPA official Numata G-group PDF."
+        },
+        {
+          "findingType": "prior-equipped-three-lift-powerlifting-result",
+          "sourceId": "src-hpa-20260425-ebetsu-clpl-pl-result",
+          "competitionName": "第55回北海道パワーリフティング選手権大会",
+          "date": "2026-04-26",
+          "grade": "北海道",
+          "eventType": "EQ-PL",
+          "division": "エクイップ男子93kg級",
+          "bodyweight": "90.60kg",
+          "affiliation": "名寄パワーリフティング協会",
+          "squatBest": "230.0kg",
+          "benchBest": "155.0kg",
+          "deadliftBest": "235.0kg",
+          "total": "620.0kg",
+          "place": "1",
+          "attemptsRaw": "S 200.0 / 217.5 / 230.0, B 155.0 / -157.5 / -157.5, D 200.0 / 220.0 / 235.0",
+          "identityCheck": "Exact Japanese full-name match in HPA official Spring Ebetsu result PDF; birth year, affiliation, equipment division, and bodyweight-class context are consistent with the Numata G-group row."
+        }
+      ],
+      "candidateFindings": [],
+      "searchNotes": "Official HPA Spring Ebetsu PL row confirms a prior equipped three-lift result. No additional national/international/IPF-Goodlift/APF/AAPF row was promoted in this run."
+    },
+    {
+      "playerId": "G-97-katayama-ryou",
+      "lot": 97,
+      "playerName": "片山 遼",
+      "status": "current-event-confirmed-only",
+      "confirmedFindings": [
+        {
+          "findingType": "current-equipped-bench-result",
+          "sourceId": "src-hpa-20260621-numata-bp-fg-sokuhou",
+          "competitionName": "第36回北海道ベンチプレス選手権大会",
+          "date": "2026-06-21",
+          "grade": "北海道",
+          "eventType": "EQ-BP",
+          "division": "男子エクイップ93kg級",
+          "bodyweight": "90.95kg",
+          "affiliation": "リアルスィング",
+          "benchBest": "185.0kg",
+          "place": "1",
+          "attemptsRaw": "170.0 / 180.0 / 185.0",
+          "points": "62.01",
+          "identityCheck": "Exact Japanese full-name and lot-number match in HPA official Numata G-group PDF."
+        }
+      ],
+      "candidateFindings": [],
+      "searchNotes": "2026 Spring Ebetsu CLPL/PL official PDF exact-name search returned no match. External exact-name searches did not return a promotable additional official/high-trust history."
+    },
+    {
+      "playerId": "G-98-yazaki-mitsuyasu",
+      "lot": 98,
+      "playerName": "矢崎 光康",
+      "status": "current-event-confirmed-only",
+      "confirmedFindings": [
+        {
+          "findingType": "current-equipped-bench-result",
+          "sourceId": "src-hpa-20260621-numata-bp-fg-sokuhou",
+          "competitionName": "第36回北海道ベンチプレス選手権大会",
+          "date": "2026-06-21",
+          "grade": "北海道",
+          "eventType": "EQ-BP",
+          "division": "男子エクイップ105kg級",
+          "bodyweight": "99.20kg",
+          "affiliation": "BURSTLIMIT",
+          "benchBest": "失格",
+          "place": "失格",
+          "attemptsRaw": "-220.0 / -225.0 / -225.0",
+          "points": "",
+          "identityCheck": "Exact Japanese full-name and lot-number match in HPA official Numata G-group PDF."
+        }
+      ],
+      "candidateFindings": [],
+      "searchNotes": "2026 Spring Ebetsu CLPL/PL official PDF exact-name search returned no match. External exact-name searches did not return a promotable additional official/high-trust history."
+    },
+    {
+      "playerId": "G-99-hirose-yuuta",
+      "lot": 99,
+      "playerName": "広瀬 優太",
+      "status": "current-event-confirmed-only",
+      "confirmedFindings": [
+        {
+          "findingType": "current-equipped-bench-result",
+          "sourceId": "src-hpa-20260621-numata-bp-fg-sokuhou",
+          "competitionName": "第36回北海道ベンチプレス選手権大会",
+          "date": "2026-06-21",
+          "grade": "北海道",
+          "eventType": "EQ-BP",
+          "division": "男子エクイップ105kg級",
+          "bodyweight": "102.00kg",
+          "affiliation": "キムンカムイ旭川",
+          "benchBest": "230.0kg",
+          "place": "1",
+          "attemptsRaw": "195.0 / 230.0 / -245.0",
+          "points": "72.41",
+          "identityCheck": "Exact Japanese full-name and lot-number match in HPA official Numata G-group PDF."
+        }
+      ],
+      "candidateFindings": [],
+      "searchNotes": "2026 Spring Ebetsu CLPL/PL official PDF exact-name search returned no match. External exact-name searches did not return a promotable additional official/high-trust history."
+    },
+    {
+      "playerId": "G-100-miyashita-ryouta",
+      "lot": 100,
+      "playerName": "宮下 綾太",
+      "status": "current-event-confirmed-only",
+      "confirmedFindings": [
+        {
+          "findingType": "current-equipped-bench-result",
+          "sourceId": "src-hpa-20260621-numata-bp-fg-sokuhou",
+          "competitionName": "第36回北海道ベンチプレス選手権大会",
+          "date": "2026-06-21",
+          "grade": "北海道",
+          "eventType": "EQ-BP",
+          "division": "男子エクイップ120kg超級",
+          "bodyweight": "135.60kg",
+          "affiliation": "リアルスィング",
+          "benchBest": "125.0kg",
+          "place": "1",
+          "attemptsRaw": "-125.0 / 125.0 / -130.0",
+          "points": "35.43",
+          "identityCheck": "Exact Japanese full-name and lot-number match in HPA official Numata G-group PDF."
+        }
+      ],
+      "candidateFindings": [],
+      "searchNotes": "2026 Spring Ebetsu CLPL/PL official PDF exact-name search returned no match. External exact-name searches did not return a promotable additional official/high-trust history."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "This run intentionally wrote an isolated batch log only. Current-event rows are audit support, not prior histories. 竹内 謙太's Spring Ebetsu EQ-PL row is confirmed and can be reviewed for later conservative database promotion with source-link conventions.",
+    "safeNextStep": "Lot 1-100 roster has now been covered through Lot 100 in small batches. Separately review whether confirmed prior-history rows accumulated in batch logs should be promoted into data/database.json under a consistent source schema."
+  }
+}
