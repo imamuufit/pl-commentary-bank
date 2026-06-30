@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.1.5",
+    "version": "0.1.6",
     "purpose": "未確認候補の一時管理。確認済みになるまで data/database.json へ昇格しない。",
     "updatedAt": "2026-06-30"
   },
@@ -10,7 +10,7 @@
       "playerName": "齊藤 敬太",
       "candidateId": "c40-old-national-results",
       "status": "要再確認",
-      "note": "過去の全国大会・世界大会歴を追加調査。公式結果PDFまたはGoodlift/IPF確認後に正本DBへ昇格する。2026-06-30の小ロット調査で、HPA公式2011年PDFから同名・男子66kg級・ノーギア北海道ベンチ行を確認した。追加小ロットでHPA公式2012年PDFから同名/表記揺れ（斎藤・齋藤）・男子66kg級・春季ベンチおよびノーギア北海道ベンチ行を確認した。さらにHPA公式2013年PDFから同名/斉藤表記・男子66kg級・春季北海道ベンチ行を確認した。ただし2026沼田Lot40本人との同一性、階級推移、個人識別は未照合のため、正本DBへは昇格しない。",
+      "note": "過去の全国大会・世界大会歴を追加調査。公式結果PDFまたはGoodlift/IPF確認後に正本DBへ昇格する。2026-06-30の小ロット調査で、HPA公式2011年PDFから同名・男子66kg級・ノーギア北海道ベンチ行を確認した。追加小ロットでHPA公式2012年PDFから同名/表記揺れ（斎藤・齋藤）・男子66kg級・春季ベンチおよびノーギア北海道ベンチ行を確認した。さらにHPA公式2013年PDFから同名/斉藤表記・男子66kg級・春季北海道ベンチ行を確認した。2026-06-30追加小ロットでHPA公式2014年PDFから同名・男子66kg級・北海道ノーギアベンチ行を確認した。ただし2026沼田Lot40本人との同一性、階級推移、個人識別は未照合のため、正本DBへは昇格しない。",
       "searchTerms": [
         "齊藤敬太 ベンチプレス",
         "斉藤敬太 ベンチプレス",
@@ -20,7 +20,8 @@
         "site:h-power.sakura.ne.jp/2011.pdf 齊藤 敬太",
         "site:h-power.sakura.ne.jp/2012.pdf 斎藤 敬太",
         "site:h-power.sakura.ne.jp/2012.pdf 齋藤 敬太",
-        "site:h-power.sakura.ne.jp/2013.pdf 斉藤 敬太"
+        "site:h-power.sakura.ne.jp/2013.pdf 斉藤 敬太",
+        "site:h-power.sakura.ne.jp/2014.pdf 齊藤 敬太"
       ],
       "lastCheckedAt": "2026-06-30",
       "checkedSources": [
@@ -55,6 +56,10 @@
         {
           "label": "HPA official PDF: 2013.pdf p.3 text row",
           "result": "春季北海道ベンチプレス選手権大会（Cグループ） / 2013-05-12 / 苫小牧市総合体育館 / 男子66Kg級 / 斉藤 敬太 / birth year 1982 / 個人 / BW 65.60 / BP 152.5, 157.5, 160.0 / best 157.5 / total 157.5 / 1位 / formula 124.29 / source https://h-power.sakura.ne.jp/2013.pdf"
+        },
+        {
+          "label": "HPA official PDF: 2014.pdf p.2 text row",
+          "result": "第18回北海道ノーギアベンチプレス選手権大会（Cグループ） / 2014-05-11 / 江別市民体育館 / 男子66Kg級 / 齊藤 敬太 / birth year 1982 / 札幌協会 / BW 64.90 / BP 157.5, 162.5, 165.0 / best 162.5 / total 162.5 / 1位 / formula 129.39 / source https://h-power.sakura.ne.jp/2014.pdf"
         }
       ],
       "rowCandidates": [
@@ -145,6 +150,28 @@
           "total": "157.5",
           "place": "1",
           "formula": "124.29",
+          "promotionStatus": "同一人物性未照合のため未昇格"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/2014.pdf",
+          "sourceLabel": "HPA official annual result PDF 2014, p.2 text row",
+          "eventDate": "2014-05-11",
+          "eventName": "第18回 北海道ノーギアベンチプレス選手権大会（Cグループ）",
+          "venue": "江別市民体育館",
+          "eventType": "S-BP",
+          "equipment": "ノーギア/クラシック扱い候補",
+          "sex": "男子",
+          "bodyweightClass": "66Kg級",
+          "athleteName": "齊藤 敬太",
+          "birthYear": "1982",
+          "team": "札幌協会",
+          "bodyweight": "64.90",
+          "bpAttempts": "157.5 / 162.5 / 165.0",
+          "bpBest": "162.5",
+          "recordMarkRaw": "☆",
+          "total": "162.5",
+          "place": "1",
+          "formula": "129.39",
           "promotionStatus": "同一人物性未照合のため未昇格"
         }
       ],
@@ -304,6 +331,50 @@
           "total": "130.0",
           "place": "2",
           "formula": "103.51",
+          "promotionStatus": "同一人物性未照合のため未昇格"
+        }
+      ],
+      "promotionRule": "公式結果PDFで行は確認済み。ただし2026エントリー選手本人との同一人物性・階級推移・年齢整合が明確になるまで data/database.json へ昇格しない。"
+    },
+    {
+      "playerId": "E-79-tsuchiya-hitoshi",
+      "playerName": "土屋 仁",
+      "candidateId": "e79-2014-hpa-nogear-bench-row",
+      "status": "要再確認",
+      "note": "HPA公式2014年PDFから同名・男子93kg級・第18回北海道ノーギアベンチプレス選手権大会の行を確認した。2026沼田Lot79本人との同一人物性、年齢整合、所属継続、階級推移は未照合のため、正本DBへは昇格しない。",
+      "searchTerms": [
+        "土屋 仁 ベンチプレス",
+        "土屋仁 パワーリフティング",
+        "site:h-power.sakura.ne.jp/2014.pdf 土屋 仁",
+        "Tsuchiya Hitoshi powerlifting"
+      ],
+      "lastCheckedAt": "2026-06-30",
+      "checkedSources": [
+        {
+          "label": "HPA official PDF: 2014.pdf p.3 text row",
+          "result": "第18回北海道ノーギアベンチプレス選手権大会（Dグループ） / 2014-05-11 / 江別市民体育館 / 男子93Kg級 / 土屋 仁 / birth year 1964 / 個人 / BW 83.05 / BP 157.5, 160.0, 165.0 / best 160.0 / total 160.0 / 1位 / formula 106.76 / source https://h-power.sakura.ne.jp/2014.pdf"
+        }
+      ],
+      "rowCandidates": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/2014.pdf",
+          "sourceLabel": "HPA official annual result PDF 2014, p.3 text row",
+          "eventDate": "2014-05-11",
+          "eventName": "第18回 北海道ノーギアベンチプレス選手権大会（Dグループ）",
+          "venue": "江別市民体育館",
+          "eventType": "S-BP",
+          "equipment": "ノーギア/クラシック扱い候補",
+          "sex": "男子",
+          "bodyweightClass": "93Kg級",
+          "athleteName": "土屋 仁",
+          "birthYear": "1964",
+          "team": "個人",
+          "bodyweight": "83.05",
+          "bpAttempts": "157.5 / 160.0 / 165.0",
+          "bpBest": "160.0",
+          "total": "160.0",
+          "place": "1",
+          "formula": "106.76",
           "promotionStatus": "同一人物性未照合のため未昇格"
         }
       ],
