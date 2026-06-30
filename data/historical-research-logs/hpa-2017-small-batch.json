@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "purpose": "Historical HPA row-level research log. This file is not a confirmed athlete history source of truth and must not mutate data/database.json automatically.",
+    "updatedAt": "2026-06-30",
+    "layoutTemplateProtected": "v5.9.6_LOCK",
+    "promotionPolicy": "Do not promote these rows into data/database.json unless identity, class/category, event date, event type, and official PDF row are unambiguous."
+  },
+  "source": {
+    "publisher": "北海道パワーリフティング協会",
+    "sourceType": "official annual result PDF",
+    "sourceUrl": "https://h-power.sakura.ne.jp/2017.pdf",
+    "sourceLabel": "HPA official annual result PDF 2017",
+    "checkedAt": "2026-06-30"
+  },
+  "processedBatch": {
+    "year": 2017,
+    "scope": "Small safe row-level extraction for current PL Commentary Bank athlete-name candidates with clear official PDF rows only.",
+    "coreAppPriorityNote": "Secondary historical research only; no app layout, runtime logic, data/database.json, or data/research-candidates.json changes were made."
+  },
+  "rows": [
+    {
+      "playerIdCandidate": "E-65-hosokawa-hirokazu",
+      "playerNameCandidate": "細川 広一",
+      "athleteNameInPdf": "細川 広一",
+      "sourcePageTextReference": "2017.pdf p.4/P3 text row No.57 from PDF extraction",
+      "eventDate": "2017-05-14",
+      "eventName": "国民体育大会パワーリフティング競技 第3回北海道予選会（Dグループ）",
+      "venue": "江別市民体育館",
+      "eventType": "三種PL",
+      "equipment": "ノーギア/クラシック扱い候補（PDF大会記号 N大会）",
+      "sex": "男子",
+      "bodyweightClass": "105Kg級",
+      "birthYear": "1969",
+      "team": "名寄協会",
+      "bodyweight": "97.35",
+      "sqAttempts": "180.0 / 190.0 / 190.0",
+      "sqBest": "180.0",
+      "bpAttempts": "120.0 / 120.0 / 125.0",
+      "bpBest": "120.0",
+      "dlAttempts": "190.0 / 200.0 / 200.0",
+      "dlBest": "190.0",
+      "total": "490.0",
+      "place": "5",
+      "formula": "301.54",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2017.pdf",
+      "pdfRowEvidence": "57 105Kg級 細川 広一 1969 名寄協会 97.35 180.0 190.0 190.0 120.0 120.0 125.0 190.0 200.0 200.0 180.0 120.0 190.0 490.0 5 301.54",
+      "promotionStatus": "公式PDF行は確認済み。ただし2026沼田Lot65本人との同一人物性、年齢・所属・階級推移、継続所属、個人識別が未照合のため未昇格。",
+      "separationNote": "ベンチ単独履歴ではなく三種PL履歴として扱う。S-BP候補や装備ベンチ履歴と混同しない。"
+    },
+    {
+      "playerIdCandidate": "D-54-takeda-yoshikazu",
+      "playerNameCandidate": "武田 佳和",
+      "athleteNameInPdf": "武田 佳和",
+      "sourcePageTextReference": "2017.pdf p.1/P0 text row No.11 from PDF extraction",
+      "eventDate": "2017-05-14",
+      "eventName": "国民体育大会パワーリフティング競技 第3回北海道予選会（Aグループ）",
+      "venue": "江別市民体育館",
+      "eventType": "三種PL",
+      "equipment": "ノーギア/クラシック扱い候補（PDF大会記号 N大会）",
+      "sex": "男子",
+      "bodyweightClass": "59Kg級",
+      "birthYear": "1975",
+      "team": "名寄協会",
+      "bodyweight": "58.65",
+      "sqAttempts": "120.0 / 130.0 / 135.0",
+      "sqBest": "135.0",
+      "bpAttempts": "100.0 / 107.5 / 107.5",
+      "bpBest": "100.0",
+      "dlAttempts": "155.0 / 162.5 / 165.0",
+      "dlBest": "162.5",
+      "total": "397.5",
+      "place": "4",
+      "formula": "346.22",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2017.pdf",
+      "pdfRowEvidence": "11 59Kg級 武田 佳和 1975 名寄協会 58.65 120.0 130.0 135.0 100.0 107.5 107.5 155.0 162.5 165.0 135.0 100.0 162.5 397.5 4 346.22",
+      "promotionStatus": "公式PDF行は確認済み。ただし2026沼田出場者本人との同一人物性、年齢・所属・階級推移、継続所属、個人識別が未照合のため未昇格。",
+      "separationNote": "ベンチ単独履歴ではなく三種PL履歴として扱う。クラシックベンチ欠席行とは別扱い。"
+    },
+    {
+      "playerIdCandidate": "C-40-saito-keita",
+      "playerNameCandidate": "齊藤 敬太",
+      "athleteNameInPdf": "齊藤 敬太",
+      "sourcePageTextReference": "2017.pdf p.8/P7 text row No.38 from PDF extraction",
+      "eventDate": "2017-07-16",
+      "eventName": "第21回 北海道クラシックベンチプレス選手権大会（Dグループ）",
+      "venue": "江別市民体育館",
+      "eventType": "ベンチプレス",
+      "equipment": "ノーギア/クラシック扱い候補（PDF大会記号 N大会）",
+      "sex": "男子",
+      "bodyweightClass": "74Kg級",
+      "birthYear": "1982",
+      "team": "BURST LIMIT",
+      "bodyweight": "70.30",
+      "bpAttempts": "170.0 / 177.5 / 182.5",
+      "bpBest": "182.5",
+      "total": "182.5",
+      "place": "1",
+      "formula": "136.32",
+      "recordMark": "☆",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2017.pdf",
+      "pdfRowEvidence": "38 74Kg級 齊藤 敬太 1982 BURST LIMIT 70.30 170.0 177.5 182.5 182.5 ☆ 182.5 1 136.32",
+      "promotionStatus": "公式PDF行は確認済み。ただし2026沼田Lot40本人との同一人物性、階級変更、所属継続、個人識別が未照合のため未昇格。",
+      "separationNote": "三種PL履歴ではなくクラシック/ノーギア系ベンチ単独履歴として扱う。装備ベンチ履歴と混同しない。"
+    }
+  ],
+  "nonMatches": [
+    {
+      "playerIdCandidate": "A-13-taniguchi-takahito",
+      "playerNameCandidate": "谷口 孝仁",
+      "year": 2017,
+      "result": "2017.pdf text extractionで同名一致行を確認できなかったため、この小ロットでは追加しない。谷口 優太の行は別人候補として扱い、流用しない。"
+    },
+    {
+      "playerIdCandidate": "D-54-takeda-yoshikazu",
+      "playerNameCandidate": "武田 佳和",
+      "year": 2017,
+      "result": "2017-07-16 第21回北海道クラシックベンチプレス選手権大会の武田 佳和行は欠席のため、競技結果履歴としては追加しない。"
+    }
+  ]
+}
