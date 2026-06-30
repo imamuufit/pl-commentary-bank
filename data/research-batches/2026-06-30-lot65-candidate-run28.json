@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "type": "pl-athlete-research-batch",
+    "runId": "2026-06-30-lot65-candidate-run28",
+    "createdAt": "2026-06-30",
+    "scope": "Incremental candidate-only follow-up for 2026 Numata Bench Press Lot 65",
+    "layoutLock": "v5.9.6_LOCK preserved; no A4 print layout files changed",
+    "promotionPolicy": "Only official/high-trust rows with sufficient same-person certainty may be promoted to data/database.json. Exact-name official rows without 2026 Numata identity reconciliation remain candidates."
+  },
+  "processedAthletes": [
+    {
+      "lot": 65,
+      "name": "細川 広一",
+      "playerId": "E-65-hosokawa-hirokazu",
+      "status": "candidate_rows_added_only",
+      "confirmedForDatabase": [],
+      "candidateFindings": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/2019.pdf",
+          "sourceLabel": "HPA official annual result PDF 2019, p.5 text row",
+          "eventDate": "2019-05-12",
+          "eventName": "国民体育大会パワーリフティング公開競技 第5回北海道代表選考会（Fグループ）",
+          "venue": "江別市民体育館",
+          "eventType": "PL",
+          "equipment": "国体公開競技/装備区分未確定候補",
+          "sex": "男子",
+          "bodyweightClass": "105Kg級",
+          "athleteName": "細川 広一",
+          "birthYear": "1969",
+          "team": "名寄協会",
+          "bodyweight": "98.05",
+          "sqAttempts": "190.0 / 200.0 / 200.0",
+          "bpAttempts": "120.0 / 125.0 / 130.0",
+          "dlAttempts": "200.0 / 210.0 / 210.0",
+          "sqBest": "190.0",
+          "bpBest": "125.0",
+          "dlBest": "200.0",
+          "total": "515.0",
+          "place": "2",
+          "formula": "315.96",
+          "promotionStatus": "HPA公式PDFの同名行は確認済み。ただし2026沼田Lot65本人との同一人物性未照合のため未昇格。"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/2019.pdf",
+          "sourceLabel": "HPA official annual result PDF 2019, p.16 text row",
+          "eventDate": "2019-10-20",
+          "eventName": "2019年度 秋季北海道パワーリフティング選手権大会（推定：ページ見出し要追加確認）",
+          "venue": "江別市民体育館",
+          "eventType": "PL",
+          "equipment": "三種/装備区分未確定候補",
+          "sex": "男子",
+          "bodyweightClass": "105Kg級",
+          "athleteName": "細川 広一",
+          "birthYear": "1969",
+          "team": "名寄協会",
+          "bodyweight": "95.20",
+          "sqAttempts": "180.0 / 180.0 / 190.0",
+          "bpAttempts": "120.0 / 130.0 / 130.0",
+          "dlAttempts": "180.0 / 190.0 / 200.0",
+          "sqBest": "180.0",
+          "bpBest": "120.0",
+          "dlBest": "190.0",
+          "total": "490.0",
+          "place": "2",
+          "formula": "429.09",
+          "promotionStatus": "HPA公式PDFの同名行は確認済み。ただし2026沼田Lot65本人との同一人物性未照合のため未昇格。イベント見出しはPDFページ連結部のため追加確認対象。"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/2021.pdf",
+          "sourceLabel": "HPA official annual result PDF 2021, p.4 text row",
+          "eventDate": "2021-05-09",
+          "eventName": "国民体育大会パワーリフティング公開競技 第7回北海道代表選考会（推定：ページ見出し要追加確認）",
+          "venue": "江別市民体育館",
+          "eventType": "PL",
+          "equipment": "国体公開競技/装備区分未確定候補",
+          "sex": "男子",
+          "bodyweightClass": "105Kg級",
+          "athleteName": "細川 広一",
+          "birthYear": "1969",
+          "team": "名寄協会",
+          "bodyweight": "97.30",
+          "sqAttempts": "180.0 / 190.0 / 200.0",
+          "bpAttempts": "120.0 / 130.0 / 132.5",
+          "dlAttempts": "180.0 / 200.0 / 210.0",
+          "sqBest": "190.0",
+          "bpBest": "132.5",
+          "dlBest": "200.0",
+          "total": "522.5",
+          "place": "3",
+          "formula": "66.88",
+          "promotionStatus": "HPA公式PDFの同名行は確認済み。ただし2026沼田Lot65本人との同一人物性未照合のため未昇格。"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/2021.pdf",
+          "sourceLabel": "HPA official annual result PDF 2021, p.14 text row",
+          "eventDate": "2021-10-17",
+          "eventName": "2021年度 秋季北海道パワーリフティング選手権大会（ページ見出し要追加確認）",
+          "venue": "江別市民体育館",
+          "eventType": "PL",
+          "equipment": "三種/装備区分未確定候補",
+          "sex": "男子",
+          "bodyweightClass": "105Kg級",
+          "athleteName": "細川 広一",
+          "birthYear": "1969",
+          "team": "名寄協会",
+          "bodyweight": "98.50",
+          "sqAttempts": "180.0 / 190.0 / 190.0",
+          "bpAttempts": "120.0 / 125.0 / 130.0",
+          "dlAttempts": "190.0 / 200.0 / 200.0",
+          "sqBest": "180.0",
+          "bpBest": "125.0",
+          "dlBest": "190.0",
+          "total": "495.0",
+          "place": "3",
+          "formula": "62.98",
+          "promotionStatus": "HPA公式PDFの同名行は確認済み。ただし2026沼田Lot65本人との同一人物性未照合のため未昇格。"
+        }
+      ],
+      "sourcesChecked": [
+        {
+          "label": "HPA 2019 official annual result PDF",
+          "url": "https://h-power.sakura.ne.jp/2019.pdf",
+          "result": "Exact-name rows found for 細川 広一 at p.5 and p.16."
+        },
+        {
+          "label": "HPA 2020 official annual result PDF",
+          "url": "https://h-power.sakura.ne.jp/2020.pdf",
+          "result": "No exact 細川 広一 row found; only 細川 徹也 appears in the searched text."
+        },
+        {
+          "label": "HPA 2021 official annual result PDF",
+          "url": "https://h-power.sakura.ne.jp/2021.pdf",
+          "result": "Exact-name rows found for 細川 広一 at p.4 and p.14."
+        },
+        {
+          "label": "web exact-name searches",
+          "url": null,
+          "result": "No additional Goodlift/JPA/APF/AAPF promotable exact identity row found in this run."
+        }
+      ],
+      "remainingCandidateIssues": [
+        "2026 Numata Lot65本人との同一人物性・年齢・所属継続の照合が未完了。",
+        "2019 p.16 および 2021 p.14 はページ連結テキスト上の見出し確認が弱いため、イベント名は追加確認対象。",
+        "装備区分はPDF見出しから確定できる行以外、未確定候補として保持。"
+      ]
+    }
+  ],
+  "databaseUpdate": {
+    "data/database.json": "unchanged",
+    "reason": "No candidate row was promoted because same-person identity with 2026 Numata Lot65 remains unresolved."
+  },
+  "candidateUpdate": {
+    "data/research-candidates.json": "unchanged",
+    "reason": "Candidate findings were isolated in this batch file to avoid risky full-file replacement of an existing candidate bank through the connector."
+  }
+}
