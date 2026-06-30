@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "runId": "candidate-sweep-run25",
+    "date": "2026-06-30",
+    "scope": "Small-batch candidate recheck after Lot 1-100 coverage",
+    "layoutTemplate": "v5.9.6_LOCK",
+    "databaseUpdated": false,
+    "researchCandidatesUpdated": true,
+    "note": "A4 print layout files were intentionally not touched. Confirmed histories were not promoted because the new official HPA row still does not independently establish same-person identity with the 2026 Numata roster athlete."
+  },
+  "processedAthletes": [
+    {
+      "lot": 40,
+      "playerId": "C-40-saito-keita",
+      "playerName": "齊藤 敬太",
+      "action": "candidate recheck",
+      "confirmedPromotions": [],
+      "candidateDisposition": "candidate expanded with one HPA 2015 official row",
+      "summary": "HPA official 2015 PDF contains a same-name 男子66Kg級 row for 第19回北海道クラシックベンチプレス選手権大会. The row was added to data/research-candidates.json only. No database promotion because 2026 Numata Lot 40 same-person identity remains unverified.",
+      "sourcesChecked": [
+        {
+          "label": "HPA official annual result PDF 2015, p.4 text row",
+          "url": "https://h-power.sakura.ne.jp/2015.pdf",
+          "result": "2015-05-10 / 江別市民体育館 / 第19回北海道クラシックベンチプレス選手権大会（Dグループ） / 男子66Kg級 / 齊藤 敬太 / birth year 1982 / BURST LIMIT / BW 65.30 / BP 160.0, 165.0, 165.0 / best 160.0 / total 160.0 / 1位 / formula 126.74. Same-person link to 2026 Lot 40 remains unconfirmed."
+        },
+        {
+          "label": "HPA official annual result PDF 2015 exact-name scan",
+          "url": "https://h-power.sakura.ne.jp/2015.pdf",
+          "result": "No matching rows found for 谷口 孝仁, 宝利 桃華, or 北村 妙美 in this 2015 PDF text extraction."
+        }
+      ]
+    },
+    {
+      "lot": 13,
+      "playerId": "A-13-taniguchi-takahito",
+      "playerName": "谷口 孝仁",
+      "action": "2015 HPA PDF exact-name recheck",
+      "confirmedPromotions": [],
+      "candidateDisposition": "existing candidate retained unchanged",
+      "summary": "No exact-name match for 谷口 孝仁 was found in the HPA 2015 PDF text extraction. Existing 2011-2014 candidate rows remain candidates only."
+    },
+    {
+      "lot": 52,
+      "playerId": "D-52-houri-momoka",
+      "playerName": "宝利 桃華",
+      "action": "2015 HPA PDF exact-name recheck",
+      "confirmedPromotions": [],
+      "candidateDisposition": "existing candidate retained unchanged",
+      "summary": "No exact-name match for 宝利 or 宝利 桃華 was found in the HPA 2015 PDF text extraction. Existing candidate remains unresolved."
+    },
+    {
+      "lot": 89,
+      "playerId": "F-89-kitamura-taemi",
+      "playerName": "北村 妙美",
+      "action": "2015 HPA PDF exact-name recheck",
+      "confirmedPromotions": [],
+      "candidateDisposition": "existing duplicate-risk candidate retained unchanged",
+      "summary": "No exact-name match for 北村 妙美 was found in the HPA 2015 PDF text extraction. Lot 56/Lot 89 duplicate-risk remains unresolved."
+    }
+  ],
+  "confirmedRowsAddedToDatabase": [],
+  "candidateRowsAddedOrChanged": [
+    {
+      "playerId": "C-40-saito-keita",
+      "playerName": "齊藤 敬太",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2015.pdf",
+      "eventDate": "2015-05-10",
+      "eventName": "第19回 北海道クラシックベンチプレス選手権大会（Dグループ）",
+      "eventType": "S-BP",
+      "equipment": "クラシック/ノーギア扱い候補",
+      "bodyweightClass": "66Kg級",
+      "bpBest": "160.0",
+      "place": "1",
+      "promotionStatus": "同一人物性未照合のため未昇格"
+    }
+  ],
+  "doNotInferNotes": [
+    "The HPA 2015 official PDF row is not treated as confirmed 2026 athlete history unless same-person identity is established from official or high-trust sources.",
+    "No domestic, national, international/world, three-lift, or single-bench history was invented or inferred.",
+    "v5.9.6_LOCK A4 print layout was preserved."
+  ]
+}
