@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "purpose": "Small-batch official-source addendum for PL Commentary Bank before any database promotion.",
+    "batchDate": "2026-07-01",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Confirmed histories require explicit official/high-trust source support with athlete identity kept unambiguous. Ambiguous identity, incomplete context, and same-name rows without enough current-roster linkage stay outside data/database.json. Do not infer achievements from name similarity."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [79, 80],
+    "processedAthletes": [
+      "土屋 仁",
+      "佐藤 楓"
+    ],
+    "reasonForAudit": "A prior Lot 76-80 batch (#89) captured 2026 Spring Ebetsu findings but did not cover the HPA 2024 annual result PDF. This addendum checks only the official 2024 HPA PDF rows for a small non-overlapping historical-source pass.",
+    "openPrCheck": "Open PR check before this run found only #111, a non-overlapping completion report generator that does not mutate data/database.json, data/research-candidates.json, or A4 print layout.",
+    "writeScope": "Research batch log only. No data/database.json, data/research-candidates.json, app runtime, CSS, generator logic, print template, A4 layout, or v5.9.6_LOCK changes."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-2024-annual-result-pdf",
+      "title": "HPA 2024 annual official result PDF",
+      "url": "https://h-power.sakura.ne.jp/2024result.pdf",
+      "sourceType": "HPA official result PDF",
+      "rowLevelExtractionStatus": "Opened and text-searched in this run. Exact rows for 土屋 仁 and 佐藤 楓 were located. 伊畑 一真, 山下 幹太, and 中嶋 輝 checks were also used to avoid accidental spillover from adjacent Lot 76-85 work."
+    },
+    {
+      "sourceId": "src-open-pr-check-20260701-run34",
+      "title": "GitHub open PR check",
+      "sourceType": "Repository state audit",
+      "auditFinding": "Only open PR found: #111 Add Numata completion report generator. Non-overlapping with athlete data mutation and A4 layout."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "F-79-tsuchiya-hitoshi",
+      "lot": 79,
+      "playerName": "土屋 仁",
+      "status": "candidate-only-same-name-official-row",
+      "confirmedFindings": [],
+      "candidateFindings": [
+        {
+          "findingType": "single-bench-result-candidate",
+          "sourceId": "src-hpa-2024-annual-result-pdf",
+          "competitionName": "第2回北海道・東北ブロックベンチプレス選手権大会",
+          "date": "2024-11-17",
+          "grade": "広域/北海道・東北",
+          "eventType": "S-BP",
+          "division": "M3-CL 83kg級",
+          "bodyweight": "81.90kg",
+          "affiliation": "北海道協会個人登録",
+          "benchAttempts": "137.5 / 142.5 / 145.0",
+          "benchBest": "145.0kg",
+          "place": "1",
+          "recordMarkRaw": "◆",
+          "candidateReason": "Official HPA row is confirmed, but Lot79 current roster has only name/kana and no birth year, team, class, or current-event row extracted in database.json. Keep as candidate until same-person identity is confirmed."
+        }
+      ],
+      "auditNotes": "No database promotion. This row is valuable for narration only after current-event identity linkage is confirmed; do not present as confirmed history yet."
+    },
+    {
+      "playerId": "F-80-satou-kaede",
+      "lot": 80,
+      "playerName": "佐藤 楓",
+      "status": "official-2024-rows-located-kept-in-batch-log",
+      "confirmedFindings": [],
+      "candidateFindings": [
+        {
+          "findingType": "three-lift-powerlifting-result-candidate",
+          "sourceId": "src-hpa-2024-annual-result-pdf",
+          "competitionName": "第29回北海道パワーリフティング選手権大会",
+          "date": "2024-11-23",
+          "grade": "北海道",
+          "eventType": "CLPL",
+          "division": "CL男子93kg級",
+          "bodyweight": "86.95kg",
+          "affiliation": "キムンカムイ旭川",
+          "squatBest": "195.0kg",
+          "benchBest": "115.0kg",
+          "deadliftBest": "200.0kg",
+          "total": "510.0kg",
+          "place": "2",
+          "attemptsRaw": "S 170.0 / 185.0 / 195.0, B 105.0 / 115.0 / -125.0, D 180.0 / 200.0 / -220.0",
+          "candidateReason": "Exact official row and prior #89 confirmed 2026 same-name HPA row strongly suggest continuity, but this automation run did not rewrite data/database.json or perform a full identity-promotion pass. Kept as candidate/batch-log addendum until conservative promotion."
+        },
+        {
+          "findingType": "single-bench-result-candidate",
+          "sourceId": "src-hpa-2024-annual-result-pdf",
+          "competitionName": "第2回北海道・東北ブロックベンチプレス選手権大会",
+          "date": "2024-11-17",
+          "grade": "広域/北海道・東北",
+          "eventType": "S-BP",
+          "division": "JR-CL 93kg級",
+          "bodyweight": "86.40kg",
+          "affiliation": "キムンカムイ旭川",
+          "benchAttempts": "100.0 / 115.0 / -122.5",
+          "benchBest": "115.0kg",
+          "place": "1",
+          "candidateReason": "Exact official row and same affiliation as the 2024 CLPL row. Kept outside data/database.json in this addendum-only run pending a dedicated promotion pass with sourceIds."
+        }
+      ],
+      "auditNotes": "No duplicate confirmed row was added. Prior Lot 76-80 batch already captured 2026 Spring Ebetsu CLPL for 佐藤 楓; this file adds only 2024 official-source context as candidate/batch-log data."
+    }
+  ],
+  "notPromotedToDatabaseThisRun": {
+    "reason": "This was a narrow official-source addendum and did not perform a minified data/database.json rewrite. Candidate rows remain isolated from confirmed database histories.",
+    "safeNextStep": "Run a dedicated conservative promotion pass for Lot 79 and Lot 80 only after confirming current-event identity fields and source ID conventions, or continue adjacent official-PDF addendum checks without touching A4 layout."
+  }
+}
