@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "batchId": "2026-06-30-hpa-2014-bench-candidates-run25",
+    "purpose": "Incremental PL Athlete Research candidate sweep using official HPA 2014 annual result PDF.",
+    "createdAt": "2026-06-30",
+    "layoutGuard": "v5.9.6_LOCK untouched; no A4 print layout, app runtime, CSS, page(p), or sourcePage changes."
+  },
+  "scope": {
+    "sourcePriority": [
+      "HPA official annual result PDF",
+      "JPA/IPF/Goodlift/APF/AAPF only if directly relevant"
+    ],
+    "processedAthletes": [
+      {
+        "lot": 40,
+        "playerId": "C-40-saito-keita",
+        "playerName": "齊藤 敬太"
+      },
+      {
+        "lot": 79,
+        "playerId": "E-79-tsuchiya-hitoshi",
+        "playerName": "土屋 仁"
+      }
+    ]
+  },
+  "confirmedPromotions": [],
+  "candidateFindings": [
+    {
+      "lot": 40,
+      "playerName": "齊藤 敬太",
+      "status": "candidate_only",
+      "reasonNotPromoted": "HPA official 2014 PDF has an exact-name row, but 2026 Numata Lot 40 identity, class progression, and personal identifier reconciliation remain incomplete.",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2014.pdf",
+      "sourceLabel": "HPA official annual result PDF 2014, p.2 text row",
+      "rowSummary": "2014-05-11 / 第18回北海道ノーギアベンチプレス選手権大会 Cグループ / 江別市民体育館 / 男子66Kg級 / 齊藤 敬太 / birth year 1982 / 札幌協会 / BW 64.90 / BP 157.5, 162.5, 165.0 / best 162.5 / total 162.5 / 1位 / formula 129.39 / ☆ raw mark"
+    },
+    {
+      "lot": 79,
+      "playerName": "土屋 仁",
+      "status": "candidate_only",
+      "reasonNotPromoted": "HPA official 2014 PDF has an exact-name row, but 2026 Numata Lot 79 identity, age consistency, affiliation continuity, and class progression remain incomplete.",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2014.pdf",
+      "sourceLabel": "HPA official annual result PDF 2014, p.3 text row",
+      "rowSummary": "2014-05-11 / 第18回北海道ノーギアベンチプレス選手権大会 Dグループ / 江別市民体育館 / 男子93Kg級 / 土屋 仁 / birth year 1964 / 個人 / BW 83.05 / BP 157.5, 160.0, 165.0 / best 160.0 / total 160.0 / 1位 / formula 106.76"
+    }
+  ],
+  "filesChanged": [
+    "data/research-candidates.json",
+    "data/research-batches/2026-06-30-hpa-2014-bench-candidates-run25.json"
+  ],
+  "filesNotChanged": [
+    "data/database.json",
+    "src/app.js",
+    "src/event-relative-history.js",
+    "CSS / print layout files"
+  ],
+  "notes": [
+    "No achievements were inferred from same-name rows.",
+    "Both rows remain candidates until independent identity reconciliation is possible.",
+    "No domestic/national/world promotion was made in this run."
+  ]
+}
