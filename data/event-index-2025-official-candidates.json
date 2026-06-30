@@ -1,19 +1,99 @@
 {
   "meta": {
     "version": "0.1.0",
-    "updatedAt": "2026-06-29",
+    "updatedAt": "2026-06-30",
     "sourcePolicy": "Official HPA/JPA sources only. This file records 2025 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
     "layoutLock": "v5.9.6_LOCK",
     "notes": [
-      "Temporary 2025 official-source candidate addendum for HPA Event Watch.",
-      "Keep separate from athlete master data, confirmed athlete histories, and research candidates.",
-      "Entry lists and schedules are event-entry sources, not confirmed achievement summaries by themselves."
+      "2025 official-source candidate addendum for HPA Event Watch.",
+      "Keep separate from athlete master data, confirmed athlete histories, event entries, and research candidates.",
+      "Entry lists, schedules, programs, and result rows are event-entry/result sources, not confirmed athlete achievement summaries by themselves.",
+      "Spring Ebetsu and summer Kitami entries are currently sourced from the official HPA 2025 aggregate result PDF only; outline, entry, schedule, program, and YouTube links remain false until separate official sources are located."
     ]
   },
   "events": [
     {
+      "id": "2025-04-26-27-hokkaido-spring-power-ebetsu",
+      "status": "official_source_found",
+      "year": 2025,
+      "name": "2025年春のパワーリフティング選手権大会",
+      "includedChampionships": [
+        "国民スポーツ大会パワーリフティング公開競技 第11回北海道代表選考会",
+        "全日本高校パワーリフティング選手権大会 第9回北海道予選会"
+      ],
+      "dates": ["2025-04-26", "2025-04-27"],
+      "venue": {
+        "name": "江別市青年センター 体育室",
+        "city": "江別市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "year_result_pdf",
+          "title": "2025年 HPA大会結果集 PDF（2025年4月26日-27日 江別市青年センター掲載ページ）",
+          "url": "https://h-power.sakura.ne.jp/2025result.pdf",
+          "observedAt": "2026-06-30"
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this event-index entry only as an official source locator.",
+        "Do not promote result rows into confirmed athlete histories without matching athlete identity, category, class, date, and PDF row.",
+        "Keep this separate from data/database.json, event entries, confirmed histories, and research candidates."
+      ]
+    },
+    {
+      "id": "2025-06-22-hokkaido-summer-bench-kitami",
+      "status": "official_source_found",
+      "year": 2025,
+      "name": "2025年夏のベンチプレス選手権大会",
+      "includedChampionships": [
+        "第35回 北海道ベンチプレス選手権大会",
+        "第29回 北海道クラシックベンチプレス選手権大会"
+      ],
+      "dates": ["2025-06-22"],
+      "venue": {
+        "name": "北見市体育センター",
+        "city": "北見市",
+        "prefecture": "北海道"
+      },
+      "sourceSummary": {
+        "hasProgram": false,
+        "hasOutline": false,
+        "hasEntryRoster": false,
+        "hasSchedule": false,
+        "hasResultPdf": true,
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
+        "hasVenueInfo": true
+      },
+      "sources": [
+        {
+          "type": "year_result_pdf",
+          "title": "2025年 HPA大会結果集 PDF（2025年6月22日 北見市体育センター掲載ページ）",
+          "url": "https://h-power.sakura.ne.jp/2025result.pdf",
+          "observedAt": "2026-06-30"
+        }
+      ],
+      "promotionGuardrails": [
+        "Use this event-index entry only as an official source locator.",
+        "Do not promote result rows into confirmed athlete histories without matching athlete identity, category, class, date, and PDF row.",
+        "Keep this separate from data/database.json, event entries, confirmed histories, and research candidates."
+      ]
+    },
+    {
       "id": "2025-10-18-19-hokkaido-autumn-power-ebetsu",
       "status": "official_source_found",
+      "year": 2025,
       "name": "2025秋のパワーリフティング選手権大会",
       "includedChampionships": [
         "第54回 北海道パワーリフティング選手権大会",
@@ -31,6 +111,8 @@
         "hasEntryRoster": true,
         "hasSchedule": true,
         "hasResultPdf": true,
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
         "hasVenueInfo": true
       },
       "sources": [
@@ -68,12 +150,13 @@
       "promotionGuardrails": [
         "Use this event-index entry only as an official source locator.",
         "Do not promote entry rows or result rows into confirmed athlete histories without matching athlete identity, category, class, date, and PDF row.",
-        "Keep this separate from data/database.json and research candidates."
+        "Keep this separate from data/database.json, event entries, confirmed histories, and research candidates."
       ]
     },
     {
       "id": "2025-11-16-hokkaido-tohoku-block-bench-toyako",
       "status": "official_source_found",
+      "year": 2025,
       "name": "第3回 北海道・東北ブロック ベンチプレス選手権大会",
       "includedChampionships": [
         "第3回 北海道・東北ブロック ベンチプレス選手権大会"
@@ -90,6 +173,8 @@
         "hasEntryRoster": true,
         "hasSchedule": true,
         "hasResultPdf": true,
+        "hasSokuhou": false,
+        "hasYoutubeLive": false,
         "hasVenueInfo": true
       },
       "sources": [
@@ -127,7 +212,7 @@
       "promotionGuardrails": [
         "Use this event-index entry only as an official source locator.",
         "Do not promote entry rows or result rows into confirmed athlete histories without matching athlete identity, category, class, date, and PDF row.",
-        "Keep this separate from data/database.json and research candidates."
+        "Keep this separate from data/database.json, event entries, confirmed histories, and research candidates."
       ]
     }
   ]
