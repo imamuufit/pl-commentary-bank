@@ -23,19 +23,24 @@ function requireNotIncludes(text, needle, target, message) {
 
 requireIncludes(indexText, '<script src="./src/event-relative-history.js" defer></script>', 'index.html', 'event-relative history helper must remain loaded after the app');
 requireIncludes(helperText, "const FALLBACK_FLOW = '履歴不足", 'src/event-relative-history.js', 'must show 履歴不足 when two prior confirmed histories are unavailable');
+requireIncludes(helperText, 'function isValidDateString(value)', 'src/event-relative-history.js', 'must validate event and history dates with a shared strict date guard');
+requireIncludes(helperText, "date.toISOString().slice(0, 10) === text", 'src/event-relative-history.js', 'must reject impossible YYYY-MM-DD dates such as 2026-02-30');
 requireIncludes(helperText, "configJson?.event?.dateFrom || configJson?.event?.dateTo || configJson?.event?.date", 'src/event-relative-history.js', 'must use selected event dateFrom/dateTo/date as the base date');
+requireIncludes(helperText, 'return isValidDateString(date) ? date : null', 'src/event-relative-history.js', 'must reject invalid selected event dates');
 requireIncludes(helperText, "history.status === '確認済'", 'src/event-relative-history.js', 'must use only confirmed histories');
 requireIncludes(helperText, 'function hasConfirmedSourceIds(history)', 'src/event-relative-history.js', 'confirmed histories must validate sourceIds before use');
 requireIncludes(helperText, 'Array.isArray(history?.sourceIds) && history.sourceIds.some', 'src/event-relative-history.js', 'confirmed histories must carry nonblank sourceIds before use');
 requireIncludes(helperText, "String(sourceId || '').trim().length > 0", 'src/event-relative-history.js', 'blank sourceIds must not qualify as confirmed sources');
+requireIncludes(helperText, 'function firstConfirmedSourceId(history)', 'src/event-relative-history.js', 'stable sorting must use the first nonblank confirmed source id');
+requireIncludes(helperText, "String(firstConfirmedSourceId(history))", 'src/event-relative-history.js', 'same-date ordering must not be destabilized by blank leading sourceIds');
 requireIncludes(helperText, '.filter((history) => hasConfirmedSourceIds(history))', 'src/event-relative-history.js', 'must exclude histories with empty sourceIds before selecting previous two events');
 requireIncludes(helperText, 'function hasConfirmedCompetitionIdentity(history)', 'src/event-relative-history.js', 'confirmed histories must have an explicit competition identity before use');
 requireIncludes(helperText, "String(history?.competitionName || '').trim().length > 0", 'src/event-relative-history.js', 'event-relative histories must not treat unnamed date-only records as competitions');
 requireIncludes(helperText, '.filter((history) => hasConfirmedCompetitionIdentity(history))', 'src/event-relative-history.js', 'must exclude confirmed histories without a competition name before selecting previous two events');
+requireIncludes(helperText, '.filter((history) => isValidDateString(history.date))', 'src/event-relative-history.js', 'must exclude impossible or malformed history dates before selecting previous two events');
 requireIncludes(helperText, "String(history.date) < baseDate", 'src/event-relative-history.js', 'must exclude the selected event date and future histories');
 requireIncludes(helperText, 'function historySortKey(history)', 'src/event-relative-history.js', 'must keep same-date confirmed histories in deterministic order');
-requireIncludes(helperText, "String(history?.competitionName || '')", 'src/event-relative-history.js', 'same-date ordering must not depend on array position alone');
-requireIncludes(helperText, "String(history?.sourceIds?.[0] || '')", 'src/event-relative-history.js', 'same-date ordering must use confirmed source identity as a final stable tie-breaker');
+requireIncludes(helperText, "String(history?.competitionName || '').trim()", 'src/event-relative-history.js', 'same-date ordering must use trimmed competition names');
 requireIncludes(helperText, 'historySortKey(a).localeCompare(historySortKey(b))', 'src/event-relative-history.js', 'confirmed history sorting must use the stable sort key');
 requireIncludes(helperText, 'const pair = histories.slice(-2)', 'src/event-relative-history.js', 'must select exactly the latest two prior histories');
 requireIncludes(helperText, "blocks['前々回→前回']", 'src/event-relative-history.js', 'must update the existing 前々回→前回 block without changing layout markup');
