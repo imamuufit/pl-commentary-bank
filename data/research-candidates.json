@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.1.7",
+    "version": "0.1.8",
     "purpose": "未確認候補の一時管理。確認済みになるまで data/database.json へ昇格しない。",
     "updatedAt": "2026-06-30"
   },
@@ -11,19 +11,7 @@
       "candidateId": "c40-old-national-results",
       "status": "要再確認",
       "note": "過去の全国大会・世界大会歴を追加調査。公式結果PDFまたはGoodlift/IPF確認後に正本DBへ昇格する。2026-06-30の小ロット調査で、HPA公式2011年PDFから同名・男子66kg級・ノーギア北海道ベンチ行を確認した。追加小ロットでHPA公式2012年PDFから同名/表記揺れ（斎藤・齋藤）・男子66kg級・春季ベンチおよびノーギア北海道ベンチ行を確認した。さらにHPA公式2013年PDFから同名/斉藤表記・男子66kg級・春季北海道ベンチ行を確認した。2026-06-30の追加小ロットでHPA公式2014年PDFから第18回北海道ノーギアBPおよび第24回北海道BPの同名・男子66kg級行を確認した。2026-06-30の追加小ロットでHPA公式2015年PDFから第19回北海道クラシックベンチプレス選手権大会の同名・男子66kg級行を確認した。ただし2026沼田Lot40本人との同一性、階級推移、個人識別は未照合のため、正本DBへは昇格しない。",
-      "searchTerms": [
-        "齊藤敬太 ベンチプレス",
-        "斉藤敬太 ベンチプレス",
-        "齋藤敬太 ベンチプレス",
-        "Keita Saito Goodlift",
-        "site:goodlift.info Keita Saito",
-        "site:h-power.sakura.ne.jp/2011.pdf 齊藤 敬太",
-        "site:h-power.sakura.ne.jp/2012.pdf 斎藤 敬太",
-        "site:h-power.sakura.ne.jp/2012.pdf 齋藤 敬太",
-        "site:h-power.sakura.ne.jp/2013.pdf 斉藤 敬太",
-        "site:h-power.sakura.ne.jp/2014.pdf 齊藤 敬太",
-        "site:h-power.sakura.ne.jp/2015.pdf 齊藤 敬太"
-      ],
+      "searchTerms": ["齊藤敬太 ベンチプレス", "斉藤敬太 ベンチプレス", "齋藤敬太 ベンチプレス", "Keita Saito Goodlift", "site:goodlift.info Keita Saito", "site:h-power.sakura.ne.jp/2011.pdf 齊藤 敬太", "site:h-power.sakura.ne.jp/2012.pdf 斎藤 敬太", "site:h-power.sakura.ne.jp/2012.pdf 齋藤 敬太", "site:h-power.sakura.ne.jp/2013.pdf 斉藤 敬太", "site:h-power.sakura.ne.jp/2014.pdf 齊藤 敬太", "site:h-power.sakura.ne.jp/2015.pdf 齊藤 敬太"],
       "lastCheckedAt": "2026-06-30",
       "checkedSources": [
         { "label": "web search: 齊藤 敬太 ベンチプレス パワーリフティング Goodlift", "result": "no reliable athlete-history match found" },
@@ -101,6 +89,22 @@
         { "sourceUrl": "https://h-power.sakura.ne.jp/2014.pdf", "sourceLabel": "HPA official annual result PDF 2014, p.6 text row", "eventDate": "2014-07-20", "eventName": "2014夏季北海道公認記録会（ベンチプレス部門）", "venue": "江別市民体育館", "eventType": "S-BP", "equipment": "公認記録会ベンチ/ノーギア・エクイップ区分未確定候補", "sex": "男子", "bodyweightClass": "66Kg級", "athleteName": "谷口 孝仁", "birthYear": "1961", "team": "十勝協会", "bodyweight": "65.25", "bpAttempts": "130.0 / 135.0 / 140.0", "bpBest": "135.0", "total": "135.0", "place": "1", "formula": "107.01", "promotionStatus": "同一人物性未照合のため未昇格" }
       ],
       "promotionRule": "公式結果PDFで行は確認済み。ただし2026エントリー選手本人との同一人物性・階級推移・年齢整合が明確になるまで data/database.json へ昇格しない。"
+    },
+    {
+      "playerId": "E-65-hosokawa-hirokazu",
+      "playerName": "細川 広一",
+      "candidateId": "e65-2016-hpa-kokutai-qualifier-pl-row",
+      "status": "要再確認",
+      "note": "HPA公式2016年PDFから同名・男子105kg級・国民体育大会パワーリフティング競技第2回北海道予選会の三種行を確認した。2026沼田Lot65本人との同一性、年齢・所属・階級推移は未照合のため、正本DBへは昇格しない。",
+      "searchTerms": ["細川 広一 パワーリフティング", "細川広一 ベンチプレス", "site:h-power.sakura.ne.jp/2016.pdf 細川 広一", "Hosokawa Hirokazu powerlifting"],
+      "lastCheckedAt": "2026-06-30",
+      "checkedSources": [
+        { "label": "HPA official PDF: 2016.pdf p.2 text row", "result": "国民体育大会パワーリフティング競技 第2回北海道予選会（Bグループ） / 2016-05-15 / 江別市民体育館 / 男子105Kg級 / 細川 広一 / birth year 1969 / 名寄協会 / BW 98.25 / SQ 180.0, 190.0, 190.0 / BP 110.0, 115.0, 120.0 / DL 180.0, 190.0, 200.0 / best S190.0 B120.0 D190.0 / total 500.0 / 3位 / formula 306.50 / source https://h-power.sakura.ne.jp/2016.pdf" }
+      ],
+      "rowCandidates": [
+        { "sourceUrl": "https://h-power.sakura.ne.jp/2016.pdf", "sourceLabel": "HPA official annual result PDF 2016, p.2 text row", "eventDate": "2016-05-15", "eventName": "国民体育大会パワーリフティング競技 第2回北海道予選会（Bグループ）", "venue": "江別市民体育館", "eventType": "PL", "equipment": "三種/装備区分未確定候補", "sex": "男子", "bodyweightClass": "105Kg級", "athleteName": "細川 広一", "birthYear": "1969", "team": "名寄協会", "bodyweight": "98.25", "sqAttempts": "180.0 / 190.0 / 190.0", "bpAttempts": "110.0 / 115.0 / 120.0", "dlAttempts": "180.0 / 190.0 / 200.0", "sqBest": "190.0", "bpBest": "120.0", "dlBest": "190.0", "total": "500.0", "place": "3", "formula": "306.50", "promotionStatus": "同一人物性未照合のため未昇格" }
+      ],
+      "promotionRule": "公式結果PDFで行は確認済み。ただし2026エントリー選手本人との同一人物性・階級推移・所属継続が明確になるまで data/database.json へ昇格しない。"
     }
   ]
 }
