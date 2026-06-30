@@ -1,19 +1,21 @@
 {
   "meta": {
-    "version": "0.1.0",
-    "updatedAt": "2026-06-30",
+    "version": "0.1.1",
+    "updatedAt": "2026-07-01",
     "sourcePolicy": "Official HPA/JPA sources only. This file records 2011 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
     "layoutLock": "v5.9.6_LOCK",
     "notes": [
       "Temporary 2011 official-source candidate addendum for HPA Event Watch.",
       "Keep separate from athlete master data, confirmed athlete histories, event entries, and research candidates.",
       "The linked annual HPA result PDF is an event-level source locator; individual athlete rows require separate identity and row verification before promotion.",
-      "2011 source pages are historical official result PDFs; program, outline, entry roster, schedule, live速報, and YouTube links were not promoted unless separately confirmed."
+      "2011 source pages are historical official result PDFs; program, outline, entry roster, schedule, live速報, and YouTube links were not promoted unless separately confirmed.",
+      "Source-summary flags use the same explicit hasSokuhou / hasYoutubeLive / hasYearResultPdf convention as newer event-index candidate files."
     ]
   },
   "events": [
     {
       "id": "2011-07-17-hokkaido-no-gear-bench-ebetsu",
+      "year": 2011,
       "status": "official_result_pdf_found",
       "name": "第15回 ノーギア北海道ベンチプレス選手権大会",
       "includedChampionships": [
@@ -32,7 +34,10 @@
         "hasSchedule": false,
         "hasResultPdf": true,
         "hasPreliminaryResults": false,
+        "hasSokuhou": false,
         "hasYoutubeLivestream": false,
+        "hasYoutubeLive": false,
+        "hasYearResultPdf": true,
         "hasVenueInfo": true
       },
       "sources": [
@@ -40,7 +45,7 @@
           "type": "annual_result_pdf",
           "title": "2011年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2011.pdf",
-          "observedAt": "2026-06-30",
+          "observedAt": "2026-07-01",
           "evidenceLines": "PDF pages for 第15回ノーギア北海道ベンチプレス選手権大会 state 2011年7月17日 and 会場 江別市民体育館."
         }
       ],
@@ -53,6 +58,7 @@
     },
     {
       "id": "2011-07-17-hokkaido-bench-ebetsu",
+      "year": 2011,
       "status": "official_result_pdf_found",
       "name": "第21回 北海道ベンチプレス選手権大会",
       "includedChampionships": [
@@ -71,7 +77,10 @@
         "hasSchedule": false,
         "hasResultPdf": true,
         "hasPreliminaryResults": false,
+        "hasSokuhou": false,
         "hasYoutubeLivestream": false,
+        "hasYoutubeLive": false,
+        "hasYearResultPdf": true,
         "hasVenueInfo": true
       },
       "sources": [
@@ -79,7 +88,7 @@
           "type": "annual_result_pdf",
           "title": "2011年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2011.pdf",
-          "observedAt": "2026-06-30",
+          "observedAt": "2026-07-01",
           "evidenceLines": "PDF page for 第21回北海道ベンチプレス選手権大会 states 2011年7月17日 and 会場 江別市民体育館."
         }
       ],
@@ -92,6 +101,7 @@
     },
     {
       "id": "2011-10-09-hokkaido-no-gear-power-memuro",
+      "year": 2011,
       "status": "official_result_pdf_found",
       "name": "第14回 ノーギア北海道パワーリフティング選手権大会",
       "includedChampionships": [
@@ -110,7 +120,10 @@
         "hasSchedule": false,
         "hasResultPdf": true,
         "hasPreliminaryResults": false,
+        "hasSokuhou": false,
         "hasYoutubeLivestream": false,
+        "hasYoutubeLive": false,
+        "hasYearResultPdf": true,
         "hasVenueInfo": true
       },
       "sources": [
@@ -118,7 +131,7 @@
           "type": "annual_result_pdf",
           "title": "2011年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2011.pdf",
-          "observedAt": "2026-06-30",
+          "observedAt": "2026-07-01",
           "evidenceLines": "PDF pages for 第14回ノーギア北海道パワーリフティング選手権大会 state 2011年10月9日 and 会場 芽室町総合体育館."
         }
       ],
@@ -131,6 +144,7 @@
     },
     {
       "id": "2011-10-09-autumn-hokkaido-power-memuro",
+      "year": 2011,
       "status": "official_result_pdf_found",
       "name": "第29回 秋季北海道パワーリフティング選手権大会",
       "includedChampionships": [
@@ -149,7 +163,10 @@
         "hasSchedule": false,
         "hasResultPdf": true,
         "hasPreliminaryResults": false,
+        "hasSokuhou": false,
         "hasYoutubeLivestream": false,
+        "hasYoutubeLive": false,
+        "hasYearResultPdf": true,
         "hasVenueInfo": true
       },
       "sources": [
@@ -157,7 +174,7 @@
           "type": "annual_result_pdf",
           "title": "2011年北海道協会大会結果PDF",
           "url": "https://h-power.sakura.ne.jp/2011.pdf",
-          "observedAt": "2026-06-30",
+          "observedAt": "2026-07-01",
           "evidenceLines": "PDF pages for 第14回ノーギア・第29回秋季北海道パワーリフティング選手権大会 state 2011年10月9日 and 会場 芽室町総合体育館."
         }
       ],
