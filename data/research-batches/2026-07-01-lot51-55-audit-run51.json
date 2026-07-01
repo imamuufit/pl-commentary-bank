@@ -1,0 +1,150 @@
+{
+  "batchId": "2026-07-01-lot51-55-audit-run51",
+  "createdAt": "2026-07-01",
+  "scope": {
+    "roster": "2026 Numata Bench Press Lot 1-100",
+    "lotRange": "51-55",
+    "layoutLock": "v5.9.6_LOCK"
+  },
+  "status": "audit-only-no-promotions",
+  "notes": [
+    "Small-batch research pass only. No A4 print layout files were touched.",
+    "No confirmed histories were promoted to data/database.json in this batch.",
+    "No new uncertain candidates were added to data/research-candidates.json because the searches did not produce source-linked candidate rows strong enough to retain.",
+    "Lot 52 宝利 桃華 already has confirmed source-linked histories in data/database.json; this batch did not duplicate or modify those rows."
+  ],
+  "preflight": {
+    "openPullRequestsChecked": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "assessment": "Open PR is report-generator related and not a direct athlete-history/database/layout mutation; this batch avoids duplicate work."
+      }
+    ],
+    "mainBranchChecked": true,
+    "duplicateAvoidance": [
+      "Reviewed prior merged run summaries in the conversation context through PR #163.",
+      "Selected Lot 51-55 because adjacent Lot 46-50 and Lot 56/89-related checks had already been handled in earlier batches."
+    ]
+  },
+  "athletes": [
+    {
+      "lot": 51,
+      "playerId": "D-51-gotou-maiko",
+      "name": "後藤 麻衣子",
+      "processed": true,
+      "confirmed": [],
+      "candidates": [],
+      "checks": [
+        {
+          "sourceType": "web/high-trust-source-search",
+          "query": "\"後藤 麻衣子\" パワーリフティング ベンチプレス 結果 PDF",
+          "result": "No reliable official/high-trust result match found in this pass."
+        },
+        {
+          "sourceType": "HPA site search",
+          "query": "site:h-power.sakura.ne.jp \"後藤 麻衣子\"",
+          "result": "No reliable HPA PDF/site match found in this pass."
+        }
+      ]
+    },
+    {
+      "lot": 52,
+      "playerId": "D-52-houri-momoka",
+      "name": "宝利 桃華",
+      "processed": true,
+      "confirmed": [],
+      "candidates": [],
+      "checks": [
+        {
+          "sourceType": "database duplicate check",
+          "query": "Existing database histories for D-52-houri-momoka",
+          "result": "Existing confirmed rows found in data/database.json for 2022 Japan GP classic powerlifting S-BP record and 2024 Hokkaido-Tohoku block bench press. No duplicate row added."
+        },
+        {
+          "sourceType": "web/high-trust-source-search",
+          "query": "\"宝利 桃華\" パワーリフティング ベンチプレス 結果 PDF",
+          "result": "No additional reliable official/high-trust result match found in this pass."
+        },
+        {
+          "sourceType": "JPA site search",
+          "query": "\"宝利桃華\" site:japanpowerlifting.org",
+          "result": "No additional reliable match found in this pass."
+        },
+        {
+          "sourceType": "Goodlift/IPF search",
+          "query": "\"Momoka Hori\" Goodlift powerlifting",
+          "result": "No reliable Goodlift/IPF match found in this pass."
+        },
+        {
+          "sourceType": "HPA site search",
+          "query": "site:h-power.sakura.ne.jp \"宝利 桃華\"",
+          "result": "No additional reliable HPA PDF/site match found in this pass."
+        }
+      ]
+    },
+    {
+      "lot": 53,
+      "playerId": "D-53-inagaki-megumi",
+      "name": "稲垣 恵",
+      "processed": true,
+      "confirmed": [],
+      "candidates": [],
+      "checks": [
+        {
+          "sourceType": "web/high-trust-source-search",
+          "query": "\"稲垣 恵\" パワーリフティング ベンチプレス 結果 PDF",
+          "result": "No reliable official/high-trust result match found in this pass."
+        },
+        {
+          "sourceType": "HPA site search",
+          "query": "site:h-power.sakura.ne.jp \"稲垣 恵\"",
+          "result": "No reliable HPA PDF/site match found in this pass."
+        }
+      ]
+    },
+    {
+      "lot": 54,
+      "playerId": "D-54-satou-nao",
+      "name": "佐藤 奈緒",
+      "processed": true,
+      "confirmed": [],
+      "candidates": [],
+      "checks": [
+        {
+          "sourceType": "web/high-trust-source-search",
+          "query": "\"佐藤 奈緒\" パワーリフティング ベンチプレス 結果 PDF",
+          "result": "No reliable official/high-trust result match found in this pass."
+        }
+      ]
+    },
+    {
+      "lot": 55,
+      "playerId": "D-55-ishiyama-yuki",
+      "name": "石山 由貴",
+      "processed": true,
+      "confirmed": [],
+      "candidates": [],
+      "checks": [
+        {
+          "sourceType": "web/high-trust-source-search",
+          "query": "\"石山 由貴\" パワーリフティング ベンチプレス 結果 PDF",
+          "result": "No reliable official/high-trust result match found in this pass."
+        },
+        {
+          "sourceType": "HPA site search",
+          "query": "site:h-power.sakura.ne.jp \"石山 由貴\"",
+          "result": "No reliable HPA PDF/site match found in this pass."
+        }
+      ]
+    }
+  ],
+  "filesChanged": [
+    "data/research-batches/2026-07-01-lot51-55-audit-run51.json"
+  ],
+  "filesIntentionallyUnchanged": [
+    "data/database.json",
+    "data/research-candidates.json",
+    "A4 print layout / v5.9.6_LOCK files"
+  ]
+}
