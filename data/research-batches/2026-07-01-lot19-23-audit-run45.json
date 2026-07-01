@@ -1,0 +1,132 @@
+{
+  "batchId": "2026-07-01-lot19-23-audit-run45",
+  "createdAt": "2026-07-01",
+  "purpose": "Incremental PL Athlete Research audit for 2026 Numata Bench Press Lot 19-23.",
+  "layoutGuard": "v5.9.6_LOCK preserved; no A4 print layout, CSS, generator, runtime, or template files touched.",
+  "mainBranchCheck": {
+    "repository": "imamuufit/pl-commentary-bank",
+    "baseBranch": "main",
+    "openPullRequestsChecked": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "assessment": "Non-overlapping report-only work; no athlete-history data or print-layout mutation required for this batch."
+      }
+    ],
+    "recentMergedBatchContext": [
+      "PR #152 Lot1-5 audit run41",
+      "PR #154 Lot6-10 audit run42",
+      "PR #155 Lot11-13 audit run43",
+      "PR #156 Lot14-18 audit run44"
+    ]
+  },
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lots": [19, 20, 21, 22, 23],
+    "athletes": [
+      {
+        "lot": 19,
+        "name": "瀬田 恭央",
+        "englishName": "Seta Norihiro",
+        "searchAliases": ["瀬田 恭央", "瀬田恭央", "セタ ノリヒロ", "Seta Norihiro", "Norihiro Seta"]
+      },
+      {
+        "lot": 20,
+        "name": "副島 広太郎",
+        "englishName": "Soejima Koutarou",
+        "searchAliases": ["副島 広太郎", "副島広太郎", "ソエジマ コウタロウ", "Soejima Koutarou", "Koutarou Soejima"]
+      },
+      {
+        "lot": 21,
+        "name": "中澤 一起",
+        "englishName": "Nakazawa Kazuki",
+        "searchAliases": ["中澤 一起", "中澤一起", "ナカザワ カズキ", "Nakazawa Kazuki", "Kazuki Nakazawa"]
+      },
+      {
+        "lot": 22,
+        "name": "河地 祥平",
+        "englishName": "Kawachi Shouhei",
+        "searchAliases": ["河地 祥平", "河地祥平", "カワチ ショウヘイ", "Kawachi Shouhei", "Shouhei Kawachi"]
+      },
+      {
+        "lot": 23,
+        "name": "中村 昂太",
+        "englishName": "Nakamura Kouta",
+        "searchAliases": ["中村 昂太", "中村昂太", "ナカムラ コウタ", "Nakamura Kouta", "Kouta Nakamura"]
+      }
+    ]
+  },
+  "sourcesChecked": [
+    {
+      "label": "Main roster skeleton",
+      "type": "repository-data",
+      "locator": "data/database.json on main",
+      "usedFor": "Lot number, athlete name, kana, romanized alias, and current empty-history status."
+    },
+    {
+      "label": "Open pull request search",
+      "type": "repository-pr-check",
+      "locator": "repo:imamuufit/pl-commentary-bank is:pr is:open",
+      "usedFor": "Avoiding duplicate or overlapping active work."
+    },
+    {
+      "label": "HPA 2026 Numata Bench Press速報 locator",
+      "type": "official-result-pdf-locator",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "usedFor": "Event/result-source family check and Hokkaido official-source sweep."
+    },
+    {
+      "label": "HPA 2026 Spring Ebetsu CLPL official result PDF locator",
+      "type": "official-result-pdf-locator",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "usedFor": "Domestic Hokkaido three-lift history sweep."
+    },
+    {
+      "label": "HPA official annual result PDF 2024 locator",
+      "type": "official-result-pdf-locator",
+      "url": "https://h-power.sakura.ne.jp/2024result.pdf",
+      "usedFor": "Domestic Hokkaido three-lift and single bench history sweep."
+    },
+    {
+      "label": "Exact-name high-trust web search",
+      "type": "web-search",
+      "queries": [
+        "\"瀬田 恭央\" パワーリフティング ベンチプレス",
+        "\"瀬田恭央\"",
+        "\"副島 広太郎\" パワーリフティング ベンチプレス",
+        "\"副島広太郎\"",
+        "\"中澤 一起\" パワーリフティング ベンチプレス",
+        "\"中澤一起\"",
+        "\"河地 祥平\" パワーリフティング ベンチプレス",
+        "\"河地祥平\"",
+        "\"中村 昂太\" パワーリフティング ベンチプレス"
+      ],
+      "usedFor": "Checking HPA, JPA, IPF/Goodlift, APF/AAPF-style official or high-trust public traces without inferring identities from noisy matches."
+    }
+  ],
+  "findings": {
+    "confirmedForDatabase": [],
+    "candidatesForReview": [],
+    "notPromotedNotes": [
+      "No source-linked official/high-trust row was strong enough to promote to data/database.json for Lot 19-23 in this pass.",
+      "No ambiguous official/high-trust row was strong enough to add to data/research-candidates.json in this pass.",
+      "No same-person identity was inferred from exact-name-only or noisy search results."
+    ]
+  },
+  "filesChangedIntended": [
+    "data/research-batches/2026-07-01-lot19-23-audit-run45.json"
+  ],
+  "filesIntentionallyUnchanged": [
+    "data/database.json",
+    "data/research-candidates.json",
+    "A4 print layout files",
+    "CSS files",
+    "generator/runtime files",
+    "v5.9.6_LOCK template contract"
+  ],
+  "validation": {
+    "jsonOnly": true,
+    "runtimeValidationRequired": false,
+    "reason": "This batch adds an isolated research log only and does not mutate application/runtime, athlete DB, candidate DB, or print-layout files."
+  }
+}
