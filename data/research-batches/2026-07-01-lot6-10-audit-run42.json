@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "type": "incremental-athlete-research-audit",
+    "updatedAt": "2026-07-01",
+    "layoutTemplateProtected": "v5.9.6_LOCK",
+    "promotionPolicy": "Only promote to data/database.json when official/high-trust source rows and athlete identity are unambiguous. Ambiguous same-name rows remain candidates only."
+  },
+  "batch": {
+    "roster": "2026 Numata Bench Press Lot 1-100",
+    "lotRange": "6-10",
+    "processedAthletes": [
+      { "lot": 6, "id": "A-6-arai-keita", "name": "荒井 慶太" },
+      { "lot": 7, "id": "A-7-fukuda-shigeru", "name": "福田 茂" },
+      { "lot": 8, "id": "A-8-sakai-yoshito", "name": "酒井 義人" },
+      { "lot": 9, "id": "A-9-takeda-yoshikazu", "name": "武田 佳和" },
+      { "lot": 10, "id": "A-10-ozeki-tsukumi", "name": "尾関 作穂" }
+    ]
+  },
+  "preflight": {
+    "openPullRequestsChecked": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "status": "open",
+        "overlapAssessment": "Non-overlapping report-only work. It does not change data/database.json, data/research-candidates.json, A4 layout, or v5.9.6_LOCK."
+      }
+    ],
+    "recentMergedWorkChecked": [
+      {
+        "number": 145,
+        "title": "Add HPA 2024 historical research log batch",
+        "overlapAssessment": "Contains a candidate row for Lot 9 武田 佳和 from HPA 2024 official annual result PDF. This batch references it rather than duplicating or promoting it."
+      },
+      {
+        "number": 152,
+        "title": "Add Lot1-5 audit research batch",
+        "overlapAssessment": "Adjacent previous batch only. No Lot 6-10 coverage."
+      }
+    ]
+  },
+  "sourcesChecked": [
+    {
+      "label": "PL Commentary Bank main data/database.json roster skeleton",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "purpose": "Confirm Lot 6-10 roster identities, team names, divisions, declared bests, aliases, and v5.9.6_LOCK metadata."
+    },
+    {
+      "label": "Repository open PR search",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "purpose": "Avoid duplicate or conflicting work before adding the isolated batch file."
+    },
+    {
+      "label": "HPA official annual result PDF 2024",
+      "url": "https://h-power.sakura.ne.jp/2024result.pdf",
+      "purpose": "Existing row-level official-source candidate for Lot 9 武田 佳和, already logged in data/historical-research-logs/hpa-2024-small-batch.json via PR #145."
+    },
+    {
+      "label": "Exact-name high-trust search sweep",
+      "url": null,
+      "purpose": "Checked HPA/JPA/IPF/Goodlift/APF-AAPF style exact-name terms for spaced/unspaced Japanese names and romanized aliases. No additional promotable or unambiguous official rows were identified in this narrow pass."
+    }
+  ],
+  "confirmedForDatabase": [],
+  "researchCandidates": [
+    {
+      "playerId": "A-9-takeda-yoshikazu",
+      "playerName": "武田 佳和",
+      "status": "existing_candidate_referenced_not_duplicated",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2024result.pdf",
+      "sourceLabel": "HPA official annual result PDF 2024, existing PR #145 row-level extraction",
+      "findingSummary": "Existing official-source candidate row: 2024-11-17 第2回北海道・東北ブロックベンチプレス選手権大会, 男子M1-CL/59kg級候補, 名寄パワーリフティング協会, BP 80.0 / 85.0 / 90.0, best 90.0, place 1. Kept candidate-only because the 2026 Numata Lot 9 athlete identity and PDF class/equipment row structure require review before database promotion.",
+      "separationNote": "Bench-only candidate. Do not merge with three-lift PL history or equipped bench history."
+    }
+  ],
+  "noAdditionalFindings": [
+    {
+      "playerId": "A-6-arai-keita",
+      "playerName": "荒井 慶太",
+      "result": "No additional official/high-trust history row identified in this narrow pass."
+    },
+    {
+      "playerId": "A-7-fukuda-shigeru",
+      "playerName": "福田 茂",
+      "result": "No additional official/high-trust history row identified in this narrow pass."
+    },
+    {
+      "playerId": "A-8-sakai-yoshito",
+      "playerName": "酒井 義人",
+      "result": "No additional official/high-trust history row identified in this narrow pass."
+    },
+    {
+      "playerId": "A-10-ozeki-tsukumi",
+      "playerName": "尾関 作穂",
+      "result": "No additional official/high-trust history row identified in this narrow pass."
+    }
+  ],
+  "filesChangedIntentionally": [
+    "data/research-batches/2026-07-01-lot6-10-audit-run42.json"
+  ],
+  "filesIntentionallyUnchanged": [
+    "data/database.json",
+    "data/research-candidates.json",
+    "A4 print layout files",
+    "v5.9.6_LOCK-related layout contract files",
+    "app runtime/generator/CSS files"
+  ],
+  "validation": {
+    "jsonStructure": "valid by construction",
+    "runtimeValidation": "not required; isolated research-log JSON only",
+    "promotionValidation": "no confirmed histories promoted; no identity inference performed"
+  }
+}
