@@ -1,0 +1,115 @@
+{
+  "batchId": "2026-07-02-candidate-queue-audit-run57",
+  "scope": "Small-batch recheck of unresolved 2026 Numata Bench Press Lot 1-100 research candidates after first-pass Lot coverage.",
+  "layoutGuard": "v5.9.6_LOCK preserved; no print-layout, CSS, generator, app runtime, or A4 template files touched.",
+  "mainAndPrCheck": {
+    "openPrsChecked": true,
+    "openPrsFound": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "overlapAssessment": "Non-overlapping report-only work; no athlete data or candidate queue mutation required for this batch."
+      }
+    ],
+    "recentMergedCoverageChecked": [
+      "Lot 1-5 via PR #152 and earlier PR #47",
+      "Lot 6-10 via PR #154",
+      "Lot 11-13 via PR #155",
+      "Lot 14-18 via PR #156",
+      "Lot 19-23 via PR #157",
+      "Lot 24-28 via PR #158",
+      "Lot 29-32 via PR #160",
+      "Lot 33-37 via PR #161",
+      "Lot 38-39 via PR #162 and Lot 36-40 via PR #67",
+      "Lot 46-50 via PR #163 and Lot 41-45 via PR #70",
+      "Lot 51-55 via PR #164",
+      "Lot 56-60 via PR #165",
+      "Lot 61-65 via PR #166",
+      "Lot 66-70 via PR #167",
+      "Lot 71-75 via PR #168",
+      "Lot 76-80 via PR #169",
+      "Lot 81-85 via PR #91 and Lot 81-83 via PR #144",
+      "Lot 86-90 via PR #93",
+      "Lot 91-95 via PR #95 and Lot 91-93 via PR #150",
+      "Lot 96-100 via PR #97 and Lot 94-96 via PR #147"
+    ]
+  },
+  "processedAthletes": [
+    {
+      "lot": 13,
+      "playerId": "A-13-taniguchi-takahito",
+      "name": "谷口 孝仁",
+      "candidateIdsReviewed": ["a13-2011-hpa-nogear-bench-row"],
+      "confirmedPromotions": [],
+      "candidateDisposition": "Remain in data/research-candidates.json. Official HPA PDF rows exist for same-name bench rows, but 2026 Numata same-person identity, age/class continuity, and event-relative identity are not fully resolved.",
+      "sourcesUsed": [
+        "data/research-candidates.json on main",
+        "HPA official annual result PDFs already recorded in candidate row: https://h-power.sakura.ne.jp/2011.pdf, https://h-power.sakura.ne.jp/2012.pdf, https://h-power.sakura.ne.jp/2013.pdf, https://h-power.sakura.ne.jp/2014.pdf",
+        "Repository PR search/open-PR check"
+      ]
+    },
+    {
+      "lot": 40,
+      "playerId": "C-40-saito-keita",
+      "name": "齊藤 敬太",
+      "candidateIdsReviewed": ["c40-old-national-results"],
+      "confirmedPromotions": [],
+      "candidateDisposition": "Remain in data/research-candidates.json. Multiple official HPA same-name/name-variant rows exist, but same-person identity with 2026 Numata Lot 40 is still not independently verified; no national/international achievement is promoted.",
+      "sourcesUsed": [
+        "data/research-candidates.json on main",
+        "HPA official annual result PDFs already recorded in candidate row: https://h-power.sakura.ne.jp/2011.pdf, https://h-power.sakura.ne.jp/2012.pdf, https://h-power.sakura.ne.jp/2013.pdf, https://h-power.sakura.ne.jp/2014.pdf, https://h-power.sakura.ne.jp/2015.pdf",
+        "Repository PR search/open-PR check"
+      ]
+    },
+    {
+      "lot": 52,
+      "playerId": "D-52-houri-momoka",
+      "name": "宝利 桃華",
+      "candidateIdsReviewed": ["d52-early-hokkaido-results"],
+      "confirmedPromotions": [],
+      "candidateDisposition": "Remain in data/research-candidates.json. This run did not identify an official/high-trust row safe enough to promote beyond existing confirmed database content and prior candidate notes.",
+      "sourcesUsed": [
+        "data/research-candidates.json on main",
+        "Repository PR search/open-PR check",
+        "Exact-name web search returned no reliable new official/high-trust match in this run"
+      ]
+    },
+    {
+      "lot": 65,
+      "playerId": "E-65-hosokawa-hirokazu",
+      "name": "細川 広一",
+      "candidateIdsReviewed": ["e65-2016-hpa-kokutai-qualifier-pl-row"],
+      "confirmedPromotions": [],
+      "candidateDisposition": "Remain in data/research-candidates.json. HPA 2016 official PDF has a same-name 105kg three-lift row, but 2026 Numata Lot 65 same-person identity, age/class continuity, and affiliation continuity remain unresolved.",
+      "sourcesUsed": [
+        "data/research-candidates.json on main",
+        "HPA official annual result PDF 2016: https://h-power.sakura.ne.jp/2016.pdf",
+        "Repository PR search/open-PR check"
+      ]
+    },
+    {
+      "lot": 89,
+      "playerId": "F-89-kitamura-taemi",
+      "name": "北村 妙美",
+      "candidateIdsReviewed": ["f89-possible-duplicate-of-d56-kitamura-taemi"],
+      "confirmedPromotions": [],
+      "candidateDisposition": "Remain in data/research-candidates.json. Lot 56/Lot 89 duplicate-name risk is preserved as unresolved; no Lot 56 history is reused for Lot 89 without official roster/result reconciliation.",
+      "sourcesUsed": [
+        "data/database.json roster skeleton on main",
+        "data/research-candidates.json on main",
+        "Repository PR search/open-PR check"
+      ]
+    }
+  ],
+  "dataMutations": {
+    "databaseJson": "unchanged",
+    "researchCandidatesJson": "unchanged",
+    "newFiles": ["data/research-batches/2026-07-02-candidate-queue-audit-run57.json"]
+  },
+  "summary": {
+    "confirmedRowsPromoted": 0,
+    "candidateRowsAdded": 0,
+    "candidateRowsRetained": 5,
+    "reasonForNoPromotion": "Official or high-trust rows either remain same-name-only, have unresolved same-person identity, or do not add a safe new source-linked achievement beyond existing candidate notes. No achievements were inferred."
+  }
+}
