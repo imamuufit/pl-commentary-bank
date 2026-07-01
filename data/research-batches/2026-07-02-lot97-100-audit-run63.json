@@ -1,0 +1,100 @@
+{
+  "batchId": "2026-07-02-lot97-100-audit-run63",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "97-100",
+    "layoutLock": "v5.9.6_LOCK",
+    "purpose": "incremental official/high-trust source audit before any database or candidate promotion"
+  },
+  "safety": {
+    "openPullRequestCheck": "Open PR check found only non-overlapping report-generator PR #111 before branch creation; no open PL Athlete Research data PR for this lot range was found.",
+    "duplicateCheck": "Repository checks found no existing data/research-batches file for lot97-100 before creation.",
+    "layoutChange": false,
+    "databaseJsonChanged": false,
+    "researchCandidatesChanged": false,
+    "noInferencePolicy": "No achievements, same-person identity links, or record claims were inferred. Only roster identity from main database was used, and no official prior-history row was promoted in this run."
+  },
+  "processedAthletes": [
+    {
+      "lot": 97,
+      "name": "片山 遼",
+      "group": "G",
+      "databaseId": "G-97-katayama-ryou",
+      "aliasesChecked": ["片山 遼", "片山遼", "カタヤマ リョウ", "Katayama Ryou", "Ryou Katayama", "Katayama Ryo", "Ryo Katayama"],
+      "confirmedFindings": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust prior-history row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 98,
+      "name": "矢崎 光康",
+      "group": "G",
+      "databaseId": "G-98-yazaki-mitsuyasu",
+      "aliasesChecked": ["矢崎 光康", "矢崎光康", "ヤザキ ミツヤス", "Yazaki Mitsuyasu", "Mitsuyasu Yazaki"],
+      "confirmedFindings": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust prior-history row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 99,
+      "name": "広瀬 優太",
+      "group": "G",
+      "databaseId": "G-99-hirose-yuuta",
+      "aliasesChecked": ["広瀬 優太", "広瀬優太", "ヒロセ ユウタ", "Hirose Yuuta", "Yuuta Hirose", "Hirose Yuta", "Yuta Hirose"],
+      "confirmedFindings": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust prior-history row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 100,
+      "name": "宮下 綾太",
+      "group": "G",
+      "databaseId": "G-100-miyashita-ryouta",
+      "aliasesChecked": ["宮下 綾太", "宮下綾太", "ミヤシタ リョウタ", "Miyashita Ryouta", "Ryouta Miyashita", "Miyashita Ryota", "Ryota Miyashita"],
+      "confirmedFindings": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust prior-history row suitable for promotion or candidate capture was located in this small audit."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "Repository main database skeleton",
+      "type": "internal-main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "usedFor": "Confirmed roster identities, lot numbers, aliases, and v5.9.6_LOCK preservation target."
+    },
+    {
+      "name": "GitHub open pull request search",
+      "type": "repository-state",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "usedFor": "Checked for open overlapping PL Athlete Research PRs before branch creation; found only non-overlapping PR #111."
+    },
+    {
+      "name": "HPA official 2026 Numata Bench Press速報 F/G PDF",
+      "type": "official result PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "usedFor": "Target current-event source for Lot97-100. This run did not promote the current-event rows to database.json."
+    },
+    {
+      "name": "HPA official site exact-name and variant checks",
+      "type": "official/high-trust search",
+      "url": "https://h-power.sakura.ne.jp/",
+      "usedFor": "Japanese exact-name and no-space variant checks for domestic Hokkaido single bench press and three-lift histories; no reliable additional row was captured in this batch."
+    },
+    {
+      "name": "JPA/IPF/Goodlift broad checks",
+      "type": "official/high-trust search",
+      "url": "https://goodlift.info/",
+      "usedFor": "Romanized-name and exact-name checks for national/international/world histories; no reliable additional row was captured in this batch."
+    }
+  ],
+  "confirmedRowsForDatabase": [],
+  "uncertainRowsForResearchCandidates": [],
+  "result": {
+    "databaseJsonUpdated": false,
+    "researchCandidatesUpdated": false,
+    "batchLogOnly": true,
+    "summary": "Lot 97-100 were audited as a small batch. No confirmed prior-history row was promoted and no uncertain row was added. v5.9.6_LOCK and A4 print layout were preserved."
+  }
+}
