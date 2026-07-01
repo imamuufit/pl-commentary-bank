@@ -1,0 +1,119 @@
+{
+  "batchId": "2026-07-02-lot96-takeuchi-reconcile-run59",
+  "task": "PL Athlete Research reconciliation audit for 2026 Numata Bench Press Lot 96",
+  "layoutGuard": "v5.9.6_LOCK preserved; no A4 print layout, CSS, generator, runtime, or print template files touched.",
+  "mainAndPrCheck": {
+    "mainBranchChecked": true,
+    "openPullRequestsChecked": true,
+    "openPullRequests": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "disposition": "non-overlapping; report-only PR, no athlete database or candidate mutation"
+      }
+    ],
+    "priorMergedContextChecked": [
+      {
+        "number": 97,
+        "title": "Add Numata Lot 96-100 research batch",
+        "finding": "Lot 96 竹内 謙太 had a confirmed HPA 2026 Spring Ebetsu equipped three-lift row recorded at batch level. This run rechecks that finding conservatively before any future schema-safe database promotion."
+      },
+      {
+        "number": 147,
+        "title": "Add Lot94-96 audit research batch",
+        "finding": "Later Lot 94-96 audit made no database/candidate mutation; no contradiction is promoted here."
+      }
+    ]
+  },
+  "sourcePriority": [
+    "HPA official result PDFs and HPA-hosted result locators",
+    "JPA official result pages/PDFs where discoverable",
+    "IPF/Goodlift searches where relevant",
+    "APF/AAPF-oriented searches where relevant"
+  ],
+  "processedAthletes": [
+    {
+      "lot": 96,
+      "name": "竹内 謙太",
+      "englishName": "Takeuchi Kenta",
+      "databaseDisposition": "no direct database promotion in this connector-backed reconciliation run",
+      "candidateDisposition": "no research-candidate row added because the HPA row is not ambiguous; it is a confirmed-source batch finding awaiting schema-safe database promotion",
+      "notes": "Exact Japanese full-name match, birth-year, affiliation, equipment division, and bodyweight-class context support the 2026 Spring Ebetsu HPA row as confirmed at audit-log level. This run does not rewrite data/database.json because the minified database file should not be edited without a schema-preserving script pass."
+    }
+  ],
+  "confirmedHistories": [
+    {
+      "lot": 96,
+      "playerName": "竹内 謙太",
+      "findingType": "prior-equipped-three-lift-powerlifting-result",
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-pl-result",
+      "competitionName": "第55回北海道パワーリフティング選手権大会",
+      "date": "2026-04-26",
+      "grade": "北海道",
+      "eventType": "EQ-PL",
+      "division": "エクイップ男子93kg級",
+      "bodyweight": "90.60kg",
+      "affiliation": "名寄パワーリフティング協会",
+      "birthYear": "1981",
+      "squatBest": "230.0kg",
+      "benchBest": "155.0kg",
+      "deadliftBest": "235.0kg",
+      "total": "620.0kg",
+      "place": "1",
+      "points": "68.17",
+      "attemptsRaw": "S 200.0 / 217.5 / 230.0, B 155.0 / -157.5 / -157.5, D 200.0 / 220.0 / 235.0",
+      "identityCheck": "Exact Japanese full-name match in HPA official Spring Ebetsu result PDF; birth year, affiliation, equipment division, and bodyweight-class context are consistent with the Numata G-group row recorded in PR #97."
+    }
+  ],
+  "candidateFindings": [],
+  "reconciliationResult": {
+    "supersedesNothingAutomatically": true,
+    "interpretation": "PR #97 remains the source batch for Lot 96-100. This run narrows the recheck to Lot 96 竹内 謙太 and confirms that the Spring Ebetsu equipped three-lift row is suitable for a future schema-safe database promotion, while keeping this run audit-only.",
+    "safeNextStep": "Promote this confirmed Lot 96 EQ-PL row to data/database.json only with a script that preserves the minified JSON schema and source-link conventions. Do not infer any national, international, APF/AAPF, or record-status achievement from this row."
+  },
+  "sourcesUsed": [
+    {
+      "type": "repository-main",
+      "label": "data/database.json roster skeleton on main",
+      "path": "data/database.json",
+      "usedFor": "Confirmed main remains the roster/data source and layoutTemplate is v5.9.6_LOCK."
+    },
+    {
+      "type": "github-pr-search",
+      "label": "Open PR check",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/111",
+      "usedFor": "Verified the only open PR is non-overlapping and report-only."
+    },
+    {
+      "type": "github-pr-patch",
+      "label": "Prior Lot 96-100 merged audit #97",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/97",
+      "usedFor": "Recovered the earlier official-source batch extraction for Lot 96 竹内 謙太."
+    },
+    {
+      "type": "github-pr-search",
+      "label": "Later Lot 94-96 merged audit #147",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/147",
+      "usedFor": "Checked for later overlapping audit context before adding this reconciliation file."
+    },
+    {
+      "type": "official-result-pdf",
+      "label": "HPA 2026 Spring Ebetsu CLPL/PL official result PDF",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "usedFor": "Confirmed 竹内 謙太 row: equipped men 93kg, 名寄パワーリフティング協会, SQ 230.0 / BP 155.0 / DL 235.0 / Total 620.0, 1st."
+    },
+    {
+      "type": "official-result-locator",
+      "label": "HPA 2026 Numata Bench Press F/G速報 PDF locator",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "usedFor": "Current-event context only; no current-event row was promoted to prior-history database in this reconciliation run."
+    }
+  ],
+  "mutationSummary": {
+    "databaseJsonChanged": false,
+    "researchCandidatesJsonChanged": false,
+    "addedFiles": [
+      "data/research-batches/2026-07-02-lot96-takeuchi-reconcile-run59.json"
+    ]
+  }
+}
