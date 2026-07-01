@@ -1,0 +1,120 @@
+{
+  "batchId": "2026-07-02-lot85-yamashita-reconcile-run58",
+  "task": "PL Athlete Research reconciliation audit for 2026 Numata Bench Press Lot 85",
+  "layoutGuard": "v5.9.6_LOCK preserved; no A4 print layout, CSS, generator, runtime, or print template files touched.",
+  "mainAndPrCheck": {
+    "mainBranchChecked": true,
+    "openPullRequestsChecked": true,
+    "openPullRequests": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "disposition": "non-overlapping; report-only PR, no athlete database or candidate mutation"
+      }
+    ],
+    "priorMergedContextChecked": [
+      {
+        "number": 91,
+        "title": "Add Lot 81-85 Numata research batch",
+        "finding": "Lot 85 山下 幹太 had an official HPA 2026 Spring Ebetsu CLPL prior-history row recorded at batch level."
+      },
+      {
+        "number": 149,
+        "title": "Add Lot84-88 audit research batch",
+        "finding": "Later Lot 84-88 audit stated no promotable prior-history row for 山下 幹太. This run reconciles that conflict conservatively."
+      }
+    ]
+  },
+  "sourcePriority": [
+    "HPA official result PDFs and HPA-hosted result locators",
+    "JPA official result pages/PDFs where discoverable",
+    "IPF/Goodlift searches where relevant",
+    "APF/AAPF-oriented searches where relevant"
+  ],
+  "processedAthletes": [
+    {
+      "lot": 85,
+      "name": "山下 幹太",
+      "englishName": "Yamashita Kanta",
+      "databaseDisposition": "no direct database promotion in this connector-backed reconciliation run",
+      "candidateDisposition": "no research-candidate row added because the HPA row is not ambiguous; it is a confirmed-source batch finding awaiting schema-safe database promotion",
+      "notes": "Exact full-name match and affiliation context support the HPA 2026 Spring Ebetsu CLPL row as confirmed at audit-log level. This run does not rewrite data/database.json because the minified database file should not be edited without a schema-preserving script pass."
+    }
+  ],
+  "confirmedHistories": [
+    {
+      "lot": 85,
+      "playerName": "山下 幹太",
+      "findingType": "prior-three-lift-powerlifting-result",
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+      "date": "2026-04-26",
+      "grade": "北海道",
+      "eventType": "CLPL",
+      "division": "クラシック男子93kg級",
+      "bodyweight": "90.35kg",
+      "affiliation": "Far East Strength",
+      "birthYear": "1999",
+      "squatBest": "277.5kg",
+      "benchBest": "190.0kg",
+      "deadliftBest": "300.0kg",
+      "total": "767.5kg",
+      "place": "1",
+      "points": "101.84",
+      "attemptsRaw": "S 255.0 / 267.5 / 277.5, B 175.0 / 185.0 / 190.0, D 290.0 / 300.0 / -310.0",
+      "recordMarker": "★ on benchBest in the official PDF; do not narrate a specific record category until checked against the HPA record table.",
+      "identityCheck": "Exact Japanese full-name match in HPA official result PDF; Numata roster lot name is 山下 幹太. Affiliation Far East Strength is consistent with the earlier Lot 81-85 batch extraction."
+    }
+  ],
+  "candidateFindings": [],
+  "reconciliationResult": {
+    "supersedesNothingAutomatically": true,
+    "interpretation": "PR #149 remains useful as a no-mutation audit, but its Lot 85 note should not be read as disproving PR #91. The HPA official Spring Ebetsu row for 山下 幹太 is confirmed at research-batch level and should be the source of truth for a future schema-safe database promotion.",
+    "safeNextStep": "Promote this confirmed Lot 85 CLPL row to data/database.json only with a script that preserves the minified JSON schema and source-link conventions. Keep the ★ record-marker as a cautious note until the exact HPA record category is separately verified."
+  },
+  "sourcesUsed": [
+    {
+      "type": "repository-main",
+      "label": "data/database.json roster skeleton on main",
+      "path": "data/database.json",
+      "usedFor": "Confirmed that main remains the roster/data source and layoutTemplate is v5.9.6_LOCK."
+    },
+    {
+      "type": "github-pr-search",
+      "label": "Open PR check",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/111",
+      "usedFor": "Verified the only open PR is non-overlapping and report-only."
+    },
+    {
+      "type": "github-pr-patch",
+      "label": "Prior Lot 81-85 merged audit #91",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/91",
+      "usedFor": "Recovered the earlier official-source batch extraction for Lot 85 山下 幹太."
+    },
+    {
+      "type": "github-pr-search",
+      "label": "Later Lot 84-88 merged audit #149",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/149",
+      "usedFor": "Identified the conservative later note that conflicted with the earlier Lot 85 finding."
+    },
+    {
+      "type": "official-result-pdf",
+      "label": "HPA 2026 Spring Ebetsu CLPL official result PDF",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "usedFor": "Confirmed 山下 幹太 row: 93kg class, Far East Strength, SQ 277.5 / BP 190.0 / DL 300.0 / Total 767.5, 1st."
+    },
+    {
+      "type": "official-result-locator",
+      "label": "HPA 2026 Numata Bench Press F/G速報 PDF locator",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "usedFor": "Current-event context only; no current-event row was promoted to prior-history database in this reconciliation run."
+    }
+  ],
+  "mutationSummary": {
+    "databaseJsonChanged": false,
+    "researchCandidatesJsonChanged": false,
+    "addedFiles": [
+      "data/research-batches/2026-07-02-lot85-yamashita-reconcile-run58.json"
+    ]
+  }
+}
