@@ -1,0 +1,110 @@
+{
+  "batchId": "2026-07-01-lot71-75-audit-run55",
+  "createdAt": "2026-07-01",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "71-75",
+    "layoutLock": "v5.9.6_LOCK",
+    "purpose": "incremental official/high-trust source audit before any database or candidate promotion"
+  },
+  "safety": {
+    "openPullRequestCheck": "Open PR check found only non-overlapping report-generator PR #111 before branch creation; no open PL Athlete Research data PR for this lot range was found.",
+    "duplicateCheck": "No existing data/research-batches file for lot71-75 audit-run55 was found before creation.",
+    "layoutChange": false,
+    "databaseJsonChanged": false,
+    "researchCandidatesChanged": false,
+    "noInferencePolicy": "No achievements, same-person identity links, or record claims were inferred from exact-name-only, noisy, or absent search results."
+  },
+  "processedAthletes": [
+    {
+      "lot": 71,
+      "name": "石川 匠",
+      "group": "E",
+      "databaseId": "E-71-ishikawa-takumi",
+      "aliasesChecked": ["石川 匠", "石川匠", "イシカワ タクミ", "Ishikawa Takumi", "Takumi Ishikawa"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 72,
+      "name": "村井 寿徳",
+      "group": "E",
+      "databaseId": "E-72-murai-toshinori",
+      "aliasesChecked": ["村井 寿徳", "村井寿徳", "ムライ トシノリ", "Murai Toshinori", "Toshinori Murai"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 73,
+      "name": "宇野 颯",
+      "group": "E",
+      "databaseId": "E-73-uno-hayate",
+      "aliasesChecked": ["宇野 颯", "宇野颯", "ウノ ハヤテ", "Uno Hayate", "Hayate Uno"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 74,
+      "name": "古河 尚幸",
+      "group": "E",
+      "databaseId": "E-74-furukawa-naoyuki",
+      "aliasesChecked": ["古河 尚幸", "古河尚幸", "フルカワ ナオユキ", "Furukawa Naoyuki", "Naoyuki Furukawa"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 75,
+      "name": "千葉 雄太",
+      "group": "E",
+      "databaseId": "E-75-chiba-yuuta",
+      "aliasesChecked": ["千葉 雄太", "千葉雄太", "チバ ユウタ", "Chiba Yuuta", "Yuuta Chiba"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust row suitable for promotion or candidate capture was located in this small audit."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "Repository main database skeleton",
+      "type": "internal-main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "usedFor": "Confirmed roster identities, lot numbers, aliases, and v5.9.6_LOCK preservation target."
+    },
+    {
+      "name": "GitHub open pull request search",
+      "type": "repository-state",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "usedFor": "Checked for open overlapping PL Athlete Research PRs before branch creation; found only non-overlapping PR #111."
+    },
+    {
+      "name": "HPA official site/domain search",
+      "type": "official/high-trust search",
+      "url": "https://h-power.sakura.ne.jp/",
+      "usedFor": "Exact-name and unspaced-name checks for Hokkaido domestic PL/BP result rows. No row-level candidate was captured in this batch."
+    },
+    {
+      "name": "JPA official site search",
+      "type": "official/high-trust search",
+      "url": "https://www.jpa-powerlifting.or.jp/",
+      "usedFor": "Exact-name checks covering national three-lift PL and single bench press histories. No row-level candidate was captured in this batch."
+    },
+    {
+      "name": "IPF/Goodlift/APF-AAPF-style web checks",
+      "type": "official/high-trust search",
+      "url": "https://goodlift.info/",
+      "usedFor": "Exact-name and romanized-name checks covering international/world and federation-relevant histories. No row-level candidate was captured in this batch."
+    }
+  ],
+  "confirmedRowsForDatabase": [],
+  "uncertainRowsForResearchCandidates": [],
+  "result": {
+    "databaseJsonUpdated": false,
+    "researchCandidatesUpdated": false,
+    "batchLogOnly": true,
+    "summary": "Lot 71-75 were audited as a small batch. No confirmed history was promoted and no uncertain official/high-trust candidate row was added."
+  }
+}
