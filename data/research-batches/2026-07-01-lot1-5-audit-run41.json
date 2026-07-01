@@ -1,0 +1,89 @@
+{
+  "batchId": "2026-07-01-lot1-5-audit-run41",
+  "createdAt": "2026-07-01",
+  "scope": "Incremental PL Athlete Research audit for 2026 Numata Bench Press Lot 1-5.",
+  "layoutLock": "v5.9.6_LOCK preserved; no A4 print layout, CSS, generator, app runtime, or template files touched.",
+  "mainAndPrCheck": {
+    "mainBaseline": "main checked before mutation; database.json layoutTemplate remains v5.9.6_LOCK.",
+    "openPullRequests": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "overlapAssessment": "Non-overlapping report-only work; no athlete data or research-candidates mutation."
+      }
+    ],
+    "duplicateWorkCheck": "Search across prior PRs found no existing Lot1-5 audit batch."
+  },
+  "processedAthletes": [
+    {
+      "lot": 1,
+      "name": "齊藤 夕大",
+      "aliasesChecked": ["齊藤 夕大", "齊藤夕大", "サイトウ ユウタ", "Saito Yuta", "Yuta Saito"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "No official/high-trust prior-history row found safe enough for database or candidate promotion in this small pass."
+    },
+    {
+      "lot": 2,
+      "name": "齋藤 悠",
+      "aliasesChecked": ["齋藤 悠", "齋藤悠", "サイトウ ユウ", "Saitou Yuu", "Yuu Saitou"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "No official/high-trust prior-history row found safe enough for database or candidate promotion in this small pass."
+    },
+    {
+      "lot": 3,
+      "name": "玉田 睦生",
+      "aliasesChecked": ["玉田 睦生", "玉田睦生", "タマダ ムツオ", "Tamada Mutsuo", "Mutsuo Tamada"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "No official/high-trust prior-history row found safe enough for database or candidate promotion in this small pass."
+    },
+    {
+      "lot": 4,
+      "name": "山口 巧",
+      "aliasesChecked": ["山口 巧", "山口巧", "ヤマグチ タクミ", "Yamaguchi Takumi", "Takumi Yamaguchi"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "Exact-name searches are noisy because the Japanese name is not unique. No row was promoted or added without source-linked identity confirmation."
+    },
+    {
+      "lot": 5,
+      "name": "春木 祥英",
+      "aliasesChecked": ["春木 祥英", "春木祥英", "ハルキ ショウエイ", "Haruki Shoei", "Shoei Haruki"],
+      "confirmedRowsPromoted": [],
+      "candidateRowsAdded": [],
+      "notes": "No official/high-trust prior-history row found safe enough for database or candidate promotion in this small pass."
+    }
+  ],
+  "sourcesChecked": [
+    {
+      "label": "data/database.json roster skeleton on main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "use": "Used only to identify Lot1-5 roster names, aliases, declared-best fields, and to confirm layoutTemplate remains v5.9.6_LOCK."
+    },
+    {
+      "label": "Open PR search",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "use": "Only open PR found in this pass was #111, assessed as non-overlapping report-only work."
+    },
+    {
+      "label": "HPA/JPA/IPF/Goodlift/APF-AAPF exact-name searches",
+      "url": "n/a",
+      "use": "Checked spaced/unspaced Japanese names, kana, and romanized aliases for domestic Hokkaido, national, international/world, three-lift PL, and single bench contexts. No safe confirmed or candidate prior-history row located."
+    }
+  ],
+  "mutations": {
+    "data/database.json": "unchanged",
+    "data/research-candidates.json": "unchanged",
+    "addedFiles": [
+      "data/research-batches/2026-07-01-lot1-5-audit-run41.json"
+    ]
+  },
+  "validation": [
+    "JSON structure is self-contained research-log only.",
+    "No achievements invented or inferred.",
+    "No same-person assumptions made from exact-name-only or noisy search hits.",
+    "A4 print layout and v5.9.6_LOCK were not touched."
+  ]
+}
