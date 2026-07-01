@@ -1,0 +1,246 @@
+{
+  "batchId": "2026-07-02-lot81-84-audit-run60",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "81-84",
+    "layoutLock": "v5.9.6_LOCK",
+    "purpose": "incremental official/high-trust source audit before any database or candidate promotion"
+  },
+  "safety": {
+    "openPullRequestCheck": "Open PR check found only non-overlapping report-generator PR #111 before branch creation; no open PL Athlete Research data PR for this lot range was found.",
+    "duplicateCheck": "No existing data/research-batches file for lot81-84 audit-run60 was found before creation.",
+    "layoutChange": false,
+    "databaseJsonChanged": false,
+    "researchCandidatesChanged": false,
+    "noInferencePolicy": "No achievements, same-person identity links, or record claims were inferred beyond rows directly visible in official HPA PDFs. 2025 rows for Lot82-84 are documented in this audit only and not promoted to data/database.json in this run."
+  },
+  "processedAthletes": [
+    {
+      "lot": 81,
+      "name": "高橋 俊寛",
+      "group": "F",
+      "databaseId": "F-81-takahashi-toshihiro",
+      "aliasesChecked": ["高橋 俊寛", "高橋俊寛", "タカハシ トシヒロ", "Takahashi Toshihiro", "Toshihiro Takahashi"],
+      "confirmedFindings": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+          "sourceLabel": "HPA official 2026 Numata Bench Press速報 F/G PDF",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権",
+          "eventType": "S-BP",
+          "equipment": "クラシック",
+          "sex": "男子",
+          "bodyweightClass": "93kg級",
+          "birthYear": "1980",
+          "team": "BURSTLIMIT",
+          "bodyweight": "86.60",
+          "bpAttempts": "160.0 / 170.0 / 172.5",
+          "bpBest": "172.5",
+          "total": "172.5",
+          "place": "4",
+          "points": "84.80",
+          "promotionStatus": "current-event result documented in audit only; database histories not changed"
+        }
+      ],
+      "candidateAdditions": [],
+      "notes": "No additional official/high-trust prior-history row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 82,
+      "name": "楠本 竜晟",
+      "group": "F",
+      "databaseId": "F-82-kusumoto-ryuusei",
+      "aliasesChecked": ["楠本 竜晟", "楠本竜晟", "楠本 ⻯晟", "楠本⻯晟", "クスモト リュウセイ", "Kusumoto Ryuusei", "Ryuusei Kusumoto"],
+      "confirmedFindings": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+          "sourceLabel": "HPA official 2026 Numata Bench Press速報 F/G PDF",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権",
+          "eventType": "S-BP",
+          "equipment": "クラシック",
+          "sex": "男子",
+          "bodyweightClass": "93kg級",
+          "birthYear": "2001",
+          "team": "リアルスィング",
+          "bodyweight": "91.65",
+          "bpAttempts": "190.0 / -200.0 / 200.0",
+          "bpBest": "200.0",
+          "total": "200.0",
+          "place": "1",
+          "points": "95.57",
+          "promotionStatus": "current-event result documented in audit only; database histories not changed"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/hokkaidoudouhokuburokku_bench_20251116z.pdf",
+          "sourceLabel": "HPA official 2025 Hokkaido-Tohoku Block Bench Press result PDF",
+          "eventDate": "2025-11-16",
+          "eventName": "第3回北海道・東北ベンチプレス選手権",
+          "eventType": "S-BP",
+          "equipment": "クラシック",
+          "sex": "男子",
+          "ageDivision": "一般",
+          "bodyweightClass": "83kg級",
+          "birthYear": "2001",
+          "team": "TOP LEGEND",
+          "bodyweight": "82.05",
+          "bpAttempts": "170.0 / 175.0 / 180.0",
+          "bpBest": "180.0",
+          "total": "180.0",
+          "place": "3",
+          "points": "90.95",
+          "promotionStatus": "same-name/same-birthYear official prior row documented in audit only; database histories not changed"
+        }
+      ],
+      "candidateAdditions": [],
+      "notes": "2025 prior row is strong but not promoted in this connector-backed run to avoid mutating the minified database without a full validation pass."
+    },
+    {
+      "lot": 83,
+      "name": "前田 貴也",
+      "group": "F",
+      "databaseId": "F-83-maeda-takaya",
+      "aliasesChecked": ["前田 貴也", "前田貴也", "マエダ タカヤ", "Maeda Takaya", "Takaya Maeda"],
+      "confirmedFindings": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+          "sourceLabel": "HPA official 2026 Numata Bench Press速報 F/G PDF",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権",
+          "eventType": "S-BP",
+          "equipment": "クラシック",
+          "sex": "男子",
+          "bodyweightClass": "93kg級",
+          "birthYear": "1974",
+          "team": "名寄パワーリフティング協会",
+          "bodyweight": "92.05",
+          "bpAttempts": "165.0 / -175.0 / -175.0",
+          "bpBest": "165.0",
+          "total": "165.0",
+          "place": "6",
+          "points": "78.68",
+          "promotionStatus": "current-event result documented in audit only; database histories not changed"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/hokkaidoudouhokuburokku_bench_20251116z.pdf",
+          "sourceLabel": "HPA official 2025 Hokkaido-Tohoku Block Bench Press result PDF",
+          "eventDate": "2025-11-16",
+          "eventName": "第3回北海道・東北ベンチプレス選手権",
+          "eventType": "S-BP",
+          "equipment": "クラシック",
+          "sex": "男子",
+          "ageDivision": "M2",
+          "bodyweightClass": "93kg級",
+          "birthYear": "1974",
+          "team": "名寄パワーリフティング協会",
+          "bodyweight": "91.50",
+          "bpAttempts": "170.0 / -180.0 / -180.0",
+          "bpBest": "170.0",
+          "total": "170.0",
+          "place": "1",
+          "points": "81.30",
+          "promotionStatus": "same-name/same-birthYear official prior row documented in audit only; database histories not changed"
+        }
+      ],
+      "candidateAdditions": [],
+      "notes": "2025 prior row is strong but not promoted in this connector-backed run to avoid mutating the minified database without a full validation pass."
+    },
+    {
+      "lot": 84,
+      "name": "中嶋 輝",
+      "group": "F",
+      "databaseId": "F-84-nakajima-hikaru",
+      "aliasesChecked": ["中嶋 輝", "中嶋輝", "ナカジマ ヒカル", "Nakajima Hikaru", "Hikaru Nakajima"],
+      "confirmedFindings": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+          "sourceLabel": "HPA official 2026 Numata Bench Press速報 F/G PDF",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権",
+          "eventType": "S-BP",
+          "equipment": "クラシック",
+          "sex": "男子",
+          "bodyweightClass": "93kg級",
+          "birthYear": "2004",
+          "team": "キムンカムイ旭川",
+          "bodyweight": "92.95",
+          "bpAttempts": "172.5 / 180.0 / -195.0",
+          "bpBest": "180.0",
+          "total": "180.0",
+          "place": "3",
+          "points": "85.42",
+          "promotionStatus": "current-event result documented in audit only; database histories not changed"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/hokkaidoudouhokuburokku_bench_20251116z.pdf",
+          "sourceLabel": "HPA official 2025 Hokkaido-Tohoku Block Bench Press result PDF",
+          "eventDate": "2025-11-16",
+          "eventName": "第3回北海道・東北ベンチプレス選手権",
+          "eventType": "S-BP",
+          "equipment": "クラシック",
+          "sex": "男子",
+          "ageDivision": "JR",
+          "bodyweightClass": "93kg級",
+          "birthYear": "2004",
+          "team": "キムンカムイ旭川",
+          "bodyweight": "91.70",
+          "bpAttempts": "172.5 / 180.0 / -182.5",
+          "bpBest": "180.0",
+          "total": "180.0",
+          "place": "1",
+          "points": "85.99",
+          "promotionStatus": "same-name/same-birthYear official prior row documented in audit only; database histories not changed"
+        }
+      ],
+      "candidateAdditions": [],
+      "notes": "2025 prior row is strong but not promoted in this connector-backed run to avoid mutating the minified database without a full validation pass."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "Repository main database skeleton",
+      "type": "internal-main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "usedFor": "Confirmed roster identities, lot numbers, aliases, and v5.9.6_LOCK preservation target."
+    },
+    {
+      "name": "GitHub open pull request search",
+      "type": "repository-state",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "usedFor": "Checked for open overlapping PL Athlete Research PRs before branch creation; found only non-overlapping PR #111."
+    },
+    {
+      "name": "HPA official 2026 Numata Bench Press速報 F/G PDF",
+      "type": "official result PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "usedFor": "Confirmed Lot81-84 current-event bench press rows, attempts, bodyweight, team, class, placement, and points."
+    },
+    {
+      "name": "HPA official 2025 Hokkaido-Tohoku Block Bench Press result PDF",
+      "type": "official result PDF",
+      "url": "https://h-power.sakura.ne.jp/hokkaidoudouhokuburokku_bench_20251116z.pdf",
+      "usedFor": "Checked prior single bench press histories for Lot81-84; row-level official matches were located for Lot82-84."
+    },
+    {
+      "name": "HPA official 2026 Spring Ebetsu PL result PDF",
+      "type": "official result PDF",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "usedFor": "Checked domestic Hokkaido three-lift PL rows for Lot81-84; no matching text rows were found for this small batch."
+    },
+    {
+      "name": "IPF/Goodlift/JPA broad web checks",
+      "type": "official/high-trust search",
+      "url": "https://goodlift.info/",
+      "usedFor": "Romanized-name and exact-name checks for national/international/world histories; no reliable additional row was captured in this batch."
+    }
+  ],
+  "confirmedRowsForDatabase": [],
+  "uncertainRowsForResearchCandidates": [],
+  "result": {
+    "databaseJsonUpdated": false,
+    "researchCandidatesUpdated": false,
+    "batchLogOnly": true,
+    "summary": "Lot 81-84 were audited as a small batch. HPA official 2026 Numata current-event rows were confirmed for all four athletes; HPA official 2025 Hokkaido-Tohoku Block Bench Press prior rows were confirmed in-audit for Lot82-84. No database or candidate file was changed in order to keep this PR limited to a safe, internally consistent audit log."
+  }
+}
