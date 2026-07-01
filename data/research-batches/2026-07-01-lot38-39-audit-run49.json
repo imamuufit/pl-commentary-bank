@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "batchId": "2026-07-01-lot38-39-audit-run49",
+    "eventId": "2026-numata-bench-press",
+    "createdAt": "2026-07-01",
+    "layoutTemplate": "v5.9.6_LOCK",
+    "scope": "Incremental audit for 2026 Numata Bench Press roster Lot 38-39. No A4 print layout, CSS, page rendering, database, or research-candidates mutation. Confirmed source rows are recorded at batch level only unless identity-safe database promotion is performed in a separate mutation."
+  },
+  "processedAthletes": [
+    {
+      "lot": 38,
+      "playerId": "C-38-ito-tatsuya",
+      "name": "伊藤 達也",
+      "kana": "イトウ タツヤ",
+      "englishName": "Ito Tatsuya",
+      "confirmedHistoryUpdates": [
+        {
+          "status": "batch-confirmed-source-row",
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+          "sourceLabel": "HPA official速報 PDF: 2026 Numata Bench Press ABC result, p.2 text row",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権",
+          "venue": "沼田町民会館",
+          "eventType": "S-BP",
+          "equipment": "Classic/CL",
+          "sex": "男子",
+          "bodyweightClass": "74kg級",
+          "athleteName": "伊藤 達也",
+          "birthYear": "1994",
+          "team": "BURSTLIMIT",
+          "bodyweight": "67.90",
+          "bpAttempts": "152.5 / 157.5 / -162.5",
+          "bpBest": "157.5",
+          "total": "157.5",
+          "place": "4",
+          "points": "87.97",
+          "databasePromotion": "not performed in this batch; recorded as source-confirmed row for future controlled database mutation"
+        },
+        {
+          "status": "batch-confirmed-source-row",
+          "sourceUrl": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+          "sourceLabel": "HPA official result PDF: 2026 Spring Ebetsu CLPL, p.4 text row",
+          "eventDate": "2026-04-25",
+          "eventName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "venue": "江別市青年センター 体育室",
+          "eventType": "3-lift PL",
+          "equipment": "Classic/CL",
+          "sex": "男子",
+          "bodyweightClass": "66kg級",
+          "athleteName": "伊藤 達也",
+          "birthYear": "1994",
+          "team": "BURSTLIMIT",
+          "bodyweight": "65.90",
+          "sqAttempts": "165.0 / 172.5 / 180.0",
+          "sqBest": "180.0",
+          "bpAttempts": "140.0 / 150.0 / -155.0",
+          "bpBest": "150.0",
+          "dlAttempts": "175.0 / 185.0 / 195.0",
+          "dlBest": "195.0",
+          "total": "525.0",
+          "place": "2",
+          "points": "81.90",
+          "databasePromotion": "not performed in this batch; prior Lot 92 audit already noted this source row, but this batch links it to Lot 38 context without duplicating database entries"
+        }
+      ],
+      "candidateUpdates": [],
+      "auditResult": "Official HPA rows were found for both 2026 Numata single bench and 2026 Spring Ebetsu three-lift powerlifting. Both rows share exact Japanese name, birth year 1994, and BURSTLIMIT affiliation with the Lot 38 roster entry. No database.json mutation was performed in this isolated audit batch to avoid duplicate or uncontrolled promotion."
+    },
+    {
+      "lot": 39,
+      "playerId": "C-39-sawauchi-chiaki",
+      "name": "澤内 千秋",
+      "kana": "サワウチ チアキ",
+      "englishName": "Sawauchi Chiaki",
+      "confirmedHistoryUpdates": [
+        {
+          "status": "batch-confirmed-source-row",
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+          "sourceLabel": "HPA official速報 PDF: 2026 Numata Bench Press ABC result, p.2 text row",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権",
+          "venue": "沼田町民会館",
+          "eventType": "S-BP",
+          "equipment": "Classic/CL",
+          "sex": "男子",
+          "bodyweightClass": "74kg級",
+          "athleteName": "澤内 千秋",
+          "birthYear": "1980",
+          "team": "十勝パワ-リフティング協会",
+          "bodyweight": "73.65",
+          "bpAttempts": "172.5 / 180.0 / 182.5",
+          "bpBest": "182.5",
+          "total": "182.5",
+          "place": "2",
+          "points": "97.57",
+          "databasePromotion": "not performed in this batch; current-event result row only, no older history source found"
+        }
+      ],
+      "candidateUpdates": [],
+      "auditResult": "The official 2026 Numata single-bench result row was found. No older domestic Hokkaido, national, international/world, APF/AAPF, or Goodlift/IPF history row was found in this pass. No uncertain candidate was added because no ambiguous official/high-trust older row was identified."
+    }
+  ],
+  "sourcePriority": [
+    "HPA official result PDFs / official Hokkaido sources",
+    "JPA official result PDFs / national results",
+    "IPF/Goodlift international results",
+    "APF/AAPF official or high-trust results if relevant"
+  ],
+  "checkedSources": [
+    {
+      "label": "Repository main: data/database.json",
+      "result": "Confirmed the roster skeleton policy and v5.9.6_LOCK metadata before mutation; did not edit database.json."
+    },
+    {
+      "label": "Repository main: data/research-candidates.json",
+      "result": "Checked existing candidate structure and avoided duplicate candidate insertion."
+    },
+    {
+      "label": "GitHub open PR search",
+      "result": "One unrelated open PR (#111) was present; no open athlete-research PR for Lot 38-39 was found."
+    },
+    {
+      "label": "HPA official roster PDF: 2026natu_entry.pdf",
+      "result": "Lot 38 伊藤達也 and Lot 39 澤内千秋 roster rows confirmed with kana, birth year, affiliation, class, and declared best."
+    },
+    {
+      "label": "HPA official result速報 PDF: 20260621result_sokuhou_ABC.pdf",
+      "result": "Current-event result rows confirmed for Lot 38 and Lot 39 in the 74kg class."
+    },
+    {
+      "label": "HPA official result PDF: hokkaido20260425_result-2.pdf",
+      "result": "Three-lift CLPL source row confirmed for 伊藤達也, 66kg class, total 525.0, 2nd place."
+    },
+    {
+      "label": "web search: \"澤内 千秋\" パワーリフティング ベンチプレス / \"澤内千秋\" \"ベンチプレス\" / \"Sawauchi Chiaki\" powerlifting",
+      "result": "No older official/high-trust athlete-history match found."
+    },
+    {
+      "label": "web search: site:h-power.sakura.ne.jp \"澤内 千秋\" / site:japanpowerlifting.org \"澤内 千秋\"",
+      "result": "No older official/high-trust athlete-history match found."
+    }
+  ],
+  "mutationSummary": {
+    "databaseJsonChanged": false,
+    "researchCandidatesJsonChanged": false,
+    "confirmedRowsPromoted": 0,
+    "batchConfirmedSourceRowsRecorded": 3,
+    "candidateRowsAdded": 0,
+    "a4LayoutChanged": false,
+    "v596LockPreserved": true
+  },
+  "nextSuggestedBatch": "Lot 41-45 or a controlled database-promotion PR for Lot 38 only after duplicate-safe history insertion rules are reviewed."
+}
