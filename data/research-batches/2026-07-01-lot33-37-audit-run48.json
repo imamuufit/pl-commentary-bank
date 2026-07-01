@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "batchId": "2026-07-01-lot33-37-audit-run48",
+    "eventId": "2026-numata-bench-press",
+    "createdAt": "2026-07-01",
+    "layoutTemplate": "v5.9.6_LOCK",
+    "scope": "Incremental audit for 2026 Numata Bench Press roster Lot 33-37. No A4 print layout, CSS, page rendering, database, or research-candidates mutation."
+  },
+  "processedAthletes": [
+    {
+      "lot": 33,
+      "playerId": "C-33-sakamoto-miki",
+      "name": "坂本 幹",
+      "kana": "サカモト ミキ",
+      "englishName": "Sakamoto Miki",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No official or high-trust row was found that could be safely linked to the 2026 Numata roster athlete in this small-batch pass."
+    },
+    {
+      "lot": 34,
+      "playerId": "C-34-aizawa-kanta",
+      "name": "相澤 完太",
+      "kana": "アイザワ カンタ",
+      "englishName": "Aizawa Kanta",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No official or high-trust row was found that could be safely linked to the 2026 Numata roster athlete in this small-batch pass."
+    },
+    {
+      "lot": 35,
+      "playerId": "C-35-hoshi-kotarou",
+      "name": "星 ⻁太郎",
+      "kana": "ホシ コタロウ",
+      "englishName": "Hoshi Kotarou",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No official or high-trust row was found that could be safely linked to the 2026 Numata roster athlete in this small-batch pass. Searched both the roster glyph form and the common 虎 form."
+    },
+    {
+      "lot": 36,
+      "playerId": "C-36-igarashi-tomoya",
+      "name": "五十嵐 友哉",
+      "kana": "イガラシ トモヤ",
+      "englishName": "Igarashi Tomoya",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No official or high-trust row was found that could be safely linked to the 2026 Numata roster athlete in this small-batch pass."
+    },
+    {
+      "lot": 37,
+      "playerId": "C-37-tamai-mikihiro",
+      "name": "玉井 幹大",
+      "kana": "タマイ ミキヒロ",
+      "englishName": "Tamai Mikihiro",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No official or high-trust row was found that could be safely linked to the 2026 Numata roster athlete in this small-batch pass."
+    }
+  ],
+  "sourcePriority": [
+    "HPA official result PDFs / official Hokkaido sources",
+    "JPA official result PDFs / national results",
+    "IPF/Goodlift international results",
+    "APF/AAPF official or high-trust results if relevant"
+  ],
+  "checkedSources": [
+    {
+      "label": "Repository main: data/database.json",
+      "result": "Confirmed Lot 33-37 roster skeleton, player IDs, names, kana, and aliases before researching."
+    },
+    {
+      "label": "Repository main: data/research-candidates.json",
+      "result": "Checked current candidate structure and avoided duplicate candidate insertion."
+    },
+    {
+      "label": "GitHub open PR search",
+      "result": "One unrelated open PR (#111) found. No open athlete-research PR for Lot 33-37 was found."
+    },
+    {
+      "label": "web search: \"坂本 幹\" パワーリフティング ベンチプレス / \"坂本幹\" \"ベンチプレス\" / \"Sakamoto Miki\" powerlifting bench press",
+      "result": "No official or high-trust athlete-history match found."
+    },
+    {
+      "label": "web search: \"相澤 完太\" パワーリフティング ベンチプレス / \"相澤完太\" \"ベンチプレス\" / \"Aizawa Kanta\" powerlifting bench press",
+      "result": "No official or high-trust athlete-history match found."
+    },
+    {
+      "label": "web search: \"星 ⻁太郎\" / \"星虎太郎\" パワーリフティング ベンチプレス / \"Hoshi Kotarou\" powerlifting bench press",
+      "result": "No official or high-trust athlete-history match found."
+    },
+    {
+      "label": "web search: \"五十嵐 友哉\" パワーリフティング ベンチプレス / \"五十嵐友哉\" \"ベンチプレス\" / \"Igarashi Tomoya\" powerlifting bench press",
+      "result": "No official or high-trust athlete-history match found."
+    },
+    {
+      "label": "web search: \"玉井 幹大\" パワーリフティング ベンチプレス / \"玉井幹大\" \"ベンチプレス\" / \"Tamai Mikihiro\" powerlifting bench press",
+      "result": "No official or high-trust athlete-history match found."
+    }
+  ],
+  "mutationSummary": {
+    "databaseJsonChanged": false,
+    "researchCandidatesJsonChanged": false,
+    "confirmedRowsPromoted": 0,
+    "candidateRowsAdded": 0,
+    "a4LayoutChanged": false,
+    "v596LockPreserved": true
+  },
+  "nextSuggestedBatch": "Lot 38-39 or revisit Lot 40 candidate promotion only after identity-safe source linkage is established."
+}
