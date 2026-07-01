@@ -1,0 +1,140 @@
+{
+  "batchId": "2026-07-01-lot24-28-audit-run46",
+  "createdAt": "2026-07-01",
+  "purpose": "Incremental PL Athlete Research audit for 2026 Numata Bench Press Lot 24-28.",
+  "layoutGuard": "v5.9.6_LOCK preserved; no A4 print layout, CSS, generator, runtime, or template files touched.",
+  "mainBranchCheck": {
+    "repository": "imamuufit/pl-commentary-bank",
+    "baseBranch": "main",
+    "openPullRequestsChecked": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "assessment": "Non-overlapping report-only work; no athlete-history data or print-layout mutation required for this batch."
+      }
+    ],
+    "recentMergedBatchContext": [
+      "PR #152 Lot1-5 audit run41",
+      "PR #154 Lot6-10 audit run42",
+      "PR #155 Lot11-13 audit run43",
+      "PR #156 Lot14-18 audit run44",
+      "PR #157 Lot19-23 audit run45"
+    ]
+  },
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lots": [24, 25, 26, 27, 28],
+    "athletes": [
+      {
+        "lot": 24,
+        "name": "山本 忍",
+        "englishName": "Yamamoto Shinobu",
+        "searchAliases": ["山本 忍", "山本忍", "ヤマモト シノブ", "Yamamoto Shinobu", "Shinobu Yamamoto"]
+      },
+      {
+        "lot": 25,
+        "name": "渡部 孝太郎",
+        "englishName": "Watabe Koutarou",
+        "searchAliases": ["渡部 孝太郎", "渡部孝太郎", "ワタベ コウタロウ", "Watabe Koutarou", "Koutarou Watabe"]
+      },
+      {
+        "lot": 26,
+        "name": "堀井 隆太",
+        "englishName": "Horii Ryuuta",
+        "searchAliases": ["堀井 隆太", "堀井隆太", "ホリイ リュウタ", "Horii Ryuuta", "Ryuuta Horii"]
+      },
+      {
+        "lot": 27,
+        "name": "落合 良介",
+        "englishName": "Ochiai Ryousuke",
+        "searchAliases": ["落合 良介", "落合良介", "オチアイ リョウスケ", "Ochiai Ryousuke", "Ryousuke Ochiai"]
+      },
+      {
+        "lot": 28,
+        "name": "佐藤 立盛",
+        "englishName": "Satou Ryuusei",
+        "searchAliases": ["佐藤 立盛", "佐藤立盛", "サトウ リュウセイ", "Satou Ryuusei", "Ryuusei Satou"]
+      }
+    ]
+  },
+  "sourcesChecked": [
+    {
+      "label": "Main roster skeleton",
+      "type": "repository-data",
+      "locator": "data/database.json on main",
+      "usedFor": "Lot number, athlete name, kana, romanized alias, and current empty-history status."
+    },
+    {
+      "label": "Open pull request search",
+      "type": "repository-pr-check",
+      "locator": "repo:imamuufit/pl-commentary-bank is:pr is:open",
+      "usedFor": "Avoiding duplicate or overlapping active work."
+    },
+    {
+      "label": "HPA 2026 Numata Bench Press速報 locator",
+      "type": "official-result-pdf-locator",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "usedFor": "Event/result-source family check and Hokkaido official-source sweep."
+    },
+    {
+      "label": "HPA 2026 Spring Ebetsu CLPL official result PDF locator",
+      "type": "official-result-pdf-locator",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "usedFor": "Domestic Hokkaido three-lift history sweep."
+    },
+    {
+      "label": "HPA official annual result PDF 2024 locator",
+      "type": "official-result-pdf-locator",
+      "url": "https://h-power.sakura.ne.jp/2024result.pdf",
+      "usedFor": "Domestic Hokkaido three-lift and single bench history sweep."
+    },
+    {
+      "label": "Exact-name high-trust web search",
+      "type": "web-search",
+      "queries": [
+        "\"山本 忍\" パワーリフティング ベンチプレス HPA JPA",
+        "\"山本忍\" \"ベンチプレス\"",
+        "site:h-power.sakura.ne.jp \"山本 忍\"",
+        "site:japanpowerlifting.org \"山本 忍\" ベンチプレス",
+        "\"渡部 孝太郎\" パワーリフティング ベンチプレス",
+        "\"渡部孝太郎\" \"ベンチプレス\"",
+        "site:h-power.sakura.ne.jp \"渡部 孝太郎\"",
+        "site:japanpowerlifting.org \"渡部 孝太郎\"",
+        "\"堀井 隆太\" パワーリフティング ベンチプレス",
+        "\"堀井隆太\" \"ベンチプレス\"",
+        "site:h-power.sakura.ne.jp \"堀井 隆太\"",
+        "\"落合 良介\" パワーリフティング ベンチプレス",
+        "site:h-power.sakura.ne.jp \"落合 良介\"",
+        "\"佐藤 立盛\" パワーリフティング ベンチプレス",
+        "site:h-power.sakura.ne.jp \"佐藤 立盛\"",
+        "site:japanpowerlifting.org \"佐藤 立盛\""
+      ],
+      "usedFor": "Checking HPA, JPA, IPF/Goodlift, APF/AAPF-style official or high-trust public traces without inferring identities from noisy matches."
+    }
+  ],
+  "findings": {
+    "confirmedForDatabase": [],
+    "candidatesForReview": [],
+    "notPromotedNotes": [
+      "No source-linked official/high-trust row was strong enough to promote to data/database.json for Lot 24-28 in this pass.",
+      "No ambiguous official/high-trust row was strong enough to add to data/research-candidates.json in this pass.",
+      "No same-person identity was inferred from exact-name-only or noisy search results."
+    ]
+  },
+  "filesChangedIntended": [
+    "data/research-batches/2026-07-01-lot24-28-audit-run46.json"
+  ],
+  "filesIntentionallyUnchanged": [
+    "data/database.json",
+    "data/research-candidates.json",
+    "A4 print layout files",
+    "CSS files",
+    "generator/runtime files",
+    "v5.9.6_LOCK template contract"
+  ],
+  "validation": {
+    "jsonOnly": true,
+    "runtimeValidationRequired": false,
+    "reason": "This batch adds an isolated research log only and does not mutate application/runtime, athlete DB, candidate DB, or print-layout files."
+  }
+}
