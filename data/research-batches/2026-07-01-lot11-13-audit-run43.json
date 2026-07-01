@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "type": "incremental-athlete-research-audit",
+    "updatedAt": "2026-07-01",
+    "layoutTemplateProtected": "v5.9.6_LOCK",
+    "promotionPolicy": "Only promote to data/database.json when official/high-trust source rows and athlete identity are unambiguous. Ambiguous same-name rows remain candidates only."
+  },
+  "batch": {
+    "roster": "2026 Numata Bench Press Lot 1-100",
+    "lotRange": "11-13",
+    "processedAthletes": [
+      { "lot": 11, "id": "A-11-konno-yuichi", "name": "紺野 雄一" },
+      { "lot": 12, "id": "A-12-kawata-toshiki", "name": "川田 俊希" },
+      { "lot": 13, "id": "A-13-taniguchi-takahito", "name": "谷口 孝仁" }
+    ]
+  },
+  "preflight": {
+    "openPullRequestsChecked": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "status": "open",
+        "overlapAssessment": "Non-overlapping report-only work. It does not change athlete histories, data/database.json, data/research-candidates.json, A4 layout, or v5.9.6_LOCK."
+      }
+    ],
+    "recentMergedWorkChecked": [
+      {
+        "number": 154,
+        "title": "Add Lot6-10 audit research batch",
+        "overlapAssessment": "Adjacent previous batch only. No Lot 11-13 coverage."
+      }
+    ]
+  },
+  "sourcesChecked": [
+    {
+      "label": "PL Commentary Bank main data/database.json roster skeleton",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "purpose": "Confirm Lot 11-13 roster identities, team names, divisions, declared bests, aliases, and v5.9.6_LOCK metadata."
+    },
+    {
+      "label": "Repository open PR search",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "purpose": "Avoid duplicate or conflicting work before adding the isolated batch file."
+    },
+    {
+      "label": "HPA official annual result PDF 2024",
+      "url": "https://h-power.sakura.ne.jp/2024result.pdf",
+      "purpose": "Row-level official-source sweep for Lot 11-13 names across Hokkaido domestic three-lift PL and single bench results included in the 2024 annual result PDF."
+    },
+    {
+      "label": "Exact-name high-trust search sweep",
+      "url": null,
+      "purpose": "Checked HPA/JPA/IPF/Goodlift/APF-AAPF style exact-name terms for spaced/unspaced Japanese names and romanized aliases. No additional promotable or unambiguous official rows were identified in this narrow pass."
+    }
+  ],
+  "confirmedForDatabase": [],
+  "researchCandidates": [
+    {
+      "playerId": "A-13-taniguchi-takahito",
+      "playerName": "谷口 孝仁",
+      "status": "new_candidate_isolated_batch_not_promoted",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2024result.pdf",
+      "sourceLabel": "HPA official annual result PDF 2024",
+      "findingSummary": "Official same-name row found in the 2024-11-17 第2回北海道・東北ブロックベンチプレス選手権大会, C group: M3-CL 66kg candidate, 十勝パワーリフティング協会, bodyweight 65.10, BP attempts 120.0 / 125.0 / -132.5, best 125.0, total 125.0, place 1, points 71.43. Kept candidate-only because the 2026 Numata Lot 13 athlete identity should be reviewed before database promotion.",
+      "separationNote": "Bench-only candidate. Do not merge with three-lift PL history or referee/officiating appearances. Same PDF also contains 谷口 孝仁 as technical controller/referee in other meet sections; those are not athlete performance histories and are not candidates for database athlete histories."
+    }
+  ],
+  "noAdditionalFindings": [
+    {
+      "playerId": "A-11-konno-yuichi",
+      "playerName": "紺野 雄一",
+      "result": "No additional official/high-trust athlete performance row identified in this narrow pass."
+    },
+    {
+      "playerId": "A-12-kawata-toshiki",
+      "playerName": "川田 俊希",
+      "result": "No additional official/high-trust athlete performance row identified in this narrow pass."
+    }
+  ],
+  "filesChangedIntentionally": [
+    "data/research-batches/2026-07-01-lot11-13-audit-run43.json"
+  ],
+  "filesIntentionallyUnchanged": [
+    "data/database.json",
+    "data/research-candidates.json",
+    "A4 print layout files",
+    "v5.9.6_LOCK-related layout contract files",
+    "app runtime/generator/CSS files"
+  ],
+  "validation": {
+    "jsonStructure": "valid by construction",
+    "runtimeValidation": "not required; isolated research-log JSON only",
+    "promotionValidation": "no confirmed histories promoted; no identity inference performed"
+  }
+}
