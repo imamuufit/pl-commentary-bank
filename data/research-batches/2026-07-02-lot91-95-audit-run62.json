@@ -1,0 +1,116 @@
+{
+  "batchId": "2026-07-02-lot91-95-audit-run62",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "91-95",
+    "layoutLock": "v5.9.6_LOCK",
+    "purpose": "incremental official/high-trust source audit before any database or candidate promotion"
+  },
+  "safety": {
+    "openPullRequestCheck": "Open PR check found only non-overlapping report-generator PR #111 before branch creation; no open PL Athlete Research data PR for this lot range was found.",
+    "duplicateCheck": "Repository checks found no existing data/research-batches file for lot91-95 before creation.",
+    "layoutChange": false,
+    "databaseJsonChanged": false,
+    "researchCandidatesChanged": false,
+    "noInferencePolicy": "No achievements, same-person identity links, or record claims were inferred. Only roster identity from main database was used, and no official prior-history row was promoted in this run."
+  },
+  "processedAthletes": [
+    {
+      "lot": 91,
+      "name": "徳丸 優",
+      "group": "G",
+      "databaseId": "G-91-tokumaru-yuu",
+      "aliasesChecked": ["徳丸 優", "徳丸優", "トクマル ユウ", "Tokumaru Yuu", "Yuu Tokumaru"],
+      "confirmedFindings": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust prior-history row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 92,
+      "name": "伊藤 達也",
+      "group": "G",
+      "databaseId": "G-92-itou-tatsuya",
+      "aliasesChecked": ["伊藤 達也", "伊藤達也", "イトウ タツヤ", "Itou Tatsuya", "Tatsuya Itou", "Ito Tatsuya", "Tatsuya Ito"],
+      "confirmedFindings": [],
+      "candidateAdditions": [],
+      "notes": "The same Japanese name appears elsewhere in public strength-sport contexts, but this run did not find an official/high-trust row with enough identity support for Lot92 promotion. No same-person linkage was inferred."
+    },
+    {
+      "lot": 93,
+      "name": "杉本 拓弥",
+      "group": "G",
+      "databaseId": "G-93-sugimoto-takuya",
+      "aliasesChecked": ["杉本 拓弥", "杉本拓弥", "スギモト タクヤ", "Sugimoto Takuya", "Takuya Sugimoto"],
+      "confirmedFindings": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust prior-history row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 94,
+      "name": "入交 将昭",
+      "group": "G",
+      "databaseId": "G-94-nyuukou-masaaki",
+      "aliasesChecked": ["入交 将昭", "入交将昭", "ニュウコウ マサアキ", "Nyuukou Masaaki", "Masaaki Nyuukou", "Nyuko Masaaki"],
+      "confirmedFindings": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust prior-history row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 95,
+      "name": "馬狩 良光",
+      "group": "G",
+      "databaseId": "G-95-umakari-yoshimitsu",
+      "aliasesChecked": ["馬狩 良光", "馬狩良光", "ウマカリ ヨシミツ", "Umakari Yoshimitsu", "Yoshimitsu Umakari"],
+      "confirmedFindings": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust prior-history row suitable for promotion or candidate capture was located in this small audit."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "Repository main database skeleton",
+      "type": "internal-main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "usedFor": "Confirmed roster identities, lot numbers, aliases, and v5.9.6_LOCK preservation target."
+    },
+    {
+      "name": "GitHub open pull request search",
+      "type": "repository-state",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "usedFor": "Checked for open overlapping PL Athlete Research PRs before branch creation; found only non-overlapping PR #111."
+    },
+    {
+      "name": "HPA official 2026 Numata Bench Press速報 F/G PDF",
+      "type": "official result PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+      "usedFor": "Target current-event source for Lot91-95. This run did not promote the current-event rows to database.json."
+    },
+    {
+      "name": "HPA official 2025 Hokkaido-Tohoku Block Bench Press result PDF",
+      "type": "official result PDF",
+      "url": "https://h-power.sakura.ne.jp/hokkaidoudouhokuburokku_bench_20251116z.pdf",
+      "usedFor": "Checked prior single bench press histories for this lot range; no row was captured for promotion or candidate addition in this run."
+    },
+    {
+      "name": "HPA official 2026 Spring Ebetsu PL result PDF",
+      "type": "official result PDF",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "usedFor": "Checked domestic Hokkaido three-lift PL history target for this lot range; no row was captured for promotion or candidate addition in this run."
+    },
+    {
+      "name": "JPA/IPF/Goodlift broad checks",
+      "type": "official/high-trust search",
+      "url": "https://goodlift.info/",
+      "usedFor": "Romanized-name and exact-name checks for national/international/world histories; no reliable additional row was captured in this batch."
+    }
+  ],
+  "confirmedRowsForDatabase": [],
+  "uncertainRowsForResearchCandidates": [],
+  "result": {
+    "databaseJsonUpdated": false,
+    "researchCandidatesUpdated": false,
+    "batchLogOnly": true,
+    "summary": "Lot 91-95 were audited as a small batch. No confirmed prior-history row was promoted and no uncertain row was added. v5.9.6_LOCK and A4 print layout were preserved."
+  }
+}
