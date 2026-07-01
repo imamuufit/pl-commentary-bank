@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "purpose": "Incremental PL Athlete Research run for 2026 Numata Bench Press roster. This file records a narrow promotion-readiness audit without touching print layout or broad data files.",
+    "batchDate": "2026-07-02",
+    "layoutGuardrail": "v5.9.6_LOCK untouched",
+    "databasePromotionPolicy": "Only official/high-trust source-backed rows with stable identity evidence may be promoted to data/database.json. Ambiguous identity remains in data/research-candidates.json or isolated research logs."
+  },
+  "batchScope": {
+    "competitionRoster": "2026 Numata Bench Press Lot 1-100",
+    "processedLots": [15],
+    "processedAthletes": ["松原 幹"],
+    "reasonForSmallBatch": "Focused reconciliation of a previously logged Lot 15 prior-history candidate before any database promotion.",
+    "openPrCheck": "Open PR check found only PR #111, a non-overlapping completion report generator. No athlete database, research-candidate, or A4 layout PR conflict was found.",
+    "mainBranchDuplicateCheck": "No existing data/research-batches/2026-07-02-lot15-matsubara-promotion-readiness-run64.json was present on main before creation. Existing Lot 11-15 run4 log was reused as prior evidence and not duplicated."
+  },
+  "sourceIndex": [
+    {
+      "sourceId": "src-hpa-20260621-numata-bp-abc-sokuhou",
+      "title": "第30回北海道クラシックベンチプレス選手権 A/B/Cグループ 速報",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "sourceType": "HPA official result速報 PDF",
+      "eventDate": "2026-06-21",
+      "venue": "沼田町民会館",
+      "usedFor": "Current roster-event identity anchor and current single bench press result."
+    },
+    {
+      "sourceId": "src-hpa-20260425-ebetsu-clpl-result",
+      "title": "第29回北海道クラシックパワーリフティング選手権大会 結果",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "HPA official result PDF",
+      "eventDate": "2026-04-25",
+      "venue": "江別市青年センター",
+      "usedFor": "Confirmed prior three-lift classic powerlifting history."
+    },
+    {
+      "sourceId": "repo-research-batch-20260629-lot11-15-run4",
+      "title": "Existing Lot 11-15 research batch log",
+      "repositoryPath": "data/research-batches/2026-06-29-lot11-15-run4.json",
+      "sourceType": "Internal research audit log backed by HPA official PDFs",
+      "usedFor": "Duplicate avoidance and confirmation of prior extracted row values."
+    }
+  ],
+  "athletes": [
+    {
+      "playerId": "A-15-matsubara-miki",
+      "lot": 15,
+      "playerName": "松原 幹",
+      "status": "confirmed-prior-history-ready-for-schema-safe-promotion",
+      "identityEvidence": [
+        "Same Japanese name: 松原 幹 in both HPA official PDFs.",
+        "Same birth year: 1991 in both HPA official PDFs.",
+        "Same affiliation continuity: BURST LIMIT KITAMI / BURSTLIMIT KITAMI in both HPA official PDFs.",
+        "Same bodyweight class context: 66kg-class Numata classic bench and 66kg-class Spring Ebetsu classic powerlifting."
+      ],
+      "confirmedHistoriesReadyForDatabase": [
+        {
+          "date": "2026-04-25",
+          "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "eventType": "CL-PL",
+          "className": "66kg級",
+          "birthYear": "1991",
+          "club": "BURSTLIMIT KITAMI",
+          "bodyweight": "65.55",
+          "sqAttempts": "200.0 / 220.0 / 230.0",
+          "bpAttempts": "140.0 / 150.0 / -160.0",
+          "dlAttempts": "210.0 / 220.0 / -240.0",
+          "sqBest": "230.0",
+          "bpBest": "150.0",
+          "dlBest": "220.0",
+          "total": "600.0",
+          "place": "1",
+          "points": "93.87",
+          "sourceIds": ["src-hpa-20260425-ebetsu-clpl-result"],
+          "promotionNote": "This is a confirmed prior three-lift powerlifting history for Lot 15. It may be promoted to data/database.json after confirming the exact history schema and avoiding a full minified-file rewrite risk."
+        }
+      ],
+      "currentEventAnchorNotForPriorHistory": [
+        {
+          "date": "2026-06-21",
+          "competitionName": "第30回北海道クラシックベンチプレス選手権大会",
+          "eventType": "S-BP",
+          "className": "66kg級",
+          "birthYear": "1991",
+          "club": "BURST LIMIT KITAMI",
+          "bodyweight": "65.45",
+          "bpAttempts": "140.0 / 150.0 / -160.0",
+          "bpBest": "150.0",
+          "place": "3",
+          "points": "85.47",
+          "sourceIds": ["src-hpa-20260621-numata-bp-abc-sokuhou"],
+          "note": "Used as identity/current-event anchor only; do not display as previous history for the same Numata event."
+        }
+      ],
+      "candidateFindings": [],
+      "notPromotedThisRun": {
+        "reason": "The confirmed prior row is ready, but data/database.json is a minified one-line master file. This run avoids broad rewrite risk and adds a narrow audit file only.",
+        "safeNextStep": "Promote this single 2026-04-25 CL-PL row into A-15-matsubara-miki histories using the established database history schema in a separate schema-focused PR."
+      }
+    }
+  ],
+  "filesIntentionallyUnchanged": [
+    "data/database.json",
+    "data/research-candidates.json",
+    "A4 print layout files",
+    "v5.9.6_LOCK template/layout behavior",
+    "application runtime or CSS"
+  ]
+}
