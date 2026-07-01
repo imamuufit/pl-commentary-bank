@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "batchId": "2026-07-01-lot46-50-audit-run50",
+    "eventId": "2026-numata-bench-press",
+    "createdAt": "2026-07-01",
+    "layoutTemplate": "v5.9.6_LOCK",
+    "scope": "Incremental audit for 2026 Numata Bench Press roster Lot 46-50. No A4 print layout, CSS, page rendering, database, or research-candidates mutation. Confirmed prior histories are recorded only when official/high-trust source rows are identity-safe; ambiguous or absent findings are not invented."
+  },
+  "processedAthletes": [
+    {
+      "lot": 46,
+      "playerId": "D-46-teramura-mika",
+      "name": "寺村 美香",
+      "kana": "テラムラ ミカ",
+      "englishName": "Teramura Mika",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No older domestic Hokkaido, national, international/world, APF/AAPF, or Goodlift/IPF official/high-trust prior-history row was identified in this pass. No candidate was added because no ambiguous official row was found."
+    },
+    {
+      "lot": 47,
+      "playerId": "D-47-miyazaki-yuka",
+      "name": "宮崎 優花",
+      "kana": "ミヤザキ ユカ",
+      "englishName": "Miyazaki Yuka",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No older domestic Hokkaido, national, international/world, APF/AAPF, or Goodlift/IPF official/high-trust prior-history row was identified in this pass. No candidate was added because no ambiguous official row was found."
+    },
+    {
+      "lot": 48,
+      "playerId": "D-48-mizushima-minami",
+      "name": "水島 南美",
+      "kana": "ミズシマ ミナミ",
+      "englishName": "Mizushima Minami",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No older domestic Hokkaido, national, international/world, APF/AAPF, or Goodlift/IPF official/high-trust prior-history row was identified in this pass. No candidate was added because no ambiguous official row was found."
+    },
+    {
+      "lot": 49,
+      "playerId": "D-49-satou-yurino",
+      "name": "佐藤 友里乃",
+      "kana": "サトウ ユリノ",
+      "englishName": "Satou Yurino",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No older domestic Hokkaido, national, international/world, APF/AAPF, or Goodlift/IPF official/high-trust prior-history row was identified in this pass. No candidate was added because no ambiguous official row was found."
+    },
+    {
+      "lot": 50,
+      "playerId": "D-50-tanaka-yuuna",
+      "name": "田中 悠菜",
+      "kana": "タナカ ユウナ",
+      "englishName": "Tanaka Yuuna",
+      "confirmedHistoryUpdates": [],
+      "candidateUpdates": [],
+      "auditResult": "No older domestic Hokkaido, national, international/world, APF/AAPF, or Goodlift/IPF official/high-trust prior-history row was identified in this pass. No candidate was added because no ambiguous official row was found."
+    }
+  ],
+  "sourcePriority": [
+    "HPA official result PDFs / official Hokkaido sources",
+    "JPA official result PDFs / national results",
+    "IPF/Goodlift international results",
+    "APF/AAPF official or high-trust results if relevant"
+  ],
+  "checkedSources": [
+    {
+      "label": "GitHub open PR search",
+      "result": "One unrelated open PR (#111) was present; no open athlete-research PR for Lot 46-50 was found."
+    },
+    {
+      "label": "GitHub all-PR duplicate search",
+      "result": "Lot 41-45 was already covered by merged PR #70, so this pass skipped that suggested batch and continued with Lot 46-50. No existing Lot 46-50 PR was found."
+    },
+    {
+      "label": "Repository main: data/database.json",
+      "result": "Confirmed v5.9.6_LOCK metadata and roster entries for Lot 46-50. Did not edit database.json."
+    },
+    {
+      "label": "Repository main: data/research-candidates.json",
+      "result": "Checked candidate structure and avoided duplicate candidate insertion. Did not edit research-candidates.json."
+    },
+    {
+      "label": "HPA official result速報 PDF locator: 20260621result_sokuhou_DE.pdf",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+      "result": "Treated as the current-event source locator for D/E group research context. Current-event rows were not promoted as prior histories in this audit-only pass."
+    },
+    {
+      "label": "HPA official result PDF: hokkaido20260425_result-2.pdf",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "result": "Checked for identity-safe 2026 Spring Ebetsu three-lift prior-history promotion candidates; no Lot 46-50 candidate was added in this pass."
+    },
+    {
+      "label": "Exact-name web searches",
+      "result": "Searched exact Japanese names and common romanizations for HPA/JPA/IPF/Goodlift/APF/AAPF powerlifting and bench-press history matches. No reliable prior-history match was identified for Lot 46-50."
+    }
+  ],
+  "mutationSummary": {
+    "databaseJsonChanged": false,
+    "researchCandidatesJsonChanged": false,
+    "confirmedRowsPromoted": 0,
+    "batchConfirmedSourceRowsRecorded": 0,
+    "candidateRowsAdded": 0,
+    "a4LayoutChanged": false,
+    "v596LockPreserved": true
+  },
+  "nextSuggestedBatch": "Lot 51-55, with special attention to any already-known national/Hokkaido prior-history candidates before database promotion."
+}
