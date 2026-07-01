@@ -1,0 +1,104 @@
+{
+  "batchId": "2026-07-01-lot56-60-audit-run52",
+  "createdAt": "2026-07-01",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "56-60",
+    "layoutLock": "v5.9.6_LOCK",
+    "purpose": "incremental official/high-trust source audit before any database or candidate promotion"
+  },
+  "safety": {
+    "openPullRequestCheck": "No open PL Athlete Research pull requests found before branch creation.",
+    "duplicateCheck": "No existing data/research-batches file for lot56-60 audit-run52 was found before creation.",
+    "layoutChange": false,
+    "databaseJsonChanged": false,
+    "researchCandidatesChanged": false,
+    "noInferencePolicy": "No achievements, same-person identity links, or record claims were inferred from exact-name-only or absent search results."
+  },
+  "processedAthletes": [
+    {
+      "lot": 56,
+      "name": "北村 妙美",
+      "group": "D",
+      "databaseId": "D-56-kitamura-taemi",
+      "aliasesChecked": ["北村 妙美", "北村妙美", "キタムラ タエミ", "Kitamura Taemi", "Taemi Kitamura"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "Lot 56 shares the same Japanese name as existing Lot 89 in the roster skeleton. No same-person merge or history transfer was performed."
+    },
+    {
+      "lot": 57,
+      "name": "伊佐 秀貴",
+      "group": "E",
+      "databaseId": "E-57-isa-hideki",
+      "aliasesChecked": ["伊佐 秀貴", "伊佐秀貴", "イサ ヒデキ", "Isa Hideki", "Hideki Isa"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 58,
+      "name": "角田 大樹",
+      "group": "E",
+      "databaseId": "E-58-kakuta-daiki",
+      "aliasesChecked": ["角田 大樹", "角田大樹", "カクタ ダイキ", "Kakuta Daiki", "Daiki Kakuta"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 59,
+      "name": "斎藤 翔磨",
+      "group": "E",
+      "databaseId": "E-59-saitou-shouma",
+      "aliasesChecked": ["斎藤 翔磨", "斎藤翔磨", "サイトウ ショウマ", "Saitou Shouma", "Shouma Saitou"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust row suitable for promotion or candidate capture was located in this small audit."
+    },
+    {
+      "lot": 60,
+      "name": "藤原 詢",
+      "group": "E",
+      "databaseId": "E-60-fujiwara-makoto",
+      "aliasesChecked": ["藤原 詢", "藤原詢", "フジワラ マコト", "Fujiwara Makoto", "Makoto Fujiwara"],
+      "confirmedPromotions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust row suitable for promotion or candidate capture was located in this small audit."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "name": "Repository main database skeleton",
+      "type": "internal-main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "usedFor": "Confirmed roster identities, lot numbers, duplicate-name risk, aliases, and v5.9.6_LOCK preservation target."
+    },
+    {
+      "name": "GitHub open pull request search",
+      "type": "repository-state",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "usedFor": "Checked for open overlapping PL Athlete Research PRs before branch creation."
+    },
+    {
+      "name": "HPA official site/domain search",
+      "type": "official/high-trust search",
+      "url": "https://h-power.sakura.ne.jp/",
+      "usedFor": "Exact-name and unspaced-name checks for Hokkaido domestic PL/BP result rows. No row-level candidate was captured in this batch."
+    },
+    {
+      "name": "JPA/IPF/Goodlift/APF-AAPF-style web checks",
+      "type": "official/high-trust search",
+      "url": "https://www.jpa-powerlifting.or.jp/",
+      "usedFor": "Exact-name checks covering national, international/world, three-lift powerlifting, and single bench press histories. No row-level candidate was captured in this batch."
+    }
+  ],
+  "confirmedRowsForDatabase": [],
+  "uncertainRowsForResearchCandidates": [],
+  "result": {
+    "databaseJsonUpdated": false,
+    "researchCandidatesUpdated": false,
+    "batchLogOnly": true,
+    "summary": "Lot 56-60 were audited as a small batch. No confirmed history was promoted and no uncertain official/high-trust candidate row was added."
+  }
+}
