@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "type": "incremental-athlete-research-audit",
+    "updatedAt": "2026-07-01",
+    "layoutTemplateProtected": "v5.9.6_LOCK",
+    "promotionPolicy": "Only promote to data/database.json when official/high-trust source rows and athlete identity are unambiguous. Ambiguous same-name rows remain candidates only."
+  },
+  "batch": {
+    "roster": "2026 Numata Bench Press Lot 1-100",
+    "lotRange": "14-18",
+    "processedAthletes": [
+      { "lot": 14, "id": "A-14-hashimoto-koichiro", "name": "橋本 滉一朗" },
+      { "lot": 15, "id": "A-15-matsubara-kan", "name": "松原 幹" },
+      { "lot": 16, "id": "A-16-hamaoka-kenta", "name": "浜岡 謙太" },
+      { "lot": 17, "id": "A-17-mori-kento", "name": "森 健人" },
+      { "lot": 18, "id": "B-18-oonami-hirotsugu", "name": "大波 弘嗣" }
+    ]
+  },
+  "preflight": {
+    "openPullRequestsChecked": [
+      {
+        "number": 111,
+        "title": "Add Numata completion report generator",
+        "status": "open",
+        "overlapAssessment": "Non-overlapping report-only work. It does not change athlete histories, data/database.json, data/research-candidates.json, A4 layout, or v5.9.6_LOCK."
+      }
+    ],
+    "recentMergedWorkChecked": [
+      {
+        "number": 155,
+        "title": "Add Lot11-13 audit research batch",
+        "overlapAssessment": "Adjacent previous batch only. No Lot 14-18 coverage."
+      }
+    ]
+  },
+  "sourcesChecked": [
+    {
+      "label": "PL Commentary Bank main data/database.json roster skeleton",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "purpose": "Confirm Lot 14-18 roster identities, team names, divisions, declared bests, aliases, and v5.9.6_LOCK metadata."
+    },
+    {
+      "label": "Repository open PR search",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "purpose": "Avoid duplicate or conflicting work before adding the isolated batch file."
+    },
+    {
+      "label": "Exact-name official/high-trust web sweep",
+      "url": null,
+      "purpose": "Checked exact Japanese spaced/unspaced names and powerlifting/bench terms against HPA/JPA/IPF/Goodlift/APF-AAPF-style source surfaces. No promotable official or high-trust athlete-history rows were identified in this narrow pass."
+    },
+    {
+      "label": "HPA official source-surface sweep",
+      "url": "https://h-power.sakura.ne.jp/",
+      "purpose": "Checked Hokkaido domestic powerlifting and bench result source surface via exact-name terms for Lot 14-18. No row was added because no unambiguous official athlete-history row was identified in this pass."
+    },
+    {
+      "label": "JPA / IPF / Goodlift style exact-name sweep",
+      "url": null,
+      "purpose": "Checked national and international source surfaces for exact-name or romanized-name matches. No confirmed domestic-national or international/world history was identified for this batch."
+    }
+  ],
+  "confirmedForDatabase": [],
+  "researchCandidates": [],
+  "noAdditionalFindings": [
+    {
+      "playerId": "A-14-hashimoto-koichiro",
+      "playerName": "橋本 滉一朗",
+      "result": "No official/high-trust athlete performance row identified in this narrow pass. No database promotion and no candidate addition."
+    },
+    {
+      "playerId": "A-15-matsubara-kan",
+      "playerName": "松原 幹",
+      "result": "No official/high-trust athlete performance row identified in this narrow pass. No database promotion and no candidate addition."
+    },
+    {
+      "playerId": "A-16-hamaoka-kenta",
+      "playerName": "浜岡 謙太",
+      "result": "No official/high-trust athlete performance row identified in this narrow pass. No database promotion and no candidate addition."
+    },
+    {
+      "playerId": "A-17-mori-kento",
+      "playerName": "森 健人",
+      "result": "No official/high-trust athlete performance row identified in this narrow pass. No database promotion and no candidate addition."
+    },
+    {
+      "playerId": "B-18-oonami-hirotsugu",
+      "playerName": "大波 弘嗣",
+      "result": "No official/high-trust athlete performance row identified in this narrow pass. No database promotion and no candidate addition. Lot 18 roster metadata remains as-is because this audit does not modify roster skeleton fields."
+    }
+  ],
+  "filesChangedIntentionally": [
+    "data/research-batches/2026-07-01-lot14-18-audit-run44.json"
+  ],
+  "filesIntentionallyUnchanged": [
+    "data/database.json",
+    "data/research-candidates.json",
+    "A4 print layout files",
+    "v5.9.6_LOCK-related layout contract files",
+    "app runtime/generator/CSS files"
+  ],
+  "validation": {
+    "jsonStructure": "valid by construction",
+    "runtimeValidation": "not required; isolated research-log JSON only",
+    "promotionValidation": "no confirmed histories promoted; no identity inference performed"
+  }
+}
