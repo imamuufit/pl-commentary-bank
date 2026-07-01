@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "batchId": "2026-07-01-lot29-32-audit-run47",
+    "createdAt": "2026-07-01",
+    "scope": "2026 Numata Bench Press roster Lot 29-32",
+    "layoutLock": "v5.9.6_LOCK",
+    "policy": "Official/high-trust sources first. Confirmed histories only enter data/database.json with source links; ambiguous findings remain candidates. No inferred achievements."
+  },
+  "processedAthletes": [
+    {
+      "lot": 29,
+      "name": "野口 通彦",
+      "rosterId": "B-29-noguchi-michihiko",
+      "searchAliases": ["野口 通彦", "野口通彦", "Noguchi Michihiko", "Michihiko Noguchi"],
+      "confirmedHistoryAdditions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust matching result row found in this small-batch pass."
+    },
+    {
+      "lot": 30,
+      "name": "菅井 駿平",
+      "rosterId": "B-30-sugai-shunpei",
+      "searchAliases": ["菅井 駿平", "菅井駿平", "Sugai Shunpei", "Shunpei Sugai"],
+      "confirmedHistoryAdditions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust matching result row found in this small-batch pass."
+    },
+    {
+      "lot": 31,
+      "name": "堀内 昭人",
+      "rosterId": "B-31-horiuchi-akihito",
+      "searchAliases": ["堀内 昭人", "堀内昭人", "Horiuchi Akihito", "Akihito Horiuchi"],
+      "confirmedHistoryAdditions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust matching result row found in this small-batch pass."
+    },
+    {
+      "lot": 32,
+      "name": "中川 英紀",
+      "rosterId": "B-32-nakagawa-hideki",
+      "searchAliases": ["中川 英紀", "中川英紀", "Nakagawa Hideki", "Hideki Nakagawa"],
+      "confirmedHistoryAdditions": [],
+      "candidateAdditions": [],
+      "notes": "No official/high-trust matching result row found in this small-batch pass."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "sourceType": "official/high-trust web search",
+      "queries": [
+        "\"野口 通彦\" パワーリフティング ベンチプレス PDF",
+        "\"菅井 駿平\" パワーリフティング ベンチプレス PDF",
+        "\"堀内 昭人\" パワーリフティング ベンチプレス PDF",
+        "\"中川 英紀\" パワーリフティング ベンチプレス PDF"
+      ],
+      "result": "No usable official/high-trust rows found."
+    },
+    {
+      "sourceType": "HPA domain-restricted search",
+      "queries": [
+        "site:hpa-power.com \"野口通彦\" OR \"野口 通彦\"",
+        "site:hpa-power.com \"菅井駿平\" OR \"菅井 駿平\"",
+        "site:hpa-power.com \"堀内昭人\" OR \"堀内 昭人\"",
+        "site:hpa-power.com \"中川英紀\" OR \"中川 英紀\""
+      ],
+      "result": "No usable official/high-trust rows found."
+    },
+    {
+      "sourceType": "repository state check",
+      "details": [
+        "Open PR search for PL Athlete Research returned no open PRs before this branch was created.",
+        "data/database.json meta retains layoutTemplate v5.9.6_LOCK.",
+        "No changes made to data/database.json or data/research-candidates.json."
+      ]
+    }
+  ],
+  "filesChanged": [
+    "data/research-batches/2026-07-01-lot29-32-audit-run47.json"
+  ],
+  "databaseJsonChanged": false,
+  "researchCandidatesJsonChanged": false,
+  "a4LayoutChanged": false
+}
