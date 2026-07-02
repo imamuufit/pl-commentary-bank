@@ -1,0 +1,116 @@
+{
+  "runId": "2026-07-02-lot24-25-audit-run66",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "24-25",
+    "layoutGuard": "v5.9.6_LOCK",
+    "mode": "small incremental official/high-trust research audit"
+  },
+  "safety": {
+    "openPrCheck": "Only PR #111 was open before this batch; it is a non-overlapping Numata completion report generator and does not mutate athlete data or A4 print layout.",
+    "databaseJsonTouched": false,
+    "researchCandidatesJsonTouched": false,
+    "a4PrintLayoutTouched": false,
+    "v596LockTouched": false,
+    "noInferredAchievements": true
+  },
+  "processedAthletes": [
+    {
+      "lot": 24,
+      "name": "山本 忍",
+      "aliasesChecked": [
+        "山本 忍",
+        "山本忍",
+        "ヤマモト シノブ",
+        "Yamamoto Shinobu",
+        "Shinobu Yamamoto"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 1987,
+          "affiliation": "BURSTLIMIT",
+          "bodyweightKg": 73.80,
+          "benchAttemptsKg": [90.0, 95.0, -102.5],
+          "bestBenchKg": 95.0,
+          "placing": 22,
+          "points": 50.74,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 90-90"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    },
+    {
+      "lot": 25,
+      "name": "渡部 孝太郎",
+      "aliasesChecked": [
+        "渡部 孝太郎",
+        "渡部孝太郎",
+        "ワタベ コウタロウ",
+        "Watabe Koutarou",
+        "Koutarou Watabe"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 1973,
+          "affiliation": "BURSTLIMIT",
+          "bodyweightKg": 73.65,
+          "benchAttemptsKg": [105.0, 110.0, 115.0],
+          "bestBenchKg": 115.0,
+          "placing": 17,
+          "points": 61.48,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 82-82"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hpa-20260621-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C速報 PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "relevance": "Confirmed current-event rows for Lot24 山本 忍 and Lot25 渡部 孝太郎."
+    },
+    {
+      "id": "repo-main-database",
+      "label": "data/database.json on main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "relevance": "Roster skeleton and v5.9.6_LOCK guard context."
+    },
+    {
+      "id": "open-pr-check",
+      "label": "GitHub open PR search before branch creation",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "relevance": "Confirmed only non-overlapping PR #111 was open."
+    }
+  ],
+  "sourceSearches": [
+    "HPA official-domain exact-name checks for 山本 忍 / 山本忍 / 山本 忍 BURSTLIMIT",
+    "HPA official-domain exact-name checks for 渡部 孝太郎 / 渡部孝太郎 / 渡部 孝太郎 BURSTLIMIT",
+    "JPA official-site exact-name checks",
+    "IPF/Goodlift-style romanized alias checks",
+    "APF/AAPF-style exact-name and romanized alias checks"
+  ],
+  "mutationSummary": {
+    "confirmedRowsAddedToDatabaseJson": 0,
+    "candidateRowsAddedToResearchCandidatesJson": 0,
+    "auditOnly": true
+  }
+}
