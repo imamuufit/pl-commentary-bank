@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "batchId": "2026-07-03-lot96-100-audit-run87",
+    "createdAt": "2026-07-03",
+    "purpose": "Incremental official-source audit for 2026 Numata Bench Press Lot96-100. This batch records a conservative search pass only; database.json and research-candidates.json are intentionally unchanged because no additional source-linked historical rows were confirmed to promotion standard in this pass.",
+    "layoutPreservation": "v5.9.6_LOCK A4 print layout untouched",
+    "sourcePriority": [
+      "HPA official result PDFs",
+      "JPA official result PDFs/pages",
+      "IPF/Goodlift official results when relevant",
+      "APF/AAPF official results when relevant",
+      "Official or high-trust result pages/PDFs only"
+    ]
+  },
+  "preflight": {
+    "openPullRequestsChecked": true,
+    "openPullRequestsFound": 0,
+    "mainBranchChecked": true,
+    "duplicateBatchSearch": "No open PR was found before this run. Main data/database.json was checked and Lot96-100 roster skeleton rows exist. Main data/database.json retains layoutTemplate v5.9.6_LOCK. No existing Lot96-100 run87 batch file was present on main before this branch."
+  },
+  "processedAthletes": [
+    {
+      "lot": 96,
+      "name": "竹内 謙太",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot96; sex, class, team, and declared best remain marked 要確認 in the skeleton. No additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["竹内 謙太", "竹内謙太", "タケウチ ケンタ", "Takeuchi Kenta", "Kenta Takeuchi"]
+    },
+    {
+      "lot": 97,
+      "name": "片山 遼",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot97; sex, class, team, and declared best remain marked 要確認 in the skeleton. No additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["片山 遼", "片山遼", "カタヤマ リョウ", "Katayama Ryou", "Ryou Katayama", "Katayama Ryo", "Ryo Katayama"]
+    },
+    {
+      "lot": 98,
+      "name": "矢崎 光康",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot98. The same Japanese name also appears as Lot70 in the roster skeleton, so this pass did not infer identity across lots or promote any name-only match.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["矢崎 光康", "矢崎光康", "ヤザキ ミツヤス", "Yazaki Mitsuyasu", "Mitsuyasu Yazaki"]
+    },
+    {
+      "lot": 99,
+      "name": "広瀬 優太",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot99; sex, class, team, and declared best remain marked 要確認 in the skeleton. No additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["広瀬 優太", "広瀬優太", "ヒロセ ユウタ", "Hirose Yuuta", "Yuuta Hirose", "Hirose Yuta", "Yuta Hirose"]
+    },
+    {
+      "lot": 100,
+      "name": "宮下 綾太",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot100; sex, class, team, and declared best remain marked 要確認 in the skeleton. No additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["宮下 綾太", "宮下綾太", "ミヤシタ リョウタ", "Miyashita Ryouta", "Ryouta Miyashita", "Miyashita Ryota", "Ryota Miyashita"]
+    }
+  ],
+  "databaseUpdate": {
+    "data/database.json": "unchanged",
+    "reason": "No confirmed historical rows beyond the existing roster skeleton met the source-linking and identity standard in this small batch. The canonical DB was not rewritten."
+  },
+  "candidateUpdate": {
+    "data/research-candidates.json": "unchanged",
+    "reason": "Search results did not produce useful but ambiguous athlete-history candidates worth preserving; no uncertain achievement was inferred."
+  },
+  "sourceAudit": [
+    {
+      "label": "Repository main data/database.json",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "usedFor": "Confirmed that Lot96-100 roster skeleton rows exist and that histories are empty before this batch; confirmed v5.9.6_LOCK remains the layoutTemplate."
+    },
+    {
+      "label": "GitHub open PR search",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "usedFor": "Checked that no open PR needed merging or conflict review before creating this safe audit branch."
+    },
+    {
+      "label": "HPA official source family",
+      "url": "https://h-power.sakura.ne.jp/",
+      "usedFor": "Maintained source priority for Hokkaido official PDFs and checked exact-name HPA source context. No additional Lot96-100 historical rows were promoted from HPA in this pass."
+    },
+    {
+      "label": "JPA official source family",
+      "url": "https://www.jpa-powerlifting.or.jp/",
+      "usedFor": "Maintained national official-source priority and performed exact-name official-site sweeps. No additional Lot96-100 historical rows were promoted from JPA in this pass."
+    },
+    {
+      "label": "Web search: official/high-trust Japanese name sweeps",
+      "url": "https://www.google.com/search?q=%E7%AB%B9%E5%86%85%E8%AC%99%E5%A4%AA+%E3%83%91%E3%83%AF%E3%83%BC%E3%83%AA%E3%83%95%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0+%E3%83%99%E3%83%B3%E3%83%81%E3%83%97%E3%83%AC%E3%82%B9+HPA+JPA",
+      "usedFor": "No reliable confirmed row was found for Lot96-100 through Japanese name-based HPA/JPA/high-trust search strings in this pass."
+    },
+    {
+      "label": "Web search: romanized Goodlift/IPF sweeps",
+      "url": "https://www.google.com/search?q=Takeuchi+Kenta+powerlifting+bench+press+Goodlift+Japan",
+      "usedFor": "Romanized searches were checked for Goodlift/IPF-style references. Generic false-positive results and unlinked namesakes were not preserved as candidates."
+    }
+  ],
+  "notes": [
+    "No achievements, records, placements, or totals were invented or inferred.",
+    "Because no candidate-quality ambiguous results were found, data/research-candidates.json was left unchanged.",
+    "A4 print layout and v5.9.6_LOCK files were not modified.",
+    "矢崎 光康 appears at both Lot70 and Lot98 in the roster skeleton; this batch did not infer whether those entries represent the same athlete. Any future promotion must preserve lot-specific identity evidence.",
+    "This run completes a first conservative audit pass across the Lot1-100 roster batches previously handled in this sequence, but recurring research may continue only if deeper official PDF review is still desired."
+  ]
+}
