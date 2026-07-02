@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "batchId": "2026-07-03-lot71-75-audit-run82",
+    "createdAt": "2026-07-03",
+    "purpose": "Incremental official-source audit for 2026 Numata Bench Press Lot71-75. This batch records a conservative search pass only; database.json and research-candidates.json are intentionally unchanged because no additional source-linked historical rows were confirmed to promotion standard in this pass.",
+    "layoutPreservation": "v5.9.6_LOCK A4 print layout untouched",
+    "sourcePriority": [
+      "HPA official result PDFs",
+      "JPA official result PDFs/pages",
+      "IPF/Goodlift official results when relevant",
+      "APF/AAPF official results when relevant",
+      "Official or high-trust result pages/PDFs only"
+    ]
+  },
+  "preflight": {
+    "openPullRequestsChecked": true,
+    "openPullRequestsFound": 0,
+    "mainBranchChecked": true,
+    "duplicateBatchSearch": "No open PR was found before this run. Main data/database.json contains Lot71-75 roster skeleton rows with empty histories; no existing Lot71-75 audit batch was found in main by repository search before this branch."
+  },
+  "processedAthletes": [
+    {
+      "lot": 71,
+      "name": "石川 匠",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["石川 匠", "石川匠", "Ishikawa Takumi", "Takumi Ishikawa"]
+    },
+    {
+      "lot": 72,
+      "name": "村井 寿徳",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["村井 寿徳", "村井寿徳", "Murai Toshinori", "Toshinori Murai"]
+    },
+    {
+      "lot": 73,
+      "name": "宇野 颯",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["宇野 颯", "宇野颯", "Uno Hayate", "Hayate Uno"]
+    },
+    {
+      "lot": 74,
+      "name": "古河 尚幸",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["古河 尚幸", "古河尚幸", "Furukawa Naoyuki", "Naoyuki Furukawa"]
+    },
+    {
+      "lot": 75,
+      "name": "千葉 雄太",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["千葉 雄太", "千葉雄太", "Chiba Yuuta", "Yuuta Chiba", "Chiba Yuta", "Yuta Chiba"]
+    }
+  ],
+  "databaseUpdate": {
+    "data/database.json": "unchanged",
+    "reason": "No confirmed historical rows beyond the existing roster skeleton met the source-linking and identity standard in this small batch. The canonical DB was not rewritten."
+  },
+  "candidateUpdate": {
+    "data/research-candidates.json": "unchanged",
+    "reason": "Search results did not produce useful but ambiguous athlete-history candidates worth preserving; no uncertain achievement was inferred."
+  },
+  "sourceAudit": [
+    {
+      "label": "Repository main data/database.json",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "usedFor": "Confirmed that Lot71-75 roster skeleton rows exist and that histories are empty before this batch."
+    },
+    {
+      "label": "GitHub open PR search",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "usedFor": "Checked that no open PR needed merging or conflict review before creating this safe audit branch."
+    },
+    {
+      "label": "Web search: official/high-trust name sweeps",
+      "url": "https://www.google.com/search?q=%E7%9F%B3%E5%B7%9D+%E5%8C%A0+%E3%83%91%E3%83%AF%E3%83%BC%E3%83%AA%E3%83%95%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0+%E3%83%99%E3%83%B3%E3%83%81%E3%83%97%E3%83%AC%E3%82%B9+HPA+%E7%B5%90%E6%9E%9C",
+      "usedFor": "No reliable confirmed row was found for Lot71-75 through Japanese and romanized name-based high-trust search strings in this pass."
+    },
+    {
+      "label": "HPA official source family",
+      "url": "https://h-power.sakura.ne.jp/",
+      "usedFor": "Maintained source priority for Hokkaido official PDFs. No additional Lot71-75 historical rows were promoted from HPA in this pass."
+    }
+  ],
+  "notes": [
+    "No achievements, records, placements, or totals were invented or inferred.",
+    "Because no candidate-quality ambiguous results were found, data/research-candidates.json was left unchanged.",
+    "A4 print layout and v5.9.6_LOCK files were not modified.",
+    "A future pass should continue Lot71-75 by directly extracting relevant HPA/JPA PDF rows if PDF text access is available, then promote only rows with exact name and identity support."
+  ]
+}
