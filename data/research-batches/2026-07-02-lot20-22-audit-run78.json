@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "batchId": "2026-07-02-lot20-22-audit-run78",
+    "createdAt": "2026-07-02",
+    "scope": "Incremental small-batch audit for 2026 Numata Bench Press roster Lots 20-22",
+    "repositoryGuardrails": [
+      "Checked open PRs before editing; no open PRs were found.",
+      "Preserved data/database.json and data/research-candidates.json unchanged.",
+      "Preserved v5.9.6_LOCK A4 print layout; no layout, CSS, rendering, or print-template files touched.",
+      "No achievements inferred from name-only matches.",
+      "Current-event rows are recorded in this audit log only and not promoted as prior histories."
+    ],
+    "sourcePolicy": "Official/high-trust sources first: HPA, JPA, IPF/Goodlift, APF/AAPF, official result PDFs. Confirmed histories require source-linked identity confidence. Ambiguous findings remain candidates."
+  },
+  "processedAthletes": [
+    {
+      "lot": 20,
+      "name": "副嶋 広太郎",
+      "englishName": "Soejima Koutarou",
+      "databasePlayerId": "B-20-soejima-koutarou",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック74kg級",
+        "birthYear": 1997,
+        "affiliation": "北海道協会個人登録",
+        "bodyweight": "73.90",
+        "attempts": ["95.0", "100.0", "105.0"],
+        "bpBest": "105.0",
+        "place": "21",
+        "points": "56.04",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 21,
+      "name": "中澤 一起",
+      "englishName": "Nakazawa Kazuki",
+      "databasePlayerId": "B-21-nakazawa-kazuki",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック74kg級",
+        "birthYear": 1979,
+        "affiliation": "BURSTLIMIT",
+        "bodyweight": "66.90",
+        "attempts": ["70.0", "75.0", "80.0"],
+        "bpBest": "80.0",
+        "place": "23",
+        "points": "45.04",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 22,
+      "name": "河地 祥平",
+      "englishName": "Kawachi Shouhei",
+      "databasePlayerId": "B-22-kawachi-shouhei",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック74kg級",
+        "birthYear": 1984,
+        "affiliation": "名寄パワーリフティング協会",
+        "bodyweight": "69.45",
+        "attempts": ["100.0", "105.0", "-110.0"],
+        "bpBest": "105.0",
+        "place": "20",
+        "points": "57.93",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-hpa-2026-numata-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C速報 PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "publisher": "北海道パワーリフティング協会 / HPA",
+      "accessedAt": "2026-07-02",
+      "evidence": "PDF text lines list Lots 20-22 with birth year, affiliation, bodyweight, bench attempts, best bench, place, and points."
+    }
+  ],
+  "searchesPerformed": [
+    {
+      "query": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "result": "Opened HPA official PDF directly and extracted Lot20-22 current-event rows."
+    },
+    {
+      "query": "\"副嶋 広太郎\" パワーリフティング ベンチプレス / \"副嶋広太郎\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"中澤 一起\" パワーリフティング ベンチプレス / \"中澤一起\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"河地 祥平\" パワーリフティング ベンチプレス / \"河地祥平\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    }
+  ],
+  "databaseUpdates": {
+    "data/database.json": "unchanged",
+    "data/research-candidates.json": "unchanged",
+    "reason": "Only current-event rows were confirmed. No safe source-linked prior histories were found, and no concrete ambiguous official/high-trust candidate rows were identified."
+  },
+  "nextRecommendedBatch": "Continue with Lot 56-60 or targeted promotion work for athletes with source-linked national/world records, while avoiding already audited Lots 1-55 and 97-100."
+}
