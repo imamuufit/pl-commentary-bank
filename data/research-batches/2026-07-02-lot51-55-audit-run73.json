@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "batchId": "2026-07-02-lot51-55-audit-run73",
+    "createdAt": "2026-07-02",
+    "scope": "Incremental small-batch audit for 2026 Numata Bench Press roster Lots 51-55",
+    "repositoryGuardrails": [
+      "Checked open PRs before editing; no open PRs were found.",
+      "Preserved data/database.json and data/research-candidates.json unchanged.",
+      "Preserved v5.9.6_LOCK A4 print layout; no layout or rendering files touched.",
+      "No achievements inferred from name-only matches.",
+      "Existing confirmed histories in data/database.json were not duplicated."
+    ],
+    "sourcePolicy": "Official/high-trust sources first: HPA, JPA, IPF/Goodlift, APF/AAPF, official result PDFs. Confirmed histories require source-linked identity confidence. Ambiguous findings remain candidates."
+  },
+  "processedAthletes": [
+    {
+      "lot": 51,
+      "name": "後藤 麻衣子",
+      "englishName": "Gotou Maiko",
+      "databasePlayerId": "D-51-gotou-maiko",
+      "status": "audited_no_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No official/high-trust athlete-history match was found in this small-batch pass. Existing roster skeleton remains unchanged."
+    },
+    {
+      "lot": 52,
+      "name": "宝利 桃華",
+      "englishName": "Momoka Hori",
+      "databasePlayerId": "D-52-houri-momoka",
+      "status": "audited_existing_confirmed_no_new_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "existingConfirmedHistoriesObserved": [
+        {
+          "historyId": "d52-2022-japan-gp-clpl",
+          "competitionName": "第1回日本グランプリクラシックパワーリフティング大会",
+          "date": "2022-11-05",
+          "eventType": "S-BP",
+          "ageDivision": "SJ",
+          "className": "57kg級",
+          "bpBest": "82.5",
+          "sourceIds": ["src-houri-record-2022"]
+        },
+        {
+          "historyId": "d52-2024-hokkaido-tohoku-bp",
+          "competitionName": "第2回北海道・東北ブロックベンチプレス選手権大会",
+          "date": "2024-11-17",
+          "eventType": "S-BP",
+          "ageDivision": "JR-CL",
+          "className": "57kg級",
+          "bpBest": "70.0",
+          "place": "1",
+          "sourceIds": ["src-houri-2024-bp"]
+        }
+      ],
+      "notes": "Database already contains two confirmed source-linked rows for this athlete. This pass found no additional safe official/high-trust row to add and did not duplicate the existing histories."
+    },
+    {
+      "lot": 53,
+      "name": "稲垣 恵",
+      "englishName": "Inagaki Megumi",
+      "databasePlayerId": "D-53-inagaki-megumi",
+      "status": "audited_no_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No official/high-trust athlete-history match was found in this small-batch pass. Existing roster skeleton remains unchanged."
+    },
+    {
+      "lot": 54,
+      "name": "佐藤 奈緒",
+      "englishName": "Satou Nao",
+      "databasePlayerId": "D-54-satou-nao",
+      "status": "audited_no_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No official/high-trust athlete-history match was found in this small-batch pass. Existing roster skeleton remains unchanged."
+    },
+    {
+      "lot": 55,
+      "name": "石山 由貴",
+      "englishName": "Ishiyama Yuki",
+      "databasePlayerId": "D-55-ishiyama-yuki",
+      "status": "audited_no_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No official/high-trust athlete-history match was found in this small-batch pass. Existing roster skeleton remains unchanged."
+    }
+  ],
+  "searchesPerformed": [
+    {
+      "query": "\"後藤 麻衣子\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"後藤麻衣子\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "site:h-powerlifting.com 後藤麻衣子 パワーリフティング 結果 PDF",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"宝利 桃華\" \"パワーリフティング\"",
+      "result": "No new reliable official/high-trust athlete-history match found beyond existing confirmed database rows."
+    },
+    {
+      "query": "\"宝利桃華\" \"パワーリフティング\"",
+      "result": "No new reliable official/high-trust athlete-history match found beyond existing confirmed database rows."
+    },
+    {
+      "query": "\"Momoka Hori\" powerlifting",
+      "result": "No reliable official/high-trust athlete-history match found; results were absent or unrelated."
+    },
+    {
+      "query": "\"Momoka Hohri\" powerlifting",
+      "result": "No reliable official/high-trust athlete-history match found; results were absent or unrelated."
+    },
+    {
+      "query": "Goodlift Momoka Hori / Goodlift Hori Momoka",
+      "result": "No reliable Goodlift athlete-history match found in this pass; results were absent or unrelated."
+    },
+    {
+      "query": "\"稲垣 恵\" \"ベンチプレス\"",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"稲垣恵\" \"ベンチプレス\"",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"佐藤 奈緒\" \"ベンチプレス\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"石山由貴\" \"ベンチプレス\"",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "北海道パワーリフティング協会 2026 沼田町 ベンチプレス 速報 PDF",
+      "result": "Search results were polluted by unrelated PDF/LHAPDF results; no safe official result source was extracted in this pass."
+    },
+    {
+      "query": "北海道パワーリフティング協会 2026 春季 パワーリフティング 江別 結果 PDF",
+      "result": "Search results were polluted by unrelated PDF/LHAPDF results; no safe official result source was extracted in this pass."
+    }
+  ],
+  "databaseUpdates": {
+    "data/database.json": "unchanged",
+    "data/research-candidates.json": "unchanged",
+    "reason": "No new source-linked confirmed histories and no concrete ambiguous candidate rows were found. Lot 52 already has confirmed rows, so this pass avoided duplicate work."
+  },
+  "nextRecommendedBatch": "Continue with Lot 56 onward. Note that 北村 妙美 appears as both Lot 56 and Lot 89 in the current skeleton, so duplicate-person handling should be reviewed before promotion."
+}
