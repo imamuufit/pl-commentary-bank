@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "batchId": "2026-07-02-lot6-10-audit-run75",
+    "createdAt": "2026-07-02",
+    "scope": "Incremental small-batch audit for 2026 Numata Bench Press roster Lots 6-10",
+    "repositoryGuardrails": [
+      "Checked open PRs before editing; no open PRs were found.",
+      "Preserved data/database.json and data/research-candidates.json unchanged.",
+      "Preserved v5.9.6_LOCK A4 print layout; no layout, CSS, rendering, or print-template files touched.",
+      "No achievements inferred from name-only matches.",
+      "Current-event rows are recorded in this audit log only and not promoted as prior histories."
+    ],
+    "sourcePolicy": "Official/high-trust sources first: HPA, JPA, IPF/Goodlift, APF/AAPF, official result PDFs. Confirmed histories require source-linked identity confidence. Ambiguous findings remain candidates."
+  },
+  "processedAthletes": [
+    {
+      "lot": 6,
+      "name": "荒井 慶太",
+      "englishName": "Arai Keita",
+      "databasePlayerId": "A-6-arai-keita",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック59kg級",
+        "birthYear": 1985,
+        "affiliation": "北海道協会個人登録",
+        "bodyweight": "欠場",
+        "attempts": [],
+        "bpBest": "欠場",
+        "place": "欠場",
+        "points": null,
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "HPA official速報 PDF lists Lot 6 as absent. No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 7,
+      "name": "福田 茂",
+      "englishName": "Fukuda Shigeru",
+      "databasePlayerId": "A-7-fukuda-shigeru",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 1976,
+        "affiliation": "釧路STRONGHOLD",
+        "bodyweight": "64.95",
+        "attempts": ["95.0", "100.0", "-105.0"],
+        "bpBest": "100.0",
+        "place": "10",
+        "points": "57.22",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 8,
+      "name": "酒井 義人",
+      "englishName": "Sakai Yoshito",
+      "databasePlayerId": "A-8-sakai-yoshito",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 1970,
+        "affiliation": "BURST LIMIT KITAMI",
+        "bodyweight": "64.95",
+        "attempts": ["75.0", "82.5", "-90.0"],
+        "bpBest": "82.5",
+        "place": "11",
+        "points": "47.21",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 9,
+      "name": "武田 佳和",
+      "englishName": "Takeda Yoshikazu",
+      "databasePlayerId": "A-9-takeda-yoshikazu",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 1975,
+        "affiliation": "名寄パワーリフティング協会",
+        "bodyweight": "61.00",
+        "attempts": ["97.5", "102.5", "105.0"],
+        "bpBest": "105.0",
+        "place": "9",
+        "points": "62.19",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 10,
+      "name": "尾関 作穂",
+      "englishName": "Ozeki Tsukumi",
+      "databasePlayerId": "A-10-ozeki-tsukumi",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 2005,
+        "affiliation": "室蘭工業大学バーベルクラブ",
+        "bodyweight": "66.00",
+        "attempts": ["112.5", "117.5", "-122.5"],
+        "bpBest": "117.5",
+        "place": "7",
+        "points": "66.65",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-hpa-2026-numata-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C速報 PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "publisher": "北海道パワーリフティング協会 / HPA",
+      "accessedAt": "2026-07-02",
+      "evidence": "PDF text lines list Lots 6-10 with birth year, affiliation, bodyweight or absence, bench attempts, best bench, place, and points."
+    }
+  ],
+  "searchesPerformed": [
+    {
+      "query": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "result": "Opened HPA official PDF directly and extracted Lot6-10 current-event rows."
+    },
+    {
+      "query": "site:h-power.sakura.ne.jp 20260621result_sokuhou_ABC.pdf 荒井 慶太 福田 茂 酒井 義人 武田 佳和 尾関 作穂",
+      "result": "No search result returned; direct official PDF URL was used instead."
+    },
+    {
+      "query": "\"荒井 慶太\" ベンチプレス パワーリフティング",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"福田 茂\" \"パワーリフティング\" / \"福田茂\" \"ベンチプレス\" \"釧路\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"酒井 義人\" \"BURST\" ベンチプレス / \"酒井義人\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"武田 佳和\" \"パワーリフティング\" / \"武田佳和\" \"ベンチプレス\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"尾関 作穂\" \"室蘭工業大学\" \"ベンチプレス\" / \"尾関作穂\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    }
+  ],
+  "databaseUpdates": {
+    "data/database.json": "unchanged",
+    "data/research-candidates.json": "unchanged",
+    "reason": "Only current-event rows were confirmed. No safe source-linked prior histories were found, and no concrete ambiguous official/high-trust candidate rows were identified."
+  },
+  "nextRecommendedBatch": "Continue with Lot 11-14, because Lot 15 has already received a targeted readiness audit in run64."
+}
