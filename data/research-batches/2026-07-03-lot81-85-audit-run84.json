@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "batchId": "2026-07-03-lot81-85-audit-run84",
+    "createdAt": "2026-07-03",
+    "purpose": "Incremental official-source audit for 2026 Numata Bench Press Lot81-85. This batch records a conservative search pass only; database.json and research-candidates.json are intentionally unchanged because no additional source-linked historical rows were confirmed to promotion standard in this pass.",
+    "layoutPreservation": "v5.9.6_LOCK A4 print layout untouched",
+    "sourcePriority": [
+      "HPA official result PDFs",
+      "JPA official result PDFs/pages",
+      "IPF/Goodlift official results when relevant",
+      "APF/AAPF official results when relevant",
+      "Official or high-trust result pages/PDFs only"
+    ]
+  },
+  "preflight": {
+    "openPullRequestsChecked": true,
+    "openPullRequestsFound": 0,
+    "mainBranchChecked": true,
+    "duplicateBatchSearch": "No open PR was found before this run. Repository search did not find an existing Lot81-85 audit batch in main before this branch. Main data/database.json retains layoutTemplate v5.9.6_LOCK."
+  },
+  "processedAthletes": [
+    {
+      "lot": 81,
+      "name": "高橋 俊宏",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot81; sex, class, team, and declared best remain marked 要確認 in the skeleton. No additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["高橋 俊宏", "高橋俊宏", "タカハシ トシヒロ", "Takahashi Toshihiro", "Toshihiro Takahashi"]
+    },
+    {
+      "lot": 82,
+      "name": "楠本 隆聖",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot82; sex, class, team, and declared best remain marked 要確認 in the skeleton. No additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["楠本 隆聖", "楠本隆聖", "クスモト リュウセイ", "Kusumoto Ryuusei", "Ryuusei Kusumoto", "Kusumoto Ryusei", "Ryusei Kusumoto"]
+    },
+    {
+      "lot": 83,
+      "name": "前田 貴也",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot83; sex, class, team, and declared best remain marked 要確認 in the skeleton. No additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["前田 貴也", "前田貴也", "マエダ タカヤ", "Maeda Takaya", "Takaya Maeda"]
+    },
+    {
+      "lot": 84,
+      "name": "中嶋 輝",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot84; sex, class, team, and declared best remain marked 要確認 in the skeleton. No additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["中嶋 輝", "中嶋輝", "ナカジマ ヒカル", "Nakajima Hikaru", "Hikaru Nakajima"]
+    },
+    {
+      "lot": 85,
+      "name": "山下 幹太",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json as Lot85; sex, class, team, and declared best remain marked 要確認 in the skeleton. No additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["山下 幹太", "山下幹太", "ヤマシタ カンタ", "Yamashita Kanta", "Kanta Yamashita"]
+    }
+  ],
+  "databaseUpdate": {
+    "data/database.json": "unchanged",
+    "reason": "No confirmed historical rows beyond the existing roster skeleton met the source-linking and identity standard in this small batch. The canonical DB was not rewritten."
+  },
+  "candidateUpdate": {
+    "data/research-candidates.json": "unchanged",
+    "reason": "Search results did not produce useful but ambiguous athlete-history candidates worth preserving; no uncertain achievement was inferred."
+  },
+  "sourceAudit": [
+    {
+      "label": "Repository main data/database.json",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "usedFor": "Confirmed that Lot81-85 roster skeleton rows exist and that histories are empty before this batch; confirmed v5.9.6_LOCK remains the layoutTemplate."
+    },
+    {
+      "label": "GitHub open PR search",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "usedFor": "Checked that no open PR needed merging or conflict review before creating this safe audit branch."
+    },
+    {
+      "label": "Web search: official/high-trust Japanese name sweeps",
+      "url": "https://www.google.com/search?q=%E9%AB%98%E6%A9%8B+%E4%BF%8A%E5%AE%8F+%E3%83%91%E3%83%AF%E3%83%BC%E3%83%AA%E3%83%95%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0+%E3%83%99%E3%83%B3%E3%83%81%E3%83%97%E3%83%AC%E3%82%B9+HPA+%E7%B5%90%E6%9E%9C",
+      "usedFor": "No reliable confirmed row was found for Lot81-85 through Japanese name-based HPA/JPA/high-trust search strings in this pass."
+    },
+    {
+      "label": "Web search: romanized Goodlift/IPF sweeps",
+      "url": "https://www.google.com/search?q=Toshihiro+Takahashi+powerlifting+bench+press+Goodlift+Japan",
+      "usedFor": "Romanized searches were checked for Goodlift/IPF-style references. Generic false-positive results and unlinked namesakes were not preserved as candidates."
+    },
+    {
+      "label": "HPA official source family",
+      "url": "https://h-power.sakura.ne.jp/",
+      "usedFor": "Maintained source priority for Hokkaido official PDFs. No additional Lot81-85 historical rows were promoted from HPA in this pass."
+    },
+    {
+      "label": "JPA official source family",
+      "url": "https://www.jpa-powerlifting.or.jp/",
+      "usedFor": "Maintained national official-source priority. No additional Lot81-85 historical rows were promoted from JPA in this pass."
+    }
+  ],
+  "notes": [
+    "No achievements, records, placements, or totals were invented or inferred.",
+    "Because no candidate-quality ambiguous results were found, data/research-candidates.json was left unchanged.",
+    "A4 print layout and v5.9.6_LOCK files were not modified.",
+    "A future pass should continue Lot81-85 by directly extracting relevant HPA/JPA PDF rows if PDF text access is available, then promote only rows with exact name and identity support."
+  ]
+}
