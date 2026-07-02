@@ -1,0 +1,215 @@
+{
+  "runId": "2026-07-02-lot26-30-audit-run67",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "26-30",
+    "layoutGuard": "v5.9.6_LOCK",
+    "mode": "small incremental official/high-trust research audit"
+  },
+  "safety": {
+    "openPrCheck": "Only PR #111 was open before this batch; it is a non-overlapping Numata completion report generator and does not mutate athlete data or A4 print layout.",
+    "databaseJsonTouched": false,
+    "researchCandidatesJsonTouched": false,
+    "a4PrintLayoutTouched": false,
+    "v596LockTouched": false,
+    "noInferredAchievements": true
+  },
+  "processedAthletes": [
+    {
+      "lot": 26,
+      "name": "堀井 隆太",
+      "aliasesChecked": [
+        "堀井 隆太",
+        "堀井隆太",
+        "ホリイ リュウタ",
+        "Horii Ryuta",
+        "Ryuta Horii"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 2001,
+          "affiliation": "kawagoe.training.GYM",
+          "bodyweightKg": 72.20,
+          "benchAttemptsKg": [110.0, 120.0, 125.0],
+          "bestBenchKg": 125.0,
+          "placing": 13,
+          "points": 67.54,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 77-78"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    },
+    {
+      "lot": 27,
+      "name": "落合 良介",
+      "aliasesChecked": [
+        "落合 良介",
+        "落合良介",
+        "オチアイ リョウスケ",
+        "Ochiai Ryosuke",
+        "Ryosuke Ochiai"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 1989,
+          "affiliation": "NPR",
+          "bodyweightKg": 73.40,
+          "benchAttemptsKg": [110.0, 117.5, -120.0],
+          "bestBenchKg": 117.5,
+          "placing": 16,
+          "points": 62.93,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 81-81"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    },
+    {
+      "lot": 28,
+      "name": "佐藤 立盛",
+      "aliasesChecked": [
+        "佐藤 立盛",
+        "佐藤立盛",
+        "サトウ タツモリ",
+        "Sato Tatsumori",
+        "Tatsumori Sato"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 2001,
+          "affiliation": "NPR",
+          "bodyweightKg": 73.15,
+          "benchAttemptsKg": [120.0, 125.0, -132.5],
+          "bestBenchKg": 125.0,
+          "placing": 14,
+          "points": 67.07,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 79-79"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    },
+    {
+      "lot": 29,
+      "name": "野口 通彦",
+      "aliasesChecked": [
+        "野口 通彦",
+        "野口通彦",
+        "ノグチ ミチヒコ",
+        "Noguchi Michihiko",
+        "Michihiko Noguchi"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 1967,
+          "affiliation": "BURSTLIMIT",
+          "bodyweightKg": 73.70,
+          "benchAttemptsKg": [120.0, 125.0, -127.5],
+          "bestBenchKg": 125.0,
+          "placing": 15,
+          "points": 66.81,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 80-80"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    },
+    {
+      "lot": 30,
+      "name": "菅井 駿平",
+      "aliasesChecked": [
+        "菅井 駿平",
+        "菅井駿平",
+        "スガイ シュンペイ",
+        "Sugai Shunpei",
+        "Shunpei Sugai"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 1996,
+          "affiliation": "キムンカムイ旭川",
+          "bodyweightKg": 73.70,
+          "benchAttemptsKg": [125.0, 132.5, 137.5],
+          "bestBenchKg": 137.5,
+          "placing": 10,
+          "points": 73.49,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 72-72"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hpa-20260621-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C速報 PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "relevance": "Confirmed current-event rows for Lot26 堀井 隆太, Lot27 落合 良介, Lot28 佐藤 立盛, Lot29 野口 通彦, and Lot30 菅井 駿平."
+    },
+    {
+      "id": "repo-main-database",
+      "label": "data/database.json on main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "relevance": "Roster skeleton and v5.9.6_LOCK guard context."
+    },
+    {
+      "id": "open-pr-check",
+      "label": "GitHub open PR search before branch creation",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "relevance": "Confirmed only non-overlapping PR #111 was open."
+    }
+  ],
+  "sourceSearches": [
+    "HPA official-domain exact-name checks for 堀井 隆太 / 堀井隆太 / 堀井 隆太 kawagoe.training.GYM",
+    "HPA official-domain exact-name checks for 落合 良介 / 落合良介 / 落合 良介 NPR",
+    "HPA official-domain exact-name checks for 佐藤 立盛 / 佐藤立盛 / 佐藤 立盛 NPR",
+    "HPA official-domain exact-name checks for 野口 通彦 / 野口通彦 / 野口 通彦 BURSTLIMIT",
+    "HPA official-domain exact-name checks for 菅井 駿平 / 菅井駿平 / 菅井 駿平 キムンカムイ旭川",
+    "JPA official-site exact-name checks",
+    "IPF/Goodlift-style romanized alias checks",
+    "APF/AAPF-style exact-name and romanized alias checks"
+  ],
+  "mutationSummary": {
+    "confirmedRowsAddedToDatabaseJson": 0,
+    "candidateRowsAddedToResearchCandidatesJson": 0,
+    "auditOnly": true
+  }
+}
