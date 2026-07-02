@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "batchId": "2026-07-02-lot1-5-audit-run74",
+    "createdAt": "2026-07-02",
+    "scope": "Incremental small-batch audit for 2026 Numata Bench Press roster Lots 1-5",
+    "repositoryGuardrails": [
+      "Checked open PRs before editing; no open PRs were found.",
+      "Preserved data/database.json and data/research-candidates.json unchanged.",
+      "Preserved v5.9.6_LOCK A4 print layout; no layout, CSS, rendering, or print-template files touched.",
+      "No achievements inferred from name-only matches.",
+      "Current-event rows are recorded in this audit log only and not promoted as prior histories."
+    ],
+    "sourcePolicy": "Official/high-trust sources first: HPA, JPA, IPF/Goodlift, APF/AAPF, official result PDFs. Confirmed histories require source-linked identity confidence. Ambiguous findings remain candidates."
+  },
+  "processedAthletes": [
+    {
+      "lot": 1,
+      "name": "齊藤 夕大",
+      "englishName": "Saito Yuta",
+      "databasePlayerId": "A-1-saito-yuta",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "女子クラシック53kg級",
+        "birthYear": 2011,
+        "affiliation": "BURSTLIMIT",
+        "bodyweight": "47.25",
+        "attempts": ["47.5", "52.5", "60.0"],
+        "bpBest": "60.0",
+        "place": "1",
+        "points": "41.04",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "The roster skeleton labels this athlete as 男子53kg級, but the HPA official速報 PDF places Lot 1 in 女子クラシック53kg級. This batch records the official result as current-event audit evidence only and does not rewrite the roster skeleton. No source-linked prior domestic/national/international history was safely confirmed in this pass."
+    },
+    {
+      "lot": 2,
+      "name": "齋藤 悠",
+      "englishName": "Saitou Yuu",
+      "databasePlayerId": "A-2-saitou-yuu",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック59kg級",
+        "birthYear": 1999,
+        "affiliation": "NPR",
+        "bodyweight": "58.90",
+        "attempts": ["95.0", "100.0", "105.0"],
+        "bpBest": "105.0",
+        "place": "3",
+        "points": "63.42",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 3,
+      "name": "玉田 睦生",
+      "englishName": "Tamada Mutsuo",
+      "databasePlayerId": "A-3-tamada-mutsuo",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック59kg級",
+        "birthYear": 1985,
+        "affiliation": "十勝パワーリフティング協会",
+        "bodyweight": "57.45",
+        "attempts": ["92.5", "100.0", "-102.5"],
+        "bpBest": "100.0",
+        "place": "4",
+        "points": "61.24",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 4,
+      "name": "山口 巧",
+      "englishName": "Yamaguchi Takumi",
+      "databasePlayerId": "A-4-yamaguchi-takumi",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック59kg級",
+        "birthYear": 1997,
+        "affiliation": "十勝パワーリフティング協会",
+        "bodyweight": "58.30",
+        "attempts": ["110.0", "117.5", "122.5"],
+        "bpBest": "122.5",
+        "place": "1",
+        "points": "74.41",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 5,
+      "name": "春木 祥英",
+      "englishName": "Haruki Shoei",
+      "databasePlayerId": "A-5-haruki-shoei",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック59kg級",
+        "birthYear": 2006,
+        "affiliation": "名寄パワーリフティング協会",
+        "bodyweight": "58.60",
+        "attempts": ["110.0", "115.0", "-117.5"],
+        "bpBest": "115.0",
+        "place": "2",
+        "points": "69.66",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-hpa-2026-numata-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C速報 PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "publisher": "北海道パワーリフティング協会 / HPA",
+      "accessedAt": "2026-07-02",
+      "evidence": "PDF text lines list Lot 1 and Lots 2-5 with birth year, affiliation, bodyweight, bench attempts, best bench, place, and points."
+    }
+  ],
+  "searchesPerformed": [
+    {
+      "query": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "result": "Opened HPA official PDF directly and extracted Lot1-5 current-event rows."
+    },
+    {
+      "query": "site:h-power.sakura.ne.jp 20260621result_sokuhou_ABC.pdf 沼田 ベンチプレス 齊藤 夕大 玉田 睦生 春木 祥英",
+      "result": "No search result returned; direct official PDF URL was used instead."
+    },
+    {
+      "query": "\"齊藤 夕大\" ベンチプレス / \"齊藤夕大\" パワーリフティング",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"齋藤 悠\" \"ベンチプレス\" \"NPR\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"玉田 睦生\" \"パワーリフティング\" / \"玉田睦生\" ベンチプレス",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"山口 巧\" \"十勝パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"春木 祥英\" \"名寄パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    }
+  ],
+  "databaseUpdates": {
+    "data/database.json": "unchanged",
+    "data/research-candidates.json": "unchanged",
+    "reason": "Only current-event rows were confirmed. No safe source-linked prior histories were found, and no concrete ambiguous official/high-trust candidate rows were identified."
+  },
+  "nextRecommendedBatch": "Continue with Lot 6-10 or perform a targeted roster-skeleton reconciliation for Lot 1 sex/division mismatch using HPA official source evidence before any DB rewrite."
+}
