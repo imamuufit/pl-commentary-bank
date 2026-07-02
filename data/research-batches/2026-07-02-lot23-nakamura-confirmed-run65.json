@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "research-batch/v1",
+  "runId": "run65",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lots": [23],
+    "athletes": [
+      {
+        "lot": 23,
+        "name": "中村 昂太",
+        "rosterId": "B-23-nakamura-kouta"
+      }
+    ]
+  },
+  "preflight": {
+    "mainBranchChecked": true,
+    "openPullRequestsChecked": true,
+    "openPullRequestNotes": [
+      "Only PR #111 was open; it is report-generator-only and does not overlap with athlete data, database histories, research candidates, or A4 print layout."
+    ],
+    "duplicateAvoidance": [
+      "Earlier Lot 21-25 batch PR #58 recorded the 2026 Spring Ebetsu row for 中村 昂太 as source-backed prior-history finding but did not promote database rows.",
+      "This run narrows to Lot 23 only and records the identity reconciliation basis without editing layout/runtime files."
+    ]
+  },
+  "sourcesUsed": [
+    {
+      "id": "hpa-2026-numata-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C sokuhou PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "sourceType": "official_result_pdf",
+      "checkedAt": "2026-07-02",
+      "relevantLines": "PDF parsed text lines show Lot 23 中村 昂太, born 1985, BURSTLIMIT, 73.50kg bodyweight, bench attempts 100.0/105.0/110.0, best 110.0, place 19."
+    },
+    {
+      "id": "hpa-2026-spring-ebetsu-clpl",
+      "label": "HPA official 2026 Spring Ebetsu Classic Powerlifting result PDF",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "sourceType": "official_result_pdf",
+      "checkedAt": "2026-07-02",
+      "relevantLines": "PDF parsed text lines show 中村 昂太, born 1985, BURSTLIMIT, 74kg class, 72.55kg bodyweight, SQ 170.0, BP 105.0, DL 190.0, Total 465.0, place 14."
+    }
+  ],
+  "confirmedHistories": [
+    {
+      "athleteLot": 23,
+      "athleteName": "中村 昂太",
+      "identityBasis": [
+        "Exact Japanese name match: 中村 昂太",
+        "Birth year match: 1985",
+        "Affiliation match: BURSTLIMIT",
+        "Bodyweight/class context remains consistent around 74kg-class men"
+      ],
+      "currentEventAnchor": {
+        "date": "2026-06-21",
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "grade": "北海道",
+        "eventType": "S-BP",
+        "division": "男子クラシック74kg級",
+        "bodyweight": "73.50",
+        "bpAttempts": "100.0〇-105.0〇-110.0〇",
+        "bpBest": "110.0",
+        "place": "19",
+        "sourceId": "hpa-2026-numata-abc-sokuhou"
+      },
+      "priorHistory": {
+        "date": "2026-04-25",
+        "competitionName": "第29回北海道クラシックパワーリフティング選手権大会",
+        "grade": "北海道",
+        "eventType": "PL",
+        "division": "クラシック男子74kg級",
+        "bodyweight": "72.55",
+        "sqBest": "170.0",
+        "bpBest": "105.0",
+        "dlBest": "190.0",
+        "total": "465.0",
+        "place": "14",
+        "sourceId": "hpa-2026-spring-ebetsu-clpl"
+      },
+      "databaseAction": "not_directly_promoted_in_this_run",
+      "databaseActionReason": "Kept the connector-backed change minimal and internally safe by adding a source-linked audit log only; no minified data/database.json rewrite and no layout/runtime mutation."
+    }
+  ],
+  "researchCandidates": [],
+  "unresolved": [
+    "No national, international/IPF-Goodlift, APF/AAPF, or additional domestic history was promoted for Lot 23 in this run.",
+    "If future runs edit data/database.json, this confirmed priorHistory can be promoted with the source URLs above."
+  ],
+  "safety": {
+    "databaseJsonChanged": false,
+    "researchCandidatesJsonChanged": false,
+    "a4LayoutChanged": false,
+    "v596LockPreserved": true,
+    "filesChanged": [
+      "data/research-batches/2026-07-02-lot23-nakamura-confirmed-run65.json"
+    ]
+  }
+}
