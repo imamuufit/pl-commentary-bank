@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "batchId": "2026-07-02-lot16-18-audit-run77",
+    "createdAt": "2026-07-02",
+    "scope": "Incremental small-batch audit for 2026 Numata Bench Press roster Lots 16-18",
+    "repositoryGuardrails": [
+      "Checked open PRs before editing; no open PRs were found.",
+      "Preserved data/database.json and data/research-candidates.json unchanged.",
+      "Preserved v5.9.6_LOCK A4 print layout; no layout, CSS, rendering, or print-template files touched.",
+      "No achievements inferred from name-only matches.",
+      "Current-event rows are recorded in this audit log only and not promoted as prior histories."
+    ],
+    "sourcePolicy": "Official/high-trust sources first: HPA, JPA, IPF/Goodlift, APF/AAPF, official result PDFs. Confirmed histories require source-linked identity confidence. Ambiguous findings remain candidates."
+  },
+  "processedAthletes": [
+    {
+      "lot": 16,
+      "name": "浜岡 謙太",
+      "englishName": "Hamaoka Kenta",
+      "databasePlayerId": "A-16-hamaoka-kenta",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 1991,
+        "affiliation": "BURSTLIMIT",
+        "bodyweight": "65.10",
+        "attempts": ["160.0", "170.0", "-175.0"],
+        "bpBest": "170.0",
+        "place": "1",
+        "points": "97.15",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 17,
+      "name": "森 健人",
+      "englishName": "Mori Kento",
+      "databasePlayerId": "A-17-mori-kento",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 2001,
+        "affiliation": "北海道協会個人登録",
+        "bodyweight": "65.50",
+        "attempts": ["170.0", "-175.0", "-175.0"],
+        "bpBest": "170.0",
+        "place": "2",
+        "points": "96.83",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 18,
+      "name": "大浪 弘嗣",
+      "englishName": "Oonami Hirotsugu",
+      "databasePlayerId": "B-18-oonami-hirotsugu",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック74kg級",
+        "birthYear": 1998,
+        "affiliation": "北海道協会個人登録",
+        "bodyweight": "73.40",
+        "attempts": ["180.0", "-182.5", "-182.5"],
+        "bpBest": "180.0",
+        "place": "3",
+        "points": "96.41",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-hpa-2026-numata-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C速報 PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "publisher": "北海道パワーリフティング協会 / HPA",
+      "accessedAt": "2026-07-02",
+      "evidence": "PDF text lines list Lots 16-18 with birth year, affiliation, bodyweight, bench attempts, best bench, place, and points."
+    }
+  ],
+  "searchesPerformed": [
+    {
+      "query": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "result": "Opened HPA official PDF directly and extracted Lot16-18 current-event rows."
+    },
+    {
+      "query": "\"浜岡 謙太\" パワーリフティング ベンチプレス / \"浜岡謙太\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"森 健人\" パワーリフティング ベンチプレス / \"森健人\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"大浪 弘嗣\" パワーリフティング ベンチプレス / \"大浪弘嗣\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    }
+  ],
+  "databaseUpdates": {
+    "data/database.json": "unchanged",
+    "data/research-candidates.json": "unchanged",
+    "reason": "Only current-event rows were confirmed. No safe source-linked prior histories were found, and no concrete ambiguous official/high-trust candidate rows were identified."
+  },
+  "nextRecommendedBatch": "Continue with Lot 20-22 while avoiding already-targeted Lot19 and Lot23."
+}
