@@ -1,0 +1,140 @@
+{
+  "batchId": "2026-07-02-lot41-45-audit-run71",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "competition": "2026 Numata Bench Press",
+    "rosterLots": [41, 42, 43, 44, 45],
+    "purpose": "Incremental PL Commentary Bank athlete research audit; preserve confirmed-vs-candidate separation."
+  },
+  "layoutLock": {
+    "preserved": true,
+    "template": "v5.9.6_LOCK",
+    "touchedLayoutFiles": false
+  },
+  "repositorySafety": {
+    "checkedOpenPullRequests": true,
+    "openPullRequestsFound": 0,
+    "baseBranch": "main",
+    "databaseJsonModified": false,
+    "researchCandidatesJsonModified": false,
+    "reasonDatabaseNotModified": "No new source-linked rows met the confirmation threshold for direct database.json promotion in this small batch.",
+    "reasonCandidatesNotModified": "No ambiguous finding with enough concrete source-row detail was found to justify a candidate row."
+  },
+  "sourcePolicy": {
+    "primarySourcesPreferred": ["HPA", "JPA", "IPF/Goodlift", "APF/AAPF", "official result PDFs"],
+    "confirmationRule": "Do not infer identity or achievements from name-only matches; require official or high-trust source details sufficient to link the roster athlete to the result row.",
+    "candidateRule": "Name-only, ambiguous, or insufficiently linked findings must remain outside database.json and be routed to research-candidates.json only when there is a concrete source row to preserve."
+  },
+  "athletesProcessed": [
+    {
+      "lot": 41,
+      "group": "D",
+      "name": "土肥 恵里奈",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. No official/high-trust domestic Hokkaido, national, international/world, three-lift, or single bench history was confirmed in this pass."
+    },
+    {
+      "lot": 42,
+      "group": "D",
+      "name": "千葉 幸奈",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. No official/high-trust domestic Hokkaido, national, international/world, three-lift, or single bench history was confirmed in this pass."
+    },
+    {
+      "lot": 43,
+      "group": "D",
+      "name": "齊藤 千也子",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. Name variants were considered, but no source row was strong enough for database.json or research-candidates.json."
+    },
+    {
+      "lot": 44,
+      "group": "D",
+      "name": "本間 沙登実",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. No official/high-trust domestic Hokkaido, national, international/world, three-lift, or single bench history was confirmed in this pass."
+    },
+    {
+      "lot": 45,
+      "group": "D",
+      "name": "山根 修子",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. No official/high-trust domestic Hokkaido, national, international/world, three-lift, or single bench history was confirmed in this pass."
+    }
+  ],
+  "searchesPerformed": [
+    {
+      "target": "Lot41 土肥 恵里奈",
+      "queries": [
+        "\"土肥 恵里奈\" パワーリフティング",
+        "\"土肥恵里奈\" ベンチプレス",
+        "site:h-power.jp 土肥恵里奈 パワーリフティング ベンチプレス",
+        "site:jpa-powerlifting.or.jp 土肥恵里奈"
+      ],
+      "outcome": "No relevant official/high-trust result found."
+    },
+    {
+      "target": "Lot42 千葉 幸奈",
+      "queries": [
+        "\"千葉 幸奈\" ベンチプレス",
+        "\"千葉幸奈\" パワーリフティング",
+        "site:h-power.jp 千葉幸奈 パワーリフティング ベンチプレス",
+        "site:jpa-powerlifting.or.jp 千葉幸奈"
+      ],
+      "outcome": "No relevant official/high-trust result found."
+    },
+    {
+      "target": "Lot43 齊藤 千也子",
+      "queries": [
+        "\"齊藤 千也子\" パワーリフティング",
+        "\"齊藤千也子\" ベンチプレス",
+        "\"斉藤 千也子\" ベンチプレス",
+        "site:h-power.jp 齊藤千也子 斉藤千也子 ベンチプレス",
+        "site:jpa-powerlifting.or.jp 齊藤千也子 斉藤千也子"
+      ],
+      "outcome": "No relevant official/high-trust result found; variant-name search did not produce a concrete source row."
+    },
+    {
+      "target": "Lot44 本間 沙登実",
+      "queries": [
+        "\"本間 沙登実\" ベンチプレス",
+        "\"本間沙登実\" パワーリフティング",
+        "site:h-power.jp 本間沙登実 パワーリフティング ベンチプレス",
+        "site:jpa-powerlifting.or.jp 本間沙登実"
+      ],
+      "outcome": "No relevant official/high-trust result found."
+    },
+    {
+      "target": "Lot45 山根 修子",
+      "queries": [
+        "\"山根 修子\" ベンチプレス",
+        "\"山根修子\" パワーリフティング",
+        "site:h-power.jp 山根修子 パワーリフティング ベンチプレス",
+        "site:jpa-powerlifting.or.jp 山根修子"
+      ],
+      "outcome": "No relevant official/high-trust result found."
+    },
+    {
+      "target": "Official result discovery for this batch",
+      "queries": [
+        "2026 沼田町 ベンチプレス 大会 結果 PDF HPA",
+        "site:h-power.jp 2026 沼田町 ベンチプレス 結果",
+        "北海道パワーリフティング協会 2026 沼田 ベンチプレス 結果 PDF",
+        "JPA パワーリフティング 土肥恵里奈 千葉幸奈 齊藤千也子 本間沙登実 山根修子"
+      ],
+      "outcome": "No additional official PDF URL or source row surfaced in this pass beyond already-tracked project context."
+    }
+  ],
+  "filesChanged": [
+    "data/research-batches/2026-07-02-lot41-45-audit-run71.json"
+  ],
+  "nextRecommendedBatch": {
+    "lots": [46, 47, 48, 49, 50],
+    "note": "Continue sequential audit unless a candidate-promotion queue is prioritized."
+  }
+}
