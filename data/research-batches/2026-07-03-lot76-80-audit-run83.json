@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "batchId": "2026-07-03-lot76-80-audit-run83",
+    "createdAt": "2026-07-03",
+    "purpose": "Incremental official-source audit for 2026 Numata Bench Press Lot76-80. This batch records a conservative search pass only; database.json and research-candidates.json are intentionally unchanged because no additional source-linked historical rows were confirmed to promotion standard in this pass.",
+    "layoutPreservation": "v5.9.6_LOCK A4 print layout untouched",
+    "sourcePriority": [
+      "HPA official result PDFs",
+      "JPA official result PDFs/pages",
+      "IPF/Goodlift official results when relevant",
+      "APF/AAPF official results when relevant",
+      "Official or high-trust result pages/PDFs only"
+    ]
+  },
+  "preflight": {
+    "openPullRequestsChecked": true,
+    "openPullRequestsFound": 0,
+    "mainBranchChecked": true,
+    "duplicateBatchSearch": "No open PR was found before this run. Main data/database.json contains Lot76-80 roster skeleton rows with empty histories; no existing Lot76-80 audit batch was found in main by repository search before this branch."
+  },
+  "processedAthletes": [
+    {
+      "lot": 76,
+      "name": "佐藤 直毅",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["佐藤 直毅", "佐藤直毅", "Satou Naoki", "Naoki Satou", "Sato Naoki", "Naoki Sato"]
+    },
+    {
+      "lot": 77,
+      "name": "飯泉 圭太",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["飯泉 圭太", "飯泉圭太", "Iizumi Keita", "Keita Iizumi", "Izumi Keita", "Keita Izumi"]
+    },
+    {
+      "lot": 78,
+      "name": "伊畑 一真",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["伊畑 一真", "伊畑一真", "Ibata Kazuma", "Kazuma Ibata"]
+    },
+    {
+      "lot": 79,
+      "name": "土屋 仁",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["土屋 仁", "土屋仁", "Tsuchiya Hitoshi", "Hitoshi Tsuchiya"]
+    },
+    {
+      "lot": 80,
+      "name": "佐藤 楓",
+      "status": "no_new_confirmed_history_promoted",
+      "identityBasis": "Roster skeleton row exists in data/database.json; no additional high-trust historical result row was confirmed in this pass.",
+      "confirmedHistories": [],
+      "candidateFindings": [],
+      "searchedNames": ["佐藤 楓", "佐藤楓", "Satou Kaede", "Kaede Satou", "Sato Kaede", "Kaede Sato"]
+    }
+  ],
+  "databaseUpdate": {
+    "data/database.json": "unchanged",
+    "reason": "No confirmed historical rows beyond the existing roster skeleton met the source-linking and identity standard in this small batch. The canonical DB was not rewritten."
+  },
+  "candidateUpdate": {
+    "data/research-candidates.json": "unchanged",
+    "reason": "Search results did not produce useful but ambiguous athlete-history candidates worth preserving; no uncertain achievement was inferred."
+  },
+  "sourceAudit": [
+    {
+      "label": "Repository main data/database.json",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "usedFor": "Confirmed that Lot76-80 roster skeleton rows exist and that histories are empty before this batch."
+    },
+    {
+      "label": "GitHub open PR search",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "usedFor": "Checked that no open PR needed merging or conflict review before creating this safe audit branch."
+    },
+    {
+      "label": "Web search: official/high-trust Japanese name sweeps",
+      "url": "https://www.google.com/search?q=%E4%BD%90%E8%97%A4+%E7%9B%B4%E6%AF%85+%E3%83%91%E3%83%AF%E3%83%BC%E3%83%AA%E3%83%95%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0+%E3%83%99%E3%83%B3%E3%83%81%E3%83%97%E3%83%AC%E3%82%B9+HPA+%E7%B5%90%E6%9E%9C",
+      "usedFor": "No reliable confirmed row was found for Lot76-80 through Japanese name-based HPA/JPA/high-trust search strings in this pass."
+    },
+    {
+      "label": "Web search: romanized Goodlift/IPF sweeps",
+      "url": "https://www.google.com/search?q=Naoki+Sato+powerlifting+bench+press+Goodlift+Japan",
+      "usedFor": "Romanized searches were checked for Goodlift/IPF-style references. Generic false-positive results, including non-powerlifting namesakes, were not preserved as candidates."
+    },
+    {
+      "label": "HPA official source family",
+      "url": "https://h-power.sakura.ne.jp/",
+      "usedFor": "Maintained source priority for Hokkaido official PDFs. No additional Lot76-80 historical rows were promoted from HPA in this pass."
+    },
+    {
+      "label": "JPA official source family",
+      "url": "https://www.jpa-powerlifting.or.jp/",
+      "usedFor": "Maintained national official-source priority. No additional Lot76-80 historical rows were promoted from JPA in this pass."
+    }
+  ],
+  "notes": [
+    "No achievements, records, placements, or totals were invented or inferred.",
+    "Because no candidate-quality ambiguous results were found, data/research-candidates.json was left unchanged.",
+    "A4 print layout and v5.9.6_LOCK files were not modified.",
+    "A future pass should continue Lot76-80 by directly extracting relevant HPA/JPA PDF rows if PDF text access is available, then promote only rows with exact name and identity support."
+  ]
+}
