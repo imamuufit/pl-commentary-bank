@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "0.1.1",
-    "updatedAt": "2026-07-01",
+    "updatedAt": "2026-07-02",
     "sourcePolicy": "Official HPA/JPA sources only. This file records 2026 event-level source candidates and must not auto-promote athlete histories into data/database.json.",
     "layoutLock": "v5.9.6_LOCK",
     "notes": [
@@ -283,7 +283,7 @@
         "hasSchedule": true,
         "hasResultPdf": false,
         "hasSokuhou": true,
-        "hasYoutubeLive": false,
+        "hasYoutubeLive": true,
         "hasVenueInfo": true,
         "hasYearPlan": true
       },
@@ -353,12 +353,25 @@
           "title": "2026夏のベンチプレス選手権大会 表彰状ダウンロード案内",
           "url": "https://h-power.sakura.ne.jp/syoujyou_dl2026natu.pdf",
           "observedAt": "2026-06-30"
+        },
+        {
+          "type": "youtube_live",
+          "title": "【LIVE】北海道ベンチプレス選手権2026｜フルギア＆ノーギア最強決定戦 in 沼田",
+          "url": "https://www.youtube.com/@hokkaido.powerlifting/streams",
+          "observedAt": "2026-07-02"
+        },
+        {
+          "type": "youtube_channel_streams",
+          "title": "北海道パワーリフティング協会 YouTube streams",
+          "url": "https://www.youtube.com/@hokkaido.powerlifting/streams",
+          "observedAt": "2026-07-02"
         }
       ],
       "promotionGuardrails": [
         "Use this event-index entry only as an official source locator.",
         "Treat速報 PDFs as provisional result sources until a final official result PDF is separately published or clearly identified.",
-        "Do not promote entry rows, program rows, or速報 rows into confirmed athlete histories without matching athlete identity, category, class, date, and PDF row.",
+        "Treat YouTube as an event-level source locator only.",
+        "Do not promote entry rows, program rows,速報 rows, or YouTube titles into confirmed athlete histories without matching athlete identity, category, class, date, and official PDF row.",
         "Keep this separate from data/database.json, event entries, confirmed histories, and research candidates."
       ]
     },
