@@ -1,0 +1,215 @@
+{
+  "runId": "2026-07-02-lot31-35-audit-run68",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "31-35",
+    "layoutGuard": "v5.9.6_LOCK",
+    "mode": "small incremental official/high-trust research audit"
+  },
+  "safety": {
+    "openPrCheck": "No open overlapping PL Athlete Research PRs were found before this batch. Existing open work was non-overlapping and not used for athlete-data mutation.",
+    "databaseJsonTouched": false,
+    "researchCandidatesJsonTouched": false,
+    "a4PrintLayoutTouched": false,
+    "v596LockTouched": false,
+    "noInferredAchievements": true
+  },
+  "processedAthletes": [
+    {
+      "lot": 31,
+      "name": "堀内 昭人",
+      "aliasesChecked": [
+        "堀内 昭人",
+        "堀内昭人",
+        "ホリウチ アキヒト",
+        "Horiuchi Akihito",
+        "Akihito Horiuchi"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 1966,
+          "affiliation": "釧路STRONGHOLD",
+          "bodyweightKg": 72.70,
+          "benchAttemptsKg": [130.0, 135.0, -140.0],
+          "bestBenchKg": 135.0,
+          "placing": 11,
+          "points": 72.68,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 73-74"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    },
+    {
+      "lot": 32,
+      "name": "中川 英紀",
+      "aliasesChecked": [
+        "中川 英紀",
+        "中川英紀",
+        "ナカガワ ヒデキ",
+        "Nakagawa Hideki",
+        "Hideki Nakagawa"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 1994,
+          "affiliation": "北海道協会個人登録",
+          "bodyweightKg": 73.40,
+          "benchAttemptsKg": [132.5, -137.5, 140.0],
+          "bestBenchKg": 140.0,
+          "placing": 9,
+          "points": 74.99,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 69-71"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    },
+    {
+      "lot": 33,
+      "name": "坂本 幹",
+      "aliasesChecked": [
+        "坂本 幹",
+        "坂本幹",
+        "サカモト ミキ",
+        "Sakamoto Miki",
+        "Miki Sakamoto"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 1970,
+          "affiliation": "BURST LIMIT KITAMI",
+          "bodyweightKg": 73.80,
+          "benchAttemptsKg": [120.0, 130.0, -137.5],
+          "bestBenchKg": 130.0,
+          "placing": 12,
+          "points": 69.43,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 75-76"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    },
+    {
+      "lot": 34,
+      "name": "相澤 完太",
+      "aliasesChecked": [
+        "相澤 完太",
+        "相澤完太",
+        "アイザワ カンタ",
+        "Aizawa Kanta",
+        "Kanta Aizawa"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 2004,
+          "affiliation": "室蘭工業大学バーベルクラブ",
+          "bodyweightKg": 71.95,
+          "benchAttemptsKg": [135.0, 140.0, 145.0],
+          "bestBenchKg": 145.0,
+          "placing": 6,
+          "points": 78.50,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 63-64"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    },
+    {
+      "lot": 35,
+      "name": "星 虎太郎",
+      "aliasesChecked": [
+        "星 虎太郎",
+        "星虎太郎",
+        "ホシ コタロウ",
+        "Hoshi Kotarou",
+        "Kotarou Hoshi"
+      ],
+      "confirmedFindings": [
+        {
+          "type": "current_event_result",
+          "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+          "date": "2026-06-21",
+          "division": "男子クラシック74kg級",
+          "birthYear": 2006,
+          "affiliation": "BURST LIMIT KITAMI",
+          "bodyweightKg": 73.85,
+          "benchAttemptsKg": [130.0, 140.0, 145.0],
+          "bestBenchKg": 145.0,
+          "placing": 8,
+          "points": 77.41,
+          "sourceId": "hpa-20260621-abc-sokuhou",
+          "sourceLines": "PDF page 2 parsed lines 67-68"
+        }
+      ],
+      "candidateFindings": [],
+      "notes": [
+        "No prior domestic Hokkaido, JPA national, IPF/Goodlift international/world, APF/AAPF, three-lift PL, or single bench history was promoted because no same-person official/high-trust row was found in this small-batch search."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hpa-20260621-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C速報 PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "relevance": "Confirmed current-event rows for Lot31 堀内 昭人, Lot32 中川 英紀, Lot33 坂本 幹, Lot34 相澤 完太, and Lot35 星 虎太郎."
+    },
+    {
+      "id": "repo-main-database",
+      "label": "data/database.json on main",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/blob/main/data/database.json",
+      "relevance": "Roster skeleton and v5.9.6_LOCK guard context."
+    },
+    {
+      "id": "open-pr-check",
+      "label": "GitHub open PR search before branch creation",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "relevance": "Checked for overlapping open PRs before creating this batch."
+    }
+  ],
+  "sourceSearches": [
+    "HPA official PDF current-event result rows for Lot31-35",
+    "HPA/JPA exact-name checks for 堀内 昭人 / 堀内昭人",
+    "HPA/JPA exact-name checks for 中川 英紀 / 中川英紀",
+    "HPA/JPA exact-name checks for 坂本 幹 / 坂本幹",
+    "HPA/JPA exact-name checks for 相澤 完太 / 相澤完太",
+    "HPA/JPA exact-name checks for 星 虎太郎 / 星虎太郎",
+    "IPF/Goodlift-style romanized alias checks for Horiuchi/Nakagawa/Sakamoto/Aizawa/Hoshi",
+    "APF/AAPF-style exact-name and romanized alias checks"
+  ],
+  "mutationSummary": {
+    "confirmedRowsAddedToDatabaseJson": 0,
+    "candidateRowsAddedToResearchCandidatesJson": 0,
+    "auditOnly": true
+  }
+}
