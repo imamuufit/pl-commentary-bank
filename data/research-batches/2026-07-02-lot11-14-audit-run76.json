@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "batchId": "2026-07-02-lot11-14-audit-run76",
+    "createdAt": "2026-07-02",
+    "scope": "Incremental small-batch audit for 2026 Numata Bench Press roster Lots 11-14",
+    "repositoryGuardrails": [
+      "Checked open PRs before editing; no open PRs were found.",
+      "Preserved data/database.json and data/research-candidates.json unchanged.",
+      "Preserved v5.9.6_LOCK A4 print layout; no layout, CSS, rendering, or print-template files touched.",
+      "No achievements inferred from name-only matches.",
+      "Current-event rows are recorded in this audit log only and not promoted as prior histories."
+    ],
+    "sourcePolicy": "Official/high-trust sources first: HPA, JPA, IPF/Goodlift, APF/AAPF, official result PDFs. Confirmed histories require source-linked identity confidence. Ambiguous findings remain candidates."
+  },
+  "processedAthletes": [
+    {
+      "lot": 11,
+      "name": "紺野 雄一",
+      "englishName": "Konno Yuichi",
+      "databasePlayerId": "A-11-konno-yuichi",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 1967,
+        "affiliation": "北海道協会個人登録",
+        "bodyweight": "65.55",
+        "attempts": ["115.0", "120.0", "-122.5"],
+        "bpBest": "120.0",
+        "place": "6",
+        "points": "68.32",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 12,
+      "name": "川田 俊希",
+      "englishName": "Kawata Toshiki",
+      "databasePlayerId": "A-12-kawata-toshiki",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 1993,
+        "affiliation": "北海道協会個人登録",
+        "bodyweight": "65.85",
+        "attempts": ["120.0", "125.0", "-130.0"],
+        "bpBest": "125.0",
+        "place": "5",
+        "points": "70.99",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    },
+    {
+      "lot": 13,
+      "name": "谷口 孝仁",
+      "englishName": "Taniguchi Takahito",
+      "databasePlayerId": "A-13-taniguchi-takahito",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 1961,
+        "affiliation": "十勝パワーリフティング協会",
+        "bodyweight": "65.55",
+        "attempts": ["110.0", "115.0", "-120.0"],
+        "bpBest": "115.0",
+        "place": "8",
+        "points": "65.47",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "HPA official速報 confirms current-event result only. The same PDF also lists 谷口孝仁 as a C-group third-class referee, but that is not an athlete competition history and was not promoted."
+    },
+    {
+      "lot": 14,
+      "name": "橋本 滉一朗",
+      "englishName": "Hashimoto Koichiro",
+      "databasePlayerId": "A-14-hashimoto-koichiro",
+      "status": "audited_current_event_confirmed_no_prior_promotion",
+      "confirmedCurrentEvent": {
+        "competitionName": "第30回北海道クラシックベンチプレス選手権",
+        "date": "2026-06-21",
+        "location": "沼田町民会館",
+        "eventType": "S-BP",
+        "division": "男子クラシック66kg級",
+        "birthYear": 1996,
+        "affiliation": "北海道協会個人登録",
+        "bodyweight": "64.60",
+        "attempts": ["125.0", "132.5", "-137.5"],
+        "bpBest": "132.5",
+        "place": "4",
+        "points": "76.04",
+        "sourceIds": ["src-hpa-2026-numata-abc-sokuhou"]
+      },
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No source-linked prior domestic/national/international powerlifting or single-bench history was safely confirmed in this pass."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-hpa-2026-numata-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C速報 PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "publisher": "北海道パワーリフティング協会 / HPA",
+      "accessedAt": "2026-07-02",
+      "evidence": "PDF text lines list Lots 11-14 with birth year, affiliation, bodyweight, bench attempts, best bench, place, and points."
+    }
+  ],
+  "searchesPerformed": [
+    {
+      "query": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "result": "Opened HPA official PDF directly and extracted Lot11-14 current-event rows."
+    },
+    {
+      "query": "\"紺野 雄一\" パワーリフティング ベンチプレス / \"紺野雄一\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"川田 俊希\" パワーリフティング ベンチプレス / \"川田俊希\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    },
+    {
+      "query": "\"谷口 孝仁\" パワーリフティング ベンチプレス / \"谷口孝仁\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found beyond the current-event HPA PDF and referee notation in the same PDF."
+    },
+    {
+      "query": "\"橋本 滉一朗\" パワーリフティング ベンチプレス / \"橋本滉一朗\" \"パワーリフティング\"",
+      "result": "No reliable official/high-trust prior-history match found."
+    }
+  ],
+  "databaseUpdates": {
+    "data/database.json": "unchanged",
+    "data/research-candidates.json": "unchanged",
+    "reason": "Only current-event rows were confirmed. No safe source-linked prior histories were found, and no concrete ambiguous official/high-trust candidate rows were identified."
+  },
+  "nextRecommendedBatch": "Lot 15 has already received a targeted readiness audit. Continue with Lot 16-18 or Lot 20-22 while avoiding already-targeted Lot19 and Lot23."
+}
