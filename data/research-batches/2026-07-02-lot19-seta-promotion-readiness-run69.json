@@ -1,0 +1,110 @@
+{
+  "runId": "2026-07-02-lot19-seta-promotion-readiness-run69",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "event": "2026 Numata Bench Press",
+    "lotRange": "19",
+    "layoutGuard": "v5.9.6_LOCK",
+    "mode": "small incremental official/high-trust promotion-readiness audit"
+  },
+  "safety": {
+    "openPrCheck": "No open PL Athlete Research PRs were found before this batch.",
+    "duplicateWorkCheck": "Merged PR #55 already logged Lot16-20 current results and identified Lot19 prior HPA CL-PL history; this run narrows to Lot19 identity reconciliation only and does not duplicate a broad Lot16-20 batch.",
+    "databaseJsonTouched": false,
+    "researchCandidatesJsonTouched": false,
+    "a4PrintLayoutTouched": false,
+    "v596LockTouched": false,
+    "noInferredAchievements": true
+  },
+  "processedAthletes": [
+    {
+      "lot": 19,
+      "name": "瀬田 恭央",
+      "aliasesChecked": [
+        "瀬田 恭央",
+        "瀬田恭央",
+        "セタ ヤスヒロ",
+        "Seta Yasuhiro",
+        "Yasuhiro Seta"
+      ],
+      "identityAnchor": {
+        "type": "current_event_result",
+        "competition": "第30回北海道クラシックベンチプレス選手権 / 2026沼田町ベンチプレス大会",
+        "date": "2026-06-21",
+        "division": "男子クラシック74kg級",
+        "birthYear": 1995,
+        "affiliation": "BURSTLIMIT",
+        "bodyweightKg": 73.00,
+        "benchAttemptsKg": [105.0, 112.5, -120.0],
+        "bestBenchKg": 112.5,
+        "placing": 18,
+        "points": 60.43,
+        "sourceId": "hpa-20260621-abc-sokuhou",
+        "sourceLines": "PDF page 2 parsed lines 83-84"
+      },
+      "confirmedFindings": [
+        {
+          "type": "prior_three_lift_powerlifting_history_ready_for_db_promotion",
+          "competition": "第29回北海道クラシックパワーリフティング選手権大会",
+          "date": "2026-04-25",
+          "venue": "江別市青年センター",
+          "division": "クラシック男子74kg級",
+          "birthYear": 1995,
+          "affiliation": "BURSTLIMIT",
+          "bodyweightKg": 72.95,
+          "squatAttemptsKg": [130.0, 140.0, 145.0],
+          "benchAttemptsKg": [100.0, 105.0, -110.0],
+          "deadliftAttemptsKg": [160.0, 170.0, 180.0],
+          "bestSquatKg": 145.0,
+          "bestBenchKg": 105.0,
+          "bestDeadliftKg": 180.0,
+          "totalKg": 430.0,
+          "placing": 18,
+          "points": 63.60,
+          "identityConfidence": "high: exact Japanese name, birth year 1995, BURSTLIMIT affiliation, and 74kg-class context match the 2026 Numata identity anchor across HPA official PDFs",
+          "sourceId": "hpa-20260425-ebetsu-clpl-result",
+          "sourceLines": "PDF page 5 parsed line 143"
+        }
+      ],
+      "candidateFindings": [],
+      "promotionRecommendation": "The 2026-04-25 Spring Ebetsu CL-PL row is confirmed-history-ready for Lot19. Do not add broader achievements or record claims; no national/international/world/APF/AAPF rows were promoted in this run. data/database.json remains untouched to avoid broad minified-file rewrite risk."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hpa-20260621-abc-sokuhou",
+      "label": "HPA official 2026 Numata Bench Press A/B/C速報 PDF",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+      "relevance": "Confirmed Lot19 current-event identity anchor: 瀬田 恭央, birth year 1995, BURSTLIMIT, 74kg class, BP112.5, 18位."
+    },
+    {
+      "id": "hpa-20260425-ebetsu-clpl-result",
+      "label": "HPA official 2026 Spring Ebetsu Classic Powerlifting result PDF",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "relevance": "Confirmed same-athlete prior three-lift row: 瀬田 恭央, birth year 1995, BURSTLIMIT, 74kg class, SQ145 / BP105 / DL180 / Total430, 18位."
+    },
+    {
+      "id": "repo-pr-55",
+      "label": "Merged PR #55 Lot16-20 Numata research batch",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pull/55",
+      "relevance": "Duplicate-work guard; earlier broad batch identified Lot19 prior HPA CL-PL history but did not promote database rows."
+    },
+    {
+      "id": "open-pr-check",
+      "label": "GitHub open PR search before branch creation",
+      "url": "https://github.com/imamuufit/pl-commentary-bank/pulls",
+      "relevance": "Checked for overlapping open PRs before creating this batch."
+    }
+  ],
+  "sourceSearches": [
+    "HPA official 2026 Numata A/B/C result row for 瀬田 恭央",
+    "HPA official 2026 Spring Ebetsu CLPL result row for 瀬田 恭央",
+    "Merged PR duplicate search for Lot16-20 / Lot19",
+    "Open PR search before mutation"
+  ],
+  "mutationSummary": {
+    "confirmedRowsAddedToDatabaseJson": 0,
+    "candidateRowsAddedToResearchCandidatesJson": 0,
+    "auditOnly": true
+  }
+}
