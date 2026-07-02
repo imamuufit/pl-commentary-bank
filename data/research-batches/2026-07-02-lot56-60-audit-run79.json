@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "batchId": "2026-07-02-lot56-60-audit-run79",
+    "createdAt": "2026-07-02",
+    "purpose": "Incremental official-source audit for 2026 Numata Bench Press Lot56-60. Confirmed rows are recorded here for promotion readiness only; database.json and research-candidates.json are intentionally unchanged in this safe batch.",
+    "layoutPreservation": "v5.9.6_LOCK A4 print layout untouched",
+    "sourcePriority": ["HPA official result PDFs", "JPA/IPF/Goodlift/APF/AAPF when relevant"]
+  },
+  "preflight": {
+    "openPullRequestsChecked": true,
+    "openPullRequestsFound": 0,
+    "mainBranchChecked": true,
+    "duplicateBatchSearch": "No existing Lot56 or lot56-60 research batch found before this run."
+  },
+  "processedAthletes": [
+    {
+      "lot": 56,
+      "name": "北村 妙美",
+      "status": "confirmed_official_rows_found",
+      "identityBasis": "2026 Numata BP row and 2026 Spring Hokkaido CLPL row match name, birth year 1989, and BURSTLIMIT affiliation.",
+      "confirmedHistories": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+          "sourceLabel": "HPA official速報 PDF: 第30回北海道クラシックベンチプレス選手権 D/E groups, p.1 text row",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権大会",
+          "venue": "沼田町民会館",
+          "eventType": "S-BP",
+          "equipment": "クラシック/ノーギア",
+          "sex": "女子",
+          "bodyweightClass": "84kg級",
+          "athleteName": "北村 妙美",
+          "birthYear": "1989",
+          "team": "BURSTLIMIT",
+          "bodyweight": "79.30",
+          "bpAttempts": "75.0 / 80.0 / 85.0",
+          "bpBest": "85.0",
+          "place": "1",
+          "points": "64.42"
+        },
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+          "sourceLabel": "HPA official result PDF: 第29回北海道クラシックパワーリフティング選手権大会 B group, p.2 text row",
+          "eventDate": "2026-04-25",
+          "eventName": "第29回北海道クラシックパワーリフティング選手権大会",
+          "venue": "江別市青年センター 体育室",
+          "eventType": "PL",
+          "equipment": "クラシック/ノーギア",
+          "sex": "女子",
+          "bodyweightClass": "76kg級",
+          "athleteName": "北村 妙美",
+          "birthYear": "1989",
+          "team": "BURSTLIMIT",
+          "bodyweight": "75.65",
+          "sqAttempts": "120.0 / 125.0 / 130.0",
+          "bpAttempts": "75.0 / 80.0 / -82.5",
+          "dlAttempts": "120.0 / 127.5 / -140.0",
+          "sqBest": "130.0",
+          "bpBest": "80.0",
+          "dlBest": "127.5",
+          "total": "337.5",
+          "place": "1",
+          "recordMarksRaw": "BP row shows ★ on 80.0; record type not expanded here beyond PDF legend.",
+          "points": "66.69"
+        }
+      ],
+      "candidateFindings": []
+    },
+    {
+      "lot": 57,
+      "name": "伊佐 秀貴",
+      "status": "numata_official_row_only",
+      "identityBasis": "Only the 2026 Numata BP official速報 row was confirmed in this batch.",
+      "confirmedHistories": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+          "sourceLabel": "HPA official速報 PDF: 第30回北海道クラシックベンチプレス選手権 D/E groups, p.2 text row",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権大会",
+          "venue": "沼田町民会館",
+          "eventType": "S-BP",
+          "equipment": "クラシック/ノーギア",
+          "sex": "男子",
+          "bodyweightClass": "83kg級",
+          "athleteName": "伊佐 秀貴",
+          "birthYear": "1994",
+          "team": "名寄パワーリフティング協会",
+          "bodyweight": "75.25",
+          "bpAttempts": "100.0 / 110.0 / 115.0",
+          "bpBest": "115.0",
+          "place": "5",
+          "points": "60.79"
+        }
+      ],
+      "candidateFindings": []
+    },
+    {
+      "lot": 58,
+      "name": "角田 大樹",
+      "status": "numata_official_row_only",
+      "identityBasis": "Only the 2026 Numata BP official速報 row was confirmed in this batch.",
+      "confirmedHistories": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+          "sourceLabel": "HPA official速報 PDF: 第30回北海道クラシックベンチプレス選手権 D/E groups, p.2 text row",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権大会",
+          "venue": "沼田町民会館",
+          "eventType": "S-BP",
+          "equipment": "クラシック/ノーギア",
+          "sex": "男子",
+          "bodyweightClass": "83kg級",
+          "athleteName": "角田 大樹",
+          "birthYear": "1995",
+          "team": "北海道協会個人登録",
+          "bodyweight": "81.85",
+          "bpAttempts": "105.0 / 107.5 / -112.5",
+          "bpBest": "107.5",
+          "place": "6",
+          "points": "54.38"
+        }
+      ],
+      "candidateFindings": []
+    },
+    {
+      "lot": 59,
+      "name": "斎藤 翔磨",
+      "status": "numata_official_row_only",
+      "identityBasis": "Only the 2026 Numata BP official速報 row was confirmed in this batch.",
+      "confirmedHistories": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+          "sourceLabel": "HPA official速報 PDF: 第30回北海道クラシックベンチプレス選手権 D/E groups, p.2 text row",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権大会",
+          "venue": "沼田町民会館",
+          "eventType": "S-BP",
+          "equipment": "クラシック/ノーギア",
+          "sex": "男子",
+          "bodyweightClass": "83kg級",
+          "athleteName": "斎藤 翔磨",
+          "birthYear": "1998",
+          "team": "NPR",
+          "bodyweight": "79.45",
+          "bpAttempts": "127.5 / -135.0 / -140.0",
+          "bpBest": "127.5",
+          "place": "4",
+          "points": "65.50"
+        }
+      ],
+      "candidateFindings": []
+    },
+    {
+      "lot": 60,
+      "name": "藤原 詢",
+      "status": "numata_official_row_only",
+      "identityBasis": "Only the 2026 Numata BP official速報 row was confirmed in this batch.",
+      "confirmedHistories": [
+        {
+          "sourceUrl": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+          "sourceLabel": "HPA official速報 PDF: 第30回北海道クラシックベンチプレス選手権 D/E groups, p.2 text row",
+          "eventDate": "2026-06-21",
+          "eventName": "第30回北海道クラシックベンチプレス選手権大会",
+          "venue": "沼田町民会館",
+          "eventType": "S-BP",
+          "equipment": "クラシック/ノーギア",
+          "sex": "男子",
+          "bodyweightClass": "83kg級",
+          "athleteName": "藤原 詢",
+          "birthYear": "2001",
+          "team": "BURST LIMIT KITAMI",
+          "bodyweight": "77.95",
+          "bpAttempts": "-132.5 / -140.0 / 140.0",
+          "bpBest": "140.0",
+          "place": "3",
+          "points": "72.64"
+        }
+      ],
+      "candidateFindings": []
+    }
+  ],
+  "databaseUpdate": {
+    "data/database.json": "unchanged",
+    "reason": "This run keeps the minified canonical database untouched to avoid broad rewrite risk; confirmed rows are staged in a research-batch file for later controlled promotion."
+  },
+  "candidateUpdate": {
+    "data/research-candidates.json": "unchanged",
+    "reason": "No ambiguous same-name or insufficiently identified historical findings were found in this small batch."
+  },
+  "sourceAudit": [
+    {
+      "label": "HPA official site current tournament section",
+      "url": "https://h-power.sakura.ne.jp/",
+      "usedFor": "Confirmed official 2026 Numata BP result PDF links and 2026 Spring Hokkaido CLPL result PDF link."
+    },
+    {
+      "label": "HPA official速報 PDF: 2026 Numata Bench Press D/E groups",
+      "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+      "usedFor": "Confirmed Lot56-60 official single bench press results."
+    },
+    {
+      "label": "HPA official result PDF: 2026 Spring Hokkaido CLPL",
+      "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+      "usedFor": "Confirmed Lot56 北村妙美 three-lift powerlifting result."
+    }
+  ],
+  "notes": [
+    "No achievements were inferred from record symbols beyond the raw PDF marks and legend.",
+    "National, international/world, IPF/Goodlift, and APF/AAPF searches did not produce a reliable confirmed row for Lot56-60 in this pass; no candidate rows were added.",
+    "A4 layout files were not modified."
+  ]
+}
