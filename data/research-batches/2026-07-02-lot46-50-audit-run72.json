@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "batchId": "2026-07-02-lot46-50-audit-run72",
+    "createdAt": "2026-07-02",
+    "scope": "Incremental small-batch audit for 2026 Numata Bench Press roster Lots 46-50",
+    "repositoryGuardrails": [
+      "Checked open PRs before editing; no open PRs were found.",
+      "Preserved data/database.json and data/research-candidates.json unchanged.",
+      "Preserved v5.9.6_LOCK A4 print layout; no layout or rendering files touched.",
+      "No achievements inferred from name-only matches."
+    ],
+    "sourcePolicy": "Official/high-trust sources first: HPA, JPA, IPF/Goodlift, APF/AAPF, official result PDFs. Confirmed histories require source-linked identity confidence. Ambiguous findings remain candidates."
+  },
+  "processedAthletes": [
+    {
+      "lot": 46,
+      "name": "寺村 美香",
+      "englishName": "Teramura Mika",
+      "databasePlayerId": "D-46-teramura-mika",
+      "status": "audited_no_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No official/high-trust athlete-history match was found in this small-batch pass. Existing roster skeleton remains unchanged."
+    },
+    {
+      "lot": 47,
+      "name": "宮﨑 優花",
+      "englishName": "Miyazaki Yuka",
+      "databasePlayerId": "D-47-miyazaki-yuka",
+      "status": "audited_no_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No official/high-trust athlete-history match was found in this small-batch pass. Existing roster skeleton remains unchanged."
+    },
+    {
+      "lot": 48,
+      "name": "水島 南美",
+      "englishName": "Mizushima Minami",
+      "databasePlayerId": "D-48-mizushima-minami",
+      "status": "audited_no_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No official/high-trust athlete-history match was found in this small-batch pass. Existing roster skeleton remains unchanged."
+    },
+    {
+      "lot": 49,
+      "name": "佐藤 友里乃",
+      "englishName": "Satou Yurino",
+      "databasePlayerId": "D-49-satou-yurino",
+      "status": "audited_no_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No official/high-trust athlete-history match was found in this small-batch pass. Existing roster skeleton remains unchanged."
+    },
+    {
+      "lot": 50,
+      "name": "田中 悠菜",
+      "englishName": "Tanaka Yuuna",
+      "databasePlayerId": "D-50-tanaka-yuuna",
+      "status": "audited_no_promotion",
+      "confirmedHistoriesAdded": [],
+      "candidateFindingsAdded": [],
+      "notes": "No official/high-trust athlete-history match was found in this small-batch pass. Existing roster skeleton remains unchanged."
+    }
+  ],
+  "searchesPerformed": [
+    {
+      "query": "\"寺村 美香\" パワーリフティング ベンチプレス",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"寺村美香\" ベンチプレス",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"宮﨑 優花\" パワーリフティング ベンチプレス",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"宮崎優花\" ベンチプレス パワーリフティング",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"水島 南美\" パワーリフティング ベンチプレス",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"水島南美\" ベンチプレス",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"佐藤 友里乃\" パワーリフティング ベンチプレス",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "\"田中 悠菜\" パワーリフティング ベンチプレス",
+      "result": "No reliable official/high-trust athlete-history match found."
+    },
+    {
+      "query": "2026 沼田町 ベンチプレス 大会 結果 PDF HPA",
+      "result": "Search results were polluted by unrelated PDF/LHAPDF results; no safe official result source was extracted in this pass."
+    },
+    {
+      "query": "site:h-power.sakura.ne.jp 2026 沼田町 ベンチプレス 結果",
+      "result": "No safe official result source was extracted in this pass."
+    }
+  ],
+  "databaseUpdates": {
+    "data/database.json": "unchanged",
+    "data/research-candidates.json": "unchanged",
+    "reason": "No source-linked confirmed histories and no concrete ambiguous candidate rows were found."
+  },
+  "nextRecommendedBatch": "Continue with Lot 51 onward, prioritizing athletes with existing candidate rows or unique names likely to resolve against HPA/JPA/Goodlift official PDFs."
+}
