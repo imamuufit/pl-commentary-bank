@@ -1,0 +1,133 @@
+{
+  "batchId": "2026-07-02-lot36-40-audit-run70",
+  "createdAt": "2026-07-02",
+  "scope": {
+    "competition": "2026 Numata Bench Press",
+    "rosterLots": [36, 37, 38, 39, 40],
+    "purpose": "Incremental PL Commentary Bank athlete research audit; preserve confirmed-vs-candidate separation."
+  },
+  "layoutLock": {
+    "preserved": true,
+    "template": "v5.9.6_LOCK",
+    "touchedLayoutFiles": false
+  },
+  "repositorySafety": {
+    "checkedOpenPullRequests": true,
+    "openPullRequestsFound": 0,
+    "baseBranch": "main",
+    "databaseJsonModified": false,
+    "researchCandidatesJsonModified": false,
+    "reasonDatabaseNotModified": "No new source-linked rows met the confirmation threshold for direct database.json promotion in this small batch.",
+    "reasonCandidatesNotModified": "No ambiguous finding with enough detail was found to justify a candidate row."
+  },
+  "sourcePolicy": {
+    "primarySourcesPreferred": ["HPA", "JPA", "IPF/Goodlift", "APF/AAPF", "official result PDFs"],
+    "confirmationRule": "Do not infer identity or achievements from name-only matches; require official or high-trust source details sufficient to link the roster athlete to the result row.",
+    "candidateRule": "Name-only, ambiguous, or insufficiently linked findings must remain outside database.json and be routed to research-candidates.json only when there is a concrete source row to preserve."
+  },
+  "athletesProcessed": [
+    {
+      "lot": 36,
+      "group": "C",
+      "name": "五十嵐 友哉",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. No official/high-trust domestic, national, international, three-lift, or single bench history was confirmed in this pass."
+    },
+    {
+      "lot": 37,
+      "group": "C",
+      "name": "玉井 幹大",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. No official/high-trust domestic, national, international, three-lift, or single bench history was confirmed in this pass."
+    },
+    {
+      "lot": 38,
+      "group": "C",
+      "name": "伊藤 達也",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. Common-name risk remains high; no direct promotion without stronger identifiers."
+    },
+    {
+      "lot": 39,
+      "group": "C",
+      "name": "澤内 千秋",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. No official/high-trust domestic, national, international, three-lift, or single bench history was confirmed in this pass."
+    },
+    {
+      "lot": 40,
+      "group": "C",
+      "name": "齊藤 敬太",
+      "confirmedAdditions": [],
+      "candidateAdditions": [],
+      "auditResult": "Roster skeleton entry checked. Existing DB readout flags this athlete for national/international priority research, but this pass did not produce a new source-linked row safe for database.json promotion."
+    }
+  ],
+  "searchesPerformed": [
+    {
+      "target": "Lot36 五十嵐 友哉",
+      "queries": [
+        "site:h-power.jp 五十嵐友哉 パワーリフティング ベンチプレス",
+        "\"五十嵐 友哉\" \"ベンチプレス\"",
+        "\"五十嵐友哉\" powerlifting"
+      ],
+      "outcome": "No relevant official/high-trust result found."
+    },
+    {
+      "target": "Lot37 玉井 幹大",
+      "queries": [
+        "site:h-power.jp 玉井幹大 パワーリフティング ベンチプレス",
+        "\"玉井 幹大\" \"ベンチプレス\"",
+        "\"玉井幹大\" powerlifting"
+      ],
+      "outcome": "No relevant official/high-trust result found."
+    },
+    {
+      "target": "Lot38 伊藤 達也",
+      "queries": [
+        "\"伊藤 達也\" \"ベンチプレス\" \"北海道\""
+      ],
+      "outcome": "No confirmable identity-linked result found; common-name ambiguity retained."
+    },
+    {
+      "target": "Lot39 澤内 千秋",
+      "queries": [
+        "site:h-power.jp 澤内千秋 パワーリフティング ベンチプレス",
+        "\"澤内 千秋\" \"ベンチプレス\"",
+        "\"澤内千秋\" powerlifting"
+      ],
+      "outcome": "No relevant official/high-trust result found."
+    },
+    {
+      "target": "Lot40 齊藤 敬太",
+      "queries": [
+        "site:jpa-powerlifting.or.jp 齊藤敬太 パワーリフティング",
+        "\"齊藤 敬太\" \"Goodlift\"",
+        "\"齊藤敬太\" powerlifting"
+      ],
+      "outcome": "No new source-linked row safe for promotion found in this pass."
+    },
+    {
+      "target": "Official 2026 Hokkaido/Numata result discovery",
+      "queries": [
+        "北海道パワーリフティング協会 2026 沼田 ベンチプレス 結果 PDF",
+        "h-power.jp 2026 沼田町 ベンチプレス 大会 結果 PDF",
+        "2026 北海道 ベンチプレス 沼田 速報 PDF",
+        "北海道パワーリフティング協会 大会結果 2026 ベンチプレス",
+        "北海道パワーリフティング協会 2026 春江別 パワーリフティング 結果 PDF"
+      ],
+      "outcome": "No additional official PDF URL surfaced in this pass beyond already-researched project context."
+    }
+  ],
+  "filesChanged": [
+    "data/research-batches/2026-07-02-lot36-40-audit-run70.json"
+  ],
+  "nextRecommendedBatch": {
+    "lots": [41, 42, 43, 44, 45],
+    "note": "Continue sequential audit unless a candidate-promotion queue is prioritized."
+  }
+}
