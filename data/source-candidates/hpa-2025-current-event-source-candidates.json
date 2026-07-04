@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "source-candidates.v1",
+  "sourceStatus": "official_hpa_candidates_only",
+  "generatedAt": "2026-07-05",
+  "rules": {
+    "preserveLayoutLock": "v5.9.6_LOCK",
+    "doNotPromoteAthleteHistories": true,
+    "keepSeparatedFrom": [
+      "athleteMasterData",
+      "eventEntries",
+      "confirmedHistories",
+      "researchCandidates"
+    ],
+    "sokuhouHandling": "Treat HPA 速報 PDFs as candidate/result-research material, not final result PDFs."
+  },
+  "officialSourceRoot": {
+    "title": "一般社団法人 北海道パワーリフティング協会 HP",
+    "url": "https://h-power.sakura.ne.jp/"
+  },
+  "sourceWatchScope": {
+    "checkedRange": "2026-2011",
+    "reason": "HPA top page still exposes late-2025 event blocks with meet outline, entry roster, schedule, and result PDF links that are useful for PL Commentary Bank source location and regression fixtures."
+  },
+  "events": [
+    {
+      "eventYear": 2025,
+      "eventName": "第54回 北海道パワーリフティング選手権大会 / 第28回 北海道クラシックパワーリフティング選手権大会",
+      "date": "2025-10-18/2025-10-19",
+      "location": "江別市青年センター",
+      "sourceStatus": "official_hpa_candidates_only",
+      "sources": [
+        {
+          "title": "HPA top page current 2025 autumn Ebetsu event block",
+          "url": "https://h-power.sakura.ne.jp/",
+          "contains": {
+            "meetOutline": true,
+            "program": false,
+            "entryRoster": true,
+            "schedule": true,
+            "sokuhou": true,
+            "resultPdf": true
+          }
+        },
+        {
+          "title": "開催要項",
+          "url": "https://h-power.sakura.ne.jp/youkou2025aki.pdf",
+          "contains": {
+            "meetOutline": true,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "エントリー",
+          "url": "https://h-power.sakura.ne.jp/2025aki_group1.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": true,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "スケジュール",
+          "url": "https://h-power.sakura.ne.jp/2025aki_sche.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": true,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "大会結果",
+          "url": "https://h-power.sakura.ne.jp/hokkaido2025101819_result_syuusei.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": true
+          }
+        }
+      ]
+    },
+    {
+      "eventYear": 2025,
+      "eventName": "第3回 北海道・東北ブロック ベンチプレス選手権大会",
+      "date": "2025-11-16",
+      "location": "洞爺湖町 洞爺湖文化センター",
+      "sourceStatus": "official_hpa_candidates_only",
+      "sources": [
+        {
+          "title": "HPA top page current 2025 Toyako block bench event block",
+          "url": "https://h-power.sakura.ne.jp/",
+          "contains": {
+            "meetOutline": true,
+            "program": false,
+            "entryRoster": true,
+            "schedule": true,
+            "sokuhou": true,
+            "resultPdf": true
+          }
+        },
+        {
+          "title": "開催要項",
+          "url": "https://h-power.sakura.ne.jp/2025block_b_youkou.pdf",
+          "contains": {
+            "meetOutline": true,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "エントリー表",
+          "url": "https://h-power.sakura.ne.jp/2025touyagroup.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": true,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "スケジュール",
+          "url": "https://h-power.sakura.ne.jp/2025touyashc.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": true,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "大会結果",
+          "url": "https://h-power.sakura.ne.jp/hokkaidoudouhokuburokku_bench_20251116z.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": true
+          }
+        }
+      ]
+    }
+  ]
+}
