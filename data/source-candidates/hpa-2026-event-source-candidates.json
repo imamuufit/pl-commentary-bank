@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "source-candidates.v1",
+  "sourceStatus": "official_hpa_candidates_only",
+  "generatedAt": "2026-07-04",
+  "rules": {
+    "preserveLayoutLock": "v5.9.6_LOCK",
+    "doNotPromoteAthleteHistories": true,
+    "keepSeparatedFrom": [
+      "athleteMasterData",
+      "eventEntries",
+      "confirmedHistories",
+      "researchCandidates"
+    ],
+    "sokuhouHandling": "Treat HPA 速報 PDFs as candidate/result-research material, not final result PDFs."
+  },
+  "officialSourceRoot": {
+    "title": "一般社団法人 北海道パワーリフティング協会 HP",
+    "url": "https://h-power.sakura.ne.jp/"
+  },
+  "yearNavigation": {
+    "checkedRange": "2026-2011",
+    "currentYearPlan": {
+      "eventYear": 2026,
+      "title": "2026日程",
+      "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+      "contains": {
+        "futurePlan": true,
+        "program": false,
+        "entryRoster": false,
+        "resultPdf": false,
+        "sokuhou": false
+      }
+    },
+    "annualResultNavigation": [
+      { "eventYear": 2025, "title": "2025'", "url": "https://h-power.sakura.ne.jp/2025.html" },
+      { "eventYear": 2024, "title": "2024'", "url": "https://h-power.sakura.ne.jp/2024.html" },
+      { "eventYear": 2023, "title": "2023'", "url": "https://h-power.sakura.ne.jp/2023.html" },
+      { "eventYear": 2022, "title": "2022'", "url": "https://h-power.sakura.ne.jp/2022.html" },
+      { "eventYear": 2021, "title": "2021'", "url": "https://h-power.sakura.ne.jp/2021.html" },
+      { "eventYear": 2020, "title": "2020'", "url": "https://h-power.sakura.ne.jp/2020.html" },
+      { "eventYear": 2019, "title": "2019'", "url": "https://h-power.sakura.ne.jp/2019.html" },
+      { "eventYear": 2018, "title": "2018'", "url": "https://h-power.sakura.ne.jp/2018.html" },
+      { "eventYear": 2017, "title": "2017'", "url": "https://h-power.sakura.ne.jp/2017.html" },
+      { "eventYear": 2016, "title": "2016'", "url": "https://h-power.sakura.ne.jp/2016.html" },
+      { "eventYear": 2015, "title": "2015'", "url": "https://h-power.sakura.ne.jp/2015.html" },
+      { "eventYear": 2014, "title": "2014'", "url": "https://h-power.sakura.ne.jp/2014.html" },
+      { "eventYear": 2013, "title": "2013'", "url": "https://h-power.sakura.ne.jp/2013.html" },
+      { "eventYear": 2012, "title": "2012'", "url": "https://h-power.sakura.ne.jp/2012.html" },
+      { "eventYear": 2011, "title": "2011'", "url": "https://h-power.sakura.ne.jp/2011.html" }
+    ]
+  },
+  "events": [
+    {
+      "eventYear": 2026,
+      "eventName": "第55回 北海道パワーリフティング選手権大会 / 第29回 北海道クラシックパワーリフティング選手権大会 / 国民スポーツ大会パワーリフティング公開競技 第12回北海道代表選考会 / 全日本高校パワーリフティング選手権大会 第10回北海道予選会 / 第39回北海道団体戦",
+      "date": "2026-04-25/2026-04-26",
+      "location": "江別市青年センター",
+      "sourceStatus": "official_hpa_candidates_only",
+      "sources": [
+        {
+          "title": "HPA top page current 2026 spring event block",
+          "url": "https://h-power.sakura.ne.jp/",
+          "contains": {
+            "meetOutline": true,
+            "program": true,
+            "entryRoster": true,
+            "schedule": true,
+            "sokuhou": false,
+            "resultPdf": true
+          }
+        },
+        {
+          "title": "大会結果",
+          "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": true
+          }
+        },
+        {
+          "title": "大会プログラム",
+          "url": "https://h-power.sakura.ne.jp/2026haru_hokkaido_cut.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": true,
+            "entryRoster": true,
+            "schedule": true,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "開催要項",
+          "url": "https://h-power.sakura.ne.jp/2026haruyoukou0224.pdf",
+          "contains": {
+            "meetOutline": true,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        }
+      ]
+    },
+    {
+      "eventYear": 2026,
+      "eventName": "第36回 北海道ベンチプレス選手権大会 / 第30回 北海道クラシックベンチプレス選手権大会",
+      "date": "2026-06-21",
+      "location": "沼田町民会館",
+      "sourceStatus": "official_hpa_candidates_only",
+      "sources": [
+        {
+          "title": "HPA top page current 2026 Numata Bench event block",
+          "url": "https://h-power.sakura.ne.jp/",
+          "contains": {
+            "meetOutline": true,
+            "program": true,
+            "entryRoster": true,
+            "schedule": true,
+            "sokuhou": true,
+            "resultPdf": false
+          },
+          "note": "HPA lists three 速報 PDFs for A/B/C, D/E, and F/G groups. Keep as candidate-only until an independent final result PDF is verified."
+        },
+        {
+          "title": "大会プログラム / 開催要項一式",
+          "url": "https://h-power.sakura.ne.jp/2026hokkaido_natu.pdf",
+          "contains": {
+            "meetOutline": true,
+            "program": true,
+            "entryRoster": true,
+            "schedule": true,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "開催要項",
+          "url": "https://h-power.sakura.ne.jp/2026_natuyoukouz.pdf",
+          "contains": {
+            "meetOutline": true,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "エントリー",
+          "url": "https://h-power.sakura.ne.jp/2026natu_entry.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": true,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "スケジュール",
+          "url": "https://h-power.sakura.ne.jp/2026natu_sche.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": true,
+            "sokuhou": false,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "速報 A/B/C",
+          "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": true,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "速報 D/E",
+          "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": true,
+            "resultPdf": false
+          }
+        },
+        {
+          "title": "速報 F/G",
+          "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": true,
+            "resultPdf": false
+          }
+        }
+      ]
+    },
+    {
+      "eventYear": 2026,
+      "eventName": "第56回 北海道パワーリフティング選手権大会 / 第30回 北海道クラシックパワーリフティング選手権大会",
+      "date": "2026-10-17/2026-10-18",
+      "location": "旭川市 大成市民センター",
+      "sourceStatus": "official_hpa_plan_candidate_only",
+      "sources": [
+        {
+          "title": "2026年度（北海道協会主催大会等）事業計画",
+          "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false,
+            "futurePlan": true
+          }
+        },
+        {
+          "title": "令和８年度 事業計画書",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false,
+            "futurePlan": true
+          }
+        }
+      ]
+    },
+    {
+      "eventYear": 2026,
+      "eventName": "第4回 北海道・東北ブロック ベンチプレス選手権大会",
+      "date": "2026-11-15",
+      "location": "洞爺湖町 文化センター",
+      "sourceStatus": "official_hpa_plan_candidate_only",
+      "sources": [
+        {
+          "title": "2026年度（北海道協会主催大会等）事業計画",
+          "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false,
+            "futurePlan": true
+          }
+        },
+        {
+          "title": "令和８年度 事業計画書",
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "contains": {
+            "meetOutline": false,
+            "program": false,
+            "entryRoster": false,
+            "schedule": false,
+            "sokuhou": false,
+            "resultPdf": false,
+            "futurePlan": true
+          }
+        }
+      ]
+    }
+  ]
+}
