@@ -32,21 +32,96 @@
       }
     },
     "annualResultNavigation": [
-      { "eventYear": 2025, "title": "2025'", "url": "https://h-power.sakura.ne.jp/2025.html" },
-      { "eventYear": 2024, "title": "2024'", "url": "https://h-power.sakura.ne.jp/2024.html" },
-      { "eventYear": 2023, "title": "2023'", "url": "https://h-power.sakura.ne.jp/2023.html" },
-      { "eventYear": 2022, "title": "2022'", "url": "https://h-power.sakura.ne.jp/2022.html" },
-      { "eventYear": 2021, "title": "2021'", "url": "https://h-power.sakura.ne.jp/2021.html" },
-      { "eventYear": 2020, "title": "2020'", "url": "https://h-power.sakura.ne.jp/2020.html" },
-      { "eventYear": 2019, "title": "2019'", "url": "https://h-power.sakura.ne.jp/2019.html" },
-      { "eventYear": 2018, "title": "2018'", "url": "https://h-power.sakura.ne.jp/2018.html" },
-      { "eventYear": 2017, "title": "2017'", "url": "https://h-power.sakura.ne.jp/2017.html" },
-      { "eventYear": 2016, "title": "2016'", "url": "https://h-power.sakura.ne.jp/2016.html" },
-      { "eventYear": 2015, "title": "2015'", "url": "https://h-power.sakura.ne.jp/2015.html" },
-      { "eventYear": 2014, "title": "2014'", "url": "https://h-power.sakura.ne.jp/2014.html" },
-      { "eventYear": 2013, "title": "2013'", "url": "https://h-power.sakura.ne.jp/2013.html" },
-      { "eventYear": 2012, "title": "2012'", "url": "https://h-power.sakura.ne.jp/2012.html" },
-      { "eventYear": 2011, "title": "2011'", "url": "https://h-power.sakura.ne.jp/2011.html" }
+      {
+        "eventYear": 2025,
+        "title": "2025'",
+        "url": "https://h-power.sakura.ne.jp/2025result.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2024,
+        "title": "2024'",
+        "url": "https://h-power.sakura.ne.jp/2024result.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2023,
+        "title": "2023'",
+        "url": "https://h-power.sakura.ne.jp/2023result.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2022,
+        "title": "2022'",
+        "url": "https://h-power.sakura.ne.jp/2022resulttt.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2021,
+        "title": "2021'",
+        "url": "https://h-power.sakura.ne.jp/2021.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2020,
+        "title": "2020'",
+        "url": "https://h-power.sakura.ne.jp/2020.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2019,
+        "title": "2019'",
+        "url": "https://h-power.sakura.ne.jp/2019.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2018,
+        "title": "2018'",
+        "url": "https://h-power.sakura.ne.jp/2018.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2017,
+        "title": "2017'",
+        "url": "https://h-power.sakura.ne.jp/2017.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2016,
+        "title": "2016'",
+        "url": "https://h-power.sakura.ne.jp/2016.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2015,
+        "title": "2015'",
+        "url": "https://h-power.sakura.ne.jp/2015.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2014,
+        "title": "2014'",
+        "url": "https://h-power.sakura.ne.jp/2014.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2013,
+        "title": "2013'",
+        "url": "https://h-power.sakura.ne.jp/2013.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2012,
+        "title": "2012'",
+        "url": "https://h-power.sakura.ne.jp/2012.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      },
+      {
+        "eventYear": 2011,
+        "title": "2011'",
+        "url": "https://h-power.sakura.ne.jp/2011.pdf",
+        "contains": { "annualResultArchive": true, "resultPdf": true, "program": false, "entryRoster": false, "sokuhou": false }
+      }
     ]
   },
   "events": [
