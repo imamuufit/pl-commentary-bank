@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.1.1",
+    "version": "0.1.2",
     "purpose": "Official HPA event/source locator candidates. This file is candidate-only and must not be treated as athlete confirmed history.",
     "updatedAt": "2026-07-06",
     "sourceBoundary": "HPA official pages/PDFs only in this seed file. Keep separate from data/database.json, athlete histories, event entries, and research-candidates.json."
@@ -185,7 +185,7 @@
       "sourceTitle": "HPA top page current 2025 autumn Ebetsu block",
       "contains": {
         "entryRoster": true,
-        "resultPdf": false,
+        "resultPdf": true,
         "sokuhou": true,
         "program": false,
         "meetGuidelines": true,
@@ -208,10 +208,15 @@
           "url": "https://h-power.sakura.ne.jp/2025aki_sche.pdf",
           "title": "2025秋江別 スケジュール",
           "contains": ["schedulePlan"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/hokkaido2025101819_result_syuusei.pdf",
+          "title": "2025秋江別 大会結果（修正）",
+          "contains": ["resultPdf"]
         }
       ],
       "status": "official_hpa_candidate",
-      "notes": "HPA top page shows 大会結果-速報 and 大会結果 labels for this event, but the final result PDF URL was not independently resolved in this run. Keep resultPdf false until a clickable official result URL is verified."
+      "notes": "Official HPA top page exposes a clickable 大会結果 link to hokkaido2025101819_result_syuusei.pdf. Athlete-history promotion still requires row-level source confirmation and identity checks."
     },
     {
       "candidateId": "hpa-2025-11-toyako-block-bench",
