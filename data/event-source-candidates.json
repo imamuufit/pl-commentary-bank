@@ -47,6 +47,11 @@
       },
       "linkedSources": [
         {
+          "url": "https://h-power.sakura.ne.jp/2026haru_hokkaido_cut.pdf",
+          "title": "2026春江別 大会プログラム",
+          "contains": ["program", "venueInfo"]
+        },
+        {
           "url": "https://h-power.sakura.ne.jp/2026haruyoukou0224.pdf",
           "title": "2026春江別 開催要項",
           "contains": ["meetGuidelines", "venueInfo"]
@@ -55,6 +60,11 @@
           "url": "https://h-power.sakura.ne.jp/2026haru_entry.pdf",
           "title": "2026春江別 エントリー",
           "contains": ["entryRoster"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2026haru_sukejyuru20260325.pdf",
+          "title": "2026春江別 スケジュール",
+          "contains": ["schedulePlan", "entryRoster"]
         },
         {
           "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
@@ -88,6 +98,11 @@
           "url": "https://h-power.sakura.ne.jp/2026hokkaido_natu.pdf",
           "title": "2026沼田ベンチ 大会プログラム / 開催要項一式",
           "contains": ["program", "meetGuidelines", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2026_natuyoukouz.pdf",
+          "title": "2026沼田ベンチ 開催要項",
+          "contains": ["meetGuidelines", "venueInfo"]
         },
         {
           "url": "https://h-power.sakura.ne.jp/2026natu_entry.pdf",
