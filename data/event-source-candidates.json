@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "purpose": "Official HPA event/source locator candidates. This file is candidate-only and must not be treated as athlete confirmed history.",
+    "updatedAt": "2026-07-05",
+    "sourceBoundary": "HPA official pages/PDFs only in this seed file. Keep separate from data/database.json, athlete histories, event entries, and research-candidates.json."
+  },
+  "events": [
+    {
+      "candidateId": "hpa-2026-plan",
+      "eventYear": 2026,
+      "eventName": "2026年度 北海道協会主催大会等 事業計画",
+      "date": "2026",
+      "location": "江別市 / 沼田町 / 旭川市 / 洞爺湖町ほか",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+      "sourceTitle": "2026日程 / 2026年度（北海道協会主催大会等）事業計画",
+      "contains": {
+        "entryRoster": false,
+        "resultPdf": false,
+        "sokuhou": false,
+        "program": false,
+        "meetGuidelines": false,
+        "schedulePlan": true,
+        "venueInfo": true,
+        "youtubeStream": false
+      },
+      "status": "official_hpa_candidate",
+      "notes": "Annual plan source only. Use as event/date/venue locator; do not promote athlete data."
+    },
+    {
+      "candidateId": "hpa-2026-04-ebetsu-classic-power",
+      "eventYear": 2026,
+      "eventName": "第55回 北海道パワーリフティング選手権大会 / 第29回 北海道クラシックパワーリフティング選手権大会 / 国民スポーツ大会パワーリフティング公開競技 第12回北海道代表選考会 / 全日本高校パワーリフティング選手権大会 第10回北海道予選会 / 第39回北海道団体戦",
+      "date": "2026-04-25/2026-04-26",
+      "location": "江別市青年センター",
+      "sourceUrl": "https://h-power.sakura.ne.jp/",
+      "sourceTitle": "HPA top page current 2026 Ebetsu block",
+      "contains": {
+        "entryRoster": true,
+        "resultPdf": true,
+        "sokuhou": false,
+        "program": true,
+        "meetGuidelines": true,
+        "schedulePlan": true,
+        "venueInfo": true,
+        "youtubeStream": false
+      },
+      "linkedSources": [
+        {
+          "url": "https://h-power.sakura.ne.jp/2026haruyoukou0224.pdf",
+          "title": "2026春江別 開催要項",
+          "contains": ["meetGuidelines", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2026haru_entry.pdf",
+          "title": "2026春江別 エントリー",
+          "contains": ["entryRoster"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/hokkaido20260425_result-2.pdf",
+          "title": "2026春江別 大会結果",
+          "contains": ["resultPdf"]
+        }
+      ],
+      "status": "official_hpa_candidate",
+      "notes": "Official result PDF candidate is available. Athlete-history promotion still requires row-level source confirmation and identity checks."
+    },
+    {
+      "candidateId": "hpa-2026-06-numata-bench",
+      "eventYear": 2026,
+      "eventName": "第36回 北海道ベンチプレス選手権大会 / 第30回 北海道クラシックベンチプレス選手権大会",
+      "date": "2026-06-21",
+      "location": "沼田町民会館",
+      "sourceUrl": "https://h-power.sakura.ne.jp/",
+      "sourceTitle": "HPA top page current 2026 Numata Bench block",
+      "contains": {
+        "entryRoster": true,
+        "resultPdf": false,
+        "sokuhou": true,
+        "program": true,
+        "meetGuidelines": true,
+        "schedulePlan": true,
+        "venueInfo": true,
+        "youtubeStream": false
+      },
+      "linkedSources": [
+        {
+          "url": "https://h-power.sakura.ne.jp/2026hokkaido_natu.pdf",
+          "title": "2026沼田ベンチ 大会プログラム / 開催要項一式",
+          "contains": ["program", "meetGuidelines", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2026natu_entry.pdf",
+          "title": "2026沼田ベンチ エントリー",
+          "contains": ["entryRoster"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2026natu_sche.pdf",
+          "title": "2026沼田ベンチ スケジュール",
+          "contains": ["schedulePlan"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_ABC.pdf",
+          "title": "2026沼田ベンチ 速報 A/B/C",
+          "contains": ["sokuhou"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_DE.pdf",
+          "title": "2026沼田ベンチ 速報 D/E",
+          "contains": ["sokuhou"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/20260621result_sokuhou_FG.pdf",
+          "title": "2026沼田ベンチ 速報 F/G",
+          "contains": ["sokuhou"]
+        }
+      ],
+      "status": "official_hpa_candidate",
+      "notes": "HPA top page displays 大会結果 text, but no independently verified clickable final result PDF URL was found. Keep hasResultPdf/resultPdf false and treat 速報 PDFs as candidate/result-research material only."
+    },
+    {
+      "candidateId": "hpa-2026-10-asahikawa-classic-power",
+      "eventYear": 2026,
+      "eventName": "第56回 北海道パワーリフティング選手権大会 / 第30回 北海道クラシックパワーリフティング選手権大会",
+      "date": "2026-10-17/2026-10-18",
+      "location": "旭川市 大成市民センター",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+      "sourceTitle": "2026日程 / 2026年度（北海道協会主催大会等）事業計画",
+      "contains": {
+        "entryRoster": false,
+        "resultPdf": false,
+        "sokuhou": false,
+        "program": false,
+        "meetGuidelines": false,
+        "schedulePlan": true,
+        "venueInfo": true,
+        "youtubeStream": false
+      },
+      "status": "official_hpa_candidate",
+      "notes": "Future meet locator from annual plan only. Await meet-specific official sources before any event-entry import."
+    },
+    {
+      "candidateId": "hpa-2026-11-toyako-block-bench",
+      "eventYear": 2026,
+      "eventName": "第4回 北海道・東北ブロック ベンチプレス選手権大会",
+      "date": "2026-11-15",
+      "location": "洞爺湖町 文化センター",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+      "sourceTitle": "2026日程 / 2026年度（北海道協会主催大会等）事業計画",
+      "contains": {
+        "entryRoster": false,
+        "resultPdf": false,
+        "sokuhou": false,
+        "program": false,
+        "meetGuidelines": false,
+        "schedulePlan": true,
+        "venueInfo": true,
+        "youtubeStream": false
+      },
+      "status": "official_hpa_candidate",
+      "notes": "Future meet locator from annual plan only. Await meet-specific official sources before any event-entry import."
+    }
+  ]
+}
