@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.1.6",
+    "version": "0.1.7",
     "purpose": "Official HPA event/source locator candidates. This file is candidate-only and must not be treated as athlete confirmed history.",
     "updatedAt": "2026-07-06",
     "sourceBoundary": "HPA official pages/PDFs and official HPA YouTube channel/streams only in this seed file. Keep separate from data/database.json, athlete histories, event entries, and research-candidates.json."
@@ -192,8 +192,8 @@
       "eventName": "第56回 北海道パワーリフティング選手権大会 / 第30回 北海道クラシックパワーリフティング選手権大会",
       "date": "2026-10-17/2026-10-18",
       "location": "旭川市 大成市民センター",
-      "sourceUrl": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
-      "sourceTitle": "2026日程 / 2026年度（北海道協会主催大会等）事業計画",
+      "sourceUrl": "https://h-power.sakura.ne.jp/",
+      "sourceTitle": "HPA top page current 2026 Asahikawa autumn block",
       "contains": {
         "entryRoster": false,
         "resultPdf": false,
@@ -204,8 +204,15 @@
         "venueInfo": true,
         "youtubeStream": false
       },
+      "linkedSources": [
+        {
+          "url": "https://h-power.sakura.ne.jp/2026hokkaido_plan.pdf",
+          "title": "2026日程 / 2026年度（北海道協会主催大会等）事業計画",
+          "contains": ["schedulePlan", "venueInfo"]
+        }
+      ],
       "status": "official_hpa_candidate",
-      "notes": "Future meet locator from annual plan only. Await meet-specific official sources before any event-entry import."
+      "notes": "HPA top page now shows a meet-specific 2026 autumn Asahikawa block with date, venue, event names, equipment notes, and source slots for 開催要項, エントリー, スケジュール, and 大会結果. No clickable meet-specific PDF URLs were verified in this pass, so this remains locator-only and must not be imported into event entries or confirmed athlete histories."
     },
     {
       "candidateId": "hpa-2026-11-toyako-block-bench",
