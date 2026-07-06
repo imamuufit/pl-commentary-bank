@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.1.3",
+    "version": "0.1.4",
     "purpose": "Official HPA event/source locator candidates. This file is candidate-only and must not be treated as athlete confirmed history.",
     "updatedAt": "2026-07-06",
     "sourceBoundary": "HPA official pages/PDFs and official HPA YouTube channel/streams only in this seed file. Keep separate from data/database.json, athlete histories, event entries, and research-candidates.json."
@@ -24,8 +24,15 @@
         "venueInfo": true,
         "youtubeStream": false
       },
+      "linkedSources": [
+        {
+          "url": "https://h-power.sakura.ne.jp/2026_Jigyoukeikaku.pdf",
+          "title": "令和8年度 事業計画書",
+          "contains": ["schedulePlan", "venueInfo"]
+        }
+      ],
       "status": "official_hpa_candidate",
-      "notes": "Annual plan source only. Use as event/date/venue locator; do not promote athlete data."
+      "notes": "Annual plan sources only. Use as event/date/venue locator; do not promote athlete data. The detailed 令和8年度事業計画書 also lists related/cooperation events, but this candidate remains source-locator only."
     },
     {
       "candidateId": "hpa-2026-04-ebetsu-classic-power",
