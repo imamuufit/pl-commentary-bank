@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.1.4",
+    "version": "0.1.5",
     "purpose": "Official HPA event/source locator candidates. This file is candidate-only and must not be treated as athlete confirmed history.",
     "updatedAt": "2026-07-06",
     "sourceBoundary": "HPA official pages/PDFs and official HPA YouTube channel/streams only in this seed file. Keep separate from data/database.json, athlete histories, event entries, and research-candidates.json."
@@ -33,6 +33,27 @@
       ],
       "status": "official_hpa_candidate",
       "notes": "Annual plan sources only. Use as event/date/venue locator; do not promote athlete data. The detailed 令和8年度事業計画書 also lists related/cooperation events, but this candidate remains source-locator only."
+    },
+    {
+      "candidateId": "hpa-2025-business-report",
+      "eventYear": 2025,
+      "eventName": "令和7年度 北海道パワーリフティング協会 事業報告",
+      "date": "2025-04-01/2026-03-31",
+      "location": "江別市 / 北見市 / 洞爺湖町ほか",
+      "sourceUrl": "https://h-power.sakura.ne.jp/2025_jigyouhoukoku.pdf",
+      "sourceTitle": "2025年度 事業報告",
+      "contains": {
+        "entryRoster": false,
+        "resultPdf": false,
+        "sokuhou": false,
+        "program": false,
+        "meetGuidelines": false,
+        "schedulePlan": false,
+        "venueInfo": true,
+        "youtubeStream": false
+      },
+      "status": "official_hpa_candidate",
+      "notes": "Annual business report source only. It summarizes 2025 HPA-hosted meets, venue cities, approximate dates/months, and participation totals. Use as a source locator/context note only; do not promote athlete data or event entries from this summary."
     },
     {
       "candidateId": "hpa-2026-04-ebetsu-classic-power",
