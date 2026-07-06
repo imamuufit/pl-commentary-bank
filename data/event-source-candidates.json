@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.1.5",
+    "version": "0.1.6",
     "purpose": "Official HPA event/source locator candidates. This file is candidate-only and must not be treated as athlete confirmed history.",
     "updatedAt": "2026-07-06",
     "sourceBoundary": "HPA official pages/PDFs and official HPA YouTube channel/streams only in this seed file. Keep separate from data/database.json, athlete histories, event entries, and research-candidates.json."
@@ -123,7 +123,7 @@
       "sourceTitle": "HPA top page current 2026 Numata Bench block",
       "contains": {
         "entryRoster": true,
-        "resultPdf": false,
+        "resultPdf": true,
         "sokuhou": true,
         "program": true,
         "meetGuidelines": true,
@@ -168,6 +168,11 @@
           "contains": ["sokuhou"]
         },
         {
+          "url": "https://h-power.sakura.ne.jp/20260621result_hokkidoBP.pdf",
+          "title": "2026沼田ベンチ 大会結果",
+          "contains": ["resultPdf"]
+        },
+        {
           "url": "https://www.youtube.com/watch?v=bwadPp7gtSk",
           "title": "【LIVE】北海道ベンチプレス選手権2026｜フルギア＆ノーギア最強決定戦 in 沼田",
           "contains": ["youtubeStream"]
@@ -179,7 +184,7 @@
         }
       ],
       "status": "official_hpa_candidate",
-      "notes": "HPA top page displays 大会結果 text, but no independently verified clickable final result PDF URL was found. Keep resultPdf false and treat 速報 PDFs as candidate/result-research material only. Official HPA YouTube stream candidates are linked separately."
+      "notes": "Official HPA top page exposes a clickable 大会結果 link to 20260621result_hokkidoBP.pdf. Treat this as an official result PDF source candidate only; athlete-history promotion still requires row-level source confirmation and identity checks."
     },
     {
       "candidateId": "hpa-2026-10-asahikawa-classic-power",
