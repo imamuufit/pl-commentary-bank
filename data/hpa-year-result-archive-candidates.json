@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "purpose": "Candidate-only index of official HPA year navigation result PDFs. These sources are locators for future parsing and must not be treated as confirmed athlete history without row-level source confirmation and identity checks.",
+    "updatedAt": "2026-07-06",
+    "sourceBoundary": "Official HPA year navigation links from the HPA top page only. Keep separate from athlete master data, event entries, confirmed histories, and research candidates."
+  },
+  "events": [
+    {
+      "candidateId": "hpa-year-result-archive-2011-2025",
+      "eventYear": "2011-2025",
+      "eventName": "HPA official year navigation result PDF archive",
+      "date": "2011/2025",
+      "location": "北海道内各開催地",
+      "sourceUrl": "https://h-power.sakura.ne.jp/",
+      "sourceTitle": "HPA top page year navigation 2025' through 2011'",
+      "contains": {
+        "entryRoster": false,
+        "resultPdf": true,
+        "sokuhou": false,
+        "program": false,
+        "meetGuidelines": false,
+        "schedulePlan": false,
+        "venueInfo": true,
+        "youtubeStream": false
+      },
+      "linkedSources": [
+        {
+          "url": "https://h-power.sakura.ne.jp/2025result.pdf",
+          "title": "2025 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2024result.pdf",
+          "title": "2024 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2023result.pdf",
+          "title": "2023 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2022resulttt.pdf",
+          "title": "2022 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2021.pdf",
+          "title": "2021 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2020.pdf",
+          "title": "2020 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2019.pdf",
+          "title": "2019 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2018.pdf",
+          "title": "2018 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2017.pdf",
+          "title": "2017 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2016.pdf",
+          "title": "2016 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2015.pdf",
+          "title": "2015 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2014.pdf",
+          "title": "2014 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2013.pdf",
+          "title": "2013 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2012.pdf",
+          "title": "2012 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        },
+        {
+          "url": "https://h-power.sakura.ne.jp/2011.pdf",
+          "title": "2011 HPA year navigation result PDF",
+          "contains": ["resultPdf", "venueInfo"]
+        }
+      ],
+      "status": "official_hpa_candidate",
+      "notes": "HPA top-page year navigation links were checked from 2025 back through 2011. These annual PDFs contain result information and venues, but this candidate is source-locator only. Do not auto-promote athlete rows into confirmed histories or event entries without explicit row-level source confirmation and identity checks. The 2026 navigation is handled separately by the 2026 plan and meet-specific candidates."
+    }
+  ]
+}
