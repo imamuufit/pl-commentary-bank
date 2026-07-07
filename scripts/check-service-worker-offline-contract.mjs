@@ -4,7 +4,7 @@ const sw = fs.readFileSync('sw.js', 'utf8');
 const errors = [];
 
 const requiredSnippets = [
-  "const CACHE_NAME = 'pl-commentary-bank-v0.1.4'",
+  "const CACHE_NAME = 'pl-commentary-bank-v0.1.5'",
   'function withoutQuery(request)',
   "url.search = ''",
   "url.hash = ''",
