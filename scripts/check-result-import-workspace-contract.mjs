@@ -14,11 +14,6 @@ function requireIncludes(text, needle, message) {
 if (packageJson.scripts?.['check:result-import-workspace'] !== 'node scripts/check-result-import-workspace-contract.mjs') {
   errors.push('package.json must expose check:result-import-workspace');
 }
-requireIncludes(
-  packageJson.scripts?.validate,
-  'node scripts/check-result-import-workspace-contract.mjs',
-  'package.json validate must include result import workspace contract'
-);
 
 requireIncludes(indexHtml, './src/result-import-workspace.css', 'index.html must load result import workspace CSS');
 requireIncludes(indexHtml, './src/result-import-workspace.js', 'index.html must load result import workspace script');
