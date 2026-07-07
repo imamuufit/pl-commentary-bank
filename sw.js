@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pl-commentary-bank-v0.1.4';
+const CACHE_NAME = 'pl-commentary-bank-v0.1.5';
 const ASSETS = [
   './',
   './index.html',
@@ -8,6 +8,8 @@ const ASSETS = [
   './src/app.js',
   './src/event-relative-history.js',
   './src/event-search-helper.js',
+  './src/result-import-workspace.css',
+  './src/result-import-workspace.js',
   './data/database.json',
   './data/research-candidates.json',
   './data/event-config.json'
