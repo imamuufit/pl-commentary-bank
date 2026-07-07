@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 4173",
-    "validate": "node scripts/validate-data.mjs data/database.json && node scripts/check-layout-lock.mjs && node scripts/check-pwa-assets.mjs && node scripts/check-github-pages-contract.mjs && node scripts/check-repository-boundary-contract.mjs && node scripts/check-service-worker-offline-contract.mjs && node scripts/check-service-worker-cache-contract.mjs && node scripts/check-event-config.mjs && node scripts/check-event-modes-contract.mjs && node scripts/check-backup-contract.mjs && node scripts/check-pages-contract.mjs && node scripts/check-pages-workflow-contract.mjs && node scripts/check-ui-safety-contract.mjs && node scripts/check-local-edit-safety-contract.mjs && node scripts/check-event-export-contract.mjs && node scripts/check-research-candidates-contract.mjs && node scripts/check-research-json-export-contract.mjs && node scripts/check-history-entry-contract.mjs && node scripts/check-print-safety-contract.mjs && node scripts/check-event-relative-history-contract.mjs && node scripts/check-source-registry-contract.mjs && node scripts/check-source-export-contract.mjs && node scripts/check-player-roster-export-contract.mjs && node scripts/check-workspace-health-report-contract.mjs && node scripts/check-event-workspace-export-contract.mjs && node scripts/check-import-audit-contract.mjs && node scripts/check-workspace-export-bundle-contract.mjs",
+    "validate": "node scripts/validate-data.mjs data/database.json && node scripts/check-layout-lock.mjs && node scripts/check-pwa-assets.mjs && node scripts/check-github-pages-contract.mjs && node scripts/check-repository-boundary-contract.mjs && node scripts/check-service-worker-offline-contract.mjs && node scripts/check-service-worker-cache-contract.mjs && node scripts/check-event-config.mjs && node scripts/check-event-modes-contract.mjs && node scripts/check-backup-contract.mjs && node scripts/check-pages-contract.mjs && node scripts/check-pages-workflow-contract.mjs && node scripts/check-ui-safety-contract.mjs && node scripts/check-local-edit-safety-contract.mjs && node scripts/check-event-export-contract.mjs && node scripts/check-research-candidates-contract.mjs && node scripts/check-research-json-export-contract.mjs && node scripts/check-history-entry-contract.mjs && node scripts/check-print-safety-contract.mjs && node scripts/check-event-relative-history-contract.mjs && node scripts/check-source-registry-contract.mjs && node scripts/check-source-export-contract.mjs && node scripts/check-player-roster-export-contract.mjs && node scripts/check-workspace-health-report-contract.mjs && node scripts/check-event-workspace-export-contract.mjs && node scripts/check-import-audit-contract.mjs && node scripts/check-workspace-export-bundle-contract.mjs && node scripts/check-official-result-pdf-extract-contract.mjs",
     "check:layout": "node scripts/check-layout-lock.mjs",
     "check:pwa": "node scripts/check-pwa-assets.mjs",
     "check:pages-deploy": "node scripts/check-github-pages-contract.mjs",
@@ -33,11 +33,13 @@
     "check:import-audit": "node scripts/check-import-audit-contract.mjs",
     "check:export-bundle": "node scripts/check-workspace-export-bundle-contract.mjs",
     "check:result-import-workspace": "node scripts/check-result-import-workspace-contract.mjs",
+    "check:official-result-pdf-extract": "node scripts/check-official-result-pdf-extract-contract.mjs",
     "health:report": "node scripts/generate-workspace-health-report.mjs",
     "export:sources": "node scripts/export-source-registry.mjs",
     "export:players": "node scripts/export-player-roster.mjs",
     "export:event-workspace": "node scripts/export-event-workspace.mjs",
     "export:bundle": "node scripts/export-workspace-bundle.mjs",
-    "audit:import": "node scripts/audit-workspace-import.mjs"
+    "audit:import": "node scripts/audit-workspace-import.mjs",
+    "extract:official-result-pdf": "node scripts/extract-official-result-pdf.mjs"
   }
 }
