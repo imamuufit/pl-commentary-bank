@@ -27,7 +27,12 @@ requireIncludes(script, 'artifact-only; do not write database.json automatically
 requireIncludes(script, 'human row-level confirmation required before PWA import', 'extractor must require row-level human confirmation');
 requireIncludes(script, 'layoutTemplate', 'extractor audit must preserve layout template evidence');
 
-requireIncludes(workflow, 'workflow_dispatch', 'workflow must be manual dispatch only');
+requireIncludes(workflow, 'workflow_dispatch', 'workflow must support manual dispatch');
+requireIncludes(workflow, 'push:', 'workflow must support targeted main push runs so extraction can be triggered from repository changes');
+requireIncludes(workflow, 'branches: [main]', 'push extraction must be limited to main');
+requireIncludes(workflow, 'paths:', 'push extraction must be path-limited');
+requireIncludes(workflow, "CANDIDATE_ID: ${{ inputs.candidate_id || 'hpa-2026-06-numata-bench' }}", 'workflow must default push runs to Numata 2026 bench');
+requireIncludes(workflow, "SOURCE_KIND: ${{ inputs.source_kind || 'resultPdf' }}", 'workflow must default push runs to resultPdf');
 requireIncludes(workflow, 'poppler-utils', 'workflow must install PDF text tools');
 requireIncludes(workflow, 'scripts/extract-official-result-pdf.mjs', 'workflow must run the official PDF extractor');
 requireIncludes(workflow, 'actions/upload-artifact@v4', 'workflow must upload generated import artifacts');

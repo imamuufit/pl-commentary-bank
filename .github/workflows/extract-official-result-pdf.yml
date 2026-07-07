@@ -11,12 +11,22 @@ on:
         description: linkedSources contains kind to extract
         required: true
         default: resultPdf
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/extract-official-result-pdf.yml
+      - scripts/extract-official-result-pdf.mjs
+      - data/event-source-candidates.json
+      - data/database.json
 
 jobs:
   extract:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    env:
+      CANDIDATE_ID: ${{ inputs.candidate_id || 'hpa-2026-06-numata-bench' }}
+      SOURCE_KIND: ${{ inputs.source_kind || 'resultPdf' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -27,11 +37,11 @@ jobs:
       - name: Extract official PDF text and import rows
         run: >-
           node scripts/extract-official-result-pdf.mjs
-          --candidate-id=${{ inputs.candidate_id }}
-          --source-kind=${{ inputs.source_kind }}
+          --candidate-id=${CANDIDATE_ID}
+          --source-kind=${SOURCE_KIND}
       - name: Upload import artifact
         uses: actions/upload-artifact@v4
         with:
-          name: official-result-import-${{ inputs.candidate_id }}-${{ inputs.source_kind }}
-          path: dist/official-result-imports/${{ inputs.candidate_id }}/
+          name: official-result-import-${{ env.CANDIDATE_ID }}-${{ env.SOURCE_KIND }}
+          path: dist/official-result-imports/${{ env.CANDIDATE_ID }}/
           if-no-files-found: error
