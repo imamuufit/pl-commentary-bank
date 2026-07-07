@@ -27,7 +27,7 @@
     "check:event-relative-history": "node scripts/check-event-relative-history-contract.mjs",
     "check:sources": "node scripts/check-source-registry-contract.mjs",
     "check:source-export": "node scripts/check-source-export-contract.mjs",
-    "check:player-roster-export": "node scripts/check-player-roster-contract.mjs",
+    "check:player-roster-export": "node scripts/check-player-roster-export-contract.mjs",
     "check:health-report": "node scripts/check-workspace-health-report-contract.mjs",
     "check:event-workspace-export": "node scripts/check-event-workspace-export-contract.mjs",
     "check:import-audit": "node scripts/check-import-audit-contract.mjs",
