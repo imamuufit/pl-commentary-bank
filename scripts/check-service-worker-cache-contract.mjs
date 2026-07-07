@@ -4,7 +4,7 @@ const sw = fs.readFileSync('sw.js', 'utf8');
 const errors = [];
 
 const requiredSnippets = [
-  "const CACHE_NAME = 'pl-commentary-bank-v0.1.4'",
+  "const CACHE_NAME = 'pl-commentary-bank-v0.1.5'",
   'if (!response || !response.ok) return response;',
   'caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy))',
   'caches.match(withoutQuery(event.request))',
@@ -21,7 +21,7 @@ if (okGuardIndex === -1 || cachePutIndex === -1 || okGuardIndex > cachePutIndex)
   errors.push('service worker must check response.ok before writing to cache');
 }
 
-if (/cache\.put\(event\.request,\s*response/.test(sw)) {
+if (sw.includes('cache.put(event.request, response')) {
   errors.push('service worker must cache a cloned response, not the live response object');
 }
 
