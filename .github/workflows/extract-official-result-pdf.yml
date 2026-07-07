@@ -1,0 +1,37 @@
+name: Extract official result PDF
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_id:
+        description: Official event candidateId from data/event-source-candidates.json
+        required: true
+        default: hpa-2026-06-numata-bench
+      source_kind:
+        description: linkedSources contains kind to extract
+        required: true
+        default: resultPdf
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install PDF text tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Extract official PDF text and import rows
+        run: >-
+          node scripts/extract-official-result-pdf.mjs
+          --candidate-id=${{ inputs.candidate_id }}
+          --source-kind=${{ inputs.source_kind }}
+      - name: Upload import artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-result-import-${{ inputs.candidate_id }}-${{ inputs.source_kind }}
+          path: dist/official-result-imports/${{ inputs.candidate_id }}/
+          if-no-files-found: error
