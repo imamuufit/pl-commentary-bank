@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pl-commentary-bank-v0.1.5';
+const CACHE_NAME = 'pl-commentary-bank-v0.1.6';
 const ASSETS = [
   './',
   './index.html',
@@ -10,9 +10,11 @@ const ASSETS = [
   './src/event-search-helper.js',
   './src/result-import-workspace.css',
   './src/result-import-workspace.js',
+  './src/official-source-candidate-picker.js',
   './data/database.json',
   './data/research-candidates.json',
-  './data/event-config.json'
+  './data/event-config.json',
+  './data/event-source-candidates.json'
 ];
 
 function withoutQuery(request) {
