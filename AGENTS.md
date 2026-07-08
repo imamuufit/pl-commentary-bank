@@ -49,8 +49,8 @@ When working on HPA Event Watch:
   1. April 2026 Ebetsu classic powerlifting meet.
   2. June 2026 Numata Bench Press meet.
   3. Future Hokkaido meets, including Asahikawa and Toyako when official plan/source confirms them.
-- Keep Numata 2026 as `hasSokuhou: true` and `hasResultPdf: false` until an independent final-result PDF is clearly verified.
-- Do not promote individual athlete rows from 速報 PDFs into confirmed histories.
+- Keep Numata 2026 as `hasSokuhou: true`; set `hasResultPdf: true` only for the verified official HPA result PDF `20260621result_hokkidoBP.pdf`, and keep 速報 PDFs separated as candidate/result-research material.
+- Do not promote individual athlete rows from 速報 or result PDFs into confirmed histories.
 
 ## Print/layout rules
 
@@ -102,7 +102,7 @@ Ask for user review before:
 ## Current important project facts
 
 - 2026 April Ebetsu spring PL: official result PDF candidate exists.
-- 2026 June Numata Bench: official program, entry, schedule, and 速報 PDFs exist.
-- 2026 June Numata Bench: independent final result PDF remains unconfirmed until verified.
+- 2026 June Numata Bench: official program, entry, schedule, 速報 PDFs, and verified official HPA result PDF exist.
+- 2026 June Numata Bench: official HPA result PDF is `https://h-power.sakura.ne.jp/20260621result_hokkidoBP.pdf`; do not treat the separate 速報 PDFs as final results.
 - 2026 Asahikawa and Toyako are future candidates from official plan sources.
 - The project is moving from event-source indexing toward athlete/event linkage, but confirmed-history promotion remains conservative.
