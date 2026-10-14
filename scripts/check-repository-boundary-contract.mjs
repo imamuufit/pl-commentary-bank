@@ -5,7 +5,10 @@ const errors = [];
 const boundaryRule = 'PL Commentary Bank data, reports, event-index files, athlete data, and print-layout work must not target Platform Buddy / total-academy.';
 const forbiddenMarkers = [
   ['total-academy', 'Platform Buddy repository name'],
-  ['platform buddy', 'Platform Buddy app name']
+  ['platform buddy', 'Platform Buddy app name'],
+  ['platform-buddy', 'Platform Buddy path/key marker'],
+  ['buddy method', 'Platform Buddy training method marker'],
+  ['e1rm', 'Platform Buddy estimated max marker']
 ];
 
 function read(file) {
@@ -41,6 +44,15 @@ function walkFiles(root) {
   return files;
 }
 
+function assertPathStaysInThisRepository(file) {
+  const normalized = file.replace(/\\/g, '/').toLowerCase();
+  for (const [marker, label] of forbiddenMarkers) {
+    if (normalized.includes(marker)) {
+      errors.push(`${file}: path contains ${label} marker "${marker}". ${boundaryRule}`);
+    }
+  }
+}
+
 function checkNoForbiddenMarkers(file) {
   const text = read(file).toLowerCase();
   for (const [marker, label] of forbiddenMarkers) {
@@ -68,7 +80,26 @@ const configFiles = [
   ...walkFiles(path.join('.github', 'workflows')).filter(file => /\.(ya?ml)$/i.test(file))
 ];
 
+const appRuntimeFiles = [
+  ...walkFiles('src').filter(file => /\.(css|html|js|mjs)$/i.test(file)),
+  ...walkFiles('icons').filter(file => /\.(svg|json|webmanifest)$/i.test(file))
+];
+
+const repositoryFiles = walkFiles('.').filter(file => {
+  const normalized = file.replace(/\\/g, '/');
+  return !normalized.startsWith('.git/')
+    && !normalized.startsWith('node_modules/');
+});
+
+for (const file of repositoryFiles) {
+  assertPathStaysInThisRepository(file);
+}
+
 for (const file of configFiles) {
+  checkNoForbiddenMarkers(file);
+}
+
+for (const file of appRuntimeFiles) {
   checkNoForbiddenMarkers(file);
 }
 
